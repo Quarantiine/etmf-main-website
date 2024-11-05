@@ -1,0 +1,86 @@
+[
+	{
+		"name": "Jared Manigault",
+		"position": "President/Chief Executive Officer",
+		"bio": "As the Founder and CEO of ETMF, Jared Manigault is a leader dedicated to empowering students and communities. His experience directing operations at major companies like FedEx, Riddell, Brinks, and Amazon has shaped his vision for creating sustainable, positive change. Through ETMF and Mindset Media, Jared is transforming education and fostering personal growth through impactful content and programs.",
+		"socials": [
+			{
+				"linkedIn": "https://www.linkedin.com/in/jared-manigault-a38465205/",
+				"img": "/icons/linkedin-black.svg"
+			}
+		],
+		"picture": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/ofwz7cjqz1z0bs5iizr4"
+	},
+	{
+		"name": "Christian Tipps",
+		"position": "Vice President/Chief Operating Officer",
+		"bio": "Christian Tipps is a driven leader with a passion for service.  A cum laude graduate and former student body president. The leading of multiple student organizations, including the Texas Junior College Student Government Association and Phi Theta Kappa, Christian brings his organizational skills and leadership experience to ensure the foundation's efficient operation.",
+		"socials": [
+			{
+				"linkedIn": "https://www.linkedin.com/in/christian-tipps-424ba027a/",
+				"img": "/icons/linkedin-black.svg"
+			}
+		],
+		"picture": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/yp5im6yu64hugemcq3qe"
+	},
+	{
+		"name": "Nery Martinez",
+		"position": "Secretary/Chief Financial Officer",
+		"bio": "Nery Martinez is a Dallas native with a passion for his community. With experience in corporate banking at JPMC and BofA, Nery brings a business-minded approach to the foundation. He is committed to making a positive impact on his city and empowering those who need it most.",
+		"socials": [
+			{
+				"linkedIn": "https://www.linkedin.com/in/nery-martinez/",
+				"img": "/icons/linkedin-black.svg"
+			}
+		],
+		"picture": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/dzt9eqchlyxnim91wpqd"
+	},
+	{
+		"name": "Daniel Ward",
+		"position": "Treasurer/Chief Technology Officer",
+		"bio": "As CTO, Daniel Ward leads the development of advanced software solutions for the foundation. He is passionate about creating accessible tools, powered by AI, that unlocks individual potential and enable learners to thrive. With a background in building AI powered software tools, a strong work ethic, and a commitment to continuous learning, he's ready to make a difference in the lives of people.",
+		"socials": [
+			{
+				"linkedIn": "https://www.linkedin.com/in/daniel-ward-071010205/",
+				"img": "/icons/linkedin-black.svg"
+			}
+		],
+		"picture": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/i46h6zx69usbwtpsvli8"
+	},
+	{
+		"name": "Natalie Garcia",
+		"position": "Educational Programs Officer",
+		"bio": "Natalie Garcia is a dedicated advocate for youth empowerment and education. At just 17, she made history as the youngest SGA President of her chapter and serves as Public Relations Officer on the executive board for TJCSGA Region 2. Motivated by her lifelong goal to become an immigration lawyer, Natalie sees law as a means to offer second chances and empower individuals to build better lives. At ETMF, she channels her passion into creating programs that equip students with the mindsets and practical skills needed for success, fostering both personal growth and community transformation.",
+		"socials": [
+			{
+				"linkedIn": "https://www.linkedin.com/in/natalie-garcia-a5a02b282/",
+				"img": "/icons/linkedin-black.svg"
+			}
+		],
+		"picture": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/t3pu3vzp0sale4zshdvu"
+	},
+	{
+		"name": "Jacob Zaragoza",
+		"position": "Community Engagement Programs Officer",
+		"bio": "Jacob Zaragoza is a dedicated advocate for student voices and community empowerment. Having served as a senator and now President of his student government association and serving on the executive board for TJCSGA Region 2 at the tender age of 17 Jacob embodies the transformative power of mindset. As ETMF's Community Programs Officer, Jacob is dedicated to building bridges and empowering community members to realize their potential. He believes that by creating supportive environments and amplifying diverse perspectives, ETMF can empower individuals to navigate challenges, embrace growth, and become active contributors to a more vibrant society.",
+		"socials": [
+			{
+				"linkedIn": "https://www.linkedin.com/in/jacob-zaragoza-129185320/",
+				"img": "/icons/linkedin-black.svg"
+			}
+		],
+		"picture": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/tgzp80hywsofizuwcqam"
+	},
+	{
+		"name": "ArbreNayia Richardson",
+		"position": "Public Relation Officer/Chief Marketing Officer",
+		"bio": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quibusdam architecto doloribus molestiae assumenda deserunt ad beatae facere, quam voluptate. Esse fuga deleniti fugit vero eaque quibusdam perspiciatis nostrum est. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos accusantium dicta dolores quae animi temporibus iure quas maiores ut illum inventore laborum quibusdam tempora, ullam sequi, placeat saepe officia aperiam.",
+		"socials": [
+			{
+				"linkedIn": "https://www.linkedin.com/in/arbrenayiar/",
+				"img": "/icons/linkedin-black.svg"
+			}
+		],
+		"picture": ""
+	}
+]

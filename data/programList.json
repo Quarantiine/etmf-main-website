@@ -1,0 +1,204 @@
+[
+	{
+		"title": "ETMF Academy",
+		"subTitle": "Empowerment Through Education",
+		"description": [
+			{
+				"text": "The ETMF Academy offers a transformative learning experience, empowering individuals to reach their full potential across various domains. From fostering entrepreneurial skills and leadership development to promoting personal growth and academic excellence, our programs are designed to equip individuals with the tools they need to thrive."
+			}
+		],
+		"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/skvvhvujsv6srilfyg2o",
+		"statementSection": [
+			{
+				"title": "Explore Our Transformative Courses",
+				"paragraphs": [
+					{
+						"textHeader": "Student Government & Leadership Development:",
+						"text": "This program focuses on developing leadership skills in governance, with modules on empathy, integrity, and decision-making. Using AI and VR simulations, students can experience the responsibilities and challenges of leading in a student government setting."
+					},
+					{
+						"textHeader": "Professional Development:",
+						"text": "Mindset-driven courses on professional development emphasize skills like communication, time management, and strategic planning. AI-driven feedback helps students improve their professional capabilities, preparing them for career advancement."
+					},
+					{
+						"textHeader": "Historically Marginalized Communities:",
+						"text": "The Academy offers specialized programs addressing leadership and empowerment within historically marginalized communities. Through immersive scenarios and AI-generated case studies, students can learn how to advocate for change and drive community growth."
+					},
+					{
+						"textHeader": "Business Leadership:",
+						"text": "Focused on executive training and innovative problem-solving, these programs develop business leaders who can lead teams and drive strategic initiatives. VR simulations provide hands-on leadership experience, fostering decision-making and team management skills."
+					},
+					{
+						"textHeader": "Personal Development:",
+						"text": "Courses focused on personal growth help students enhance emotional intelligence, resilience, and self-awareness. AI-driven exercises and VR meditative environments provide tools for personal reflection, self-improvement, and mindfulness."
+					},
+					{
+						"textHeader": "Academic Excellence:",
+						"text": "The Academy’s academic programs offer mindset-based strategies for excelling in educational pursuits. With personalized learning paths, AI tutors, and AR tools, students receive the support they need to achieve academic success."
+					}
+				]
+			},
+			{
+				"title": "Zhyra AI within the Academy",
+				"paragraphs": [
+					{
+						"textHeader": "Personalized Tutor:",
+						"text": "Zhyra AI provides targeted hints and feedback, fostering critical thinking without simply giving away answers."
+					},
+					{
+						"textHeader": "Real-World Application:",
+						"text": "AI-generated scenarios based on course content allow students to apply their knowledge in practical, relevant situations."
+					},
+					{
+						"textHeader": "Zhyra AI Lecture Video Conversations:",
+						"text": "Zhyra AI engages users in conversations about lecture videos, helping them understand and break down the content effectively. This interaction ensures users grasp the key concepts being taught, making the learning experience more engaging by providing them with a supportive dialogue as they navigate through each video."
+					},
+					{
+						"textHeader": "Customizable Personality:",
+						"text": "Students can tailor Zhyra's personality to their preferences, creating a motivating and enjoyable learning experience."
+					},
+					{
+						"textHeader": "Multilingual Support:",
+						"text": "Zhyra AI communicates in multiple languages, ensuring accessibility for diverse learners."
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Student Activity Program",
+		"subTitle": "Empowering Student Leaders",
+		"description": [
+			{
+				"text": "The ETMF Student Activity Program empowers student governments at all levels to effectively govern, lead, and create a tangible impact on their respective communities."
+			},
+			{
+				"text": "We achieve this through a comprehensive approach that combines substantial annual funding with high-quality training in essential leadership skills, advocacy, data analytics, and program development. By equipping student leaders with both financial resources and practical skills, we aim to cultivate thriving student communities and a culture of impactful student engagement."
+			},
+			{
+				"text": "(Important: The following training is required for all levels of funding in this program)"
+			}
+		],
+		"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/j7eeazsk5lupdobivmf8",
+		"statementSection": [
+			{
+				"title": "What You'll Learn",
+				"paragraphs": [
+					{
+						"textHeader": "Student Government Leadership Training:",
+						"text": "Specialized courses will equip SGA members with the following skills: Communication, decision-making, teamwork, conflict resolution, public speaking, persuasive communication, legislative processes, working with administrators."
+					},
+					{
+						"textHeader": "Student Government Empowerment Training:",
+						"text": "The Student Empowerment Training course teaches school administrators and staff to effectively empower student government leaders, fostering collaborative partnerships essential for creating engaging, inclusive, and impactful student experiences, and required for schools seeking ETMF Student Activity Program funding."
+					},
+					{
+						"textHeader": "Data Analytics for Student Government:",
+						"text": "Teaches data collection methods, surveys, analysis and reporting, program evaluation, performance indicators to help student governments to effectively understand and represent their constituents."
+					},
+					{
+						"textHeader": "Creating High-Impact Programs:",
+						"text": "Teaches project management, program design, execution, marketing, budgeting, and impact assessment empowering student governments to create impactful programs for the student body that drive engagement."
+					},
+					{
+						"textHeader": "Financial Management & Budgeting:",
+						"text": "Teaches budgeting principles, expense tracking, responsible spending practices, reporting requirements, exploring diverse revenue generation techniques (fundraising, sponsorship procurement, grants), and budget forecasting strategies."
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Access To Education",
+		"subTitle": "Bridging the Gap for Financially Marginalized Students",
+		"description": [
+			{
+				"text": "The Access to Education Program is designed to address the systemic inequities that limit educational opportunities for financially marginalized students."
+			},
+			{
+				"text": "We focus on providing holistic support to international, undocumented and out of state students who face significant financial barriers to accessing and completing their education."
+			}
+		],
+		"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/uufwd8beiqsceq411qe8",
+		"statementSection": [
+			{
+				"title": "Financial Assistance",
+				"paragraphs": [
+					{
+						"textHeader": "",
+						"text": "Empowering minds starts with removing barriers, ETMF's Financial Assistance initiatives within the Access to Education Program alleviate the financial burdens faced by marginalized students, ensuring that economic hardship does not hinder their pursuit of knowledge and opportunity."
+					}
+				]
+			},
+			{
+				"title": "Housing Security",
+				"paragraphs": [
+					{
+						"textHeader": "",
+						"text": "Believing that a stable learning environment extends beyond the classroom, ETMF’s Access to Education Program champions Housing Security by working to ensure that students have a secure and supportive place to live, fostering an environment conducive to academic success."
+					}
+				]
+			},
+			{
+				"title": "Food Security",
+				"paragraphs": [
+					{
+						"textHeader": "",
+						"text": "Recognizing that nourished minds are empowered minds, ETMF's Access to Education Program supports Food Security, ensuring that students' basic needs are met so that they can focus on learning and reach their full potential."
+					}
+				]
+			},
+			{
+				"title": "Transportation Insecurity",
+				"paragraphs": [
+					{
+						"textHeader": "",
+						"text": "Understanding that access to education relies on access to opportunity, ETMF’s Access to Education Program combats Transportation Insecurity, helping to remove a critical barrier that may keep students from consistently engaging in their education and broader community life."
+					}
+				]
+			},
+			{
+				"title": "Wrap-Around Support Services:",
+				"paragraphs": [
+					{
+						"textHeader": "Legal Aid Referrals (for undocumented students):",
+						"text": "Connecting students with legal professionals to navigate complex immigration laws."
+					},
+					{
+						"textHeader": "Mental Health Services:",
+						"text": "Providing or facilitating access to mental health counseling and support groups to address stress, anxiety, and other challenges."
+					},
+					{
+						"textHeader": "Academic Advising:",
+						"text": "Offering individualized academic support and guidance to help students stay on track and achieve their academic goals."
+					},
+					{
+						"textHeader": "Mentorship Program:",
+						"text": "Connecting students with mentors who can provide guidance, encouragement, and support throughout their academic journey."
+					}
+				]
+			},
+			{
+				"title": "Impact Measurement:",
+				"paragraphs": [
+					{
+						"textHeader": "Student Retention and Graduation Rates:",
+						"text": "Tracking the number of students who are able to continue their education and successfully complete their degrees."
+					},
+					{
+						"textHeader": "Improved Academic Performance:",
+						"text": "Measuring changes in GPA, course completion rates, and other academic indicators."
+					},
+					{
+						"textHeader": "Increased Access to Basic Needs:",
+						"text": "Monitoring access to affordable housing, food, and transportation among participating students."
+					},
+					{
+						"textHeader": "Student Well-being:",
+						"text": "Assessing the overall well-being of students, including their mental and emotional health, and their sense of belonging and support within the academic community."
+					}
+				]
+			}
+		]
+	}
+]

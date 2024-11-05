@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============= CSS Pre-Defined Styles */
+
+/* For paragraph tags */
+.lato-regular {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* For paragraph titles */
+.lato-bold {
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* For titles */
+.montserrat-bold {
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.default-overflow::-webkit-scrollbar {
+	width: 10px;
+}
+.default-overflow::-webkit-scrollbar-thumb {
+	background-color: #4bf2c7;
+}
+.default-overflow::-webkit-scrollbar-track {
+	background-color: white;
+}
+
+.default-overflow-x::-webkit-scrollbar {
+	height: 10px;
+}
+.default-overflow-x::-webkit-scrollbar-thumb {
+	background-color: #4bf2c7;
+}
+.default-overflow-x::-webkit-scrollbar-track {
+	background-color: white;
+}
+
+/* ============= Tailwind Pre-Defined Styles */
+
+.text-yellow {
+	@apply text-[#FFD700];
+}
+
+/* Mostly Used For Btns */
+.text-green-1 {
+	@apply text-[#4BF2C7];
+}
+
+/* Mostly Used For Backgrounds */
+.text-green-2 {
+	@apply text-[#7CDAC2];
+}
+.text-green-3 {
+	@apply text-[#0B7955];
+}
+.text-green-4 {
+	@apply text-[#104030];
+}
+
+.bg-yellow {
+	@apply bg-[#FFD700];
+}
+
+/* Mostly Used For Btns */
+.bg-green-1 {
+	@apply bg-[#4BF2C7];
+}
+
+/* Mostly Used For Backgrounds */
+.bg-green-2 {
+	@apply bg-[#7CDAC2];
+}
+.bg-green-3 {
+	@apply bg-[#0B7955];
+}
+.bg-green-4 {
+	@apply bg-[#104030];
+}
+
+.bg-gradient-green-1 {
+	@apply bg-gradient-to-r from-[#104030] to-[#0B7955];
+}
+.bg-gradient-green-1b {
+	@apply bg-gradient-to-r from-[#0B7955] to-[#104030];
+}
+
+.title-1 {
+	@apply text-5xl;
+}
+.title-2 {
+	@apply text-2xl;
+}
+
+.no-style-btn {
+	@apply cursor-pointer hover:opacity-70 transition-opacity;
+}
+.styled-btn {
+	@apply lato-bold cursor-pointer text-black bg-[#4bf2c7] px-4 py-2 hover:opacity-70 transition-all rounded-lg;
+}
+.disabled-styled-btn {
+	@apply lato-bold cursor-pointer bg-gray-500 text-white px-4 py-2 hover:opacity-70 transition-all rounded-lg;
+}
+.outlined-styled-btn {
+	@apply cursor-pointer bg-transparent border-2 text-white border-[#4bf2c7] px-4 py-2 hover:opacity-70 transition-all rounded-lg;
+}
+
+.navbar-link-underline {
+	@apply w-full h-[1.5px] bg-black;
+}
+
+.input-field-style {
+	@apply rounded-lg px-4 py-2 outline-none w-full;
+}
+
+.spinner {
+	@apply w-5 h-5 border-4 border-[#4bf2c7] border-t-transparent animate-spin rounded-full;
+}
+
+.default-width {
+	@apply w-[90%] xl:w-[1000px];
+}
+
+.placeholder-bg {
+	@apply bg-gradient-to-r from-[#7CDAC2] to-[#0B7955] absolute top-0 left-0 w-full h-full inset-0 z-0;
+}
+
+.default-modal {
+	@apply flex flex-col justify-center items-center w-full h-full bg-[rgba(0,0,0,0.7)] backdrop-blur-md fixed top-0 left-0 z-50 px-5 py-10;
+}
+
+.check-point-circles {
+	@apply max-w-10 min-w-10 max-h-10 min-h-10 rounded-full bg-green-3;
+}
+.check-point-line {
+	@apply absolute top-0 left-[17px] h-full w-2 bg-green-1 z-[-1] rounded-t-full;
+}

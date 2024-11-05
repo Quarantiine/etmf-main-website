@@ -1,0 +1,144 @@
+[
+	{
+		"title": "",
+		"description": [
+			{
+				"text": "This Privacy Policy describes how Empowerment Through Mindset Foundation (“ETMF,” “ETM Foundation,” “foundation,” “Foundation,” “we,” “us,” or “our”) collects, uses, and protects the personal information of users who visit our website, https://etmfoundation.com (the “Website”). By using the Website, you consent to the data practices described in this policy."
+			}
+		],
+		"points": [{}]
+	},
+	{
+		"title": "Information We Collect",
+		"description": [{}],
+		"points": [
+			{
+				"textHeader": "Personal Information Provided by Users",
+				"text": "When interacting with the Website, you may provide personal information directly, such as when filling out forms, submitting feedback, or engaging with Zhyra AI. This includes name, email address, and any other information you choose to provide."
+			},
+			{
+				"textHeader": "Automatically Collected Information",
+				"text": "ETMF may collect data through cookies, Google Forms, and similar technologies, including IP addresses, browser types, operating systems, and other usage data to analyze Website traffic, user interests, and improve Website engagement."
+			}
+		]
+	},
+	{
+		"title": "Use of Collected Information",
+		"description": [{}],
+		"points": [
+			{
+				"textHeader": "Conversational Data with Zhyra AI",
+				"text": "Users have the choice to save or not save conversational data when engaging with Zhyra AI. By default, conversational data is saved and may be used to enhance Zhyra AI’s assistance capabilities. Once saved, this conversational data cannot be deleted by users."
+			},
+			{
+				"textHeader": "Improvement of Website Services",
+				"text": "Data collected from interactions with Zhyra AI, forms, and analytics tools are used to improve Website functionality, user experience, and content relevance."
+			},
+			{
+				"textHeader": "Marketing and Analytics",
+				"text": "Data from user interactions, such as form submissions and website usage, may be used for marketing purposes, including understanding user interests and promoting relevant ETMF initiatives and programs."
+			}
+		]
+	},
+	{
+		"title": "Data Processing and External Handling",
+		"description": [{}],
+		"points": [
+			{
+				"textHeader": "Third-Party Processing and External Sharing",
+				"text": "User data, including conversational data saved from interactions with Zhyra AI, may be processed and stored using third-party technologies and platforms, including Google-related entities and their affiliated technologies, such as Gemini flash models and Gemini pro models. These processes adhere to industry standards and legal regulations concerning data privacy and security."
+			},
+			{
+				"textHeader": "Location of Data Processing",
+				"text": "Your data may be processed outside your geographic region or outside ETMF’s immediate data frameworks. This includes processing by third-party providers under applicable regulatory compliance standards in effect for AI and data privacy, such as those governing Google’s AI models."
+			},
+			{
+				"textHeader": "Security and Compliance Measures",
+				"text": "While ETMF employs technologies and safeguards to protect your data, including encryption and secure storage protocols, we cannot guarantee that data handling practices by third parties, including Google or Gemini model frameworks, will adhere to any specific methods or standards. ETMF strives to ensure due diligence and compliance with prevailing data protection regulations, but users should be aware that data is subject to processing and security protocols under third-party governance."
+			}
+		]
+	},
+	{
+		"title": "User Rights and Choices",
+		"description": [{}],
+		"points": [
+			{
+				"textHeader": "Opting to Save Data",
+				"text": "Users have control over their choice to save or not save their interactions with Zhyra AI. Saved interactions, however, cannot be deleted once stored."
+			},
+			{
+				"textHeader": "Cookie and Tracking Preferences",
+				"text": "Users may manage cookie settings and disable certain tracking technologies through their browser settings. However, doing so may affect the functionality and personalized experience on the Website."
+			}
+		]
+	},
+	{
+		"title": "Third-Party Services",
+		"description": [{}],
+		"points": [
+			{
+				"textHeader": "Google Forms and Analytics",
+				"text": "The Website integrates Google Forms for various functions, such as analytics, communication, and marketing. Information submitted via Google Forms is handled under Google’s data privacy and security protocols. ETMF is not responsible for the practices or policies of Google, and users are encouraged to review Google’s Privacy Policy and Terms of Service."
+			},
+			{
+				"textHeader": "External Links",
+				"text": "The Website may contain links to external sites or third-party services. ETMF does not control these sites and is not responsible for their content or privacy practices. Users are encouraged to review the privacy policies of any external sites they visit."
+			}
+		]
+	},
+	{
+		"title": "Data Security",
+		"description": [
+			{
+				"text": "ETMF implements reasonable technical and organizational measures to secure personal information and limit unauthorized access or disclosure. However, please note that no data transmission over the Internet or storage system can be guaranteed to be 100% secure. Users interact with the Website at their own risk, and ETMF cannot be held liable for any damages arising from security vulnerabilities beyond ETMF’s control, including those involving third-party technologies and software."
+			}
+		],
+		"points": [{}]
+	},
+	{
+		"title": "Data Retention",
+		"description": [{}],
+		"points": [
+			{
+				"textHeader": "Retention of User Data",
+				"text": "ETMF retains user data for as long as necessary to fulfill the purposes outlined in this Privacy Policy, including for compliance, analytics, and service improvement. Once conversational data is saved, it cannot be removed by users."
+			},
+			{
+				"textHeader": "Data Removal Requests",
+				"text": "Although saved conversational data cannot be deleted, users may request the removal of other data collected through forms or other Website interactions by contacting ETMF tech support down below. ETMF will make reasonable efforts to accommodate such requests, where feasible and in compliance with applicable laws."
+			}
+		]
+	},
+	{
+		"title": "Compliance with Data Privacy Regulations",
+		"description": [
+			{
+				"text": "ETMF is committed to complying with applicable data privacy regulations, including but not limited to the GDPR (General Data Protection Regulation) for users within the EU and the CCPA (California Consumer Privacy Act) for California residents. ETMF will disclose and process data per these legal frameworks and may update this Privacy Policy as needed to reflect compliance requirements."
+			}
+		],
+		"points": [{}]
+	},
+	{
+		"title": "Changes to this Privacy Policy",
+		"description": [
+			{
+				"text": "ETMF may update this Privacy Policy periodically. Users will be notified of significant changes through the Website or, where applicable, on the website. Continued use of the Website after updates are posted signifies user acceptance of the revised Privacy Policy."
+			}
+		],
+		"points": [{}]
+	},
+	{
+		"title": "Contact Us",
+		"description": [
+			{
+				"text": "For questions about this Privacy Policy or data practices, please contact ETMF tech support down below"
+			}
+		],
+		"points": [
+			{
+				"textHeader": "",
+				"text": ""
+			}
+		]
+	}
+]

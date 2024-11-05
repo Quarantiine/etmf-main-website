@@ -1,0 +1,135 @@
+[
+	{
+		"title": "Agreement to Terms",
+		"description": [
+			{
+				"text": "By accessing or using https://etmfoundation.com (the “Website”), you confirm that you have read, understood, and agree to be bound by these Terms and Conditions (“Terms”). ETMF reserves the right to modify or update these Terms at any time."
+			},
+			{
+				"text": "Notification of significant changes will be provided through website notices or, if applicable, by email to users. Continued use of the Website after any changes take effect constitutes acceptance of those changes."
+			}
+		],
+		"points": [{}]
+	},
+	{
+		"title": "Use of Website - Eligibility",
+		"description": [{}],
+		"points": [
+			{
+				"textHeader": "Age Requirements",
+				"text": "If you are under the age of 16, please do not submit any forms or share personal information without parental consent."
+			},
+			{
+				"textHeader": "Account and Registration",
+				"text": "The Website does not have a user registration system, and users are not required to create accounts to access the Website’s content or services."
+			},
+			{
+				"textHeader": "User Conduct",
+				"text": "Users agree not to engage in prohibited behaviors, including attempting unauthorized access, sharing private information of others, or misusing website features."
+			}
+		]
+	},
+	{
+		"title": "Intellectual Property",
+		"description": [
+			{
+				"text": "All content on the Website, but not limited to,—including text, images, videos, graphics, and AI-generated content—is the property of ETMF or its licensors."
+			},
+			{
+				"text": "This content will be protected by copyright, trademark, and other intellectual property laws. Users agree not to reproduce, distribute, or publicly display content from the Website without prior written permission from ETMF."
+			}
+		],
+		"points": [{}]
+	},
+	{
+		"title": "Data Collection and Use",
+		"description": [{}],
+		"points": [
+			{
+				"textHeader": "Data Collection Options",
+				"text": "Users interacting with Zhyra AI will have the choice to either save or not save their conversation data to improve the AI model’s assistance capabilities. By default, data from user interactions is saved, but users can adjust these settings to control what information is retained."
+			},
+			{
+				"textHeader": "Data Handling",
+				"text": "ETMF uses Google Forms for analytics, marketing, and communication purposes. Google Forms collects only the data that users willingly input. Data collected via these forms helps ETMF understand user interests and improve the website experience. For comprehensive information, including Zhyra AI’s data usage practices, please refer to our Privacy Policy down below."
+			},
+			{
+				"textHeader": "Data Retention and Privacy",
+				"text": "Conversations that users choose to save may be analyzed to refine Zhyra AI’s functionality. However, once saved, users cannot delete these interactions from ETMF’s backend. ETMF is committed to handling all data securely and responsibly, aligning with relevant data privacy laws."
+			}
+		]
+	},
+	{
+		"title": "Third-Party Services",
+		"description": [
+			{
+				"text": "The Website may integrate or link to third-party services, such as Google Forms, to enhance user experience. ETMF does not control third-party applications and is not responsible for any damages or losses users may experience due to third-party software use, including data breaches or malfunction. Users interact with third-party services at their own risk and are encouraged to review the privacy policies of these external providers."
+			}
+		],
+		"points": [{}]
+	},
+	{
+		"title": "Donations and Payments",
+		"description": [{}],
+		"points": [
+			{
+				"textHeader": "Donations Policy",
+				"text": "All donations are voluntary and generally non-refundable. ETMF allocates funds according to program needs and donor specifications where applicable. For questions regarding donations or refund exceptions, contact customer support down below"
+			}
+		]
+	},
+	{
+		"title": "Disclaimer of Warranties",
+		"description": [
+			{
+				"text": "The Website and all content are provided “as is” and “as available” without any express or implied warranties. ETMF disclaims any liability for inaccuracies or omissions in the Website content, including educational or advisory content. The Website may be unavailable or limited in certain jurisdictions, and ETMF makes no guarantees of uninterrupted access."
+			}
+		],
+		"points": [{}]
+	},
+	{
+		"title": "Limitation of Liability",
+		"description": [
+			{
+				"text": "ETMF and its affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from the use of the Website, Zhyra AI, Google Forms, or any affiliated services. This includes damages for loss of profits, data, or goodwill resulting from user access issues, third-party content, or unauthorized access."
+			}
+		],
+		"points": [{}]
+	},
+	{
+		"title": "Indemnification",
+		"description": [
+			{
+				"text": "Users agree to indemnify, defend, and hold ETMF harmless from any claims, liabilities, damages, and expenses (including legal fees) arising from a user’s breach of these Terms or their activities on the Website."
+			}
+		],
+		"points": [{}]
+	},
+	{
+		"title": "Governing Law",
+		"description": [
+			{
+				"text": "These Terms shall be governed by the laws of the State of Texas, USA, without regard to conflict of law principles. Users accessing the Website from outside the United States are responsible for compliance with local laws."
+			}
+		],
+		"points": [{}]
+	},
+	{
+		"title": "Modifications to Terms",
+		"description": [
+			{
+				"text": "ETMF reserves the right to amend these Terms at any time. Notice of changes will be provided on the Website or via email to users. Continued access after changes take effect signifies agreement to the updated Terms."
+			}
+		],
+		"points": [{}]
+	},
+	{
+		"title": "Contact Information",
+		"description": [
+			{
+				"text": "For questions regarding these Terms, please contact our tech support down below. Our team will respond to inquiries promptly."
+			}
+		],
+		"points": [{}]
+	}
+]
