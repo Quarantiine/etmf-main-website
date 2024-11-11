@@ -1,95 +1,134 @@
 [
-  {
-    "title": "Featured Content",
-    "subTitle": "Popular Media",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusantium veritatis modi impedit vitae aspernatur soluta officiis, reprehenderit laborum distinctio similique adipisci mollitia, autem tenetur aut? Dignissimos vero sint magnam!",
-    "link": "",
-    "enableBg": true,
-    "content": [
-      {
-        "title": "Title 1",
-        "image": ""
-      },
-      {
-        "title": "Title 2",
-        "image": ""
-      }
-    ]
-  },
-  {
-    "title": "News & Announcements",
-    "subTitle": "Stay Updated with ETMF",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusantium veritatis modi impedit vitae aspernatur soluta officiis, reprehenderit laborum distinctio similique adipisci mollitia, autem tenetur aut? Dignissimos vero sint magnam!",
-    "link": "/",
-    "enableBg": false,
-    "content": [
-      {
-        "title": "Title 1",
-        "image": ""
-      }
-    ]
-  },
-  {
-    "title": "Tech News",
-    "subTitle": "Exciting Tech Being Developed From ETM Foundation",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusantium veritatis modi impedit vitae aspernatur soluta officiis, reprehenderit laborum distinctio similique adipisci mollitia, autem tenetur aut? Dignissimos vero sint magnam!",
-    "link": "",
-    "enableBg": false,
-    "content": [
-      {
-        "title": "Title 1",
-        "image": ""
-      },
-      {
-        "title": "Title 2",
-        "image": ""
-      },
-      {
-        "title": "Title 3",
-        "image": ""
-      },
-      {
-        "title": "Title 4",
-        "image": ""
-      }
-    ]
-  },
-  {
-    "title": "Educational News",
-    "subTitle": "Insights from the ETM Foundation",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusantium veritatis modi impedit vitae aspernatur soluta officiis, reprehenderit laborum distinctio similique adipisci mollitia, autem tenetur aut? Dignissimos vero sint magnam!",
-    "link": "",
-    "enableBg": false,
-    "content": [
-      {
-        "title": "Title 1",
-        "image": ""
-      },
-      {
-        "title": "Title 2",
-        "image": ""
-      }
-    ]
-  },
-  {
-    "title": "Social Media",
-    "subTitle": "See What We Are Posting",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusantium veritatis modi impedit vitae aspernatur soluta officiis, reprehenderit laborum distinctio similique adipisci mollitia, autem tenetur aut? Dignissimos vero sint magnam!",
-    "link": "",
-    "enableBg": true,
-    "content": [
-      {
-        "title": "Title 1",
-        "image": ""
-      },
-      {
-        "title": "Title 2",
-        "image": ""
-      },
-      {
-        "title": "Title 3",
-        "image": ""
-      }
-    ]
-  }
+	{
+		"title": "Featured Content",
+		"subTitle": "Popular Media",
+		"link": "",
+		"enableBg": true,
+		"content": [
+			{
+				"title": "Speaker Series Coming Up!! Nov 22nd",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Flyers/czvmphajwr901xafr08v-nov22",
+				"imageCollage": [
+					{
+						"src": "none"
+					}
+				],
+				"link": "https://forms.office.com/r/MW9sp08a1m",
+				"mediaType": "flyer"
+			}
+		]
+	},
+	{
+		"title": "News & Announcements",
+		"subTitle": "Stay Updated with ETMF",
+		"link": "/",
+		"enableBg": false,
+		"content": [
+			{
+				"title": "New Podcast Dropping Soon. Stay Tuned",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/hbticm142i7rk93p8ydt",
+				"imageCollage": [
+					{
+						"src": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/lixv9iiypw2ys2bduyct"
+					},
+					{
+						"src": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/bxlv6mjlaypfqrtr4shx"
+					},
+					{
+						"src": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/b7aiyaf0zlig63coqydo"
+					},
+					{
+						"src": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/dc86ijr0iq79lmpjisao"
+					}
+				],
+				"link": "https://www.youtube.com/@ETMFoundation/videos",
+				"mediaType": "youtube"
+			},
+			{
+				"title": "Mindset Matters EP7 Dropped!",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/ea5vk9fufy9vgg9zj4gn",
+				"imageCollage": [
+					{
+						"src": "none"
+					}
+				],
+				"link": "https://www.youtube.com/watch?v=EgH-otg83Zw",
+				"mediaType": ""
+			}
+		]
+	},
+	{
+		"title": "Tech News",
+		"subTitle": "Exciting Tech Being Developed From ETM Foundation",
+		"link": "",
+		"enableBg": false,
+		"content": []
+	},
+	{
+		"title": "Educational News",
+		"subTitle": "What the ETM Foundation doing in education",
+		"link": "",
+		"enableBg": false,
+		"content": []
+	},
+	{
+		"title": "Mindset Media Production (MMP)",
+		"subTitle": "The Media Production That Changes People",
+		"link": "",
+		"enableBg": true,
+		"content": [
+			{
+				"title": "Explore What MM Productions is Creating",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/MMP/tsz7nmery7jz0hiyaae9",
+				"imageCollage": [
+					{
+						"src": "none"
+					}
+				],
+				"link": "https://www.youtube.com/@ETMFoundation/featured",
+				"mediaType": "mindset-media-productions"
+			}
+		]
+	},
+	{
+		"title": "Social Media",
+		"subTitle": "See What We Are Posting",
+		"link": "",
+		"enableBg": true,
+		"content": [
+			{
+				"title": "Our Instagram",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Social%20Media/nvjmls7m8mjbfikpwwdf",
+				"imageCollage": [
+					{
+						"src": "none"
+					}
+				],
+				"link": "https://www.instagram.com/etm.foundation/",
+				"mediaType": "social-media"
+			},
+			{
+				"title": "Our YouTube",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Social%20Media/m5twhmfx5nmqkticqkuo",
+				"imageCollage": [
+					{
+						"src": "none"
+					}
+				],
+				"link": "https://www.youtube.com/@ETMFoundation",
+				"mediaType": "social-media"
+			},
+			{
+				"title": "Our LinkedIn",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Social%20Media/gj1qwuadluksn5tquc1e",
+				"imageCollage": [
+					{
+						"src": "none"
+					}
+				],
+				"link": "https://www.linkedin.com/company/the-etm-foundation/",
+				"mediaType": "social-media"
+			}
+		]
+	}
 ]

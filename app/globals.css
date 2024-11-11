@@ -147,3 +147,11 @@
 .check-point-line {
 	@apply absolute top-0 left-[17px] h-full w-2 bg-green-1 z-[-1] rounded-t-full;
 }
+
+.default-gradient-bg {
+	@apply bg-gradient-to-t from-black to-transparent opacity-80 absolute bottom-0 left-0 w-full h-full inset-0 z-0;
+}
+
+.main-overflow-x {
+	@apply default-overflow-x overflow-x-auto overflow-y-hidden w-full h-full grid grid-flow-col auto-cols-[minmax(300px,4fr)] sm:auto-cols-[minmax(400px,4fr)];
+}

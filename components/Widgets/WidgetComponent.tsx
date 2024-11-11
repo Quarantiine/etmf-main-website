@@ -6,7 +6,7 @@ import React from "react";
 export default function WidgetComponent() {
 	return (
 		<>
-			<Sidetab id="ULvIvS58" buttonText="Feedback" />
+			<Sidetab autoClose keepSession id="ULvIvS58" buttonText="Feedback" />
 		</>
 	);
 }

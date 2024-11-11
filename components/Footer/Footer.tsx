@@ -178,12 +178,12 @@ export default function Footer(): React.ReactElement {
 											Get Involved
 										</Link>
 
-										{/* <Link
+										<Link
 											className="no-style-btn text-green-1"
 											href={"/resources"}
 										>
 											Resources
-										</Link> */}
+										</Link>
 									</div>
 								</div>
 
