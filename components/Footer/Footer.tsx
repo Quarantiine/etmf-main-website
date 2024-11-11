@@ -122,9 +122,39 @@ export default function Footer(): React.ReactElement {
 								</div>
 							</div>
 
+							<div className="flex flex-col gap-2 text-center md:text-start md:w-full">
+								<h1 className="montserrat-bold text-3xl">Take Action</h1>
+
+								<div className="flex flex-col w-fit">
+									<Link
+										href={"https://m06w1sq48mn.typeform.com/to/egR2Hgce"}
+										className="no-style-btn text-green-1"
+										target="_blank"
+									>
+										Meet a Person
+									</Link>
+
+									<Link
+										href={"https://m06w1sq48mn.typeform.com/to/Mpuj7LyK"}
+										className="no-style-btn text-green-1"
+										target="_blank"
+									>
+										Get Involved
+									</Link>
+
+									<Link
+										href={"https://m06w1sq48mn.typeform.com/to/ULvIvS58"}
+										className="no-style-btn text-green-1"
+										target="_blank"
+									>
+										Give Website Feedback
+									</Link>
+								</div>
+							</div>
+
 							<>
 								<div className="flex flex-col gap-2 text-center md:text-start w-full">
-									<h1 className="montserrat-bold text-3xl">Stay Informed</h1>
+									<h1 className="montserrat-bold text-3xl">Pages</h1>
 
 									<div className="flex flex-col w-fit mx-auto md:mx-0">
 										<Link
@@ -133,18 +163,21 @@ export default function Footer(): React.ReactElement {
 										>
 											About Us
 										</Link>
+
 										<Link
 											className="no-style-btn text-green-1"
 											href={"/programs"}
 										>
 											Programs
 										</Link>
+
 										<Link
 											className="no-style-btn text-green-1"
 											href={"/getinvolved"}
 										>
 											Get Involved
 										</Link>
+
 										{/* <Link
 											className="no-style-btn text-green-1"
 											href={"/resources"}

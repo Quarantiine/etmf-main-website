@@ -18,7 +18,7 @@
 			},
 			{
 				"textHeader": "Automatically Collected Information",
-				"text": "ETMF may collect data through cookies, Google Forms, and similar technologies, including IP addresses, browser types, operating systems, and other usage data to analyze Website traffic, user interests, and improve Website engagement."
+				"text": "ETMF may collect data through cookies, Typeform, and similar technologies, including IP addresses, browser types, operating systems, and other usage data to analyze Website traffic, user interests, and improve Website engagement."
 			}
 		]
 	},
@@ -46,15 +46,15 @@
 		"points": [
 			{
 				"textHeader": "Third-Party Processing and External Sharing",
-				"text": "User data, including conversational data saved from interactions with Zhyra AI, may be processed and stored using third-party technologies and platforms, including Google-related entities and their affiliated technologies, such as Gemini flash models and Gemini pro models. These processes adhere to industry standards and legal regulations concerning data privacy and security."
+				"text": "User data, including conversational data saved from interactions with Zhyra AI, may be processed and stored using third-party technologies and platforms, including Typeform-related entities and their affiliated technologies, such as Gemini flash models and Gemini pro models. These processes adhere to industry standards and legal regulations concerning data privacy and security."
 			},
 			{
 				"textHeader": "Location of Data Processing",
-				"text": "Your data may be processed outside your geographic region or outside ETMF’s immediate data frameworks. This includes processing by third-party providers under applicable regulatory compliance standards in effect for AI and data privacy, such as those governing Google’s AI models."
+				"text": "Your data may be processed outside your geographic region or outside ETMF’s immediate data frameworks. This includes processing by third-party providers under applicable regulatory compliance standards in effect for AI and data privacy, such as those governing Typeform’s AI models."
 			},
 			{
 				"textHeader": "Security and Compliance Measures",
-				"text": "While ETMF employs technologies and safeguards to protect your data, including encryption and secure storage protocols, we cannot guarantee that data handling practices by third parties, including Google or Gemini model frameworks, will adhere to any specific methods or standards. ETMF strives to ensure due diligence and compliance with prevailing data protection regulations, but users should be aware that data is subject to processing and security protocols under third-party governance."
+				"text": "While ETMF employs technologies and safeguards to protect your data, including encryption and secure storage protocols, we cannot guarantee that data handling practices by third parties, including Typeform or Gemini model frameworks, will adhere to any specific methods or standards. ETMF strives to ensure due diligence and compliance with prevailing data protection regulations, but users should be aware that data is subject to processing and security protocols under third-party governance."
 			}
 		]
 	},
@@ -77,8 +77,8 @@
 		"description": [{}],
 		"points": [
 			{
-				"textHeader": "Google Forms and Analytics",
-				"text": "The Website integrates Google Forms for various functions, such as analytics, communication, and marketing. Information submitted via Google Forms is handled under Google’s data privacy and security protocols. ETMF is not responsible for the practices or policies of Google, and users are encouraged to review Google’s Privacy Policy and Terms of Service."
+				"textHeader": "Typeform and Analytics",
+				"text": "The Website integrates Typeform for various functions, such as analytics, communication, and marketing. Information submitted via Typeform is handled under Typeform’s data privacy and security protocols. ETMF is not responsible for the practices or policies of Typeform, and users are encouraged to review Typeform’s Privacy Policy and Terms of Service."
 			},
 			{
 				"textHeader": "External Links",

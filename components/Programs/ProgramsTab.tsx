@@ -232,9 +232,7 @@ export default function ProgramsTab(): React.ReactElement {
 						</div>
 
 						<Link
-							href={
-								"https://docs.google.com/forms/d/e/1FAIpQLSdUiVHtgmZO1fJ9nAnql3OyaKGWQIf1QeUiW1f5Cu9VUR10rw/viewform?usp=sf_link"
-							}
+							href={"https://m06w1sq48mn.typeform.com/to/egR2Hgce"}
 							className="styled-btn"
 							target="_blank"
 						>
