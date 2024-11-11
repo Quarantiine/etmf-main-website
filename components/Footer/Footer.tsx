@@ -12,7 +12,7 @@ interface SocialListTypes {
 }
 
 export default function Footer(): React.ReactElement {
-	// Array of social media link objects
+	// Array of social media link object
 
 	const socialList: SocialListTypes[] = [
 		{
