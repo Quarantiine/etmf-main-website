@@ -233,25 +233,70 @@ const MindsetMediaProductionsContent: FC<{ data: ContentTypes }> = ({
 				/>
 			</div>
 
-			<div className="flex flex-col justify-start items-start w-full p-5 gap-2">
-				<h1 className="montserrat-bold text-3xl sm:text-4xl">
-					Podcast Playlist
-				</h1>
-				<div className="main-overflow-x gap-5 rounded-xl">
-					<iframe
-						width="100%" // adjust width as needed
-						height="500" // adjust height as needed
-						src="https://www.youtube.com/embed/videoseries?list=PL-ew-Q-81RCuPlGcZz1ja6_8wybT4qUFJ"
-						title="YouTube Playlist"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowFullScreen
-					></iframe>
+			<div className="flex flex-col justify-center items-center gap-5 p-5 w-full h-auto">
+				<div className="flex flex-col justify-start items-start w-full gap-2">
+					<h1 className="montserrat-bold text-3xl sm:text-4xl">
+						Podcast Playlist
+					</h1>
+					<div className="main-overflow-x gap-5 rounded-xl">
+						<iframe
+							width="100%" // adjust width as needed
+							height="500" // adjust height as needed
+							src="https://www.youtube.com/embed/videoseries?list=PL-ew-Q-81RCuPlGcZz1ja6_8wybT4qUFJ"
+							title="YouTube Playlist"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowFullScreen
+						></iframe>
+					</div>
 				</div>
-			</div>
 
-			<div className="main-overflow-x gap-5">
-				<div className=""></div>
-				{/* CODE HERE */}
+				<div className="main-overflow-x gap-5">
+					<Link
+						href={"https://www.youtube.com/@ETMFoundation/shorts"}
+						target="_blank"
+						className="no-style-btn w-auto h-auto z-10 relative rounded-xl overflow-hidden"
+					>
+						<div className="w-full h-[400px]">
+							<Image
+								className="object-cover w-full h-auto z-0"
+								src={
+									"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Social%20Media/dscwtzkz54sap74jhuml"
+								}
+								alt="image"
+								fill
+								sizes="(max-width: 2000px) 100vw, (max-width: 1200px) 50vw, 33vw"
+							/>
+							<div className="default-gradient-bg opacity-70 absolute top-0 left-0 w-full h-full z-10 flex flex-col justify-end items-start text-white p-5">
+								<h1 className="montserrat-bold text-2xl sm:text-3xl">
+									Explore ETMF Shorts
+								</h1>
+							</div>
+						</div>
+					</Link>
+
+					<Link
+						href={"https://www.youtube.com/@ETMFoundation/podcasts"}
+						target="_blank"
+						className="no-style-btn w-auto h-auto z-10 relative rounded-xl overflow-hidden"
+					>
+						<div className="w-full h-[400px]">
+							<Image
+								className="object-cover w-full h-auto z-0"
+								src={
+									"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Social%20Media/yqkghuukufvatwafz2eh"
+								}
+								alt="image"
+								fill
+								sizes="(max-width: 2000px) 100vw, (max-width: 1200px) 50vw, 33vw"
+							/>
+							<div className="default-gradient-bg opacity-70 absolute top-0 left-0 w-full h-full z-10 flex flex-col justify-end items-start text-white p-5">
+								<h1 className="montserrat-bold text-2xl sm:text-3xl">
+									Explore ETMF Podcasts
+								</h1>
+							</div>
+						</div>
+					</Link>
+				</div>
 			</div>
 
 			<Link
