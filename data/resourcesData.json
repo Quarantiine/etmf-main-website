@@ -25,24 +25,15 @@
 		"enableBg": false,
 		"content": [
 			{
-				"title": "New Podcast Dropping Soon. Stay Tuned",
+				"title": "Mindset Matters EP8 Dropped!",
 				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/hbticm142i7rk93p8ydt",
 				"imageCollage": [
 					{
-						"src": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/lixv9iiypw2ys2bduyct"
-					},
-					{
-						"src": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/bxlv6mjlaypfqrtr4shx"
-					},
-					{
-						"src": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/b7aiyaf0zlig63coqydo"
-					},
-					{
-						"src": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/dc86ijr0iq79lmpjisao"
+						"src": "none"
 					}
 				],
-				"link": "https://www.youtube.com/@ETMFoundation/videos",
-				"mediaType": "youtube"
+				"link": "https://www.youtube.com/watch?v=_OYptmC4lGo",
+				"mediaType": ""
 			},
 			{
 				"title": "Mindset Matters EP7 Dropped!",
