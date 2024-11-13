@@ -127,7 +127,10 @@ export default function Footer(): React.ReactElement {
 
 								<div className="flex flex-col w-fit">
 									<Link
-										href={"https://m06w1sq48mn.typeform.com/to/egR2Hgce"}
+										href={
+											"https://docs.google.com/forms/d/e/1FAIpQLSdUiVHtgmZO1fJ9nAnql3OyaKGWQIf1QeUiW1f5Cu9VUR10rw/viewform?usp=sf_link"
+										}
+										// href={"https://m06w1sq48mn.typeform.com/to/egR2Hgce"}
 										className="no-style-btn text-green-1"
 										target="_blank"
 									>
@@ -135,7 +138,10 @@ export default function Footer(): React.ReactElement {
 									</Link>
 
 									<Link
-										href={"https://m06w1sq48mn.typeform.com/to/Mpuj7LyK"}
+										href={
+											"https://docs.google.com/forms/d/e/1FAIpQLSf4xhtcqL2j8vxwV0wHTzM_xUXPXHce6pury5V77lo3UFbtiw/viewform?usp=sf_link"
+										}
+										// href={"https://m06w1sq48mn.typeform.com/to/Mpuj7LyK"}
 										className="no-style-btn text-green-1"
 										target="_blank"
 									>
