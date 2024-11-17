@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 // import Link from "next/link";
 import React from "react";
 
@@ -17,44 +18,40 @@ interface PointsType {
 export const Section2B: React.FC = () => {
 	const problemList: ProblemListType[] = [
 		{
-			title: "Simplifies Complex Information",
+			title: "Zhyra AI For ETMF Website",
 			pointSection: [
 				{
 					mainPoint:
-						"Zhyra AI breaks down complicated topics and website navigation, making information easily accessible to everyone.",
+						"Deconstructs intricate topics into clear, concise, and digestible insights.",
+				},
+				{
+					mainPoint:
+						"Improves website navigation by directing users to the most relevant pages with accurate links.",
+				},
+				{
+					mainPoint:
+						"Continuously enhances interactions by leveraging user feedback and behavior to maximize engagement.",
 				},
 			],
 			image: "/icons/engagement.png",
 		},
 		{
-			title: "Personalizes the Experience",
+			title: "Zhyra AI For ETMF Academy",
 			pointSection: [
 				{
 					mainPoint:
-						"Zhyra AI adapts to individual learning styles and preferences, creating custom-tailored support and guidance.",
+						"Adapts dynamically to individual preferences and needs for a tailored user experience.",
+				},
+				{
+					mainPoint:
+						"Delivers personalized support, offering relevant guidance and resources to each user.",
+				},
+				{
+					mainPoint:
+						"Continuously refines interactions based on user feedback and behavior for optimal engagement.",
 				},
 			],
 			image: "/icons/ai.png",
-		},
-		{
-			title: "Empowers Efficient Decision-Making",
-			pointSection: [
-				{
-					mainPoint:
-						"Zhyra AI provides data-driven insights and streamlines workflows, freeing up time for strategic thinking.",
-				},
-			],
-			image: "/icons/tuition.png",
-		},
-		{
-			title: "Promotes Deeper Engagement",
-			pointSection: [
-				{
-					mainPoint:
-						"Zhyra AI interactive approach and personalized feedback boost user motivation and create more meaningful learning and growth experiences",
-				},
-			],
-			image: "/icons/area-chart.png",
 		},
 	];
 
@@ -77,7 +74,10 @@ export const Section2B: React.FC = () => {
 					</h1>
 
 					<p>
-						{`Here are just a few examples of how we're harnessing technology to create a more vibrant and connected community. Discover more about our initiatives in the "Resources" tab!`}
+						{`Here are just a few examples of how we're harnessing technology to create a more vibrant and connected community. Discover more in the "Resources" tab!`}
+					</p>
+					<p>
+						{`Zhyra AI is an advanced AI assistant developed and managed under the guidance of the Chief Product & Technology Officer.`}
 					</p>
 
 					<div className="grid grid-cols-1 lg:grid-cols-2 w-full mx-auto h-auto justify-center items-center gap-5 relative">
@@ -108,12 +108,12 @@ export const Section2B: React.FC = () => {
 						))}
 					</div>
 
-					{/* <Link
-            className="w-full sm:w-[200px] text-center styled-btn"
-            href={"/resources"}
-          >
-            Read More
-          </Link> */}
+					<Link
+						className="w-full sm:w-[200px] text-center styled-btn"
+						href={"/resources"}
+					>
+						Discover More
+					</Link>
 				</div>
 			</div>
 		</>

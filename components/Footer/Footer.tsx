@@ -30,6 +30,11 @@ export default function Footer(): React.ReactElement {
 			href: "https://www.youtube.com/@ETMFoundation",
 			img: "/icons/youtube.svg",
 		},
+		{
+			name: "Facebook",
+			href: "https://www.facebook.com/profile.php?id=61568531660269",
+			img: "/icons/facebook.svg",
+		},
 	];
 
 	return (
@@ -116,6 +121,7 @@ export default function Footer(): React.ReactElement {
 									<p className="text-[14px] sm:text-[18px]">
 										customersupport@etmfoundatiom.com
 									</p>
+
 									<p className="text-[14px] sm:text-[18px]">
 										techsupport@etmfoundatiom.com
 									</p>
@@ -127,9 +133,7 @@ export default function Footer(): React.ReactElement {
 
 								<div className="flex flex-col w-fit">
 									<Link
-										href={
-											"https://docs.google.com/forms/d/e/1FAIpQLSdUiVHtgmZO1fJ9nAnql3OyaKGWQIf1QeUiW1f5Cu9VUR10rw/viewform?usp=sf_link"
-										}
+										href={"https://forms.gle/CVWDuUaUKYkXErN47"}
 										// href={"https://m06w1sq48mn.typeform.com/to/egR2Hgce"}
 										className="no-style-btn text-green-1"
 										target="_blank"
@@ -138,9 +142,7 @@ export default function Footer(): React.ReactElement {
 									</Link>
 
 									<Link
-										href={
-											"https://docs.google.com/forms/d/e/1FAIpQLSf4xhtcqL2j8vxwV0wHTzM_xUXPXHce6pury5V77lo3UFbtiw/viewform?usp=sf_link"
-										}
+										href={"https://forms.gle/37vpdEWtkTXSfaHD6"}
 										// href={"https://m06w1sq48mn.typeform.com/to/Mpuj7LyK"}
 										className="no-style-btn text-green-1"
 										target="_blank"
@@ -149,7 +151,10 @@ export default function Footer(): React.ReactElement {
 									</Link>
 
 									<Link
-										href={"https://m06w1sq48mn.typeform.com/to/ULvIvS58"}
+										href={
+											"https://docs.google.com/forms/d/e/1FAIpQLSfgKKg44BaBRps6JjVtx_6jy68q1pxT1VJbnBWchvoX556Lqw/viewform?usp=sf_link"
+										}
+										// href={"https://m06w1sq48mn.typeform.com/to/ULvIvS58"}
 										className="no-style-btn text-green-1"
 										target="_blank"
 									>

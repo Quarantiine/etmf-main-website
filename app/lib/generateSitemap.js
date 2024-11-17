@@ -7,6 +7,7 @@ export async function generateSitemap() {
 		"aboutus",
 		"programs",
 		"getinvolved",
+		"resources",
 		"privacypolicy",
 		"terms",
 	];

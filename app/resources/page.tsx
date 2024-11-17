@@ -5,7 +5,7 @@ import resourcesData from "@/data/resourcesData.json";
 import { ResourcesContent } from "@/components/Resources/ResourcesContent";
 
 export const metadata: Metadata = {
-	title: "Resources | ETMF",
+	title: "Resources | ETM Foundation",
 	description:
 		"Explore how the ETM Foundation is impacting students’ lives and enriching communities. Discover our latest advanced technology developments, initiatives, and much more.",
 };

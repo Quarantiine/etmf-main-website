@@ -5,7 +5,7 @@ import gettingInvolvedData from "@/data/gettingInvolvedData.json";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-	title: "Get Involved | ETMF",
+	title: "Get Involved | ETM Foundation",
 	description:
 		"Join a vibrant community of passionate people of all backgrounds, all united by a shared vision of growth and success",
 };

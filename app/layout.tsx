@@ -26,7 +26,6 @@ export default function RootLayout({
 			<body className="h-auto w-full lato-regular text-lg">
 				<main className="min-h-[50vw] w-full relative">
 					<NavigationBar />
-
 					<WidgetComponent />
 
 					{/* <AIAssistant /> */}

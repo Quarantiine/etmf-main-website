@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-	title: "Programs | ETMF",
+	title: "Programs | ETM Foundation",
 	description:
 		"ETMF's Department of Education offers innovative programs that foster a growth mindset and develop essential skills for student success and workforce readiness. Explore our transformative programs and empower the next generation.",
 };

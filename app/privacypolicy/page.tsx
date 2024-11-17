@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-	title: "Privacy Policy | ETMF",
+	title: "Privacy Policy | ETM Foundation",
 	description:
 		"Your data is important to us. Discover how we handle your information and the measures we’re taking to ensure its protection.",
 };

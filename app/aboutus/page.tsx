@@ -1,10 +1,11 @@
+import MeetingMinutes from "@/components/AboutUs/MeetingMinutes";
 import OurTeam from "@/components/AboutUs/OurTeam";
 import Section1 from "@/components/AboutUs/Section1";
 import StatementsSection from "@/components/AboutUs/StatementsSection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "About Us | ETMF",
+	title: "About Us | ETM Foundation",
 	description:
 		"Empowerment Through Mindset Foundation (ETMF) transforms lives through innovative, mindset-based learning. Led by a visionary board, we empower individuals and communities to build a brighter future. Learn more about our story, vision, and mission.",
 };
@@ -61,22 +62,28 @@ export default function AboutUs(): React.ReactElement {
 
 	return (
 		<>
-			<main className="flex flex-col gap-20 w-full h-auto justify-center items-center">
+			<main className="flex flex-col w-full h-auto justify-center items-center">
 				<Section1 />
 
-				<div className="flex flex-col gap-5 default-width">
-					<OurTeam />
-				</div>
+				<div className="default-width flex flex-col gap-20 pt-10">
+					<div className="flex flex-col gap-5">
+						<OurTeam />
+					</div>
 
-				<div className="default-width flex flex-col justify-center items-center">
-					<div className="flex flex-col justify-center items-center relative pb-20 gap-20">
-						<div className="check-point-line" />
+					<MeetingMinutes />
 
-						{statementsList.map(
-							(statement: StatementListTypes, index: number) => {
-								return <StatementsSection key={index} statement={statement} />;
-							}
-						)}
+					<div className="flex flex-col justify-center items-center">
+						<div className="flex flex-col justify-center items-center relative pb-20 gap-20">
+							<div className="check-point-line" />
+
+							{statementsList.map(
+								(statement: StatementListTypes, index: number) => {
+									return (
+										<StatementsSection key={index} statement={statement} />
+									);
+								}
+							)}
+						</div>
 					</div>
 				</div>
 			</main>

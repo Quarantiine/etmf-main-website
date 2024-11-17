@@ -1,6 +1,6 @@
 [
 	{
-		"title": "Featured Content",
+		"title": "Events",
 		"subTitle": "Popular Media",
 		"link": "",
 		"enableBg": true,
@@ -25,6 +25,23 @@
 		"enableBg": false,
 		"content": [
 			{
+				"title": "(Coming Soon) Mindset Matters EP9!",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/e1djhrwzy9vj7s7oawfc",
+				"imageCollage": [
+					{
+						"src": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/e1djhrwzy9vj7s7oawfc"
+					},
+					{
+						"src": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/gqaehvtw1fqp5u5oyw16"
+					},
+					{
+						"src": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/hzktbbm5vndnpv0dk9l9"
+					}
+				],
+				"link": "https://www.youtube.com/@ETMFoundation",
+				"mediaType": "youtube"
+			},
+			{
 				"title": "Mindset Matters EP8 Dropped!",
 				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/hbticm142i7rk93p8ydt",
 				"imageCollage": [
@@ -34,15 +51,19 @@
 				],
 				"link": "https://www.youtube.com/watch?v=_OYptmC4lGo",
 				"mediaType": ""
+			},
+			{
+				"title": "Mindset Matters EP7 Dropped!",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/ea5vk9fufy9vgg9zj4gn",
+				"imageCollage": [
+					{
+						"src": "none"
+					}
+				],
+				"link": "https://youtu.be/EgH-otg83Zw?si=h4aFCvEYJl4YzZyk",
+				"mediaType": ""
 			}
 		]
-	},
-	{
-		"title": "Tech News",
-		"subTitle": "Exciting Tech Being Developed From ETM Foundation",
-		"link": "",
-		"enableBg": false,
-		"content": []
 	},
 	{
 		"title": "Educational News",
@@ -52,29 +73,10 @@
 		"content": []
 	},
 	{
-		"title": "Mindset Media Production (MMP)",
-		"subTitle": "The Media Production That Changes People",
-		"link": "",
-		"enableBg": true,
-		"content": [
-			{
-				"title": "Explore What MM Productions is Creating",
-				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/MMP/tsz7nmery7jz0hiyaae9",
-				"imageCollage": [
-					{
-						"src": "none"
-					}
-				],
-				"link": "https://www.youtube.com/@ETMFoundation/featured",
-				"mediaType": "mindset-media-productions"
-			}
-		]
-	},
-	{
 		"title": "Social Media",
 		"subTitle": "See What We Are Posting",
 		"link": "",
-		"enableBg": true,
+		"enableBg": false,
 		"content": [
 			{
 				"title": "Our Instagram",
@@ -107,6 +109,17 @@
 					}
 				],
 				"link": "https://www.linkedin.com/company/the-etm-foundation/",
+				"mediaType": "social-media"
+			},
+			{
+				"title": "Our Facebook",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Social%20Media/doampncvlc40dswz2ki8",
+				"imageCollage": [
+					{
+						"src": "none"
+					}
+				],
+				"link": "https://www.facebook.com/profile.php?id=61568531660269",
 				"mediaType": "social-media"
 			}
 		]
