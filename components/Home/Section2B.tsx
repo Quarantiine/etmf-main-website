@@ -70,7 +70,7 @@ export const Section2B: React.FC = () => {
 
 				<div className="flex flex-col justify-center items-start default-width mx-auto gap-10 z-10">
 					<h1 className="montserrat-bold text-4xl sm:text-5xl">
-						{"What Problems We're Solving Using Technology?"}
+						{"This is How we Are Using Technology"}
 					</h1>
 
 					<p>
