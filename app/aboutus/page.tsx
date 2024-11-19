@@ -70,7 +70,7 @@ export default function AboutUs(): React.ReactElement {
 						<OurTeam />
 					</div>
 
-					<MeetingMinutes />
+					{/* <MeetingMinutes /> */}
 
 					<div className="flex flex-col justify-center items-center">
 						<div className="flex flex-col justify-center items-center relative pb-20 gap-20">
