@@ -1,4 +1,4 @@
-import MeetingMinutes from "@/components/AboutUs/MeetingMinutes";
+// import MeetingMinutes from "@/components/AboutUs/MeetingMinutes";
 import OurTeam from "@/components/AboutUs/OurTeam";
 import Section1 from "@/components/AboutUs/Section1";
 import StatementsSection from "@/components/AboutUs/StatementsSection";
