@@ -1,4 +1,5 @@
 import ActionSection from "@/components/Home/ActionSection";
+import FeaturingSection from "@/components/Home/FeaturingSection";
 import Section1 from "@/components/Home/Section1";
 import Section2 from "@/components/Home/Section2";
 // import Section3 from "@/components/Home/Section3";
@@ -19,6 +20,10 @@ export default function Home(): React.ReactElement {
 			<div className="flex flex-col gap-20 h-auto w-full">
 				<div className="flex flex-row gap-5 default-width mx-auto">
 					<Section1 />
+				</div>
+
+				<div className="flex flex-row gap-5 default-width mx-auto">
+					<FeaturingSection />
 				</div>
 
 				<div className="flex flex-row gap-5 w-full mx-auto">

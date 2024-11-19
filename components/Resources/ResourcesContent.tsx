@@ -55,7 +55,7 @@ export const ResourcesContent: FC<{ resource: ResourcesTypes }> = ({
 	return (
 		<>
 			{resource.content.map((data: ContentTypes) => data).length > 0 && (
-				<div className="flex flex-col justify-center items-start gap-5 w-full default-width relative">
+				<div className="default-width flex flex-col justify-center items-start gap-5 w-full relative">
 					<div
 						className={`flex flex-col sm:flex-row gap-2 w-full h-auto ${
 							resource.link

@@ -39,7 +39,7 @@
 }
 
 .default-overflow-x::-webkit-scrollbar {
-	height: 10px;
+	height: 0px;
 }
 .default-overflow-x::-webkit-scrollbar-thumb {
 	background-color: #4bf2c7;

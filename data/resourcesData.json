@@ -7,7 +7,7 @@
 		"content": [
 			{
 				"title": "(Event) Speaker Series Coming Up!! Nov 22nd",
-				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Flyers/czvmphajwr901xafr08v-nov22",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Flyers/zuqpahlavwabrark0lvh",
 				"imageCollage": [
 					{
 						"src": "none"
@@ -25,21 +25,15 @@
 		"enableBg": false,
 		"content": [
 			{
-				"title": "(Coming Soon) Mindset Matters EP9!",
+				"title": "Mindset Matters EP9 Dropped!",
 				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/e1djhrwzy9vj7s7oawfc",
 				"imageCollage": [
 					{
-						"src": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/e1djhrwzy9vj7s7oawfc"
-					},
-					{
-						"src": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/gqaehvtw1fqp5u5oyw16"
-					},
-					{
-						"src": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/hzktbbm5vndnpv0dk9l9"
+						"src": "none"
 					}
 				],
-				"link": "https://www.youtube.com/@ETMFoundation",
-				"mediaType": "youtube"
+				"link": "https://youtu.be/qqMElU0qALE?si=3p3enTbFdiy2UWLd",
+				"mediaType": ""
 			},
 			{
 				"title": "Mindset Matters EP8 Dropped!",
@@ -51,26 +45,27 @@
 				],
 				"link": "https://www.youtube.com/watch?v=_OYptmC4lGo",
 				"mediaType": ""
-			},
+			}
+		]
+	},
+	{
+		"title": "News",
+		"subTitle": "Things Going on at The ETM Foundation",
+		"link": "",
+		"enableBg": false,
+		"content": [
 			{
-				"title": "Mindset Matters EP7 Dropped!",
-				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/ea5vk9fufy9vgg9zj4gn",
+				"title": "Discover What Shaped Jared Manigault's Unstoppable Resilience",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Featured%20Content/npz0uwq2xnk1ald4rzxk",
 				"imageCollage": [
 					{
 						"src": "none"
 					}
 				],
-				"link": "https://youtu.be/EgH-otg83Zw?si=h4aFCvEYJl4YzZyk",
+				"link": "http://blog.dallascollege.edu/2024/11/jared-manigault/?utm_medium=social&utm_source=instagram&utm_campaign=student-feature&utm_content=blog&fbclid=PAZXh0bgNhZW0CMTEAAaaaDnQ7T1iSm1Y-7n3MOV_UK_q9cb9FJ-H_fEv-n483glwktMoMQenIp_M_aem_tusgXvVuT_XwNbcHFZCLBw",
 				"mediaType": ""
 			}
 		]
-	},
-	{
-		"title": "Educational News",
-		"subTitle": "What the ETM Foundation doing in education",
-		"link": "",
-		"enableBg": false,
-		"content": []
 	},
 	{
 		"title": "Social Media",
