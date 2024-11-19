@@ -43,6 +43,10 @@
 			{
 				"linkedIn": "https://www.linkedin.com/in/daniel-ward-071010205/",
 				"img": "/icons/linkedin-black.svg"
+			},
+			{
+				"linkedIn": "https://medium.com/@danielward.occ",
+				"img": "/icons/medium.svg"
 			}
 		],
 		"picture": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/i46h6zx69usbwtpsvli8"

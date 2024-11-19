@@ -1,7 +1,7 @@
 [
 	{
 		"title": "Events",
-		"subTitle": "Popular Media",
+		"subTitle": "Upcoming Events From ETM Foundation",
 		"link": "",
 		"enableBg": true,
 		"content": [
@@ -19,7 +19,7 @@
 		]
 	},
 	{
-		"title": "Announcements",
+		"title": "What's New",
 		"subTitle": "Stay Updated with ETMF",
 		"link": "",
 		"enableBg": false,
@@ -50,12 +50,12 @@
 	},
 	{
 		"title": "News",
-		"subTitle": "Things Going on at The ETM Foundation",
+		"subTitle": "Things Going On At The ETM Foundation",
 		"link": "",
 		"enableBg": false,
 		"content": [
 			{
-				"title": "Discover What Shaped Jared Manigault's Unstoppable Resilience",
+				"title": "Explore the Journey That Forged the Unstoppable Resilience of President & CEO, Jared Manigault",
 				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Featured%20Content/npz0uwq2xnk1ald4rzxk",
 				"imageCollage": [
 					{

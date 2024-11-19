@@ -18,6 +18,24 @@ interface PointsType {
 export const Section2B: React.FC = () => {
 	const problemList: ProblemListType[] = [
 		{
+			title: "Virtual Reality (VR) for ETMF Academy",
+			pointSection: [
+				{
+					mainPoint:
+						"Pitch Delivery Practice: Simulate pitches to virtual investors or panels, using AI feedback to improve body language, voice modulation, and clarity.",
+				},
+				{
+					mainPoint:
+						"Strategic Decision-Making: Analyze market data and experience the consequences of business decisions in dynamic VR scenarios, boosting strategic confidence.",
+				},
+				{
+					mainPoint:
+						"Leadership and Team Management: Hone leadership, conflict resolution, and team management skills through realistic VR scenarios like product launches and interpersonal conflicts.",
+				},
+			],
+			image: "/icons/engagement.png",
+		},
+		{
 			title: "Zhyra AI For ETMF Website",
 			pointSection: [
 				{
@@ -33,7 +51,7 @@ export const Section2B: React.FC = () => {
 						"Continuously enhances interactions by leveraging user feedback and behavior to maximize engagement.",
 				},
 			],
-			image: "/icons/engagement.png",
+			image: "/icons/area-chart.png",
 		},
 		{
 			title: "Zhyra AI For ETMF Academy",
@@ -70,7 +88,7 @@ export const Section2B: React.FC = () => {
 
 				<div className="flex flex-col justify-center items-start default-width mx-auto gap-10 z-10">
 					<h1 className="montserrat-bold text-4xl sm:text-5xl">
-						{"This is How we Are Using Technology"}
+						{"How We’re Embracing Technology"}
 					</h1>
 
 					<p>
@@ -80,13 +98,10 @@ export const Section2B: React.FC = () => {
 						{`Zhyra AI is an advanced AI assistant developed and managed under the guidance of the Chief Product & Technology Officer.`}
 					</p>
 
-					<div className="grid grid-cols-1 lg:grid-cols-2 w-full mx-auto h-auto justify-center items-center gap-5 relative">
+					<div className="grid grid-cols-1 lg:grid-cols-3 w-full mx-auto h-auto justify-center items-center gap-5 relative">
 						{problemList.map((list: ProblemListType, index) => (
-							<div
-								className="relative w-full h-full rounded-xl overflow-hidden"
-								key={index}
-							>
-								<div className="w-full h-full p-5 flex flex-col gap-4 text-start bg-white text-black z-10 relative">
+							<div className="relative w-full h-full" key={index}>
+								<div className="w-full h-fit p-5 flex rounded-xl flex-col gap-4 text-start bg-white text-black z-10 relative">
 									<Image src={list.image} alt="icon" width={100} height={100} />
 									<h1 className="montserrat-bold">{list.title}</h1>
 

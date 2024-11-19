@@ -51,7 +51,7 @@
 			},
 			{
 				"textHeader": "Data Handling",
-				"text": "ETMF uses Typeform for analytics, marketing, and communication purposes. Typeform collects only the data that users willingly input. Data collected via these forms helps ETMF understand user interests and improve the website experience. For comprehensive information, including Zhyra AI’s data usage practices, please refer to our Privacy Policy down below."
+				"text": "ETMF uses Typeform or Google Form for analytics, marketing, and communication purposes. Typeform or Google Form collects only the data that users willingly input. Data collected via these forms helps ETMF understand user interests and improve the website experience. For comprehensive information, including Zhyra AI’s data usage practices, please refer to our Privacy Policy down below."
 			},
 			{
 				"textHeader": "Data Retention and Privacy",
@@ -63,7 +63,7 @@
 		"title": "Third-Party Services",
 		"description": [
 			{
-				"text": "The Website may integrate or link to third-party services, such as Typeform, to enhance user experience. ETMF does not control third-party applications and is not responsible for any damages or losses users may experience due to third-party software use, including data breaches or malfunction. Users interact with third-party services at their own risk and are encouraged to review the privacy policies of these external providers."
+				"text": "The Website may integrate or link to third-party services, such as Typeform or Google Form, to enhance user experience. ETMF does not control third-party applications and is not responsible for any damages or losses users may experience due to third-party software use, including data breaches or malfunction. Users interact with third-party services at their own risk and are encouraged to review the privacy policies of these external providers."
 			}
 		],
 		"points": [{}]
@@ -91,7 +91,7 @@
 		"title": "Limitation of Liability",
 		"description": [
 			{
-				"text": "ETMF and its affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from the use of the Website, Zhyra AI, Typeform, or any affiliated services. This includes damages for loss of profits, data, or goodwill resulting from user access issues, third-party content, or unauthorized access."
+				"text": "ETMF and its affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from the use of the Website, Zhyra AI, Typeform, Google Form, or any affiliated services. This includes damages for loss of profits, data, or goodwill resulting from user access issues, third-party content, or unauthorized access."
 			}
 		],
 		"points": [{}]

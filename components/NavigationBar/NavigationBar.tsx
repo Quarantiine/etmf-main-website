@@ -29,6 +29,7 @@ export default function NavigationBar(): React.ReactElement {
 	// State to keep track of the current page
 	const [openMobileNavbar, setOpenMobileNavbar] = useState<boolean>(false);
 	const [openUpdateBanner, setOpenUpdateBanner] = useState<boolean>(false);
+	// const [showTitle, setShowTitle] = useState<boolean>(false);
 
 	const handleOpenMobileNavbar = () => {
 		setOpenMobileNavbar(!openMobileNavbar);
@@ -43,118 +44,68 @@ export default function NavigationBar(): React.ReactElement {
 		setOpenUpdateBanner(!openUpdateBanner);
 	};
 
+	// const handleShowMMPTitle = () => {
+	// 	setShowTitle(true);
+	// };
+	// const handleCloseMMPTitle = () => {
+	// 	setShowTitle(false);
+	// };
+
 	return (
 		<>
-			<nav className="bg-[rgba(255,255,255,0.3)] backdrop-blur-3xl h-full w-full sticky top-0 left-0 text-black z-50">
-				{!openUpdateBanner && (
-					<div className="flex flex-row sticky top-0 left-0 w-full bg-green-1 px-10 py-5 z-10 gap-1 justify-start items-center text-sm">
-						<p className="">
-							😁🥳🎉 Welcome to the newly updated ETM Foundation website! By
-							using this website, you agree to our{" "}
-							<Link
-								href={"/terms"}
-								target="_blank"
-								className="no-style-btn underline"
+			<div className="flex flex-col gap-2 w-full h-fit justify-center items-end sticky top-0 left-0 z-50">
+				<nav className="bg-[rgba(255,255,255,0.3)] backdrop-blur-3xl h-full w-full text-black">
+					{!openUpdateBanner && (
+						<div className="flex flex-row w-full bg-green-1 px-10 py-5 z-10 gap-1 sticky top-0 left-0 justify-start items-center text-sm">
+							<p className="">
+								😁🥳🎉 Welcome to the newly updated ETM Foundation website! By
+								using this website, you agree to our{" "}
+								<Link
+									href={"/terms"}
+									target="_blank"
+									className="no-style-btn underline"
+								>
+									Terms & Conditions{" "}
+								</Link>{" "}
+								and{" "}
+								<Link
+									href={"/privacypolicy"}
+									target="_blank"
+									className="no-style-btn underline"
+								>
+									Privacy Policy
+								</Link>
+							</p>
+
+							<button
+								onClick={handleCloseUpdateBanner}
+								className="no-style-btn absolute top-1/2 -translate-y-1/2 right-3"
 							>
-								Terms & Conditions{" "}
-							</Link>{" "}
-							and{" "}
-							<Link
-								href={"/privacypolicy"}
-								target="_blank"
-								className="no-style-btn underline"
-							>
-								Privacy Policy
-							</Link>
-						</p>
-
-						<button
-							onClick={handleCloseUpdateBanner}
-							className="no-style-btn absolute top-1/2 -translate-y-1/2 right-3"
-						>
-							<Image
-								className="w-auto h-[19px]"
-								src={"/icons/close.svg"}
-								alt="image"
-								width={20}
-								height={20}
-							/>
-						</button>
-					</div>
-				)}
-
-				{/* Tablet/Desktop Navigation Bar */}
-				<div className="hidden md:flex w-full h-fit flex-row justify-between items-center gap-4 px-5 sm:px-10 py-3">
-					<button onClick={handleHomeBtn}>
-						<Image
-							className="object-cover w-auto h-[40px] no-style-btn"
-							src="/etm_foundation_text_black.png"
-							alt="logo"
-							width={50}
-							height={50}
-							priority={true}
-						/>
-					</button>
-
-					<div className="flex flex-row gap-4 text-lg">
-						{/* Map through URLList to create navigation buttons */}
-						{URLList.map((item: urlListTypes, index: number) => {
-							return (
-								<URLs
-									key={index}
-									item={item}
-									setOpenMobileNavbar={setOpenMobileNavbar}
+								<Image
+									className="w-auto h-[19px]"
+									src={"/icons/close.svg"}
+									alt="image"
+									width={20}
+									height={20}
 								/>
-							);
-						})}
-					</div>
-				</div>
+							</button>
+						</div>
+					)}
 
-				{/* Mobile Navigation Bar */}
-				<div className="flex md:hidden w-full h-fit flex-col justify-between items-center gap-4 px-5 sm:px-10 py-3">
-					<div className="flex flex-row justify-between items-center gap-4 w-full">
+					{/* Tablet/Desktop Navigation Bar */}
+					<div className="hidden md:flex w-full h-fit flex-row justify-between items-center gap-4 px-5 sm:px-10 py-4">
 						<button onClick={handleHomeBtn}>
 							<Image
 								className="object-cover w-auto h-[40px] no-style-btn"
-								src="/etm_foundation_logo.png"
+								src="/etm_foundation_text_black.png"
 								alt="logo"
-								width={40}
-								height={40}
+								width={50}
+								height={50}
 								priority={true}
 							/>
 						</button>
 
-						<>
-							{openMobileNavbar ? (
-								<button
-									onClick={handleOpenMobileNavbar}
-									className="no-style-btn w-fit"
-								>
-									<Image
-										src="/icons/close.svg"
-										alt="logo"
-										width={30}
-										height={30}
-									/>
-								</button>
-							) : (
-								<button
-									onClick={handleOpenMobileNavbar}
-									className="no-style-btn w-fit"
-								>
-									<Image
-										src="/icons/menu.svg"
-										alt="logo"
-										width={30}
-										height={30}
-									/>
-								</button>
-							)}
-						</>
-					</div>
-
-					{openMobileNavbar && (
-						<div className="flex flex-col gap-4 text-lg">
+						<div className="flex flex-row gap-4 text-lg">
 							{/* Map through URLList to create navigation buttons */}
 							{URLList.map((item: urlListTypes, index: number) => {
 								return (
@@ -165,10 +116,103 @@ export default function NavigationBar(): React.ReactElement {
 									/>
 								);
 							})}
+
+							{/* <div className="w-fit h-fit relative">
+								<Link
+									href={"/mmp"}
+									className={`hidden lg:block relative w-fit styled-btn`}
+								>
+									<p>Mindset Media Productions</p>
+								</Link>
+
+								<Link
+									href={"/mmp"}
+									className={`block lg:hidden relative w-fit styled-btn`}
+									onMouseOver={handleShowMMPTitle}
+									onMouseLeave={handleCloseMMPTitle}
+								>
+									<p>MMP</p>
+								</Link>
+
+								{showTitle && (
+									<div
+										onMouseOver={handleShowMMPTitle}
+										onMouseLeave={handleCloseMMPTitle}
+										className="text-center bg-white shadow-xl rounded-xl absolute top-10 right-0 z-50 px-3 py-2 w-fit whitespace-nowrap border"
+									>
+										<p>Mindset Media Productions</p>
+									</div>
+								)}
+							</div> */}
 						</div>
-					)}
-				</div>
-			</nav>
+					</div>
+
+					{/* Mobile Navigation Bar */}
+					<div className="flex md:hidden w-full h-fit flex-col justify-between items-center gap-4 px-5 sm:px-10 py-4">
+						<div className="flex flex-row justify-between items-center gap-4 w-full">
+							<button onClick={handleHomeBtn}>
+								<Image
+									className="object-cover w-auto h-[40px] no-style-btn"
+									src="/etm_foundation_logo.png"
+									alt="logo"
+									width={40}
+									height={40}
+									priority={true}
+								/>
+							</button>
+
+							<>
+								{openMobileNavbar ? (
+									<button
+										onClick={handleOpenMobileNavbar}
+										className="no-style-btn w-fit"
+									>
+										<Image
+											src="/icons/close.svg"
+											alt="logo"
+											width={30}
+											height={30}
+										/>
+									</button>
+								) : (
+									<button
+										onClick={handleOpenMobileNavbar}
+										className="no-style-btn w-fit"
+									>
+										<Image
+											src="/icons/menu.svg"
+											alt="logo"
+											width={30}
+											height={30}
+										/>
+									</button>
+								)}
+							</>
+						</div>
+
+						{openMobileNavbar && (
+							<>
+								<div className="flex flex-col gap-4 text-lg">
+									{/* Map through URLList to create navigation buttons */}
+									{URLList.map((item: urlListTypes, index: number) => {
+										return (
+											<URLs
+												key={index}
+												item={item}
+												setOpenMobileNavbar={setOpenMobileNavbar}
+											/>
+										);
+									})}
+								</div>
+
+								{/* <Link href={"/mmp"} className={`relative w-fit styled-btn`}>
+									<p>Mindset Media Productions</p>
+								</Link> */}
+							</>
+						)}
+					</div>
+				</nav>
+			</div>
 		</>
 	);
 }

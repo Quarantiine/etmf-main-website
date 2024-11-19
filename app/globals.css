@@ -39,7 +39,7 @@
 }
 
 .default-overflow-x::-webkit-scrollbar {
-	height: 0px;
+	height: 10px;
 }
 .default-overflow-x::-webkit-scrollbar-thumb {
 	background-color: #4bf2c7;
@@ -149,7 +149,7 @@
 }
 
 .default-gradient-bg {
-	@apply bg-gradient-to-t from-black to-transparent opacity-80 absolute bottom-0 left-0 w-full h-full inset-0 z-0;
+	@apply bg-gradient-to-t from-black to-transparent opacity-100 absolute bottom-0 left-0 w-full h-full inset-0 z-0;
 }
 
 .main-overflow-x {

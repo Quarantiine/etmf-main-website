@@ -41,7 +41,7 @@ export default function FeaturingSection() {
 			content: [
 				{
 					title:
-						"Discover What Shaped Jared Manigault's Unstoppable Resilience",
+						"Explore the Journey That Forged the Unstoppable Resilience of President & CEO, Jared Manigault",
 					image:
 						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Featured%20Content/npz0uwq2xnk1ald4rzxk",
 					imageCollage: [
@@ -149,7 +149,7 @@ export default function FeaturingSection() {
 															/>
 															<div className="default-gradient-bg" />
 
-															<h1 className="montserrat-bold text-3xl z-10">
+															<h1 className="montserrat-bold text-2xl z-10">
 																{data.title}
 															</h1>
 														</Link>

@@ -18,7 +18,7 @@
 			},
 			{
 				"textHeader": "Automatically Collected Information",
-				"text": "ETMF may collect data through cookies, Typeform, and similar technologies, including IP addresses, browser types, operating systems, and other usage data to analyze Website traffic, user interests, and improve Website engagement."
+				"text": "ETMF may collect data through cookies, Typeform, Google Forms, and similar technologies, including IP addresses, browser types, operating systems, and other usage data to analyze Website traffic, user interests, and improve Website engagement."
 			}
 		]
 	},
@@ -46,7 +46,7 @@
 		"points": [
 			{
 				"textHeader": "Third-Party Processing and External Sharing",
-				"text": "User data, including conversational data saved from interactions with Zhyra AI, may be processed and stored using third-party technologies and platforms, including Typeform-related entities and their affiliated technologies, such as Gemini flash models and Gemini pro models. These processes adhere to industry standards and legal regulations concerning data privacy and security."
+				"text": "User data, including conversational data saved from interactions with Zhyra AI, may be processed and stored using third-party technologies and platforms, such as Gemini flash models and Gemini pro models. These processes adhere to industry standards and legal regulations concerning data privacy and security."
 			},
 			{
 				"textHeader": "Location of Data Processing",
@@ -54,7 +54,7 @@
 			},
 			{
 				"textHeader": "Security and Compliance Measures",
-				"text": "While ETMF employs technologies and safeguards to protect your data, including encryption and secure storage protocols, we cannot guarantee that data handling practices by third parties, including Typeform or Gemini model frameworks, will adhere to any specific methods or standards. ETMF strives to ensure due diligence and compliance with prevailing data protection regulations, but users should be aware that data is subject to processing and security protocols under third-party governance."
+				"text": "While ETMF employs technologies and safeguards to protect your data, including encryption and secure storage protocols, we cannot guarantee that data handling practices by third parties, including Typeform, Google Forms, or Gemini model frameworks, will adhere to any specific methods or standards. ETMF strives to ensure due diligence and compliance with prevailing data protection regulations, but users should be aware that data is subject to processing and security protocols under third-party governance."
 			}
 		]
 	},
@@ -77,8 +77,8 @@
 		"description": [{}],
 		"points": [
 			{
-				"textHeader": "Typeform and Analytics",
-				"text": "The Website integrates Typeform for various functions, such as analytics, communication, and marketing. Information submitted via Typeform is handled under Typeform’s data privacy and security protocols. ETMF is not responsible for the practices or policies of Typeform, and users are encouraged to review Typeform’s Privacy Policy and Terms of Service."
+				"textHeader": "Typeform, Google Forms, and Analytics",
+				"text": "The Website integrates Typeform or Google Forms for various functions, such as analytics, communication, and marketing. Information submitted via Typeform or Google Forms is handled under Typeform’s or Google Form's data privacy and security protocols. ETMF is not responsible for the practices or policies of Typeform or Google Forms, and users are encouraged to review Typeform’s or Google Form's legal documents on their websites."
 			},
 			{
 				"textHeader": "External Links",

@@ -195,6 +195,10 @@ export default function Footer(): React.ReactElement {
 										>
 											Resources
 										</Link>
+
+										{/* <Link className="no-style-btn text-green-1" href={"/mmp"}>
+											Mindset Media Productions
+										</Link> */}
 									</div>
 								</div>
 
