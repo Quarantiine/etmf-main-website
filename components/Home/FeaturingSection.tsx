@@ -42,7 +42,7 @@ export default function FeaturingSection() {
 				{
 					title: "(Event) Speaker Series Coming Up!! Nov 22nd",
 					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Flyers/d5pluqj0zcbb04c1dl7q",
+						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Flyers/runae6vpevnyqhf2hift",
 					imageCollage: [
 						{
 							src: "none",
