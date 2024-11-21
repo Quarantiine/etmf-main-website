@@ -40,22 +40,9 @@ export default function FeaturingSection() {
 			enableBg: false,
 			content: [
 				{
-					title:
-						"Explore the Journey That Forged the Unstoppable Resilience of President & CEO, Jared Manigault",
-					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Featured%20Content/npz0uwq2xnk1ald4rzxk",
-					imageCollage: [
-						{
-							src: "none",
-						},
-					],
-					link: "http://blog.dallascollege.edu/2024/11/jared-manigault/?utm_medium=social&utm_source=instagram&utm_campaign=student-feature&utm_content=blog&fbclid=PAZXh0bgNhZW0CMTEAAaaaDnQ7T1iSm1Y-7n3MOV_UK_q9cb9FJ-H_fEv-n483glwktMoMQenIp_M_aem_tusgXvVuT_XwNbcHFZCLBw",
-					mediaType: "",
-				},
-				{
 					title: "(Event) Speaker Series Coming Up!! Nov 22nd",
 					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Flyers/zuqpahlavwabrark0lvh",
+						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Flyers/d5pluqj0zcbb04c1dl7q",
 					imageCollage: [
 						{
 							src: "none",
