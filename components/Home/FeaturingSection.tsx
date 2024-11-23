@@ -40,16 +40,28 @@ export default function FeaturingSection() {
 			enableBg: false,
 			content: [
 				{
-					title: "(Event) Speaker Series Coming Up!! Nov 22nd",
+					title: "(Dropping) Mindset Matters Podcast EP11!",
 					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Flyers/d5pluqj0zcbb04c1dl7q",
+						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/nxxnazu57tbunj9ntuco",
 					imageCollage: [
 						{
 							src: "none",
 						},
 					],
-					link: "https://forms.office.com/r/MW9sp08a1m",
-					mediaType: "flyer",
+					link: "https://youtube.com/@ETMFoundation",
+					mediaType: "",
+				},
+				{
+					title: "(Dropping) Mindset Matters Podcast EP10!",
+					image:
+						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/q4fiuz59ulfplqbmtfr4",
+					imageCollage: [
+						{
+							src: "none",
+						},
+					],
+					link: "https://youtube.com/@ETMFoundation",
+					mediaType: "",
 				},
 				{
 					title: "Mindset Matters Podcast EP9 Dropped!",
@@ -61,18 +73,6 @@ export default function FeaturingSection() {
 						},
 					],
 					link: "https://youtu.be/qqMElU0qALE?si=3p3enTbFdiy2UWLd",
-					mediaType: "",
-				},
-				{
-					title: "Mindset Matters Podcast EP8 Dropped!",
-					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/hbticm142i7rk93p8ydt",
-					imageCollage: [
-						{
-							src: "none",
-						},
-					],
-					link: "https://www.youtube.com/watch?v=_OYptmC4lGo",
 					mediaType: "",
 				},
 			],
@@ -128,7 +128,7 @@ export default function FeaturingSection() {
 															className="no-style-btn w-full h-96 bg-gray-500 rounded-xl flex flex-col justify-end items-start text-white p-5 relative overflow-hidden"
 														>
 															<Image
-																className="object-cover object-top w-auto"
+																className="object-cover object-center w-auto"
 																src={data.image}
 																alt="image"
 																fill

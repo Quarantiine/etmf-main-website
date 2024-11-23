@@ -99,7 +99,7 @@ export const ResourcesContent: FC<{ resource: ResourcesTypes }> = ({
 												className="no-style-btn w-full h-96 bg-gray-500 rounded-xl flex flex-col justify-end items-start text-white p-5 relative overflow-hidden"
 											>
 												<Image
-													className="object-cover object-top w-auto"
+													className="object-cover object-center w-auto"
 													src={data.image}
 													alt="image"
 													fill
@@ -118,7 +118,7 @@ export const ResourcesContent: FC<{ resource: ResourcesTypes }> = ({
 													className="no-style-btn w-full h-96 bg-gray-500 rounded-xl flex flex-col text-start justify-end items-start text-white p-5 relative overflow-hidden"
 												>
 													<Image
-														className="object-cover object-top w-auto h-auto"
+														className="object-cover object-center w-auto h-auto"
 														src={data.image}
 														alt="image"
 														fill
@@ -139,9 +139,11 @@ export const ResourcesContent: FC<{ resource: ResourcesTypes }> = ({
 																	{data.mediaType === "flyer" && (
 																		<FlyerContent data={data} />
 																	)}
+
 																	{data.mediaType === "youtube" && (
 																		<Youtube data={data} />
 																	)}
+
 																	{data.mediaType ===
 																		"mindset-media-productions" && (
 																		<MindsetMediaProductionsContent

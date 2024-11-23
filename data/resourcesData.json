@@ -1,29 +1,32 @@
 [
 	{
-		"title": "Events",
-		"subTitle": "Upcoming Events From ETM Foundation",
-		"link": "",
-		"enableBg": true,
-		"content": [
-			{
-				"title": "(Event) Speaker Series Coming Up!! Nov 22nd",
-				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Flyers/d5pluqj0zcbb04c1dl7q",
-				"imageCollage": [
-					{
-						"src": "none"
-					}
-				],
-				"link": "https://forms.office.com/r/MW9sp08a1m",
-				"mediaType": "flyer"
-			}
-		]
-	},
-	{
 		"title": "What's New",
 		"subTitle": "Stay Updated with ETMF",
 		"link": "",
 		"enableBg": false,
 		"content": [
+			{
+				"title": "(Dropping) Mindset Matters Podcast EP11!",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/nxxnazu57tbunj9ntuco",
+				"imageCollage": [
+					{
+						"src": "none"
+					}
+				],
+				"link": "https://youtube.com/@ETMFoundation",
+				"mediaType": ""
+			},
+			{
+				"title": "(Dropping) Mindset Matters Podcast EP10!",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/q4fiuz59ulfplqbmtfr4",
+				"imageCollage": [
+					{
+						"src": "none"
+					}
+				],
+				"link": "https://youtube.com/@ETMFoundation",
+				"mediaType": ""
+			},
 			{
 				"title": "Mindset Matters EP9 Dropped!",
 				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/e1djhrwzy9vj7s7oawfc",
@@ -33,17 +36,6 @@
 					}
 				],
 				"link": "https://youtu.be/qqMElU0qALE?si=3p3enTbFdiy2UWLd",
-				"mediaType": ""
-			},
-			{
-				"title": "Mindset Matters EP8 Dropped!",
-				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/hbticm142i7rk93p8ydt",
-				"imageCollage": [
-					{
-						"src": "none"
-					}
-				],
-				"link": "https://www.youtube.com/watch?v=_OYptmC4lGo",
 				"mediaType": ""
 			}
 		]
