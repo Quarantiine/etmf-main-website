@@ -35,7 +35,7 @@ Zhyra's integration utilizes Google's Gemini AI API. For details on Zhyra's vari
 
 ## Contribution Guidelines
 
-We are not accepting _contribution_ at the moment.
+We are not accepting _contributions_ at the moment.
 
 ## License
 
