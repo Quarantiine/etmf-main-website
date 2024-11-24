@@ -33,7 +33,6 @@ Zhyra, ETMF's AI assistant, is integrated into the website to provide a more eng
 
 Zhyra's integration utilizes Google's Gemini AI API. For details on Zhyra's various personas and implementation specifics, please see the [Zhyra Documentation](/path/to/zhyra/docs). (Replace with the actual path to Zhyra's documentation.)
 
-
 ## Contribution Guidelines
 
 We are not accepting _contribution_ at the moment.
