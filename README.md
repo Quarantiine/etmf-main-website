@@ -5,7 +5,7 @@ This repository contains the source code for the Empowerment Through Mindset Fou
 ## Features
 
 * **Informative Content:**  Detailed information on ETMF's mission, programs (ETMF Academy, Student Activity Program, Access to Education Program etc.), and impact.
-* **Zhyra AI Integration:** An intelligent assistant guiding users through the site, answering FAQs, and providing personalized support.  (See [Zhyra AI](https://medium.com/@danielward.occ/meet-zhyra-ai-the-intelligent-ai-assistant-3034b939de89) for more details.)
+* **Zhyra AI Integration:** An intelligent assistant guiding users through the site, answering FAQs, and providing personalized support.  (See [Zhyra AI Article](https://medium.com/@danielward.occ/meet-zhyra-ai-the-intelligent-ai-assistant-3034b939de89) for more details.)
 * **Easy Navigation:**  Intuitive site structure and clear calls to action enabling users to easily find what they need.
 * **Engagement Opportunities:**  Clear pathways for users to get involved through donations, partnerships, or volunteering.
 * **Resources:**  Access to articles, publications, and multimedia content related to ETMF's mission and programs.
@@ -31,7 +31,7 @@ Zhyra, ETMF's AI assistant, is integrated into the website to provide a more eng
 * **Offering Personalized Recommendations:** Suggesting relevant content based on user interests.
 * **Collecting User Feedback:**  Gathering information to continuously improve the website and Zhyra's performance.
 
-Zhyra's integration utilizes Google's Gemini AI API. For details on Zhyra's various personas and implementation specifics, please see the [Zhyra Documentation](/path/to/zhyra/docs). (Replace with the actual path to Zhyra's documentation.)
+Zhyra's integration utilizes Google's Gemini AI API. For details on Zhyra's various personas and implementation specifics, please see the [Zhyra AI Article](https://medium.com/@danielward.occ/meet-zhyra-ai-the-intelligent-ai-assistant-3034b939de89).
 
 ## Contribution Guidelines
 
@@ -39,7 +39,7 @@ We are not accepting _contribution_ at the moment.
 
 ## License
 
-This project is licensed under the [LICENSE](LICENSE).
+This project is licensed under the [LICENSE](https://github.com/Quarantiine/ETMF-Main-Website/blob/main/LICENSE.md).
 
 ## Contact
 
