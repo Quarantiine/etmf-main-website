@@ -29,7 +29,6 @@ export default function NavigationBar(): React.ReactElement {
   // State to keep track of the current page
   const [openMobileNavbar, setOpenMobileNavbar] = useState<boolean>(false);
   const [openUpdateBanner, setOpenUpdateBanner] = useState<boolean>(false);
-  const [showTitle, setShowTitle] = useState<boolean>(false);
 
   const handleOpenMobileNavbar = () => {
     setOpenMobileNavbar(!openMobileNavbar);
@@ -42,13 +41,6 @@ export default function NavigationBar(): React.ReactElement {
 
   const handleCloseUpdateBanner = () => {
     setOpenUpdateBanner(!openUpdateBanner);
-  };
-
-  const handleShowMMPTitle = () => {
-    setShowTitle(true);
-  };
-  const handleCloseMMPTitle = () => {
-    setShowTitle(false);
   };
 
   return (
