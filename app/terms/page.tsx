@@ -7,7 +7,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
 	title: "Terms & Conditions | ETM Foundation",
 	description:
-		"Explore how ETMF outlines the rules and regulations for using the ETMF website, including interacting with its features, content, and AI assistant, Zhyra.",
+		"Explore how ETMF outlines the rules and regulations for using the ETMF website, including interacting with its features, content, and AI assistant.",
 };
 
 interface TermsTypes {

@@ -36,7 +36,7 @@ export const Section2B: React.FC = () => {
 			image: "/icons/engagement.png",
 		},
 		{
-			title: "Zhyra AI For ETMF Academy",
+			title: "AI For ETMF Academy",
 			pointSection: [
 				{
 					mainPoint:
@@ -77,7 +77,7 @@ export const Section2B: React.FC = () => {
 						{`Here are just a few examples of how we're harnessing technology to create a more vibrant and connected community. Discover more in the "Resources" tab!`}
 					</p>
 					<p>
-						{`Zhyra AI is an advanced AI assistant developed and managed under the guidance of the Chief Product & Technology Officer.`}
+						{`AI is an advanced AI assistant developed and managed under the guidance of the Chief Product & Technology Officer.`}
 					</p>
 
 					<div className="grid grid-cols-1 lg:grid-cols-2 w-full mx-auto h-auto justify-center items-center gap-5 relative">
