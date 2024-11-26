@@ -36,24 +36,6 @@ export const Section2B: React.FC = () => {
 			image: "/icons/engagement.png",
 		},
 		{
-			title: "Zhyra AI For ETMF Website",
-			pointSection: [
-				{
-					mainPoint:
-						"Deconstructs intricate topics into clear, concise, and digestible insights.",
-				},
-				{
-					mainPoint:
-						"Improves website navigation by directing users to the most relevant pages with accurate links.",
-				},
-				{
-					mainPoint:
-						"Continuously enhances interactions by leveraging user feedback and behavior to maximize engagement.",
-				},
-			],
-			image: "/icons/area-chart.png",
-		},
-		{
 			title: "Zhyra AI For ETMF Academy",
 			pointSection: [
 				{
@@ -98,7 +80,7 @@ export const Section2B: React.FC = () => {
 						{`Zhyra AI is an advanced AI assistant developed and managed under the guidance of the Chief Product & Technology Officer.`}
 					</p>
 
-					<div className="grid grid-cols-1 lg:grid-cols-3 w-full mx-auto h-auto justify-center items-center gap-5 relative">
+					<div className="grid grid-cols-1 lg:grid-cols-2 w-full mx-auto h-auto justify-center items-center gap-5 relative">
 						{problemList.map((list: ProblemListType, index) => (
 							<div className="relative w-full h-full" key={index}>
 								<div className="w-full h-fit p-5 flex rounded-xl flex-col gap-4 text-start bg-white text-black z-10 relative">

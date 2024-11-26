@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-// import resource from "@/data/resourcesData.json"
 
 interface ResourcesTypes {
 	title: string;
@@ -42,7 +41,7 @@ export default function FeaturingSection() {
 				{
 					title: "(Dropping) Mindset Matters Podcast EP11!",
 					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/nxxnazu57tbunj9ntuco",
+						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/q4fiuz59ulfplqbmtfr4",
 					imageCollage: [
 						{
 							src: "none",
@@ -52,15 +51,15 @@ export default function FeaturingSection() {
 					mediaType: "",
 				},
 				{
-					title: "(Dropping) Mindset Matters Podcast EP10!",
+					title: "Mindset Matters Podcast EP10 Dropped!",
 					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/q4fiuz59ulfplqbmtfr4",
+						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/nxxnazu57tbunj9ntuco",
 					imageCollage: [
 						{
 							src: "none",
 						},
 					],
-					link: "https://youtube.com/@ETMFoundation",
+					link: "https://youtu.be/Z9W11vOq8Vc?si=hHcgfuKS_lKLiAOz",
 					mediaType: "",
 				},
 				{
