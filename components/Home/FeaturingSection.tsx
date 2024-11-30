@@ -123,7 +123,17 @@ export default function FeaturingSection() {
 									)}
 								</div>
 
-								<div className="w-full flex flex-col justify-center items-center">
+								<div className="w-full flex flex-col justify-center items-center relative">
+									{/* <button className="no-style-btn bg-green-1 w-16 h-16 absolute top-1/2 -translate-y-1/2 -left-6 z-10 rounded-full flex flex-col justify-center items-center -rotate-90">
+										<Image
+											className="w-auto h-[30px]"
+											src={"/icons/arrow_drop_up.png"}
+											alt="icon"
+											width={35}
+											height={35}
+										/>
+									</button> */}
+
 									<div
 										className={`default-overflow-x overflow-x-auto overflow-y-hidden w-full h-full grid grid-flow-col auto-cols-[minmax(300px,4fr)] sm:auto-cols-[minmax(400px,4fr)] gap-5 rounded-xl ${
 											resource.enableBg ? "bg-gray-200 p-2" : "pb-5"
