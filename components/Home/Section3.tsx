@@ -22,7 +22,7 @@ export default function Section3(): React.ReactElement {
 			pointSection: [
 				{
 					mainPoint:
-						"Zhyra AI (ETMF AI Assistant) is designed to improve student engagement through: Enthusiastic and upbeat interactions",
+						"AI (ETMF AI Assistant) is designed to improve student engagement through: Enthusiastic and upbeat interactions",
 					point: [
 						{ text: "Supportive and encouraging communication" },
 						{
@@ -34,19 +34,19 @@ export default function Section3(): React.ReactElement {
 			image: "/icons/engagement.png",
 		},
 		{
-			title: "How Zhyra AI Enhances the ETMF Website Experience",
+			title: "How AI Enhances the ETMF Website Experience",
 			pointSection: [
 				{
 					mainPoint: "",
 					point: [
 						{
-							text: "Seamless Navigation: Zhyra guides users, answers questions, and suggests resources for easy access and engagement.",
+							text: "Seamless Navigation: The AI assistant guides users, answers questions, and suggests resources for easy access and engagement.",
 						},
 						{
 							text: "Accessibility for All: Multilingual support and accessibility features make the site inclusive.",
 						},
 						{
-							text: "Fostering Involvement: Zhyra simplifies donations and promotes volunteer opportunities.",
+							text: "Fostering Involvement: The AI assistant simplifies donations and promotes volunteer opportunities.",
 						},
 					],
 				},
@@ -58,7 +58,7 @@ export default function Section3(): React.ReactElement {
 			pointSection: [
 				{
 					mainPoint:
-						"By implementing Zhyra AI, ETMF aims to provide more efficient and effective learning experiences with ETMF Academy. This addresses the problem of inefficient use of educational resources by:",
+						"By implementing AI, ETMF aims to provide more efficient and effective learning experiences with ETMF Academy. This addresses the problem of inefficient use of educational resources by:",
 					point: [
 						{ text: "Offering personalized tutoring at scale" },
 						{ text: "Adapting to learners' unique needs" },
@@ -72,13 +72,13 @@ export default function Section3(): React.ReactElement {
 			title: "Data-Driven Improvement",
 			pointSection: [
 				{
-					mainPoint: "The fine-tuning system for Zhyra AI includes:",
+					mainPoint: "The fine-tuning system for the AI assistant includes:",
 					point: [
 						{
-							text: "A 'Gold Standard' database for storing successful interactions for Zhyra AI to replicate and follow after.",
+							text: "A 'Gold Standard' database for storing successful interactions for the AI assistant to replicate and follow after.",
 						},
 						{
-							text: "A 'Lessons Learned' database for interactions that need to be avoided. Teaches Zhyra AI to avoid certain conversations.",
+							text: "A 'Lessons Learned' database for interactions that need to be avoided. Teaches the AI assistant to avoid certain conversations.",
 						},
 					],
 				},

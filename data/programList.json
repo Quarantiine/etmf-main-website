@@ -1,5 +1,6 @@
 [
 	{
+		"id": "1",
 		"title": "ETMF Academy",
 		"subTitle": "Empowerment Through Education",
 		"description": [
@@ -39,27 +40,27 @@
 				]
 			},
 			{
-				"title": "Zhyra AI within the Academy",
+				"title": "AI within the Academy",
 				"paragraphs": [
 					{
 						"textHeader": "Personalized Tutor:",
-						"text": "Zhyra AI provides targeted hints and feedback, fostering critical thinking without simply giving away answers."
+						"text": "AI provides targeted hints and feedback, fostering critical thinking without simply giving away answers."
 					},
 					{
 						"textHeader": "Real-World Application:",
 						"text": "AI-generated scenarios based on course content allow students to apply their knowledge in practical, relevant situations."
 					},
 					{
-						"textHeader": "Zhyra AI Lecture Video Conversations:",
-						"text": "Zhyra AI engages users in conversations about lecture videos, helping them understand and break down the content effectively. This interaction ensures users grasp the key concepts being taught, making the learning experience more engaging by providing them with a supportive dialogue as they navigate through each video."
+						"textHeader": "AI Lecture Video Conversations:",
+						"text": "AI engages users in conversations about lecture videos, helping them understand and break down the content effectively. This interaction ensures users grasp the key concepts being taught, making the learning experience more engaging by providing them with a supportive dialogue as they navigate through each video."
 					},
 					{
 						"textHeader": "Customizable Personality:",
-						"text": "Students can tailor Zhyra's personality to their preferences, creating a motivating and enjoyable learning experience."
+						"text": "Students can tailor the AI assistant's personality to their preferences, creating a motivating and enjoyable learning experience."
 					},
 					{
 						"textHeader": "Multilingual Support:",
-						"text": "Zhyra AI communicates in multiple languages, ensuring accessibility for diverse learners."
+						"text": "the AI assistant communicates in multiple languages, ensuring accessibility for diverse learners."
 					}
 				]
 			},
@@ -83,6 +84,7 @@
 		]
 	},
 	{
+		"id": "2",
 		"title": "Student Activity Program",
 		"subTitle": "Empowering Student Leaders",
 		"description": [
@@ -126,6 +128,7 @@
 		]
 	},
 	{
+		"id": "3",
 		"title": "Access To Education",
 		"subTitle": "Bridging the Gap for Financially Marginalized Students",
 		"description": [

@@ -42,20 +42,46 @@
 		"points": [{}]
 	},
 	{
+		"title": "Attribution and Image Credits",
+		"description": [
+			{
+				"text": "The Empowerment Through Mindset Foundation (ETMF) is committed to transparency in our use of visual content. Many of the images displayed on this Website are sourced from Unsplash, a platform that provides free, high-quality images contributed by talented photographers worldwide."
+			}
+		],
+		"points": [
+			{
+				"textHeader": "Acknowledgment of Contributors",
+				"text": "We are grateful to the photographers and creators who share their work on Unsplash, allowing us to enhance the visual experience of our Website. Although Unsplash does not require attribution, we recognize the effort and creativity of these contributors."
+			},
+			{
+				"textHeader": "Unsplash Licensing",
+				"text": "The images sourced from Unsplash are used in compliance with Unsplash’s licensing terms, which allow free usage for commercial and non-commercial purposes without the need for permission or attribution. For more details, visit the Unsplash License page."
+			},
+			{
+				"textHeader": "User Restrictions",
+				"text": "While ETMF uses images under Unsplash’s license, users of this Website are reminded that they cannot download, reuse, or distribute images from our Website unless they visit the original source and comply with Unsplash’s licensing terms."
+			},
+			{
+				"textHeader": "Contact for Questions",
+				"text": "If you have questions regarding the use of images on this Website, please contact tech support email below"
+			}
+		]
+	},
+	{
 		"title": "Data Collection and Use",
 		"description": [{}],
 		"points": [
 			{
 				"textHeader": "Data Collection Options",
-				"text": "Users interacting with Zhyra AI will have the choice to either save or not save their conversation data to improve the AI model’s assistance capabilities. By default, data from user interactions is saved, but users can adjust these settings to control what information is retained."
+				"text": "Users interacting with the AI assistant will have the choice to either save or not save their conversation data to improve the AI model’s assistance capabilities. By default, data from user interactions is saved, but users can adjust these settings to control what information is retained."
 			},
 			{
 				"textHeader": "Data Handling",
-				"text": "ETMF uses Typeform or Google Form for analytics, marketing, and communication purposes. Typeform or Google Form collects only the data that users willingly input. Data collected via these forms helps ETMF understand user interests and improve the website experience. For comprehensive information, including Zhyra AI’s data usage practices, please refer to our Privacy Policy down below."
+				"text": "ETMF uses Typeform or Google Form for analytics, marketing, and communication purposes. Typeform or Google Form collects only the data that users willingly input. Data collected via these forms helps ETMF understand user interests and improve the website experience. For comprehensive information, including the AI assistant's data usage practices, please refer to our Privacy Policy down below."
 			},
 			{
 				"textHeader": "Data Retention and Privacy",
-				"text": "Conversations that users choose to save may be analyzed to refine Zhyra AI’s functionality. However, once saved, users cannot delete these interactions from ETMF’s backend. ETMF is committed to handling all data securely and responsibly, aligning with relevant data privacy laws."
+				"text": "Conversations that users choose to save may be analyzed to refine ETMF's AI assistant functionality. However, once saved, users cannot delete these interactions from ETMF’s backend. ETMF is committed to handling all data securely and responsibly, aligning with relevant data privacy laws."
 			}
 		]
 	},
@@ -91,7 +117,7 @@
 		"title": "Limitation of Liability",
 		"description": [
 			{
-				"text": "ETMF and its affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from the use of the Website, Zhyra AI, Typeform, Google Form, or any affiliated services. This includes damages for loss of profits, data, or goodwill resulting from user access issues, third-party content, or unauthorized access."
+				"text": "ETMF and its affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from the use of the Website, the AI assistant, Typeform, Google Form, or any affiliated services. This includes damages for loss of profits, data, or goodwill resulting from user access issues, third-party content, or unauthorized access."
 			}
 		],
 		"points": [{}]

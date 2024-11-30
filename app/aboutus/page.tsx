@@ -5,7 +5,7 @@ import StatementsSection from "@/components/AboutUs/StatementsSection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "About Us | ETM Foundation",
+	title: "About Us",
 	description:
 		"Empowerment Through Mindset Foundation (ETMF) transforms lives through innovative, mindset-based learning. Led by a visionary board, we empower individuals and communities to build a brighter future. Learn more about our story, vision, and mission.",
 };

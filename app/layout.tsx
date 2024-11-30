@@ -20,6 +20,9 @@ export default function RootLayout({
 					content="Wqq0eG8Q-_ha081ePlpFcQf-mpGsCMTjcynBqsrbYNw"
 				/>
 
+				<meta charSet="utf-8" />
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 				<meta name="robots" content="index, follow" />
 			</head>
 

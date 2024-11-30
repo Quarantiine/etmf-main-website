@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-	title: "Terms & Conditions | ETM Foundation",
+	title: "Terms & Conditions",
 	description:
 		"Explore how ETMF outlines the rules and regulations for using the ETMF website, including interacting with its features, content, and AI assistant.",
 };
@@ -48,7 +48,7 @@ export default function TermsNConditions(): React.ReactElement {
 								<span className="lato-bold">Effective Date:</span> 11/2/2024{" "}
 							</p>
 							<p>
-								<span className="lato-bold">Last Updated:</span> 11/2/2024
+								<span className="lato-bold">Last Updated:</span> 11/30/2024
 							</p>
 						</div>
 					</div>

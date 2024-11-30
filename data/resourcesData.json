@@ -60,6 +60,25 @@
 		]
 	},
 	{
+		"title": "Tech Topics",
+		"subTitle": "Tech Updates at ETMF",
+		"link": "",
+		"enableBg": false,
+		"content": [
+			{
+				"title": "How is AI Being Used at ETMF?",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Tech%20News/rmpl9bahnkfqbfqdlcu6",
+				"imageCollage": [
+					{
+						"src": "none"
+					}
+				],
+				"link": "https://medium.com/@danielward.occ/meet-zhyra-ai-the-intelligent-ai-assistant-3034b939de89",
+				"mediaType": ""
+			}
+		]
+	},
+	{
 		"title": "Social Media",
 		"subTitle": "See What We Are Posting",
 		"link": "",

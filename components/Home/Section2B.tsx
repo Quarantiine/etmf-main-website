@@ -48,7 +48,7 @@ export const Section2B: React.FC = () => {
 				},
 				{
 					mainPoint:
-						"Students can customize AI's personality for a motivating experience, with multilingual support ensuring inclusivity for diverse learners.",
+						"Students can customize the AI assistant's personality for a motivating experience, with multilingual support ensuring inclusivity for diverse learners.",
 				},
 			],
 			image: "/icons/ai.png",

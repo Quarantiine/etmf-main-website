@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-	title: "Privacy Policy | ETM Foundation",
+	title: "Privacy Policy",
 	description:
 		"Your data is important to us. Discover how we handle your information and the measures we’re taking to ensure its protection.",
 };
@@ -48,7 +48,7 @@ export default function PrivacyPolicy(): React.ReactElement {
 								<span className="lato-bold">Effective Date:</span> 11/2/2024{" "}
 							</p>
 							<p>
-								<span className="lato-bold">Last Updated:</span> 11/2/2024
+								<span className="lato-bold">Last Updated:</span> 11/30/2024
 							</p>
 						</div>
 					</div>

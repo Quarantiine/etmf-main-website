@@ -46,7 +46,7 @@ export default function AIAssistant(): React.ReactElement {
 								<Image
 									className="w-auto h-[25px]"
 									src={"/icons/search-white.svg"}
-									alt="AI assistants"
+									alt="icon"
 									width={25}
 									height={25}
 								/>
@@ -56,7 +56,7 @@ export default function AIAssistant(): React.ReactElement {
 								<Image
 									className="w-auto h-[25px]"
 									src={"/icons/search-white.svg"}
-									alt="AI assistants"
+									alt="icon"
 									width={25}
 									height={25}
 								/>
@@ -69,17 +69,21 @@ export default function AIAssistant(): React.ReactElement {
 			{openAIAssistant && (
 				<>
 					<div className="ai-assistant-modal hidden fixed bottom-16 right-16 w-80 h-96 bg-white rounded-2xl shadow-xl p-5 z-50 sm:flex flex-col justify-start items-start gap-1">
-						<h3 className="lato-bold">Zhyra AI Assistant</h3>
+						<h3 className="lato-bold">AI Assistant</h3>
 
-						<div className="flex flex-col w-full h-fit justify-start items-start gap-5 default-overflow overflow-x-hidden overflow-y-scroll relative"></div>
+						<div className="flex flex-col w-full h-full justify-start items-start gap-5 default-overflow overflow-x-hidden overflow-y-scroll relative border">
+							<p>AI CODE</p>
+						</div>
 
 						<div className="flex flex-row gap-1 w-full h-auto mt-auto">
-							<input
-								className="input-field-style border"
+							<textarea
+								className="input-field-style border min-h-[50px] h-[50px] max-h-[100px] overflow-y-auto"
 								placeholder="Ask Anything..."
-								type="text"
 							/>
-							<button className="styled-btn w-fit text-center">Send</button>
+
+							<button className="styled-btn w-fit text-center h-fit">
+								Send
+							</button>
 						</div>
 					</div>
 
