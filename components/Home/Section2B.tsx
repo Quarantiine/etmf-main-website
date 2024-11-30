@@ -22,15 +22,15 @@ export const Section2B: React.FC = () => {
 			pointSection: [
 				{
 					mainPoint:
-						"Pitch Delivery Practice: Simulate pitches to virtual investors or panels, using AI feedback to improve body language, voice modulation, and clarity.",
+						"VR simulates pitch scenarios with AI feedback on delivery, helping entrepreneurs perfect their presentation skills.",
 				},
 				{
 					mainPoint:
-						"Strategic Decision-Making: Analyze market data and experience the consequences of business decisions in dynamic VR scenarios, boosting strategic confidence.",
+						"Interactive VR challenges enhance decision-making by letting users analyze data and experience the outcomes of their choices.",
 				},
 				{
 					mainPoint:
-						"Leadership and Team Management: Hone leadership, conflict resolution, and team management skills through realistic VR scenarios like product launches and interpersonal conflicts.",
+						"VR offers a risk-free environment for developing team management, conflict resolution, and leadership abilities.",
 				},
 			],
 			image: "/icons/engagement.png",
@@ -40,15 +40,15 @@ export const Section2B: React.FC = () => {
 			pointSection: [
 				{
 					mainPoint:
-						"Adapts dynamically to individual preferences and needs for a tailored user experience.",
+						"AI provides targeted hints, feedback, and conversational engagement with lecture videos, enhancing critical thinking and comprehension.",
 				},
 				{
 					mainPoint:
-						"Delivers personalized support, offering relevant guidance and resources to each user.",
+						"AI-generated scenarios based on course content allow students to apply their knowledge in real-world situations for deeper understanding.",
 				},
 				{
 					mainPoint:
-						"Continuously refines interactions based on user feedback and behavior for optimal engagement.",
+						"Students can customize AI's personality for a motivating experience, with multilingual support ensuring inclusivity for diverse learners.",
 				},
 			],
 			image: "/icons/ai.png",
@@ -74,10 +74,7 @@ export const Section2B: React.FC = () => {
 					</h1>
 
 					<p>
-						{`Here are just a few examples of how we're harnessing technology to create a more vibrant and connected community. Discover more in the "Resources" tab!`}
-					</p>
-					<p>
-						{`AI is an advanced AI assistant developed and managed under the guidance of the Chief Product & Technology Officer.`}
+						{`Here are just a few examples of how we're harnessing technology to create a more vibrant and connected community. Discover more in the "Programs" or "Resources" tab!`}
 					</p>
 
 					<div className="grid grid-cols-1 lg:grid-cols-2 w-full mx-auto h-auto justify-center items-center gap-5 relative">
@@ -107,7 +104,7 @@ export const Section2B: React.FC = () => {
 
 					<Link
 						className="w-full sm:w-[200px] text-center styled-btn"
-						href={"/resources"}
+						href={"/programs"}
 					>
 						Discover More
 					</Link>

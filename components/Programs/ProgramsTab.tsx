@@ -35,7 +35,8 @@ interface TextTypes {
 }
 
 export default function ProgramsTab(): React.ReactElement {
-	const [currentClickedProgram, setCurrentClickedProgram] = useState("");
+	const [currentClickedProgram, setCurrentClickedProgram] =
+		useState<string>("");
 
 	const handleClickedProgram = (text: string) => {
 		window.scrollTo(0, 510);

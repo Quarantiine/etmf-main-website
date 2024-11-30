@@ -13,7 +13,7 @@ export default function ActionSection(): React.ReactElement {
 						<Image
 							className="object-cover inset-0 z-0"
 							src={
-								"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/blgmklh6wixyk8hhnxrn"
+								"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/wqblsmher3ai8heykkvf"
 							}
 							alt="image"
 							fill
@@ -41,7 +41,7 @@ export default function ActionSection(): React.ReactElement {
 						<Image
 							className="object-cover inset-0 z-0"
 							src={
-								"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/wqblsmher3ai8heykkvf"
+								"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/blgmklh6wixyk8hhnxrn"
 							}
 							alt="image"
 							fill
