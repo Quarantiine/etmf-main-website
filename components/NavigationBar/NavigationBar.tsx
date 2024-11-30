@@ -76,7 +76,7 @@ export default function NavigationBar(): React.ReactElement {
 								<Image
 									className="w-auto h-[19px]"
 									src={"/icons/close.svg"}
-									alt="image"
+									alt="icon"
 									width={20}
 									height={20}
 								/>
@@ -133,7 +133,7 @@ export default function NavigationBar(): React.ReactElement {
 									>
 										<Image
 											src="/icons/close.svg"
-											alt="logo"
+											alt="icon"
 											width={30}
 											height={30}
 										/>
@@ -145,7 +145,7 @@ export default function NavigationBar(): React.ReactElement {
 									>
 										<Image
 											src="/icons/menu.svg"
-											alt="logo"
+											alt="icon"
 											width={30}
 											height={30}
 										/>

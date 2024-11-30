@@ -104,7 +104,7 @@ export default function PersonalModal({
 															<Image
 																className="w-auto h-[40px]"
 																src={social.img}
-																alt={`Image`}
+																alt={`icon`}
 																width={50}
 																height={50}
 															/>

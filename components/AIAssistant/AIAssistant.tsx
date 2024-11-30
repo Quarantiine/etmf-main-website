@@ -106,7 +106,7 @@ export default function AIAssistant(): React.ReactElement {
 										heightIncrease && "rotate-180"
 									}`}
 									src={"/icons/arrow_drop_up.png"}
-									alt="AI assistants"
+									alt="icon"
 									width={35}
 									height={35}
 								/>
@@ -119,7 +119,7 @@ export default function AIAssistant(): React.ReactElement {
 							<Image
 								className="w-auto h-[25px]"
 								src={"/icons/close.svg"}
-								alt="AI assistants"
+								alt="icon"
 								width={25}
 								height={25}
 							/>
