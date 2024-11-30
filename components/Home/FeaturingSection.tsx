@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useRef } from "react";
+import CarouselArrows from "../Widgets/CarouselArrows";
 
 interface ResourcesTypes {
 	title: string;
@@ -31,6 +32,8 @@ interface ContentTypes {
 }
 
 export default function FeaturingSection() {
+	const carouselArrowsRef = useRef<HTMLDivElement>(null);
+
 	const resources: ResourcesTypes[] = [
 		{
 			title: "Featured Content",
@@ -124,17 +127,10 @@ export default function FeaturingSection() {
 								</div>
 
 								<div className="w-full flex flex-col justify-center items-center relative">
-									{/* <button className="no-style-btn bg-green-1 w-16 h-16 absolute top-1/2 -translate-y-1/2 -left-6 z-10 rounded-full flex flex-col justify-center items-center -rotate-90">
-										<Image
-											className="w-auto h-[30px]"
-											src={"/icons/arrow_drop_up.png"}
-											alt="icon"
-											width={35}
-											height={35}
-										/>
-									</button> */}
+									<CarouselArrows carouselArrowsRef={carouselArrowsRef} />
 
 									<div
+										ref={carouselArrowsRef}
 										className={`default-overflow-x overflow-x-auto overflow-y-hidden w-full h-full grid grid-flow-col auto-cols-[minmax(300px,4fr)] sm:auto-cols-[minmax(400px,4fr)] gap-5 rounded-xl ${
 											resource.enableBg ? "bg-gray-200 p-2" : "pb-5"
 										}`}
@@ -146,7 +142,7 @@ export default function FeaturingSection() {
 														<Link
 															href={data.link}
 															target="_blank"
-															className="no-style-btn w-full h-96 bg-gray-500 rounded-xl flex flex-col justify-end items-start text-white p-5 relative overflow-hidden"
+															className="default-overflow-x-child no-style-btn w-full h-96 bg-gray-500 rounded-xl flex flex-col justify-end items-start text-white p-5 relative overflow-hidden"
 														>
 															<Image
 																className="object-cover object-center w-auto"

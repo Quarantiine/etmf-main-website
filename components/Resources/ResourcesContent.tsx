@@ -1,9 +1,10 @@
 "use client";
 
-import React, { FC, useEffect, useState } from "react";
+import React, { FC, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { createPortal } from "react-dom";
+import CarouselArrows from "../Widgets/CarouselArrows";
 
 interface ResourcesTypes {
 	title: string;
@@ -34,6 +35,7 @@ interface ContentTypes {
 export const ResourcesContent: FC<{ resource: ResourcesTypes }> = ({
 	resource,
 }) => {
+	const resourceCarouselArrowsRef = useRef<HTMLDivElement>(null);
 	const [openModal, setOpenModal] = useState<boolean>(false);
 
 	useEffect(() => {
@@ -80,8 +82,31 @@ export const ResourcesContent: FC<{ resource: ResourcesTypes }> = ({
 						)}
 					</div>
 
-					<div className="w-full flex flex-col justify-center items-center">
+					<div className="w-full flex flex-col justify-center items-center relative">
+						<div className="w-fit h-fit hidden lg:block">
+							{resource.content.map((data: ContentTypes) => data).length >
+								2 && (
+								<>
+									<CarouselArrows
+										carouselArrowsRef={resourceCarouselArrowsRef}
+									/>
+								</>
+							)}
+						</div>
+
+						<div className="w-fit h-fit lg:hidden">
+							{resource.content.map((data: ContentTypes) => data).length >
+								1 && (
+								<>
+									<CarouselArrows
+										carouselArrowsRef={resourceCarouselArrowsRef}
+									/>
+								</>
+							)}
+						</div>
+
 						<div
+							ref={resourceCarouselArrowsRef}
 							className={`default-overflow-x overflow-x-auto overflow-y-hidden w-full h-full grid grid-flow-col auto-cols-[minmax(300px,4fr)] sm:auto-cols-[minmax(400px,4fr)] gap-5 rounded-xl ${
 								resource.enableBg ? "bg-gray-200 p-2" : "pb-5"
 							}`}
@@ -96,7 +121,7 @@ export const ResourcesContent: FC<{ resource: ResourcesTypes }> = ({
 											<Link
 												href={data.link}
 												target="_blank"
-												className="no-style-btn w-full h-96 bg-gray-500 rounded-xl flex flex-col justify-end items-start text-white p-5 relative overflow-hidden"
+												className="default-overflow-x-child no-style-btn w-full h-96 bg-gray-500 rounded-xl flex flex-col justify-end items-start text-white p-5 relative overflow-hidden"
 											>
 												<Image
 													className="object-cover object-center w-auto"

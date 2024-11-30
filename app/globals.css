@@ -38,14 +38,20 @@
 	background-color: white;
 }
 
+.default-overflow-x {
+	scroll-snap-type: x mandatory;
+}
 .default-overflow-x::-webkit-scrollbar {
-	height: 10px;
+	height: 0px;
 }
 .default-overflow-x::-webkit-scrollbar-thumb {
 	background-color: #4bf2c7;
 }
 .default-overflow-x::-webkit-scrollbar-track {
 	background-color: white;
+}
+.default-overflow-x-child {
+	scroll-snap-align: start;
 }
 
 /* ============= Tailwind Pre-Defined Styles */
