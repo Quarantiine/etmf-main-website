@@ -5,7 +5,7 @@ This repository contains the source code for the Empowerment Through Mindset Fou
 ## Features
 
 - **Informative Content:** Detailed information on ETMF's mission, programs (ETMF Academy, Student Activity Program, Access to Education Program etc.), and impact.
-- **AI Integration:** An intelligent assistant guiding users through the site, answering FAQs, and providing personalized support. (See [AI Article](https://medium.com/@danielward.occ/meet-zhyra-ai-the-intelligent-ai-assistant-3034b939de89) for more details.)
+- **AI Integration:** An intelligent assistant guiding users through the site, answering FAQs, and providing personalized support.
 - **Easy Navigation:** Intuitive site structure and clear calls to action enabling users to easily find what they need.
 - **Engagement Opportunities:** Clear pathways for users to get involved through donations, partnerships, or volunteering.
 - **Resources:** Access to articles, publications, and multimedia content related to ETMF's mission and programs.
@@ -21,6 +21,7 @@ This repository contains the source code for the Empowerment Through Mindset Fou
 - **Tailwind CSS:** A utility-first CSS framework that simplifies and accelerates the process of designing custom user interfaces.
 - **React.js:** A JavaScript library for building user interfaces using reusable components, streamlining the development process.
 - **Google's Gemini AI:** An advanced AI model powering the ETMF AI assistant, enabling intelligent, efficient, and context-aware interactions.
+- **And More...**
 
 ## AI Inclusion
 
@@ -31,7 +32,7 @@ ETMF's AI assistant, is integrated into the website to provide a more engaging a
 - **Offering Personalized Recommendations:** Suggesting relevant content based on user interests.
 - **Collecting User Feedback:** Gathering information to continuously improve the website and the AI assistant's performance.
 
-The AI assistant's integration utilizes Google's Gemini AI API. For details on AI implementation specifics, please see the [AI Article](https://medium.com/@danielward.occ/meet-zhyra-ai-the-intelligent-ai-assistant-3034b939de89).
+The AI assistant's integration utilizes Google's Gemini AI API.
 
 ## Contribution Guidelines
 
