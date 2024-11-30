@@ -39,6 +39,18 @@ export default function FeaturingSection() {
 			enableBg: false,
 			content: [
 				{
+					title: "How Will AI be Used at ETMF?",
+					image:
+						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Tech%20News/rmpl9bahnkfqbfqdlcu6",
+					imageCollage: [
+						{
+							src: "none",
+						},
+					],
+					link: "https://medium.com/@danielward.occ/meet-zhyra-ai-the-intelligent-ai-assistant-3034b939de89",
+					mediaType: "",
+				},
+				{
 					title: "(Dropping) Mindset Matters Podcast EP11!",
 					image:
 						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/q4fiuz59ulfplqbmtfr4",
