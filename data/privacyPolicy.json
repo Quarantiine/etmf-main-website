@@ -28,7 +28,7 @@
 		"points": [
 			{
 				"textHeader": "Conversational Data with AI",
-				"text": "Users have the choice to save or not save conversational data when engaging with the search feature that's powered by AI. By default, conversational data is saved and may be used to enhance ETMF's AI assistance capabilities. Once saved, this conversational data cannot be deleted by users."
+				"text": "Users have the choice to save or not save conversational data when engaging with the search feature that's powered by AI. By default, conversational data is saved and may be used to enhance ETMF's AI assistance capabilities. Once saved, this conversational data cannot be deleted by users. The default setting can change depending on usage."
 			},
 			{
 				"textHeader": "Improvement of Website Services",

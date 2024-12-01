@@ -19,7 +19,7 @@ export default function Section4(): React.ReactElement {
 				"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/skvvhvujsv6srilfyg2o",
 			title: "ETMF Academy",
 			description:
-				"ETMF Academy: Our technology-driven learning platform utilizes AI, VR, and personalized learning pathways. Programs include: Entrepreneurship & Innovation Student Government Leadership Professional Development Academic Excellence Empowerment for Historically Marginalized Communities",
+				"Our technology-driven learning platform utilizes AI, VR, and personalized learning pathways. Programs include: Entrepreneurship & Innovation Student Government Leadership Professional Development Academic Excellence Empowerment for Historically Marginalized Communities",
 		},
 		{
 			id: "2",

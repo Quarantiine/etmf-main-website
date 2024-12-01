@@ -29,7 +29,7 @@
 }
 
 .default-overflow::-webkit-scrollbar {
-	width: 10px;
+	width: 0px;
 }
 .default-overflow::-webkit-scrollbar-thumb {
 	background-color: #4bf2c7;
@@ -120,7 +120,7 @@
 	@apply lato-bold cursor-pointer bg-gray-500 text-white px-4 py-2 hover:opacity-70 transition-all rounded-lg;
 }
 .outlined-styled-btn {
-	@apply cursor-pointer bg-transparent border-2 text-white border-[#4bf2c7] px-4 py-2 hover:opacity-70 transition-all rounded-lg;
+	@apply cursor-pointer bg-transparent border-2 border-[#4bf2c7] px-4 py-2 hover:opacity-70 transition-all rounded-lg;
 }
 
 .navbar-link-underline {

@@ -36,7 +36,7 @@
 				"text": "All content on the Website, but not limited to,—including text, images, videos, graphics, and AI-generated content—is the property of ETMF or its licensors."
 			},
 			{
-				"text": "This content will be protected by copyright, trademark, and other intellectual property laws. Users agree not to reproduce, distribute, or publicly display content from the Website without prior written permission from ETMF."
+				"text": "This content will be protected soon by copyright, trademark, and other intellectual property laws. Users agree not to reproduce, distribute, or publicly display content from the Website without prior written permission from ETMF."
 			}
 		],
 		"points": [{}]
@@ -73,7 +73,7 @@
 		"points": [
 			{
 				"textHeader": "Data Collection Options",
-				"text": "Users interacting with the AI assistant will have the choice to either save or not save their conversation data to improve the AI model’s assistance capabilities. By default, data from user interactions is saved, but users can adjust these settings to control what information is retained."
+				"text": "Users interacting with the AI assistant will have the choice to either save or not save their conversation data to improve the AI model’s assistance capabilities. By default, data from user interactions is saved, but users can adjust this setting to control what information is retained. The default setting can change depending on usage."
 			},
 			{
 				"textHeader": "Data Handling",
