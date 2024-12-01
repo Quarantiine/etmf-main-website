@@ -2,6 +2,7 @@
 
 import { Content } from "@google/generative-ai";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import ReactMarkdown from "react-markdown";
 
@@ -27,24 +28,20 @@ export default function AIRoles({ conversation }: { conversation: Content }) {
 							<ReactMarkdown
 								components={{
 									ul: ({ children }) => (
-										<ul
-											style={{
-												listStyleType: "disc",
-												paddingLeft: "20px",
-											}}
-										>
-											{children}
-										</ul>
+										<ul className="list-disc pl-5">{children}</ul>
 									),
 									li: ({ children }) => (
-										<li
-											style={{
-												color: "black",
-												fontWeight: "medium",
-											}}
+										<li className="text-black font-medium">{children}</li>
+									),
+									a: ({ href }) => (
+										<a
+											href={href}
+											className="text-[#007bff] decoration-0 font-medium transition-colors"
+											target="_blank"
+											rel="noopener noreferrer"
 										>
-											{children}
-										</li>
+											{`Link`}
+										</a>
 									),
 								}}
 							>
@@ -65,28 +62,19 @@ export default function AIRoles({ conversation }: { conversation: Content }) {
 							<ReactMarkdown
 								components={{
 									ul: ({ children }) => (
-										<ul
-											style={{
-												listStyleType: "disc",
-												paddingLeft: "20px",
-											}}
-										>
-											{children}
-										</ul>
+										<ul className="list-disc pl-5">{children}</ul>
 									),
 									li: ({ children }) => (
-										<li
-											style={{
-												color: "black",
-												fontWeight: "medium",
-											}}
-										>
-											{children}
-										</li>
+										<li className="text-black font-medium">{children}</li>
 									),
-									a: ({ href, children }) => (
-										<a href={href} target="_blank" rel="noopener noreferrer">
-											{children}
+									a: ({ href }) => (
+										<a
+											href={href}
+											className="text-[#007bff] decoration-0 font-medium transition-colors"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											{`Link`}
 										</a>
 									),
 								}}
