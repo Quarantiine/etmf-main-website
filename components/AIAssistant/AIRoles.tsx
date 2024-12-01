@@ -84,6 +84,11 @@ export default function AIRoles({ conversation }: { conversation: Content }) {
 											{children}
 										</li>
 									),
+									a: ({ href, children }) => (
+										<a href={href} target="_blank" rel="noopener noreferrer">
+											{children}
+										</a>
+									),
 								}}
 							>
 								{part.text}
