@@ -2,7 +2,7 @@ import "./globals.css";
 import Footer from "@/components/Footer/Footer";
 import NavigationBar from "@/components/NavigationBar/NavigationBar";
 import WidgetComponent from "@/components/Widgets/WidgetComponent";
-// import AIAssistant from "@/components/AIAssistant/AIAssistant";
+import AIAssistant from "@/components/AIAssistant/AIAssistant";
 
 export default function RootLayout({
 	children,
@@ -31,7 +31,7 @@ export default function RootLayout({
 					<NavigationBar />
 					<WidgetComponent />
 
-					{/* <AIAssistant /> */}
+					<AIAssistant />
 
 					<div className="w-full mx-auto">{children}</div>
 				</main>

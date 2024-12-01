@@ -7,34 +7,42 @@ import React, {
 	ChangeEvent,
 	MouseEventHandler,
 	useEffect,
+	useRef,
 	useState,
 } from "react";
-import ReactMarkdown from "react-markdown";
+import questionsList from "@/data/questionsList.json";
+import AIRoles from "./AIRoles";
+import languagesList from "@/data/languages.json";
 
-// interface HistoryType {
-// 	role: string;
-// 	parts: { text: string }[];
-// }
+interface QuestionListTypes {
+	title: string;
+	prompts: {
+		text: string;
+	}[];
+}
 
 export default function AIComponent({
 	handleOpenAIAssistant,
 }: {
 	handleOpenAIAssistant: MouseEventHandler<HTMLButtonElement>;
 }) {
-	const { AIChatbotSystem, historyResp } = GeminiAPI();
+	const {
+		AIChatbotSystem,
+		historyResp,
+		error,
+		loading,
+		setSystemLanguage,
+		systemLanguage,
+	} = GeminiAPI();
 
 	const [prompt, setPrompt] = useState<string>("");
 	const [closePrePrompts, setClosePrePrompts] = useState<boolean>(false);
 	const [saveConversation, setSaveConversation] = useState<boolean>(false);
 	const [showInfo, setShowInfo] = useState<boolean>(false);
+	const [showLanguageList, setShowLanguageList] = useState<boolean>(false);
+	const [languageSearch, setLanguageSearch] = useState("");
 
-	const questionsList = [
-		{ text: "What is the ETMF about?" },
-		{ text: "How can I donate to ETMF?" },
-		{ text: "Can you tell me about ETMF's mission and vision" },
-		{ text: "Who are the key leaders at ETMF?" },
-		{ text: "" },
-	];
+	const ChatBoxRef = useRef<HTMLDivElement | null>(null);
 
 	const handlePromptChange = (
 		e: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
@@ -77,26 +85,158 @@ export default function AIComponent({
 		}
 	};
 
+	useEffect(() => {
+		ChatBoxRef.current?.scrollTo({
+			top: ChatBoxRef.current?.scrollHeight,
+			left: 0,
+			behavior: "smooth",
+		});
+	}, [loading]);
+
+	const handleSetSystemLanguage = (language: string) => {
+		setSystemLanguage(language);
+		setLanguageSearch("");
+		setShowLanguageList(false);
+	};
+
+	const handleLanguageChange = () => {
+		setShowLanguageList(!showLanguageList);
+	};
+
+	useEffect(() => {
+		const closeModal = (e: MouseEvent) => {
+			const target = e.target as HTMLElement;
+			if (!target.closest(".language-change")) {
+				setShowLanguageList(false);
+				setLanguageSearch("");
+			}
+		};
+
+		document.addEventListener("mousedown", closeModal);
+		return () => document.removeEventListener("mousedown", closeModal);
+	}, []);
+
+	const handleLanguageSearch = (e: ChangeEvent<HTMLInputElement>): void => {
+		setLanguageSearch(e.target.value);
+	};
+
 	return (
 		<>
-			<div className="fixed bottom-0 right-0 w-full border-t-4 h-[90%] mt-auto bg-gradient-to-tr bg-[rgba(255,255,255,0.9)] backdrop-blur-xl z-50 flex flex-col justify-center items-center">
-				<button
-					onClick={handleOpenAIAssistant}
-					className="ai-assistant-modal no-style-btn absolute top-2 right-2"
-				>
-					<Image
-						className="w-auto h-[25px]"
-						src={"/icons/close.svg"}
-						alt="icon"
-						width={25}
-						height={25}
-					/>
-				</button>
+			<div className="fixed bottom-0 right-0 w-full border-t-4 h-full mt-auto bg-gradient-to-tr bg-[rgba(255,255,255,0.9)] backdrop-blur-xl z-50 flex flex-col justify-center items-center">
+				<div className="ai-assistant-modal w-[90%] lg:w-[700px] h-full px-10 py-5 flex flex-col justify-start items-start gap-1 md:hover:bg-gray-100 transition-colors relative">
+					<div className="flex flex-col sm:flex-row gap-2 justify-start sm:justify-between items-between sm:items-center w-full">
+						<div className="flex flex-row justify-between items-center gap-1">
+							<h1 className="lato-bold">AI Assistant: Search</h1>
 
-				<div className="ai-assistant-modal w-[90%] lg:w-[700px] h-full px-10 py-5 flex flex-col justify-start items-start gap-1 md:hover:bg-gray-100 transition-colors">
-					<h1 className="lato-bold">AI Assistant: Search</h1>
+							<button
+								onClick={handleOpenAIAssistant}
+								className="ai-assistant-modal no-style-btn block sm:hidden"
+							>
+								<Image
+									className="h-auto min-w-[25px] max-w-[25px]"
+									src={"/icons/close.svg"}
+									alt="icon"
+									width={25}
+									height={25}
+								/>
+							</button>
+						</div>
 
-					<div className="flex flex-col w-full h-full justify-start items-start gap-5 default-overflow overflow-x-hidden overflow-y-scroll relative">
+						<div className="w-full sm:w-fit h-fit flex flex-row justify-center items-center gap-5">
+							<div className="w-full sm:w-fit h-fit relative flex justify-center items-center">
+								<button
+									onClick={() => {
+										handleLanguageChange();
+									}}
+									className="language-change no-style-btn flex flex-row gap-1 justify-center items-center py-3 ml-auto"
+								>
+									<p className="text-sm text-gray-400">{systemLanguage}</p>
+									<Image
+										className="h-auto min-w-[25px] max-w-[25px]"
+										src={"/icons/translate.svg"}
+										alt="icon"
+										width={25}
+										height={25}
+									/>
+								</button>
+
+								{showLanguageList && (
+									<div className="language-change absolute top-10 right-0 bg-white border shadow-xl px-4 py-2 rounded-xl w-[200px] sm:w-[250px] h-fit z-10">
+										<div className="flex flex-col gap-1 w-full justify-start items-start pb-1">
+											<h1 className="lato-bold">Choose a Language:</h1>
+
+											<input
+												className="input-field-style w-full border text-sm"
+												type="text"
+												placeholder="Search Language"
+												onChange={handleLanguageSearch}
+												value={languageSearch}
+											/>
+										</div>
+
+										<div className="flex flex-col justify-start items-start default-overflow overflow-y-scroll overflow-x-hidden w-full max-h-[200px]">
+											{languagesList.languages.map(
+												(language: string, index: number) => {
+													if (
+														language
+															.normalize("NFD")
+															.replace(/\p{Diacritic}/gu, "")
+															.toLowerCase()
+															.includes(languageSearch.toLowerCase())
+													) {
+														return (
+															<React.Fragment key={index}>
+																<button
+																	onClick={() => {
+																		handleSetSystemLanguage(language);
+																	}}
+																	className="no-style-btn"
+																>
+																	{language}
+																</button>
+															</React.Fragment>
+														);
+													}
+												}
+											)}
+
+											{languagesList.languages
+												.filter((language: string) =>
+													language
+														.normalize("NFD")
+														.replace(/\p{Diacritic}/gu, "")
+														.toLowerCase()
+														.includes(languageSearch.toLowerCase())
+												)
+												.map((language: string) => language).length < 1 && (
+												<>
+													<p className="text-gray-400">Language Not Here</p>
+												</>
+											)}
+										</div>
+									</div>
+								)}
+							</div>
+
+							<button
+								onClick={handleOpenAIAssistant}
+								className="ai-assistant-modal no-style-btn hidden sm:block"
+							>
+								<Image
+									className="h-auto min-w-[25px] max-w-[25px]"
+									src={"/icons/close.svg"}
+									alt="icon"
+									width={25}
+									height={25}
+								/>
+							</button>
+						</div>
+					</div>
+
+					<div
+						ref={ChatBoxRef}
+						className="flex flex-col w-full h-full justify-start items-start gap-5 default-overflow overflow-x-hidden overflow-y-scroll relative"
+					>
 						{historyResp &&
 							historyResp?.map((value: Content) => value.role).length <= 1 && (
 								<div className="flex flex-col justify-center items-center text-center absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
@@ -116,65 +256,25 @@ export default function AIComponent({
 										.includes("9jd&3vd%")
 							)
 							?.map((conversation: Content) => (
-								<React.Fragment
+								<AIRoles
 									key={conversation.parts.map((part) => part.text).toString()}
-								>
-									<div className="flex flex-col">
-										<div className="flex flex-row gap-1 justify-start items-center">
-											{conversation.role === "model" ? (
-												<>
-													<Image
-														className="object-cover w-auto h-[20px]"
-														src={"/etm_foundation_logo.png"}
-														alt="logo"
-														width={25}
-														height={25}
-													/>
-												</>
-											) : (
-												<>
-													<div className="w-4 h-4 bg-green-1 rounded-full" />
-												</>
-											)}
-
-											<p className="lato-bold">
-												{conversation.role === "user" ? "You" : "Zhyra (AI)"}
-											</p>
-										</div>
-
-										{conversation.parts.map((part, index2) => (
-											<React.Fragment key={index2}>
-												<ReactMarkdown
-													components={{
-														ul: ({ children }) => (
-															<ul
-																style={{
-																	listStyleType: "disc",
-																	paddingLeft: "20px",
-																}}
-															>
-																{children}
-															</ul>
-														),
-														li: ({ children }) => (
-															<li
-																style={{ color: "black", fontWeight: "medium" }}
-															>
-																{children}
-															</li>
-														),
-													}}
-												>
-													{part.text}
-												</ReactMarkdown>
-											</React.Fragment>
-										))}
-									</div>
-								</React.Fragment>
+									conversation={conversation}
+								/>
 							))}
 					</div>
 
 					<div className="flex flex-col w-full h-auto gap-2 pt-3 text-sm">
+						{error && (
+							<p
+								onClick={handleClosePrePrompts}
+								className="text-white bg-red-500 px-4 py-2 rounded-lg w-full"
+							>
+								{error}
+							</p>
+						)}
+
+						{loading && <p className="w-full text-center">Typing...</p>}
+
 						<button
 							onClick={handleClosePrePrompts}
 							className="outlined-styled-btn"
@@ -183,20 +283,35 @@ export default function AIComponent({
 						</button>
 
 						{closePrePrompts === false && (
-							<div className="default-overflow overflow-y-scroll overflow-x-hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 w-full max-h-[100px] py-2">
+							<div className="default-overflow overflow-y-scroll overflow-x-hidden gap-2 w-full max-h-[100px] py-2">
 								{questionsList.map(
-									(question: { text: string }, index: number) => {
+									(question: QuestionListTypes, index: number) => {
 										return (
-											<React.Fragment key={index}>
-												{question.text && (
-													<button
-														onClick={() => handlePrePrompts(question.text)}
-														className="no-style-btn !bg-white border rounded-xl p-2"
-													>
-														{question.text}
-													</button>
-												)}
-											</React.Fragment>
+											<div
+												className="flex flex-col gap-1 w-full justify-start items-start"
+												key={index}
+											>
+												<h1 className="text-xl lato-bold">{question.title}</h1>
+
+												<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 w-full py-2">
+													{question.prompts.map(
+														(prePrompt: { text: string }, index: number) => {
+															return (
+																<React.Fragment key={index}>
+																	<button
+																		onClick={() =>
+																			handlePrePrompts(prePrompt.text)
+																		}
+																		className="no-style-btn !bg-white border rounded-xl p-2"
+																	>
+																		{prePrompt.text}
+																	</button>
+																</React.Fragment>
+															);
+														}
+													)}
+												</div>
+											</div>
 										);
 									}
 								)}
@@ -204,38 +319,69 @@ export default function AIComponent({
 						)}
 					</div>
 
-					<div className="flex flex-row gap-1 w-full h-auto mt-auto py-1">
-						<textarea
-							className="input-field-style block md:hidden border min-h-[45px] h-[45px] max-h-[150px] overflow-y-auto"
-							placeholder="Chat..."
-							onChange={(e) => handlePromptChange(e)}
-							value={prompt}
-						/>
+					<div className="flex flex-row gap-1 w-full h-auto mt-auto py-1 relative">
+						{loading ? (
+							<>
+								<textarea
+									disabled
+									className="input-field-style block md:hidden border min-h-[45px] h-[45px] max-h-[150px] overflow-y-auto opacity-30 cursor-not-allowed"
+									placeholder="Chat..."
+									onChange={(e) => handlePromptChange(e)}
+									value={prompt}
+								/>
 
-						<input
-							className="input-field-style hidden md:block border overflow-y-auto"
-							placeholder="Chat..."
-							onKeyDown={(e) => e.key === "Enter" && handlePrompt()}
-							onChange={(e) => handlePromptChange(e)}
-							value={prompt}
-						/>
+								<input
+									disabled
+									className="input-field-style hidden md:block border overflow-y-auto opacity-30 cursor-not-allowed"
+									placeholder="Chat..."
+									onKeyDown={(e) => e.key === "Enter" && handlePrompt()}
+									onChange={(e) => handlePromptChange(e)}
+									value={prompt}
+								/>
 
-						<button
-							onClick={handlePrompt}
-							className="styled-btn w-fit text-center h-fit"
-						>
-							Send
-						</button>
+								<button
+									disabled
+									onClick={handlePrompt}
+									className="styled-btn w-fit text-center h-fit opacity-30 hover:!opacity-40 !cursor-not-allowed"
+								>
+									Send
+								</button>
+							</>
+						) : (
+							<>
+								<textarea
+									className="input-field-style block md:hidden border min-h-[45px] h-[45px] max-h-[150px] overflow-y-auto"
+									placeholder="Chat..."
+									onChange={(e) => handlePromptChange(e)}
+									value={prompt}
+								/>
+
+								<input
+									className="input-field-style hidden md:block border overflow-y-auto"
+									placeholder="Chat..."
+									onKeyDown={(e) => e.key === "Enter" && handlePrompt()}
+									onChange={(e) => handlePromptChange(e)}
+									value={prompt}
+								/>
+
+								<button
+									onClick={handlePrompt}
+									className="styled-btn w-fit text-center h-fit"
+								>
+									Send
+								</button>
+							</>
+						)}
 					</div>
 
-					<div className="flex flex-row gap-1 px-3 rounded-lg justify-center items-center text-gray-500 w-full text-sm">
-						<div className="relative w-fit h-fit">
+					<div className="flex flex-col sm:flex-row gap-1 px-3 rounded-lg justify-center items-center text-gray-500 w-full text-sm">
+						<div className="relative w-fit h-fit flex flex-row justify-center items-center gap-1">
 							<button
 								onClick={handleShowInfo}
 								className="no-style-btn show-info flex flex-row gap-1 text-center justify-center items-center"
 							>
 								<Image
-									className="w-auto h-[19px]"
+									className="h-auto min-w-[16px] max-w-[16px]"
 									src={"/icons/info.svg"}
 									alt="icon"
 									width={25}
@@ -244,36 +390,37 @@ export default function AIComponent({
 							</button>
 
 							{showInfo && (
-								<div className="show-info absolute bottom-6 left-0 bg-white border shadow-xl px-4 py-2 rounded-xl w-[250px] h-fit">
+								<div className="show-info absolute bottom-6 -left-12 sm:left-0 bg-white border shadow-xl px-4 py-2 rounded-xl w-[250px] h-fit">
 									<p>
-										Saving conversations helps the AI assistant become more
-										accurate, efficient, and helpful by learning to interact
-										with users more effectively over time. AI is not always
-										accurate.
+										AI is not always accurate. Saving conversations helps the AI
+										assistant become more accurate, efficient, and helpful by
+										learning to interact with users more effectively over time.
 									</p>
 								</div>
 							)}
+
+							<button
+								disabled
+								onClick={handleSaveConversations}
+								className="no-style-btn flex flex-row gap-1 text-center justify-center items-center !cursor-not-allowed"
+							>
+								<p className="text-[12px] sm:text-sm">Save Conversation</p>
+
+								<Image
+									className="h-auto min-w-[19px] max-w-[19px] mt-auto"
+									src={
+										saveConversation
+											? "/icons/toggle_on.svg"
+											: "/icons/toggle_off.svg"
+									}
+									alt="icon"
+									width={25}
+									height={25}
+								/>
+							</button>
 						</div>
 
-						<button
-							disabled
-							onClick={handleSaveConversations}
-							className="no-style-btn flex flex-row gap-1 text-center justify-center items-center !cursor-not-allowed"
-						>
-							<p>Save Conversation</p>
-
-							<Image
-								className="w-auto h-[22px] mt-auto"
-								src={
-									saveConversation
-										? "/icons/toggle_on.svg"
-										: "/icons/toggle_off.svg"
-								}
-								alt="icon"
-								width={25}
-								height={25}
-							/>
-						</button>
+						<p className="text-[12px]">(Coming Soon)</p>
 					</div>
 				</div>
 			</div>
