@@ -2,7 +2,6 @@
 
 import { Content } from "@google/generative-ai";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import ReactMarkdown from "react-markdown";
 
@@ -40,7 +39,7 @@ export default function AIRoles({ conversation }: { conversation: Content }) {
 											target="_blank"
 											rel="noopener noreferrer"
 										>
-											{`Link`}
+											{``}
 										</a>
 									),
 								}}
@@ -74,7 +73,7 @@ export default function AIRoles({ conversation }: { conversation: Content }) {
 											target="_blank"
 											rel="noopener noreferrer"
 										>
-											{`Link`}
+											{``}
 										</a>
 									),
 								}}
