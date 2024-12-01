@@ -39,7 +39,7 @@ export default function AIRoles({ conversation }: { conversation: Content }) {
 											target="_blank"
 											rel="noopener noreferrer"
 										>
-											{``}
+											{`Link`}
 										</a>
 									),
 								}}
@@ -73,7 +73,7 @@ export default function AIRoles({ conversation }: { conversation: Content }) {
 											target="_blank"
 											rel="noopener noreferrer"
 										>
-											{``}
+											{`Link`}
 										</a>
 									),
 								}}
