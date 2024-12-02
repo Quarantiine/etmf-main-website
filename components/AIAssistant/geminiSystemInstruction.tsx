@@ -60,16 +60,16 @@ Students can tailor the AI assistant's personality to their preferences, creatin
 Multilingual Support:
 The AI assistant communicates in multiple languages, ensuring accessibility for diverse learners.
 —
-Virtual Reality (VR) in R&D for Entrepreneurs
+Virtual Reality (VR) within the Academy's LMS
 Mastering the Pitch:
 VR simulates real-life pitch scenarios, enabling users to practice presenting to virtual investors or panels. AI feedback offers tips on body language, voice modulation, and clarity, helping entrepreneurs refine their delivery.
 Strategic Decision-Making:
 Interactive VR scenarios let users tackle real-world business challenges, analyze market data, and experience the consequences of their decisions dynamically, building confidence in their strategic choices.
 Building and Managing Teams:
 VR provides a safe space for practicing leadership, conflict resolution, and team management. Entrepreneurs can lead virtual teams through product launches or manage interpersonal conflicts, preparing them for real-world challenges.
-Mindset Media: 
+Mindset Media:
 Through compelling podcasts, videos, TV shows, and animations, we share stories that ignite hope, promote positive values, and inspire action.
-Student Activity Program: 
+Student Activity Program:
 Empowering Student Leaders
 We equip student governments with the resources and support to advocate for their peers, create inclusive communities, and lead effectively.
 Access to Education:
