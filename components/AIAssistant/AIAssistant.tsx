@@ -35,8 +35,11 @@ export default function AIAssistant(): React.ReactElement {
 		<>
 			<div className="fixed bottom-5 right-5 z-50 ai-assistant-modal">
 				{showPopUpMessage && (
-					<div className="flex flex-row justify-center items-center gap-2 w-[190px] h-fit absolute bottom-20 right-0 text-sm !bg-white shadow-lg rounded-xl px-3 py-2">
-						<button onClick={handleOpenAIAssistant} className="no-style-btn">
+					<div className="flex flex-row justify-start items-center gap-2 w-[175px] h-fit absolute bottom-20 right-0 text-sm !bg-white shadow-lg rounded-xl px-3 py-2">
+						<button
+							onClick={handleOpenAIAssistant}
+							className="no-style-btn text-start"
+						>
 							Need Help Finding Something Fast?
 						</button>
 

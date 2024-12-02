@@ -9,7 +9,7 @@ export default function AIRoles({ conversation }: { conversation: Content }) {
 	return (
 		<>
 			{conversation.role === "model" ? (
-				<div className="flex flex-col">
+				<div className="flex flex-col w-full">
 					<div className="flex flex-row gap-1 justify-start items-center">
 						<Image
 							className="object-cover w-auto h-[20px]"
@@ -23,7 +23,10 @@ export default function AIRoles({ conversation }: { conversation: Content }) {
 					</div>
 
 					{conversation.parts.map((part, index2) => (
-						<React.Fragment key={index2}>
+						<div
+							className="ai-overflow-x overflow-x-scroll overflow-y-hidden w-fit"
+							key={index2}
+						>
 							<ReactMarkdown
 								components={{
 									ul: ({ children }) => (
@@ -39,14 +42,14 @@ export default function AIRoles({ conversation }: { conversation: Content }) {
 											target="_blank"
 											rel="noopener noreferrer"
 										>
-											{`Link`}
+											{"Link"}
 										</a>
 									),
 								}}
 							>
 								{part.text}
 							</ReactMarkdown>
-						</React.Fragment>
+						</div>
 					))}
 				</div>
 			) : (

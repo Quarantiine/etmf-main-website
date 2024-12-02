@@ -241,8 +241,7 @@ export default function AIComponent({
 							historyResp?.map((value: Content) => value.role).length <= 1 && (
 								<div className="flex flex-col justify-center items-center text-center absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
 									<p className="text-gray-400">
-										Looking for something? Ask anything related to the ETM
-										Foundation.
+										Ask anything related to the ETM Foundation.
 									</p>
 								</div>
 							)}

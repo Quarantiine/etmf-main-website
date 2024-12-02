@@ -54,6 +54,10 @@
 	scroll-snap-align: start;
 }
 
+.ai-overflow-x::-webkit-scrollbar {
+	height: 0px;
+}
+
 /* ============= Tailwind Pre-Defined Styles */
 
 .text-yellow {

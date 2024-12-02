@@ -131,10 +131,9 @@ export default function Footer(): React.ReactElement {
 							<div className="flex flex-col gap-2 text-center md:text-start md:w-full">
 								<h1 className="montserrat-bold text-3xl">Take Action</h1>
 
-								<div className="flex flex-col w-fit">
+								<div className="flex flex-wrap gap-x-5 w-fit justify-center items-center md:justify-start md:items-start">
 									<Link
 										href={"https://forms.gle/CVWDuUaUKYkXErN47"}
-										// href={"https://m06w1sq48mn.typeform.com/to/egR2Hgce"}
 										className="no-style-btn text-green-1"
 										target="_blank"
 									>
@@ -143,7 +142,6 @@ export default function Footer(): React.ReactElement {
 
 									<Link
 										href={"https://forms.gle/37vpdEWtkTXSfaHD6"}
-										// href={"https://m06w1sq48mn.typeform.com/to/Mpuj7LyK"}
 										className="no-style-btn text-green-1"
 										target="_blank"
 									>
@@ -154,11 +152,40 @@ export default function Footer(): React.ReactElement {
 										href={
 											"https://docs.google.com/forms/d/e/1FAIpQLSfgKKg44BaBRps6JjVtx_6jy68q1pxT1VJbnBWchvoX556Lqw/viewform?usp=sf_link"
 										}
-										// href={"https://m06w1sq48mn.typeform.com/to/ULvIvS58"}
 										className="no-style-btn text-green-1"
 										target="_blank"
 									>
 										Give Website Feedback
+									</Link>
+
+									<Link
+										href={
+											"https://docs.google.com/forms/d/e/1FAIpQLSdbIkyAqce-r8KZOT0tPg_78Bs9wcgUtIfW88BaRF6qG5ifsg/viewform"
+										}
+										className="no-style-btn text-green-1"
+										target="_blank"
+									>
+										Donating/Sponsoring
+									</Link>
+
+									<Link
+										href={
+											"https://docs.google.com/forms/d/e/1FAIpQLScfNsKkv788mqzYGs3z_T88sa_kfSQhCG5P_bRjQrJPXsUWLw/viewform"
+										}
+										className="no-style-btn text-green-1"
+										target="_blank"
+									>
+										Collaborate/Partnership
+									</Link>
+
+									<Link
+										href={
+											"https://docs.google.com/forms/d/e/1FAIpQLSf0Vcygx2fSKW3eJ9R9Ty-KnBdfJ5PuLxLup_FmfEYaD_jZvw/viewform"
+										}
+										className="no-style-btn text-green-1"
+										target="_blank"
+									>
+										Volunteering
 									</Link>
 								</div>
 							</div>

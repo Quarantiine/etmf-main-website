@@ -1,6 +1,6 @@
 [
 	{
-		"title": "Donating & Sponsoring",
+		"title": "Donating/Sponsoring",
 		"paragraphs": [
 			{
 				"textHeader": "Direct Donations:",
@@ -16,10 +16,10 @@
 			}
 		],
 		"link": "https://docs.google.com/forms/d/e/1FAIpQLSdbIkyAqce-r8KZOT0tPg_78Bs9wcgUtIfW88BaRF6qG5ifsg/viewform",
-		"linkText": "Become a Donor or Sponsor"
+		"linkText": "Become a Donor"
 	},
 	{
-		"title": "Partnerships",
+		"title": "Collaborate/Partnership",
 		"paragraphs": [
 			{
 				"textHeader": "Educational Institutions:",
@@ -32,13 +32,17 @@
 			{
 				"textHeader": "Corporate Partnerships:",
 				"text": "Businesses can partner with us to offer employee training programs, mentorship opportunities, or volunteer initiatives that support our mission while enhancing their corporate social responsibility efforts."
+			},
+			{
+				"textHeader": "Individual Collaboration:",
+				"text": "Individual collaboration with the foundation allows you to directly contribute your skills and expertise, helping us drive meaningful change and support our mission to empower students and communities."
 			}
 		],
-		"link": "https://docs.google.com/forms/d/e/1FAIpQLSdbIkyAqce-r8KZOT0tPg_78Bs9wcgUtIfW88BaRF6qG5ifsg/viewform",
+		"link": "https://docs.google.com/forms/d/e/1FAIpQLScfNsKkv788mqzYGs3z_T88sa_kfSQhCG5P_bRjQrJPXsUWLw/viewform",
 		"linkText": "Become a Partner"
 	},
 	{
-		"title": "Volunteerism",
+		"title": "Volunteering",
 		"paragraphs": [
 			{
 				"textHeader": "Mentorship:",
@@ -51,9 +55,13 @@
 			{
 				"textHeader": "Content Creation:",
 				"text": "If you're skilled in content creation, we welcome your contributions in writing articles, creating videos, or developing educational materials for the ETMF Academy."
+			},
+			{
+				"textHeader": "Custom Skill Set:",
+				"text": "If you have any skills or experience that you believe would be valuable to the foundation, and you're eager to contribute to our mission, we welcome your support in helping us achieve our goals."
 			}
 		],
-		"link": "https://docs.google.com/forms/d/e/1FAIpQLSdbIkyAqce-r8KZOT0tPg_78Bs9wcgUtIfW88BaRF6qG5ifsg/viewform",
+		"link": "https://docs.google.com/forms/d/e/1FAIpQLSf0Vcygx2fSKW3eJ9R9Ty-KnBdfJ5PuLxLup_FmfEYaD_jZvw/viewform",
 		"linkText": "Become a Volunteer"
 	},
 	{

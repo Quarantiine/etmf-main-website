@@ -115,7 +115,6 @@ export const ResourcesContent: FC<{ resource: ResourcesTypes }> = ({
 								return (
 									<React.Fragment key={index}>
 										{data.link &&
-										data.mediaType !== "flyer" &&
 										data.mediaType !== "mindset-media-productions" &&
 										data.mediaType !== "youtube" ? (
 											<Link
@@ -161,10 +160,6 @@ export const ResourcesContent: FC<{ resource: ResourcesTypes }> = ({
 														<>
 															<div className="default-modal">
 																<div className="default-overflow resources-content bg-white default-width rounded-xl flex flex-col sm:flex-row overflow-x-hidden overflow-y-scroll justify-start sm:justify-center items-center sm:items-start">
-																	{data.mediaType === "flyer" && (
-																		<FlyerContent data={data} />
-																	)}
-
 																	{data.mediaType === "youtube" && (
 																		<Youtube data={data} />
 																	)}
@@ -190,28 +185,6 @@ export const ResourcesContent: FC<{ resource: ResourcesTypes }> = ({
 				</div>
 			)}
 		</>
-	);
-};
-
-const FlyerContent: FC<{ data: ContentTypes }> = ({ data }) => {
-	return (
-		<div className="flex flex-col justify-center items-start gap-3 relative w-full p-2">
-			<Image
-				className="object-cover w-full h-auto rounded-xl"
-				src={data.image}
-				alt="image"
-				width={1000}
-				height={1000}
-			/>
-
-			<Link
-				href={data.link}
-				target="_blank"
-				className="styled-btn text-center w-full"
-			>
-				Register Here
-			</Link>
-		</div>
 	);
 };
 
@@ -323,6 +296,8 @@ const MindsetMediaProductionsContent: FC<{ data: ContentTypes }> = ({
 							</div>
 						</div>
 					</Link>
+
+					<div className="default-overflow-x overflow-x-scroll overflow-y-hidden"></div>
 				</div>
 			</div>
 

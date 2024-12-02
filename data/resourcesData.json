@@ -1,41 +1,52 @@
 [
 	{
-		"title": "What's New",
-		"subTitle": "Stay Updated with ETMF",
+		"title": "ETMF Academy Activities",
+		"subTitle": "See What ETMF is Bringing to You",
 		"link": "",
 		"enableBg": false,
 		"content": [
 			{
-				"title": "(Dropping) Mindset Matters Podcast EP11!",
-				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/q4fiuz59ulfplqbmtfr4",
+				"title": "Join ETMF Academy",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ETMF%20Academy/wdkyss0gubq1gitzfm6e",
 				"imageCollage": [
 					{
 						"src": "none"
 					}
 				],
-				"link": "https://youtube.com/@ETMFoundation",
+				"link": "https://www.remind.com/join/83667g",
 				"mediaType": ""
 			},
 			{
-				"title": "Mindset Matters Podcast EP10 Dropped!",
-				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/nxxnazu57tbunj9ntuco",
+				"title": "Speaker Series",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ETMF%20Academy/wvwpmrgawzovcygl1c0x",
 				"imageCollage": [
 					{
 						"src": "none"
 					}
 				],
-				"link": "https://youtu.be/Z9W11vOq8Vc?si=hHcgfuKS_lKLiAOz",
+				"link": "https://docs.google.com/forms/d/e/1FAIpQLSfDsbQE_J2AgV6_b9IjneP2j97oCzyLYogz62A8kM__G6JbhA/viewform",
 				"mediaType": ""
 			},
 			{
-				"title": "Mindset Matters EP9 Dropped!",
-				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/e1djhrwzy9vj7s7oawfc",
+				"title": "Weekly Workshops",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ETMF%20Academy/py8bdkwvalc2fyazm9xz",
 				"imageCollage": [
 					{
 						"src": "none"
 					}
 				],
-				"link": "https://youtu.be/qqMElU0qALE?si=3p3enTbFdiy2UWLd",
+				"link": "https://docs.google.com/forms/d/e/1FAIpQLSdnAW9NitVJidc-9aNIYnzL3tfZUDUgHnnifLEmJDiJAz0DFA/viewform",
+				"mediaType": ""
+			},
+			{
+				"title": "Monthly Lectures",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ETMF%20Academy/wropjnmpzbsshurm0evd",
+				"imageCollage": [
+					{
+						"src": "none"
+					}
+				],
+				"link": "https://docs.google.com/forms/d/e/1FAIpQLSfRoJUTIRro5D-cMMMYQ7u5r_DQigZY9QdhYGL9EeoHgbFrtw/viewform",
 				"mediaType": ""
 			}
 		]
@@ -61,7 +72,7 @@
 	},
 	{
 		"title": "Tech Topics",
-		"subTitle": "Tech Updates at ETMF",
+		"subTitle": "Tech Updates From ETMF",
 		"link": "",
 		"enableBg": false,
 		"content": [
