@@ -23,33 +23,7 @@ export default function AIRoles({ conversation }: { conversation: Content }) {
 					</div>
 
 					{conversation.parts.map((part, index2) => (
-						<div
-							className="ai-overflow-x overflow-x-scroll overflow-y-hidden w-fit"
-							key={index2}
-						>
-							<ReactMarkdown
-								components={{
-									ul: ({ children }) => (
-										<ul className="list-disc pl-5">{children}</ul>
-									),
-									li: ({ children }) => (
-										<li className="text-black font-medium">{children}</li>
-									),
-									a: ({ href }) => (
-										<a
-											href={href}
-											className="text-[#007bff] decoration-0 font-medium transition-colors"
-											target="_blank"
-											rel="noopener noreferrer"
-										>
-											{"Link"}
-										</a>
-									),
-								}}
-							>
-								{part.text}
-							</ReactMarkdown>
-						</div>
+						<AIAssistant key={index2} part={part} />
 					))}
 				</div>
 			) : (
@@ -90,3 +64,78 @@ export default function AIRoles({ conversation }: { conversation: Content }) {
 		</>
 	);
 }
+
+const AIAssistant = ({ part }: { part: any }) => {
+	const processUrl = (href: any) => {
+		// Add scheme if it's missing
+		let validUrl = href;
+
+		// If the URL is missing a scheme (http:// or https://), prepend one.
+		if (!/^https?:\/\//.test(href)) {
+			validUrl = "https://" + href;
+		}
+
+		try {
+			const url = new URL(validUrl);
+			let domain;
+
+			if (url.hostname.includes("www.")) {
+				domain = url.hostname.split(".")[1]; // Removes "www"
+			} else {
+				domain = url.hostname.split(".")[0]; // Takes the first part
+			}
+
+			return domain;
+		} catch (error) {
+			console.error("Invalid URL:", href);
+			return ""; // Return empty string for invalid URL
+		}
+	};
+
+	return (
+		<div className="ai-overflow-x overflow-x-scroll overflow-y-hidden w-fit flex flex-col gap-4">
+			<ReactMarkdown
+				components={{
+					ul: ({ children }) => <ul className="list-disc pl-5">{children}</ul>,
+					li: ({ children }) => (
+						<li className="text-black font-medium">{children}</li>
+					),
+					a: ({ href }) => (
+						<a
+							href={href}
+							className="text-[#007bff] decoration-0 font-medium transition-colors"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							{processUrl(href)}
+						</a>
+					),
+				}}
+			>
+				{part.text}
+			</ReactMarkdown>
+
+			{/* <div className="flex flex-row gap-4 w-full justify-start items-center">
+								<button className="no-style-btn flex justify-center items-center">
+									<Image
+										className="h-auto min-w-[18px] max-w-[18px]"
+										src={"/icons/thumb_up_filled.svg"}
+										alt="icon"
+										width={20}
+										height={20}
+									/>
+								</button>
+
+								<button className="no-style-btn flex justify-center items-center rotate-180">
+									<Image
+										className="h-auto min-w-[18px] max-w-[18px]"
+										src={"/icons/thumb_up.svg"}
+										alt="icon"
+										width={20}
+										height={20}
+									/>
+								</button>
+							</div> */}
+		</div>
+	);
+};
