@@ -1,6 +1,6 @@
 "use client";
 
-import { Content } from "@google/generative-ai";
+import { Content, Part } from "@google/generative-ai";
 import Image from "next/image";
 import React from "react";
 import ReactMarkdown from "react-markdown";
@@ -33,7 +33,7 @@ export default function AIRoles({ conversation }: { conversation: Content }) {
 						<p className="lato-bold">You</p>
 					</div>
 
-					{conversation.parts.map((part, index2) => (
+					{conversation.parts.map((part: Part, index2: number) => (
 						<React.Fragment key={index2}>
 							<ReactMarkdown
 								components={{
@@ -65,8 +65,8 @@ export default function AIRoles({ conversation }: { conversation: Content }) {
 	);
 }
 
-const AIAssistant = ({ part }: { part: any }) => {
-	const processUrl = (href: any) => {
+const AIAssistant = ({ part }: { part: Part }) => {
+	const processUrl = (href: string) => {
 		// Add scheme if it's missing
 		let validUrl = href;
 
@@ -87,7 +87,7 @@ const AIAssistant = ({ part }: { part: any }) => {
 
 			return domain;
 		} catch (error) {
-			console.error("Invalid URL:", href);
+			console.error("Invalid URL:", `${href} | ${error}`);
 			return ""; // Return empty string for invalid URL
 		}
 	};
@@ -107,7 +107,7 @@ const AIAssistant = ({ part }: { part: any }) => {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							{processUrl(href)}
+							{href && processUrl(href)}
 						</a>
 					),
 				}}
@@ -116,26 +116,26 @@ const AIAssistant = ({ part }: { part: any }) => {
 			</ReactMarkdown>
 
 			{/* <div className="flex flex-row gap-4 w-full justify-start items-center">
-								<button className="no-style-btn flex justify-center items-center">
-									<Image
-										className="h-auto min-w-[18px] max-w-[18px]"
-										src={"/icons/thumb_up_filled.svg"}
-										alt="icon"
-										width={20}
-										height={20}
-									/>
-								</button>
+				<button className="no-style-btn flex justify-center items-center">
+					<Image
+						className="h-auto min-w-[18px] max-w-[18px]"
+						src={"/icons/thumb_up_filled.svg"}
+						alt="icon"
+						width={20}
+						height={20}
+					/>
+				</button>
 
-								<button className="no-style-btn flex justify-center items-center rotate-180">
-									<Image
-										className="h-auto min-w-[18px] max-w-[18px]"
-										src={"/icons/thumb_up.svg"}
-										alt="icon"
-										width={20}
-										height={20}
-									/>
-								</button>
-							</div> */}
+				<button className="no-style-btn flex justify-center items-center rotate-180">
+					<Image
+						className="h-auto min-w-[18px] max-w-[18px]"
+						src={"/icons/thumb_up.svg"}
+						alt="icon"
+						width={20}
+						height={20}
+					/>
+				</button>
+			</div> */}
 		</div>
 	);
 };
