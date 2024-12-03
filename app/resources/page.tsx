@@ -48,10 +48,9 @@ export default function Resources(): React.ReactElement {
 						<div className="default-width py-10 sm:py-16 h-auto flex flex-col justify-center items-start gap-4">
 							<h1 className="montserrat-bold text-5xl">Resoures</h1>
 							<p>
-								The resource page keeps you updated on ETM {"Foundation's "}{" "}
-								latest activities. It features various popular media formats to
-								build a vibrant, engaged, and empowered community within the
-								ETMF ecosystem.
+								{
+									"The resource page keeps you updated on ETM Foundation's latest activities, featuring diverse media formats to foster a vibrant, engaged, and empowered community."
+								}
 							</p>
 
 							{/* Colored dots for design purposes */}

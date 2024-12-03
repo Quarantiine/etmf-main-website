@@ -43,7 +43,7 @@ export default function GetInvolved(): React.ReactElement {
 							<h1 className="montserrat-bold text-5xl">Getting Involved</h1>
 							<p>
 								{
-									"ETMF offers various ways for individuals and organizations to get involved, including direct and targeted donations, event sponsorship, partnerships with educational institutions, and volunteer opportunities in mentorship and event support. Additionally, spreading awareness through social media and personal testimonials can help amplify ETMF's mission and impact"
+									"ETMF offers multiple ways to get involved, including donations, sponsorships, partnerships, volunteering, and spreading awareness through social media or testimonials."
 								}
 							</p>
 

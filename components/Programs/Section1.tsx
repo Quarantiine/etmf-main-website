@@ -26,11 +26,9 @@ export default function Section1(): React.ReactElement {
 							Education Programs
 						</h1>
 						<p>
-							Our Department of Education collaborates with educational
-							institutions to deliver innovative programs, fostering a growth
-							mindset, developing essential skills, and paving the way for
-							student success and workforce readiness, ultimately leading to
-							wider economic development.
+							Our Department of Education partners with institutions to foster
+							growth mindsets, build skills, and prepare students for success
+							and workforce readiness.
 						</p>
 
 						{/* Colored dots for design purposes */}

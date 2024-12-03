@@ -54,7 +54,7 @@ export default function FeaturingSection() {
 					mediaType: "",
 				},
 				{
-					title: "(Dropping) Mindset Matters Podcast EP11!",
+					title: "Mindset Matters Podcast EP11 Dropped!",
 					image:
 						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/q4fiuz59ulfplqbmtfr4",
 					imageCollage: [
@@ -62,7 +62,7 @@ export default function FeaturingSection() {
 							src: "none",
 						},
 					],
-					link: "https://youtube.com/@ETMFoundation",
+					link: "https://www.youtube.com/watch?v=6Sx-8Fy9uzg&list=PL-ew-Q-81RCuPlGcZz1ja6_8wybT4qUFJ&index=1",
 					mediaType: "",
 				},
 				{
