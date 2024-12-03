@@ -13,7 +13,7 @@ export default function WidgetComponent(): React.ReactElement {
 			<div className="fixed bottom-5 left-0 z-50 text-white">
 				<Link
 					href={
-						"https://docs.google.com/forms/d/e/1FAIpQLSfgKKg44BaBRps6JjVtx_6jy68q1pxT1VJbnBWchvoX556Lqw/viewform?usp=sf_Link"
+						"https://docs.google.com/forms/d/e/1FAIpQLSc1uTdhwkn5m2Vql5A0_igyTEzXYVbuwOrFOntBcWod1CGR1g/viewform"
 					}
 					target="_blank"
 					className="w-fit h-32 p-5 bg-green-3 rounded-r-xl shadow-[0px_0px_10px_0px_rgba(0,0,0,0.4)] relative no-style-btn block"

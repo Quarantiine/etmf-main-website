@@ -118,12 +118,16 @@ export default function Footer(): React.ReactElement {
 								<h1 className="montserrat-bold text-3xl">Contact Us</h1>
 
 								<div className="flex flex-col">
-									<p className="text-[14px] sm:text-[18px]">
+									{/* <p className="text-[14px] sm:text-[18px]">
 										customersupport@etmfoundatiom.com
 									</p>
 
 									<p className="text-[14px] sm:text-[18px]">
 										techsupport@etmfoundatiom.com
+									</p> */}
+
+									<p className="text-[14px] sm:text-[18px]">
+										etmfoundation.business@gmail.com
 									</p>
 								</div>
 							</div>
@@ -133,7 +137,9 @@ export default function Footer(): React.ReactElement {
 
 								<div className="flex flex-wrap gap-x-5 w-fit justify-center items-center md:justify-start md:items-start">
 									<Link
-										href={"https://forms.gle/CVWDuUaUKYkXErN47"}
+										href={
+											"https://docs.google.com/forms/d/e/1FAIpQLSeZb_o8MS1tGORx56L9JOsjj1TWx7uR3ocbGzOpUEF7eNFXJQ/viewform"
+										}
 										className="no-style-btn text-green-1"
 										target="_blank"
 									>
@@ -141,16 +147,8 @@ export default function Footer(): React.ReactElement {
 									</Link>
 
 									<Link
-										href={"https://forms.gle/37vpdEWtkTXSfaHD6"}
-										className="no-style-btn text-green-1"
-										target="_blank"
-									>
-										Get Involved
-									</Link>
-
-									<Link
 										href={
-											"https://docs.google.com/forms/d/e/1FAIpQLSfgKKg44BaBRps6JjVtx_6jy68q1pxT1VJbnBWchvoX556Lqw/viewform?usp=sf_link"
+											"https://docs.google.com/forms/d/e/1FAIpQLSc1uTdhwkn5m2Vql5A0_igyTEzXYVbuwOrFOntBcWod1CGR1g/viewform"
 										}
 										className="no-style-btn text-green-1"
 										target="_blank"
@@ -160,7 +158,7 @@ export default function Footer(): React.ReactElement {
 
 									<Link
 										href={
-											"https://docs.google.com/forms/d/e/1FAIpQLSdbIkyAqce-r8KZOT0tPg_78Bs9wcgUtIfW88BaRF6qG5ifsg/viewform"
+											"https://docs.google.com/forms/d/e/1FAIpQLSdmyR3SyzFKZDhVvlXV_nod6kYtVbZqWv5Wa56QBzQBLvlGjg/viewform"
 										}
 										className="no-style-btn text-green-1"
 										target="_blank"
@@ -170,7 +168,7 @@ export default function Footer(): React.ReactElement {
 
 									<Link
 										href={
-											"https://docs.google.com/forms/d/e/1FAIpQLScfNsKkv788mqzYGs3z_T88sa_kfSQhCG5P_bRjQrJPXsUWLw/viewform"
+											"https://docs.google.com/forms/d/e/1FAIpQLScBPx1_dTcoS5zOytGE9Igk1O4NGqSU_GCMPwjHBAyK7ZSqTw/viewform"
 										}
 										className="no-style-btn text-green-1"
 										target="_blank"
@@ -180,7 +178,7 @@ export default function Footer(): React.ReactElement {
 
 									<Link
 										href={
-											"https://docs.google.com/forms/d/e/1FAIpQLSf0Vcygx2fSKW3eJ9R9Ty-KnBdfJ5PuLxLup_FmfEYaD_jZvw/viewform"
+											"https://docs.google.com/forms/d/e/1FAIpQLSdI6mWco1NYVzBi8OUO3Rc0ESXMpAkhUuX5GspylArg64Ublw/viewform"
 										}
 										className="no-style-btn text-green-1"
 										target="_blank"
