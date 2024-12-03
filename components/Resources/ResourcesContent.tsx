@@ -296,8 +296,6 @@ const MindsetMediaProductionsContent: FC<{ data: ContentTypes }> = ({
 							</div>
 						</div>
 					</Link>
-
-					<div className="default-overflow-x overflow-x-scroll overflow-y-hidden"></div>
 				</div>
 			</div>
 
