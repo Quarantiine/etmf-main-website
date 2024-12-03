@@ -28,17 +28,6 @@
 				"mediaType": ""
 			},
 			{
-				"title": "Weekly Workshops",
-				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ETMF%20Academy/py8bdkwvalc2fyazm9xz",
-				"imageCollage": [
-					{
-						"src": "none"
-					}
-				],
-				"link": "https://docs.google.com/forms/d/e/1FAIpQLSc8uEPraHb8ETMuPgcN6MEkcl3VPvGeFl0gw6PA-nmsIAZWag/viewform",
-				"mediaType": ""
-			},
-			{
 				"title": "Monthly Lectures",
 				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ETMF%20Academy/wropjnmpzbsshurm0evd",
 				"imageCollage": [
@@ -47,6 +36,17 @@
 					}
 				],
 				"link": "https://docs.google.com/forms/d/e/1FAIpQLSeppcqUqBh7XKueA8Ja41ubohozXr25fsxJt5VUcS5u5PbVVg/viewform",
+				"mediaType": ""
+			},
+			{
+				"title": "Weekly Workshops",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ETMF%20Academy/py8bdkwvalc2fyazm9xz",
+				"imageCollage": [
+					{
+						"src": "none"
+					}
+				],
+				"link": "https://docs.google.com/forms/d/e/1FAIpQLSc8uEPraHb8ETMuPgcN6MEkcl3VPvGeFl0gw6PA-nmsIAZWag/viewform",
 				"mediaType": ""
 			}
 		]
