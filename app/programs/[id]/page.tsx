@@ -61,7 +61,7 @@ export default async function ProgramsPages({
 			</Head>
 
 			<div className="flex flex-col w-full h-auto justify-center items-center">
-				<div className="default-width mx-auto pt-20 flex flex-col gap-10">
+				<div className="default-width mx-auto pt-10 flex flex-col gap-10">
 					<div className="w-full h-fit flex flex-col justify-center items-center">
 						<div className="flex flex-col justify-center items-center gap-20 w-full">
 							{programList
