@@ -19,7 +19,7 @@ export default function AIRoles({ conversation }: { conversation: Content }) {
 							height={25}
 						/>
 
-						<p className="lato-bold">Zhyra (AI)</p>
+						<p className="lato-bold">Aira (AI)</p>
 					</div>
 
 					{conversation.parts.map((part, index2) => (
