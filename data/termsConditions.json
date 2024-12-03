@@ -63,7 +63,7 @@
 			},
 			{
 				"textHeader": "Contact for Questions",
-				"text": "If you have questions regarding the use of images on this Website, please contact tech support email below"
+				"text": "If you have questions regarding the use of images on this Website, please contact support email below"
 			}
 		]
 	},
@@ -100,7 +100,7 @@
 		"points": [
 			{
 				"textHeader": "Donations Policy",
-				"text": "All donations are voluntary and generally non-refundable. ETMF allocates funds according to program needs and donor specifications where applicable. For questions regarding donations or refund exceptions, contact customer support down below"
+				"text": "All donations are voluntary and generally non-refundable. ETMF allocates funds according to program needs and donor specifications where applicable. For questions regarding donations or refund exceptions, support down below"
 			}
 		]
 	},
@@ -153,7 +153,7 @@
 		"title": "Contact Information",
 		"description": [
 			{
-				"text": "For questions regarding these Terms, please contact our tech support down below. Our team will respond to inquiries promptly."
+				"text": "For questions regarding these Terms, please contact our support down below. Our team will respond to inquiries promptly."
 			}
 		],
 		"points": [{}]

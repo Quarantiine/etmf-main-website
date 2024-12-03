@@ -122,7 +122,7 @@ export default function AIComponent({
 
 	return (
 		<>
-			<div className="fixed bottom-0 right-0 w-full border-t-4 h-full mt-auto bg-gradient-to-tr bg-[rgba(255,255,255,0.9)] backdrop-blur-xl z-50 flex flex-col justify-center items-center">
+			<div className="fixed bottom-0 right-0 w-full border-t-4 h-full mt-auto bg-gradient-to-tr bg-[rgba(255,255,255,0.9)] backdrop-blur-xl z-[60] flex flex-col justify-center items-center">
 				<div className="ai-assistant-modal w-[90%] lg:w-[700px] h-full px-10 py-5 flex flex-col justify-start items-start gap-1 md:hover:bg-gray-100 transition-colors relative">
 					<div className="flex flex-col sm:flex-row gap-2 justify-start sm:justify-between items-between sm:items-center w-full">
 						<div className="flex flex-row justify-between items-center gap-1">
