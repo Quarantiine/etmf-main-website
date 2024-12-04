@@ -98,7 +98,9 @@ export default async function ProgramsPages({
 						</div>
 
 						<Link
-							href={"https://forms.gle/CVWDuUaUKYkXErN47"}
+							href={
+								"https://docs.google.com/forms/d/e/1FAIpQLSeZb_o8MS1tGORx56L9JOsjj1TWx7uR3ocbGzOpUEF7eNFXJQ/viewform"
+							}
 							// href={"https://m06w1sq48mn.typeform.com/to/egR2Hgce"}
 							className="styled-btn"
 							target="_blank"
