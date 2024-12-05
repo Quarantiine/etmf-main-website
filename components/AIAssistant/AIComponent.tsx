@@ -421,6 +421,10 @@ export default function AIComponent({
 
 						<p className="text-[12px]">(Coming Soon)</p>
 					</div>
+
+					<p className="text-[12px] text-gray-500 mx-auto text-center">
+						This is an experimental generative AI chatbot. AI can make mistakes.
+					</p>
 				</div>
 			</div>
 		</>
