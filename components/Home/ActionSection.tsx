@@ -22,7 +22,7 @@ export default function ActionSection(): React.ReactElement {
 
 						<div className="w-full h-full bg-[rgba(0,0,0,0.7)] flex flex-col gap-5 z-10 p-10 justify-center items-center">
 							<h1 className="text-3xl sm:text-4xl montserrat-bold">
-								Become a Partner
+								Become a Collaborator or Partner
 							</h1>
 
 							<p>
@@ -50,7 +50,7 @@ export default function ActionSection(): React.ReactElement {
 
 						<div className="w-full h-full bg-[rgba(0,0,0,0.7)] flex flex-col gap-5 z-10 p-10 justify-center items-center">
 							<h1 className="text-3xl sm:text-4xl montserrat-bold">
-								Become a Sponsor
+								Become a Donor or Sponsor
 							</h1>
 							<p>
 								Partner with us to invest in the future, making tomorrow a

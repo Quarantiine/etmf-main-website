@@ -4,11 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-// Define an interface for the social media links data
 interface SocialListTypes {
 	name: string; // Name of the social media platform
 	href: string; // URL of the social media profile
 	img: string; // Path to the social media icon image
+}
+
+interface LinkTypes {
+	href: string;
+	text: string;
 }
 
 export default function Footer(): React.ReactElement {
@@ -37,10 +41,71 @@ export default function Footer(): React.ReactElement {
 		},
 	];
 
+	const actionLinks: LinkTypes[] = [
+		{
+			href: "https://docs.google.com/forms/d/e/1FAIpQLSeZb_o8MS1tGORx56L9JOsjj1TWx7uR3ocbGzOpUEF7eNFXJQ/viewform",
+			text: "Meet a Person",
+		},
+		{
+			href: "https://docs.google.com/forms/d/e/1FAIpQLSc1uTdhwkn5m2Vql5A0_igyTEzXYVbuwOrFOntBcWod1CGR1g/viewform",
+			text: "Give Website Feedback",
+		},
+		{
+			href: "https://docs.google.com/forms/d/e/1FAIpQLSdmyR3SyzFKZDhVvlXV_nod6kYtVbZqWv5Wa56QBzQBLvlGjg/viewform",
+			text: "Donating/Sponsoring",
+		},
+		{
+			href: "https://docs.google.com/forms/d/e/1FAIpQLScBPx1_dTcoS5zOytGE9Igk1O4NGqSU_GCMPwjHBAyK7ZSqTw/viewform",
+			text: "Collaborate/Partnership",
+		},
+		{
+			href: "https://docs.google.com/forms/d/e/1FAIpQLSdI6mWco1NYVzBi8OUO3Rc0ESXMpAkhUuX5GspylArg64Ublw/viewform",
+			text: "Volunteering",
+		},
+	];
+
+	const pagesLinks: LinkTypes[] = [
+		{
+			href: "https://etmfoundation.com/aboutus",
+			text: "About Us",
+		},
+		{
+			href: "https://etmfoundation.com/programs",
+			text: "Programs",
+		},
+		{
+			href: "https://etmfoundation.com/getinvolved",
+			text: "Get Involved",
+		},
+		{
+			href: "https://etmfoundation.com/resources",
+			text: "Resources",
+		},
+	];
+
+	const etmfInitiatives: LinkTypes[] = [
+		{
+			href: "https://www.remind.com/join/etmfaca",
+			text: "Academy Register",
+		},
+		{
+			href: "https://docs.google.com/forms/d/e/1FAIpQLSf1N0zcn6oanoTVBccynQ_D7fQFiy6gCMn5L2uaasIDKqEB2w/viewform",
+			text: "Speaker Series",
+		},
+		{
+			href: "https://docs.google.com/forms/d/e/1FAIpQLSeppcqUqBh7XKueA8Ja41ubohozXr25fsxJt5VUcS5u5PbVVg/viewform",
+			text: "Monthly Lectures",
+		},
+		{
+			href: "https://docs.google.com/forms/d/e/1FAIpQLSc8uEPraHb8ETMuPgcN6MEkcl3VPvGeFl0gw6PA-nmsIAZWag/viewform",
+			text: "Weekly Workshops",
+		},
+	];
+
 	return (
 		<>
 			<footer className="bg-gray-100 h-full w-full border-t-[20px] border-[#4BF2C7]">
-				<div className="flex flex-col md:grid md:grid-cols-[50%_50%] justify-center items-center w-full h-full z-50">
+				<div className="flex flex-col md:grid md:grid-cols-[50%_50%] justify-center items-center w-full h-full z-50 text-sm">
 					{/* Left Column - Background Image with Overlay */}
 					<div className="w-full h-[400px] md:h-full bg-gray-500 relative">
 						<Image
@@ -115,145 +180,105 @@ export default function Footer(): React.ReactElement {
 
 						<div className="flex flex-col justify-center items-center gap-10 text-white w-full lg:w-[400px] md:m-auto">
 							<div className="flex flex-col gap-2 text-center md:text-start md:w-full">
-								<h1 className="montserrat-bold text-3xl">Contact Us</h1>
+								<h1 className="montserrat-bold text-xl">Contact Us</h1>
 
 								<div className="flex flex-col">
-									{/* <p className="text-[14px] sm:text-[18px]">
-										customersupport@etmfoundatiom.com
-									</p>
+									{/* <p>customersupport@etmfoundatiom.com</p>
 
-									<p className="text-[14px] sm:text-[18px]">
-										techsupport@etmfoundatiom.com
-									</p> */}
+									<p>techsupport@etmfoundatiom.com</p> */}
 
-									<p className="text-[14px] sm:text-[18px]">
-										etmfoundation.business@gmail.com
-									</p>
+									<p>etmfoundation.business@gmail.com</p>
 								</div>
 							</div>
 
-							<div className="flex flex-col gap-2 text-center md:text-start md:w-full">
-								<h1 className="montserrat-bold text-3xl">Take Action</h1>
+							<div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-start gap-10 w-full h-auto">
+								<div className="flex flex-col gap-x-5 justify-center sm:justify-start items-center sm:items-start w-fit mx-auto md:mx-0">
+									<h1 className="montserrat-bold text-xl pb-2">Take Action</h1>
 
-								<div className="flex flex-wrap gap-x-5 w-fit justify-center items-center md:justify-start md:items-start">
-									<Link
-										href={
-											"https://docs.google.com/forms/d/e/1FAIpQLSeZb_o8MS1tGORx56L9JOsjj1TWx7uR3ocbGzOpUEF7eNFXJQ/viewform"
-										}
-										className="no-style-btn text-green-1"
-										target="_blank"
-									>
-										Meet a Person
-									</Link>
+									{actionLinks.map((actionlink: LinkTypes, index: number) => {
+										return (
+											<React.Fragment key={index}>
+												<Link
+													href={actionlink.href}
+													className="no-style-btn text-green-1"
+													target="_blank"
+												>
+													{actionlink.text}
+												</Link>
+											</React.Fragment>
+										);
+									})}
+								</div>
 
-									<Link
-										href={
-											"https://docs.google.com/forms/d/e/1FAIpQLSc1uTdhwkn5m2Vql5A0_igyTEzXYVbuwOrFOntBcWod1CGR1g/viewform"
-										}
-										className="no-style-btn text-green-1"
-										target="_blank"
-									>
-										Give Website Feedback
-									</Link>
+								<div className="flex flex-col w-fit mx-auto md:mx-0 justify-center sm:justify-start items-center sm:items-start">
+									<h1 className="montserrat-bold text-xl pb-2">Pages</h1>
 
-									<Link
-										href={
-											"https://docs.google.com/forms/d/e/1FAIpQLSdmyR3SyzFKZDhVvlXV_nod6kYtVbZqWv5Wa56QBzQBLvlGjg/viewform"
-										}
-										className="no-style-btn text-green-1"
-										target="_blank"
-									>
-										Donating/Sponsoring
-									</Link>
+									{pagesLinks.map((pageLink: LinkTypes, index: number) => {
+										return (
+											<React.Fragment key={index}>
+												<Link
+													className="no-style-btn text-green-1"
+													href={pageLink.href}
+													target="_blank"
+												>
+													{pageLink.text}
+												</Link>
+											</React.Fragment>
+										);
+									})}
+								</div>
 
-									<Link
-										href={
-											"https://docs.google.com/forms/d/e/1FAIpQLScBPx1_dTcoS5zOytGE9Igk1O4NGqSU_GCMPwjHBAyK7ZSqTw/viewform"
-										}
-										className="no-style-btn text-green-1"
-										target="_blank"
-									>
-										Collaborate/Partnership
-									</Link>
+								<div className="flex flex-col w-fit mx-auto md:mx-0 justify-center sm:justify-start items-center sm:items-start">
+									<h1 className="montserrat-bold text-xl pb-2">
+										ETMF Initiatives
+									</h1>
 
-									<Link
-										href={
-											"https://docs.google.com/forms/d/e/1FAIpQLSdI6mWco1NYVzBi8OUO3Rc0ESXMpAkhUuX5GspylArg64Ublw/viewform"
-										}
-										className="no-style-btn text-green-1"
-										target="_blank"
-									>
-										Volunteering
-									</Link>
+									{etmfInitiatives.map((pageLink: LinkTypes, index: number) => {
+										return (
+											<React.Fragment key={index}>
+												<Link
+													className="no-style-btn text-green-1"
+													href={pageLink.href}
+													target="_blank"
+												>
+													{pageLink.text}
+												</Link>
+											</React.Fragment>
+										);
+									})}
 								</div>
 							</div>
 
-							<>
-								<div className="flex flex-col gap-2 text-center md:text-start w-full">
-									<h1 className="montserrat-bold text-3xl">Pages</h1>
+							<div className="text-center md:text-start opacity-30 text-sm text-white flex flex-col justify-center items-center md:items-start pt-10 relative mx-auto md:mr-auto md:mx-0">
+								<p>Copyright © 2024</p>
+								<p>Empowerment Through Mindset Foundation</p>
 
-									<div className="flex flex-col w-fit mx-auto md:mx-0">
-										<Link
-											className="no-style-btn text-green-1"
-											href={"/aboutus"}
-										>
-											About Us
-										</Link>
-
-										<Link
-											className="no-style-btn text-green-1"
-											href={"/programs"}
-										>
-											Programs
-										</Link>
-
-										<Link
-											className="no-style-btn text-green-1"
-											href={"/getinvolved"}
-										>
-											Get Involved
-										</Link>
-
-										<Link
-											className="no-style-btn text-green-1"
-											href={"/resources"}
-										>
-											Resources
-										</Link>
-									</div>
+								<div className="flex flex-wrap gap-1 w-full justify-center md:justify-start items-center">
+									<Link
+										className="underline no-style-btn"
+										href={"/terms"}
+										target="_blank"
+									>
+										Terms & Conditions
+									</Link>
+									|
+									<Link
+										className="underline no-style-btn"
+										href={"/privacypolicy"}
+										target="_blank"
+									>
+										Privacy Policy
+									</Link>
+									|
+									<Link
+										className="underline no-style-btn"
+										href={"/sitemap.xml"}
+										target="_blank"
+									>
+										Sitemap
+									</Link>
 								</div>
-
-								<div className="text-center md:text-start opacity-30 text-sm text-white flex flex-col justify-center items-center md:items-start pt-10 relative mx-auto md:mr-auto md:mx-0">
-									<p>Copyright © 2024</p>
-									<p>Empowerment Through Mindset Foundation</p>
-
-									<div className="flex flex-wrap gap-1 w-full justify-center md:justify-start items-center">
-										<Link
-											className="underline no-style-btn"
-											href={"/terms"}
-											target="_blank"
-										>
-											Terms & Conditions
-										</Link>
-										|
-										<Link
-											className="underline no-style-btn"
-											href={"/privacypolicy"}
-											target="_blank"
-										>
-											Privacy Policy
-										</Link>
-										|
-										<Link
-											className="underline no-style-btn"
-											href={"/sitemap.xml"}
-											target="_blank"
-										>
-											Sitemap
-										</Link>
-									</div>
-								</div>
-							</>
+							</div>
 						</div>
 					</div>
 				</div>

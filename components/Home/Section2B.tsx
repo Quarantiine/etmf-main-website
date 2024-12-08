@@ -58,16 +58,6 @@ export const Section2B: React.FC = () => {
 	return (
 		<>
 			<div className="bg-gradient-green-1 w-full h-fit flex flex-col justify-center items-start text-white relative px-5 sm:px-10 py-16 overflow-hidden">
-				<Image
-					className="object-cover grayscale opacity-20 inset-0 z-0"
-					src={
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/ztn0h5db9b2uig0ivfah"
-					}
-					alt="image"
-					fill
-					sizes="(max-width: 2000px) 100vw, (max-width: 1200px) 50vw, 33vw"
-				/>
-
 				<div className="flex flex-col justify-center items-start default-width mx-auto gap-10 z-10">
 					<h1 className="montserrat-bold text-4xl sm:text-5xl">
 						{"How We’re Embracing Technology"}

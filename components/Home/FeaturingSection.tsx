@@ -42,15 +42,27 @@ export default function FeaturingSection() {
 			enableBg: false,
 			content: [
 				{
-					title: "How Will AI be Used at ETMF?",
+					title: "ETMF Speaker Series Event Coming Up! Register Now!",
 					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Tech%20News/rmpl9bahnkfqbfqdlcu6",
+						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ETMF%20Academy/wvwpmrgawzovcygl1c0x",
 					imageCollage: [
 						{
 							src: "none",
 						},
 					],
-					link: "https://medium.com/@danielward.occ/meet-zhyra-ai-the-intelligent-ai-assistant-3034b939de89",
+					link: "https://docs.google.com/forms/d/e/1FAIpQLSf1N0zcn6oanoTVBccynQ_D7fQFiy6gCMn5L2uaasIDKqEB2w/viewform",
+					mediaType: "",
+				},
+				{
+					title: "(Coming Soon) Mindset Matters Podcast EP13",
+					image:
+						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/vdcokbebhiittbv7othk",
+					imageCollage: [
+						{
+							src: "none",
+						},
+					],
+					link: "https://www.youtube.com/@ETMFoundation",
 					mediaType: "",
 				},
 				{
@@ -75,18 +87,6 @@ export default function FeaturingSection() {
 						},
 					],
 					link: "https://youtu.be/Z9W11vOq8Vc?si=hHcgfuKS_lKLiAOz",
-					mediaType: "",
-				},
-				{
-					title: "Mindset Matters Podcast EP9 Dropped!",
-					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/e1djhrwzy9vj7s7oawfc",
-					imageCollage: [
-						{
-							src: "none",
-						},
-					],
-					link: "https://youtu.be/qqMElU0qALE?si=3p3enTbFdiy2UWLd",
 					mediaType: "",
 				},
 			],

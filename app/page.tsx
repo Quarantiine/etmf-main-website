@@ -30,9 +30,10 @@ export default function Home(): React.ReactElement {
 					<Section2 />
 				</div>
 
-				{/* <div className="flex justify-center items-center gap-5 w-full mx-auto">
-          <Section3 />
-        </div> */}
+				{/* 
+				<div className="flex justify-center items-center gap-5 w-full mx-auto">
+					<Section3 />
+				</div> */}
 
 				<div className="flex flex-col gap-10 default-width mx-auto">
 					<Section4 />

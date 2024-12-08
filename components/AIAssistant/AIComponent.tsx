@@ -278,7 +278,7 @@ export default function AIComponent({
 							onClick={handleClosePrePrompts}
 							className="outlined-styled-btn"
 						>
-							{closePrePrompts ? "Show Pre-Prompts" : "Hide Pre-Prompts"}
+							{closePrePrompts ? "Show Prompts" : "Hide Prompts"}
 						</button>
 
 						{closePrePrompts === false && (
@@ -324,7 +324,7 @@ export default function AIComponent({
 								<textarea
 									disabled
 									className="input-field-style block md:hidden border min-h-[45px] h-[45px] max-h-[150px] overflow-y-auto opacity-30 cursor-not-allowed"
-									placeholder="Chat..."
+									placeholder="Prompt..."
 									onChange={(e) => handlePromptChange(e)}
 									value={prompt}
 								/>
@@ -332,7 +332,7 @@ export default function AIComponent({
 								<input
 									disabled
 									className="input-field-style hidden md:block border overflow-y-auto opacity-30 cursor-not-allowed"
-									placeholder="Chat..."
+									placeholder="Prompt..."
 									onKeyDown={(e) => e.key === "Enter" && handlePrompt()}
 									onChange={(e) => handlePromptChange(e)}
 									value={prompt}
@@ -350,14 +350,14 @@ export default function AIComponent({
 							<>
 								<textarea
 									className="input-field-style block md:hidden border min-h-[45px] h-[45px] max-h-[150px] overflow-y-auto"
-									placeholder="Chat..."
+									placeholder="Prompt..."
 									onChange={(e) => handlePromptChange(e)}
 									value={prompt}
 								/>
 
 								<input
 									className="input-field-style hidden md:block border overflow-y-auto"
-									placeholder="Chat..."
+									placeholder="Prompt..."
 									onKeyDown={(e) => e.key === "Enter" && handlePrompt()}
 									onChange={(e) => handlePromptChange(e)}
 									value={prompt}
