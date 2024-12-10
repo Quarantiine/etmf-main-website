@@ -43,20 +43,8 @@
 				"title": "AI within the Academy's LMS (Coming Soon)",
 				"paragraphs": [
 					{
-						"textHeader": "Personalized Tutor:",
-						"text": "AI provides targeted hints and feedback, fostering critical thinking without simply giving away answers."
-					},
-					{
 						"textHeader": "Real-World Application:",
 						"text": "AI-generated scenarios based on course content allow students to apply their knowledge in practical, relevant situations."
-					},
-					{
-						"textHeader": "AI Lecture Video Conversations:",
-						"text": "AI engages users in conversations about lecture videos, helping them understand and break down the content effectively. This interaction ensures users grasp the key concepts being taught, making the learning experience more engaging by providing them with a supportive dialogue as they navigate through each video."
-					},
-					{
-						"textHeader": "Customizable Personality:",
-						"text": "Students can tailor the AI assistant's personality to their preferences, creating a motivating and enjoyable learning experience."
 					},
 					{
 						"textHeader": "Multilingual Support:",
@@ -74,10 +62,6 @@
 					{
 						"textHeader": "Strategic Decision-Making:",
 						"text": "Interactive VR scenarios let users tackle real-world business challenges, analyze market data, and experience the consequences of their decisions dynamically, building confidence in their strategic choices."
-					},
-					{
-						"textHeader": "Building and Managing Teams:",
-						"text": "VR provides a safe space for practicing leadership, conflict resolution, and team management. Entrepreneurs can lead virtual teams through product launches or manage interpersonal conflicts, preparing them for real-world challenges."
 					}
 				]
 			}

@@ -51,7 +51,7 @@
 	background-color: white;
 }
 .default-overflow-x-child {
-	scroll-snap-align: start;
+	scroll-snap-align: center;
 }
 
 .ai-overflow-x::-webkit-scrollbar {

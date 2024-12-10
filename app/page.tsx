@@ -2,7 +2,7 @@ import ActionSection from "@/components/Home/ActionSection";
 import FeaturingSection from "@/components/Home/FeaturingSection";
 import Section1 from "@/components/Home/Section1";
 import Section2 from "@/components/Home/Section2";
-// import Section3 from "@/components/Home/Section3";
+import { Section3 } from "@/components/Home/Section3";
 import Section4 from "@/components/Home/Section4";
 import type { Metadata } from "next";
 import React from "react";
@@ -30,10 +30,9 @@ export default function Home(): React.ReactElement {
 					<Section2 />
 				</div>
 
-				{/* 
 				<div className="flex justify-center items-center gap-5 w-full mx-auto">
 					<Section3 />
-				</div> */}
+				</div>
 
 				<div className="flex flex-col gap-10 default-width mx-auto">
 					<Section4 />

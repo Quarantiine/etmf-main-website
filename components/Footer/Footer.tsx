@@ -161,12 +161,12 @@ export default function Footer(): React.ReactElement {
 								return (
 									<React.Fragment key={index}>
 										<Link
-											className="no-style-btn"
+											className="no-style-btn pt-5"
 											href={social.href}
 											target="_blank"
 										>
 											<Image
-												className="w-auto h-[40px]"
+												className="w-auto h-[30px]"
 												src={social.img}
 												alt={`icon`}
 												width={50}
