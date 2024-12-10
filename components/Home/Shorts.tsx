@@ -60,6 +60,7 @@ export default function Shorts({
 
 				{showPauseButton && (
 					<button
+						onMouseLeave={handleHidePauseButton}
 						onMouseOver={handleShowPauseButton}
 						onClick={togglePlay}
 						className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center w-16 h-16 bg-black bg-opacity-50 text-white rounded-full hover:bg-opacity-75 transition-all"
