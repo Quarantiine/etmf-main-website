@@ -54,7 +54,7 @@ export default function FeaturingSection() {
 					mediaType: "",
 				},
 				{
-					title: "(Coming Soon) Mindset Matters Podcast EP13",
+					title: "Mindset Matters Podcast EP13 Dropped",
 					image:
 						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/vdcokbebhiittbv7othk",
 					imageCollage: [
@@ -62,7 +62,7 @@ export default function FeaturingSection() {
 							src: "none",
 						},
 					],
-					link: "https://www.youtube.com/@ETMFoundation",
+					link: "https://youtu.be/at-oyezrRwU?si=FKzfxndF0KoLX348",
 					mediaType: "",
 				},
 				{
