@@ -54,7 +54,7 @@ export default function FeaturingSection() {
 					mediaType: "",
 				},
 				{
-					title: "Mindset Matters Podcast EP13 Dropped",
+					title: "Mindset Matters Podcast EP12 Dropped",
 					image:
 						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/vdcokbebhiittbv7othk",
 					imageCollage: [

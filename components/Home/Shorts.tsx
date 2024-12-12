@@ -36,6 +36,8 @@ export default function Shorts({
 	return (
 		<>
 			<div className="default-overflow-x-child relative w-full h-fit mx-auto rounded-2xl">
+				<div className="placeholder-bg rounded-2xl" />
+
 				<div className="relative w-fit">
 					<video
 						ref={videoRef}

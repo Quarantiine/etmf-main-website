@@ -144,7 +144,7 @@
 }
 
 .placeholder-bg {
-	@apply bg-gradient-to-r from-[#7CDAC2] to-[#0B7955] absolute top-0 left-0 w-full h-full inset-0 z-0;
+	@apply bg-green-1 absolute top-0 left-0 w-full h-full inset-0 z-0;
 }
 
 .default-modal {
