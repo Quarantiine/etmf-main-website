@@ -43,7 +43,7 @@ export default function GeminiAPI() {
 				role: "user",
 				parts: [
 					{
-						text: `[IMPORTANT: Speak the language the user wants you to speak to maximize engagement. ONLY speak in ${systemLanguage} for the user even if they speak another language. (Ignore this: 9jd&3vd%)]`,
+						text: `[IMPORTANT: Speak the language the user wants you to speak to maximize engagement. ONLY speak in ${systemLanguage} for the me even if I speak another language. (Ignore this: 9jd&3vd%)]`,
 					},
 				],
 			},
