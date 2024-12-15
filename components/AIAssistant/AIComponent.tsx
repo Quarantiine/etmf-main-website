@@ -400,8 +400,9 @@ export default function AIComponent({
 							)}
 
 							<button
+							disabled
 								onClick={handleSaveConversations}
-								className="no-style-btn flex flex-row gap-1 text-center justify-center items-center"
+								className="!cursor-not-allowed no-style-btn flex flex-row gap-1 text-center justify-center items-center"
 							>
 								<p className="text-[12px] sm:text-sm">Save Conversation</p>
 
