@@ -58,10 +58,6 @@ export default function AIComponent({
 		setClosePrePrompts(!closePrePrompts);
 	};
 
-	const handleSaveConversations = () => {
-		setSaveConversation(!saveConversation);
-	};
-
 	const handleShowInfo = () => {
 		setShowInfo(!showInfo);
 	};
@@ -120,6 +116,10 @@ export default function AIComponent({
 		setLanguageSearch(e.target.value);
 	};
 
+	const handleSaveConversations = () => {
+		setSaveConversation(!saveConversation);
+	};
+
 	return (
 		<>
 			<div className="fixed bottom-0 right-0 w-full border-t-4 h-full mt-auto bg-gradient-to-tr bg-[rgba(255,255,255,0.9)] backdrop-blur-xl z-[60] flex flex-col justify-center items-center">
@@ -142,6 +142,7 @@ export default function AIComponent({
 							</button>
 						</div>
 
+						{/* Language Change */}
 						<div className="w-full sm:w-fit h-fit flex flex-row justify-center items-center gap-5">
 							<div className="w-full sm:w-fit h-fit relative flex justify-center items-center">
 								<button
@@ -241,7 +242,7 @@ export default function AIComponent({
 							historyResp?.map((value: Content) => value.role).length <= 1 && (
 								<div className="flex flex-col justify-center items-center text-center absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
 									<p className="text-gray-400">
-										Ask anything related to the ETM Foundation.
+										Ask anything about the ETM Foundation.
 									</p>
 								</div>
 							)}
@@ -399,9 +400,8 @@ export default function AIComponent({
 							)}
 
 							<button
-								disabled
 								onClick={handleSaveConversations}
-								className="no-style-btn flex flex-row gap-1 text-center justify-center items-center !cursor-not-allowed"
+								className="no-style-btn flex flex-row gap-1 text-center justify-center items-center"
 							>
 								<p className="text-[12px] sm:text-sm">Save Conversation</p>
 
