@@ -2,9 +2,12 @@
 
 import { NextResponse } from "next/server";
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import GeminiAPI from "@/components/AIAssistant/GeminiAPI";
 
 // This will handle the POST request
 export async function POST(req: Request) {
+	const { systemLanguage } = GeminiAPI();
+
 	// Only allow POST requests
 	const { userPrompt, systemInstruction, historyResp } = await req.json();
 
@@ -37,8 +40,20 @@ export async function POST(req: Request) {
 		// Start a chat session with the history
 		const chatSession = model.startChat({
 			generationConfig,
-			history: historyResp,
+			history: [
+				{
+					role: "user",
+					parts: [
+						{
+							text: `[IMPORTANT: Speak the language the user wants you to speak to maximize engagement. ONLY speak in ${systemLanguage} for me even if I speak another language. (Ignore this: 9jd&3vd%)]`,
+						},
+					],
+				},
+
+				...historyResp,
+			],
 		});
+
 		const result = await chatSession.sendMessage(userPrompt);
 
 		// Send the response text back to the client
