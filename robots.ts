@@ -1,3 +1,5 @@
+// robots.ts
+
 import type { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
@@ -8,6 +10,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/private/', '/resources/', '/_not-found/', '/api/sitemap/'],
       },
     ],
-    sitemap: 'https://etmfoundation.com/sitemap.xml',
+    sitemap: 'http://etmfoundation.com/sitemap.xml',
   };
 }

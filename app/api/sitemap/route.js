@@ -1,13 +1,20 @@
 // app/api/sitemap/route.js
-import { NextResponse } from "next/server";
-import { generateSitemap } from "../../lib/generateSitemap";
+
+import { generateSitemap } from "../../lib/generateSitemap.js";
 
 export async function GET() {
-	const sitemap = await generateSitemap();
+	try {
+		const sitemap = await generateSitemap();
 
-	return new NextResponse(sitemap, {
-		headers: {
-			"Content-Type": "application/xml",
-		},
-	});
+		return new Response(sitemap, {
+			headers: {
+				"Content-Type": "application/xml",
+				"Cache-Control": "public, max-age=86400", // Cache for 24 hours
+			},
+		});
+	} catch (error) {
+		return new Response(`Failed to generate sitemap: ${error}`, {
+			status: 500,
+		});
+	}
 }
