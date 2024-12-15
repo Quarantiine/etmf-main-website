@@ -12,16 +12,16 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<head>
+				<meta charSet="utf-8" />
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 				<link rel="icon" href="/etm_foundation_logo.png" />
 				<link rel="apple-touch-icon" href="/etm_foundation_logo.png" />
 
 				<meta
 					name="google-site-verification"
-					content="Wqq0eG8Q-_ha081ePlpFcQf-mpGsCMTjcynBqsrbYNw"
+					content="jiUymk0Qjg-JYxEM7_e6LQ6exNFW0TbDnjNMsbcITqk"
 				/>
-
-				<meta charSet="utf-8" />
-				<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 				<meta name="robots" content="index, follow" />
 			</head>
