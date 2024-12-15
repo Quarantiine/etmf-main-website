@@ -3,7 +3,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-import GeminiSystemInstruction from "@/components/AIAssistant/GeminiSystemInstruction";
+import GeminiSystemInstruction from "../../components/AIAssistant/GeminiSystemInstruction";
 import { Content } from "@google/generative-ai";
 
 export default function GeminiAPI() {
