@@ -18,7 +18,7 @@ export default function GeminiAPI() {
 
 	const errorRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-	const apiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY!;
+	const apiKey = process.env.NEXT_PUBLIC_GEMINI_API!;
 	const genAI: GoogleGenerativeAI = new GoogleGenerativeAI(apiKey);
 
 	const model = genAI.getGenerativeModel({
