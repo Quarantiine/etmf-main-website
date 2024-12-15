@@ -7,6 +7,46 @@ import {
 	GoogleGenerativeAI,
 } from "@google/generative-ai";
 import { useEffect, useRef, useState } from "react";
+// import { NextApiRequest, NextApiResponse } from "next";
+
+// interface ErrorResponse {
+// 	error: string;
+// }
+
+// interface GeminiData {
+// 	someKey: string[] | number[];
+// }
+
+// async function handler(
+// 	req: NextApiRequest,
+// 	res: NextApiResponse<GeminiData | ErrorResponse>
+// ) {
+// 	const apiKey = process.env.GEMINI_API_KEY;
+
+// 	if (!apiKey) {
+// 		return res.status(500).json({ error: "API key missing" });
+// 	}
+
+// 	try {
+// 		const response = await fetch("https://api.gemini.com/v1/some_endpoint", {
+// 			headers: {
+// 				Authorization: `Bearer ${apiKey}`,
+// 			},
+// 		});
+
+// 		if (!response.ok) {
+// 			return res
+// 				.status(response.status)
+// 				.json({ error: "Failed to fetch data" });
+// 		}
+
+// 		const data: GeminiData = await response.json();
+
+// 		return res.status(200).json(data);
+// 	} catch {
+// 		return res.status(500).json({ error: "An unexpected error occurred" });
+// 	}
+// }
 
 export default function GeminiAPI() {
 	const { systemInstruction } = GeminiSystemInstruction();
