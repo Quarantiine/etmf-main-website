@@ -1,6 +1,6 @@
 // app/api/sitemap/route.js
 
-import { generateSitemap } from "../../lib/generateSitemap.js";
+import { generateSitemap } from "../lib/generateSitemap.js";
 
 export async function GET() {
 	try {

@@ -1,6 +1,6 @@
 "use client";
 
-import GeminiAPI from "@/app/api/geminiAPI";
+import GeminiAPI from "../../components/AIAssistant/GeminiAPI";
 import { Content } from "@google/generative-ai";
 import Image from "next/image";
 import React, {
@@ -400,7 +400,7 @@ export default function AIComponent({
 							)}
 
 							<button
-							disabled
+								disabled
 								onClick={handleSaveConversations}
 								className="!cursor-not-allowed no-style-btn flex flex-row gap-1 text-center justify-center items-center"
 							>
