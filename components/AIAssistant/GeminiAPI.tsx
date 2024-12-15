@@ -3,11 +3,11 @@
 "use client";
 
 import { useState, useRef } from "react";
-import GeminiSystemInstruction from "../../components/AIAssistant/GeminiSystemInstruction";
+import GeminiSystemInstructions from "@/components/AIAssistant/GeminiSystemInstructions";
 import { Content } from "@google/generative-ai";
 
 export default function GeminiAPI() {
-	const { systemInstruction } = GeminiSystemInstruction();
+	const { systemInstruction } = GeminiSystemInstructions();
 
 	const [historyResp, setHistoryResp] = useState<Content[]>([]);
 	const [error, setError] = useState<string>("");
