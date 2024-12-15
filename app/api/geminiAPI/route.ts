@@ -41,6 +41,8 @@ export async function POST(req: Request) {
 		const chatSession = model.startChat({
 			generationConfig,
 			history: [
+				...historyResp,
+
 				{
 					role: "user",
 					parts: [
@@ -49,8 +51,6 @@ export async function POST(req: Request) {
 						},
 					],
 				},
-
-				...historyResp,
 			],
 		});
 
