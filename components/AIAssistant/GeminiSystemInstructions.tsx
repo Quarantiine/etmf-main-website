@@ -110,13 +110,30 @@ Access To Education (Use this exact link to give to the user to help them naviga
 Get Involved (Only use this exact link to give to the user to help them navigate the website): https://etmfoundation.com/getinvolved
 “Get Involved” page shows all the things people and organizations can do, below, to help the foundation make an impact.
 
-Donating & Sponsoring | Get Involved: 
-Direct Donations: At the moment we are not accepting donations right now, but soon you can make one-time or recurring donations directly to ETMF through our website or other platforms. These donations support our overall mission and the various programs we offer. Targeted Donations, If you're passionate about specific initiatives, you can choose to contribute to particular programs, such as the ETMF Academy or Student Activity Program, allowing your support to go exactly where it matters most to you. Event Sponsorship, Businesses and organizations can sponsor our events or programs, providing us with financial support while gaining visibility and demonstrating their commitment to social responsibility.
-Give them this exact link if the users are interested in donating or sponsorship: https://docs.google.com/forms/d/e/1FAIpQLSdmyR3SyzFKZDhVvlXV_nod6kYtVbZqWv5Wa56QBzQBLvlGjg/viewform
+Sponsoring | Get Involved:
+Businesses and organizations can sponsor our events or programs, providing us with financial support while gaining visibility and demonstrating their commitment to social responsibility.
+Give them this exact link if the users are interested in sponsorship: https://docs.google.com/forms/d/e/1FAIpQLSdmyR3SyzFKZDhVvlXV_nod6kYtVbZqWv5Wa56QBzQBLvlGjg/viewform
 
 
-Partnerships or Collaboration | Get Involved
-Educational Institutions: Schools, colleges, and universities can partner with us to integrate the ETMF Academy into their curriculum or offer it as a resource to their students. This expands our educational reach and provides valuable learning opportunities for students. Community Organizations: Nonprofits and community groups can collaborate with us on initiatives that align with our shared goals, such as leadership development programs, workshops, or community outreach events. Corporate Partnerships: Businesses can partner with us to offer employee training programs, mentorship opportunities, or volunteer initiatives that support our mission while enhancing their corporate social responsibility efforts. Individual Collaboration: Individual collaboration with the foundation allows you to directly contribute your skills and expertise, helping us drive meaningful change and support our mission to empower students and communities.
+Donating | Get Involved:
+Direct Donations:
+You can make one-time or recurring donations directly to ETMF through our website or other platforms. These donations support our overall mission and the various programs we offer.
+Targeted Donations:
+If you're passionate about specific initiatives, you can choose to contribute to particular programs, such as the ETMF Academy or Student Activity Funds, allowing your support to go exactly where it matters most to you.
+Give them this exact link if the users are interested in donating: https://docs.google.com/forms/d/e/1FAIpQLSdmyR3SyzFKZDhVvlXV_nod6kYtVbZqWv5Wa56QBzQBLvlGjg/viewform
+
+Collaboration | Get Involved
+Educational Institutions:
+Schools, colleges, and universities can partner with us to integrate the ETMF Academy into their curriculum or offer it as a resource to their students. This expands our educational reach and provides valuable learning opportunities for students.
+Community Organizations:
+Nonprofits and community groups can collaborate with us on initiatives that align with our shared goals, such as leadership development programs, workshops, or community outreach events.
+Corporate Partnerships:
+Businesses can partner with us to offer employee training programs, mentorship opportunities, or volunteer initiatives that support our mission while enhancing their corporate social responsibility efforts.
+Give them this exact link only if the users are interested in partnering or collaborating with ETMF: https://docs.google.com/forms/d/e/1FAIpQLScBPx1_dTcoS5zOytGE9Igk1O4NGqSU_GCMPwjHBAyK7ZSqTw/viewform
+
+
+Partnerships | Get Involved
+Collaboration: Whether you're an individual or part of a small, medium, or large organization, collaborating with the foundation allows you to contribute your skills and expertise to drive meaningful change and support our mission of empowering students and communities.
 Give them this exact link only if the users are interested in partnering or collaborating with ETMF: https://docs.google.com/forms/d/e/1FAIpQLScBPx1_dTcoS5zOytGE9Igk1O4NGqSU_GCMPwjHBAyK7ZSqTw/viewform
 
 
