@@ -12,7 +12,7 @@ import React, {
 } from "react";
 import questionsList from "@/data/questionsList.json";
 import AIRoles from "./AIRoles";
-import languagesList from "@/data/languages.json";
+// import languagesList from "@/data/languages.json";
 
 interface QuestionListTypes {
 	title: string;
@@ -31,16 +31,16 @@ export default function AIComponent({
 		historyResp,
 		error,
 		loading,
-		setSystemLanguage,
-		systemLanguage,
+		// setSystemLanguage,
+		// systemLanguage,
 	} = GeminiAPI();
 
 	const [prompt, setPrompt] = useState<string>("");
 	const [closePrePrompts, setClosePrePrompts] = useState<boolean>(false);
 	const [saveConversation, setSaveConversation] = useState<boolean>(false);
 	const [showInfo, setShowInfo] = useState<boolean>(false);
-	const [showLanguageList, setShowLanguageList] = useState<boolean>(false);
-	const [languageSearch, setLanguageSearch] = useState("");
+	// const [showLanguageList, setShowLanguageList] = useState<boolean>(false);
+	// const [languageSearch, setLanguageSearch] = useState("");
 
 	const ChatBoxRef = useRef<HTMLDivElement | null>(null);
 
@@ -89,32 +89,32 @@ export default function AIComponent({
 		});
 	}, [loading]);
 
-	const handleSetSystemLanguage = (language: string) => {
-		setSystemLanguage(language);
-		setLanguageSearch("");
-		setShowLanguageList(false);
-	};
+	// const handleSetSystemLanguage = (language: string) => {
+	// 	setSystemLanguage(language);
+	// 	setLanguageSearch("");
+	// 	setShowLanguageList(false);
+	// };
 
-	const handleLanguageChange = () => {
-		setShowLanguageList(!showLanguageList);
-	};
+	// const handleLanguageChange = () => {
+	// 	setShowLanguageList(!showLanguageList);
+	// };
 
-	useEffect(() => {
-		const closeModal = (e: MouseEvent) => {
-			const target = e.target as HTMLElement;
-			if (!target.closest(".language-change")) {
-				setShowLanguageList(false);
-				setLanguageSearch("");
-			}
-		};
+	// useEffect(() => {
+	// 	const closeModal = (e: MouseEvent) => {
+	// 		const target = e.target as HTMLElement;
+	// 		if (!target.closest(".language-change")) {
+	// 			setShowLanguageList(false);
+	// 			setLanguageSearch("");
+	// 		}
+	// 	};
 
-		document.addEventListener("mousedown", closeModal);
-		return () => document.removeEventListener("mousedown", closeModal);
-	}, []);
+	// 	document.addEventListener("mousedown", closeModal);
+	// 	return () => document.removeEventListener("mousedown", closeModal);
+	// }, []);
 
-	const handleLanguageSearch = (e: ChangeEvent<HTMLInputElement>): void => {
-		setLanguageSearch(e.target.value);
-	};
+	// const handleLanguageSearch = (e: ChangeEvent<HTMLInputElement>): void => {
+	// 	setLanguageSearch(e.target.value);
+	// };
 
 	const handleSaveConversations = () => {
 		setSaveConversation(!saveConversation);
@@ -143,7 +143,7 @@ export default function AIComponent({
 						</div>
 
 						{/* Language Change */}
-						<div className="w-full sm:w-fit h-fit flex flex-row justify-center items-center gap-5">
+						{/* <div className="w-full sm:w-fit h-fit flex flex-row justify-center items-center gap-5">
 							<div className="w-full sm:w-fit h-fit relative flex justify-center items-center">
 								<button
 									onClick={() => {
@@ -231,7 +231,20 @@ export default function AIComponent({
 									height={25}
 								/>
 							</button>
-						</div>
+						</div> */}
+
+						<button
+							onClick={handleOpenAIAssistant}
+							className="ai-assistant-modal no-style-btn hidden sm:block"
+						>
+							<Image
+								className="h-auto min-w-[25px] max-w-[25px]"
+								src={"/icons/close.svg"}
+								alt="icon"
+								width={25}
+								height={25}
+							/>
+						</button>
 					</div>
 
 					<div
