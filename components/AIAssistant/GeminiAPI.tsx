@@ -26,6 +26,7 @@ export default function GeminiAPI() {
 		try {
 			setHistoryResp((prevHistory) => [
 				...prevHistory,
+
 				{ role: "user", parts: [{ text: userPrompt }] },
 			]);
 
@@ -35,6 +36,7 @@ export default function GeminiAPI() {
 				headers: {
 					"Content-Type": "application/json",
 				},
+
 				body: JSON.stringify({
 					userPrompt,
 					systemInstruction,

@@ -12,13 +12,21 @@ import React, {
 } from "react";
 import questionsList from "@/data/questionsList.json";
 import AIRoles from "./AIRoles";
-// import languagesList from "@/data/languages.json";
+import languagesList from "@/data/languages.json";
 
 interface QuestionListTypes {
 	title: string;
 	prompts: {
 		text: string;
 	}[];
+}
+
+interface SalesDataTypes {
+	date: string;
+	item: string;
+	price: number;
+	quantity: number;
+	_id: number;
 }
 
 export default function AIComponent({
@@ -31,16 +39,18 @@ export default function AIComponent({
 		historyResp,
 		error,
 		loading,
-		// setSystemLanguage,
-		// systemLanguage,
+		setSystemLanguage,
+		systemLanguage,
 	} = GeminiAPI();
 
 	const [prompt, setPrompt] = useState<string>("");
 	const [closePrePrompts, setClosePrePrompts] = useState<boolean>(false);
 	const [saveConversation, setSaveConversation] = useState<boolean>(false);
 	const [showInfo, setShowInfo] = useState<boolean>(false);
-	// const [showLanguageList, setShowLanguageList] = useState<boolean>(false);
-	// const [languageSearch, setLanguageSearch] = useState("");
+	const [showLanguageList, setShowLanguageList] = useState<boolean>(false);
+	const [languageSearch, setLanguageSearch] = useState("");
+	const [data, setData] = useState<SalesDataTypes[]>([]);
+	const [dbError, setDBError] = useState<string>("");
 
 	const ChatBoxRef = useRef<HTMLDivElement | null>(null);
 
@@ -89,35 +99,57 @@ export default function AIComponent({
 		});
 	}, [loading]);
 
-	// const handleSetSystemLanguage = (language: string) => {
-	// 	setSystemLanguage(language);
-	// 	setLanguageSearch("");
-	// 	setShowLanguageList(false);
-	// };
+	const handleSetSystemLanguage = (language: string) => {
+		setSystemLanguage(language);
+		setLanguageSearch("");
+		setShowLanguageList(false);
+	};
 
-	// const handleLanguageChange = () => {
-	// 	setShowLanguageList(!showLanguageList);
-	// };
+	const handleLanguageChange = () => {
+		setShowLanguageList(!showLanguageList);
+	};
 
-	// useEffect(() => {
-	// 	const closeModal = (e: MouseEvent) => {
-	// 		const target = e.target as HTMLElement;
-	// 		if (!target.closest(".language-change")) {
-	// 			setShowLanguageList(false);
-	// 			setLanguageSearch("");
-	// 		}
-	// 	};
+	useEffect(() => {
+		const closeModal = (e: MouseEvent) => {
+			const target = e.target as HTMLElement;
+			if (!target.closest(".language-change")) {
+				setShowLanguageList(false);
+				setLanguageSearch("");
+			}
+		};
 
-	// 	document.addEventListener("mousedown", closeModal);
-	// 	return () => document.removeEventListener("mousedown", closeModal);
-	// }, []);
+		document.addEventListener("mousedown", closeModal);
+		return () => document.removeEventListener("mousedown", closeModal);
+	}, []);
 
-	// const handleLanguageSearch = (e: ChangeEvent<HTMLInputElement>): void => {
-	// 	setLanguageSearch(e.target.value);
-	// };
+	const handleLanguageSearch = (e: ChangeEvent<HTMLInputElement>): void => {
+		setLanguageSearch(e.target.value);
+	};
+
+	useEffect(() => {
+		async function fetchData() {
+			try {
+				const res = await fetch("/api/mongoDB");
+				if (!res.ok) throw new Error("Failed to fetch data");
+				const json = await res.json();
+				setData(json.salesData);
+			} catch (err: unknown) {
+				if (err instanceof Error) {
+					setDBError(err.message);
+				} else {
+					setDBError(`Unknown Error: ${err}`);
+				}
+			}
+		}
+
+		fetchData();
+	}, []);
 
 	const handleSaveConversations = () => {
 		setSaveConversation(!saveConversation);
+
+		console.log(data.map((value) => value));
+		console.log(dbError);
 	};
 
 	return (
@@ -143,7 +175,7 @@ export default function AIComponent({
 						</div>
 
 						{/* Language Change */}
-						{/* <div className="w-full sm:w-fit h-fit flex flex-row justify-center items-center gap-5">
+						<div className="w-full sm:w-fit h-fit flex flex-row justify-center items-center gap-5">
 							<div className="w-full sm:w-fit h-fit relative flex justify-center items-center">
 								<button
 									onClick={() => {
@@ -231,20 +263,7 @@ export default function AIComponent({
 									height={25}
 								/>
 							</button>
-						</div> */}
-
-						<button
-							onClick={handleOpenAIAssistant}
-							className="ai-assistant-modal no-style-btn hidden sm:block"
-						>
-							<Image
-								className="h-auto min-w-[25px] max-w-[25px]"
-								src={"/icons/close.svg"}
-								alt="icon"
-								width={25}
-								height={25}
-							/>
-						</button>
+						</div>
 					</div>
 
 					<div
@@ -252,7 +271,7 @@ export default function AIComponent({
 						className="flex flex-col w-full h-full justify-start items-start gap-5 default-overflow overflow-x-hidden overflow-y-scroll relative"
 					>
 						{historyResp &&
-							historyResp?.map((value: Content) => value.role).length <= 1 && (
+							historyResp?.map((value: Content) => value).length < 1 && (
 								<div className="flex flex-col justify-center items-center text-center absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
 									<p className="text-gray-400">
 										Ask anything about the ETM Foundation.
@@ -387,7 +406,7 @@ export default function AIComponent({
 						)}
 					</div>
 
-					<div className="flex flex-col sm:flex-row gap-1 px-3 rounded-lg justify-center items-center text-gray-500 w-full text-sm">
+					<div className="hidden flex-col sm:flex-row gap-1 px-3 rounded-lg justify-center items-center text-gray-500 w-full text-sm">
 						<div className="relative w-fit h-fit flex flex-row justify-center items-center gap-1">
 							<button
 								onClick={handleShowInfo}
@@ -413,9 +432,8 @@ export default function AIComponent({
 							)}
 
 							<button
-								disabled
 								onClick={handleSaveConversations}
-								className="!cursor-not-allowed no-style-btn flex flex-row gap-1 text-center justify-center items-center"
+								className="no-style-btn flex-row gap-1 text-center justify-center items-center"
 							>
 								<p className="text-[12px] sm:text-sm">Save Conversation</p>
 
@@ -432,8 +450,6 @@ export default function AIComponent({
 								/>
 							</button>
 						</div>
-
-						<p className="text-[12px]">(Coming Soon)</p>
 					</div>
 
 					<p className="text-[12px] text-gray-500 mx-auto text-center">

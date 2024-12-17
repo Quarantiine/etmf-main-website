@@ -27,7 +27,9 @@
 		"**/*.ts",
 		"**/*.tsx",
 		".next/types/**/*.ts",
-		"app/api/geminiAPI/route.ts"
+		"app/api/geminiAPI/route.ts",
+		"lib/mongodb.js",
+		"app/api/mongoDB/route.js"
 	],
 	"exclude": ["node_modules"]
 }

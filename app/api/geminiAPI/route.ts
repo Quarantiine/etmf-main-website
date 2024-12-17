@@ -6,7 +6,8 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 // This will handle the POST request
 export async function POST(req: Request) {
 	// Only allow POST requests
-	const { userPrompt, systemInstruction, historyResp } = await req.json();
+	const { userPrompt, systemInstruction, systemLanguage, historyResp } =
+		await req.json();
 
 	try {
 		// Securely access the API key
@@ -37,8 +38,20 @@ export async function POST(req: Request) {
 		// Start a chat session with the history and prepend custom instruction
 		const chatSession = model.startChat({
 			generationConfig,
-			history: historyResp,
+			history: [
+				...historyResp,
+
+				{
+					role: "user",
+					parts: [
+						{
+							text: `[IMPORTANT (Something to consider): ONLY speak in ${systemLanguage} for me even if I speak another language. (Ignore this part: 9jd&3vd%)]`,
+						},
+					],
+				},
+			],
 		});
+
 		const result = await chatSession.sendMessage(userPrompt);
 
 		// Send the response text back to the client
