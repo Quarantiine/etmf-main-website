@@ -4,6 +4,7 @@ import NavigationBar from "@/components/NavigationBar/NavigationBar";
 import WidgetComponent from "@/components/Widgets/WidgetComponent";
 import AIAssistant from "@/components/AIAssistant/AIAssistant";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function RootLayout({
 	children,
@@ -35,8 +36,12 @@ export default function RootLayout({
 
 					<AIAssistant />
 
-					<div className="w-full mx-auto">{children}</div>
-					<SpeedInsights />
+					<div className="w-full mx-auto">
+						{children}
+
+						<SpeedInsights />
+						<Analytics />
+					</div>
 				</main>
 
 				<Footer />
