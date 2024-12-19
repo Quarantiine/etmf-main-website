@@ -1,6 +1,6 @@
 "use client";
 
-import GeminiAPI from "@/app/api/geminiAPI";
+import GeminiAPI from "../../components/AIAssistant/GeminiAPI";
 import { Content } from "@google/generative-ai";
 import Image from "next/image";
 import React, {
@@ -19,6 +19,14 @@ interface QuestionListTypes {
 	prompts: {
 		text: string;
 	}[];
+}
+
+interface SalesDataTypes {
+	date: string;
+	item: string;
+	price: number;
+	quantity: number;
+	_id: number;
 }
 
 export default function AIComponent({
@@ -41,6 +49,8 @@ export default function AIComponent({
 	const [showInfo, setShowInfo] = useState<boolean>(false);
 	const [showLanguageList, setShowLanguageList] = useState<boolean>(false);
 	const [languageSearch, setLanguageSearch] = useState("");
+	const [data, setData] = useState<SalesDataTypes[]>([]);
+	const [dbError, setDBError] = useState<string>("");
 
 	const ChatBoxRef = useRef<HTMLDivElement | null>(null);
 
@@ -56,10 +66,6 @@ export default function AIComponent({
 
 	const handleClosePrePrompts = () => {
 		setClosePrePrompts(!closePrePrompts);
-	};
-
-	const handleSaveConversations = () => {
-		setSaveConversation(!saveConversation);
 	};
 
 	const handleShowInfo = () => {
@@ -120,6 +126,32 @@ export default function AIComponent({
 		setLanguageSearch(e.target.value);
 	};
 
+	useEffect(() => {
+		async function fetchData() {
+			try {
+				const res = await fetch("/api/mongoDB");
+				if (!res.ok) throw new Error("Failed to fetch data");
+				const json = await res.json();
+				setData(json.salesData);
+			} catch (err: unknown) {
+				if (err instanceof Error) {
+					setDBError(err.message);
+				} else {
+					setDBError(`Unknown Error: ${err}`);
+				}
+			}
+		}
+
+		fetchData();
+	}, []);
+
+	const handleSaveConversations = () => {
+		setSaveConversation(!saveConversation);
+
+		console.log(data.map((value) => value));
+		console.log(dbError);
+	};
+
 	return (
 		<>
 			<div className="fixed bottom-0 right-0 w-full border-t-4 h-full mt-auto bg-gradient-to-tr bg-[rgba(255,255,255,0.9)] backdrop-blur-xl z-[60] flex flex-col justify-center items-center">
@@ -142,6 +174,7 @@ export default function AIComponent({
 							</button>
 						</div>
 
+						{/* Language Change */}
 						<div className="w-full sm:w-fit h-fit flex flex-row justify-center items-center gap-5">
 							<div className="w-full sm:w-fit h-fit relative flex justify-center items-center">
 								<button
@@ -238,10 +271,10 @@ export default function AIComponent({
 						className="flex flex-col w-full h-full justify-start items-start gap-5 default-overflow overflow-x-hidden overflow-y-scroll relative"
 					>
 						{historyResp &&
-							historyResp?.map((value: Content) => value.role).length <= 1 && (
+							historyResp?.map((value: Content) => value).length < 1 && (
 								<div className="flex flex-col justify-center items-center text-center absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
 									<p className="text-gray-400">
-										Ask anything related to the ETM Foundation.
+										Ask anything about the ETM Foundation.
 									</p>
 								</div>
 							)}
@@ -373,7 +406,7 @@ export default function AIComponent({
 						)}
 					</div>
 
-					<div className="flex flex-col sm:flex-row gap-1 px-3 rounded-lg justify-center items-center text-gray-500 w-full text-sm">
+					<div className="hidden flex-col sm:flex-row gap-1 px-3 rounded-lg justify-center items-center text-gray-500 w-full text-sm">
 						<div className="relative w-fit h-fit flex flex-row justify-center items-center gap-1">
 							<button
 								onClick={handleShowInfo}
@@ -399,9 +432,8 @@ export default function AIComponent({
 							)}
 
 							<button
-								disabled
 								onClick={handleSaveConversations}
-								className="no-style-btn flex flex-row gap-1 text-center justify-center items-center !cursor-not-allowed"
+								className="no-style-btn flex-row gap-1 text-center justify-center items-center"
 							>
 								<p className="text-[12px] sm:text-sm">Save Conversation</p>
 
@@ -418,8 +450,6 @@ export default function AIComponent({
 								/>
 							</button>
 						</div>
-
-						<p className="text-[12px]">(Coming Soon)</p>
 					</div>
 
 					<p className="text-[12px] text-gray-500 mx-auto text-center">

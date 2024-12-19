@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /_not-found/
+Disallow: /api/
+Sitemap: https://etmfoundation.com/sitemap.xml
