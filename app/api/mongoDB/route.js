@@ -3,20 +3,20 @@ import clientPromise from "@/lib/mongodb";
 export async function GET() {
 	try {
 		const client = await clientPromise;
-		const db = client.db("mongodbVSCodePlaygroundDB"); // Replace with your DB name
+		const db = client.db("rating_system"); // Replace with your DB name
 
 		// Fetch collections
 		const collections = await db.listCollections().toArray(); // Make sure to call .toArray() to get an array of collections
 
-		// Fetch documents from the "sales" collection
-		const salesCollection = db.collection("sales");
-		const salesData = await salesCollection.find().toArray(); // Fetch all documents in the "sales" collection
+		// Fetch documents from the "AIChatbotRating" collection
+		const AIRatingCollection = db.collection("AIChatbotRating");
+		const AIRatingData = await AIRatingCollection.find().toArray(); // Fetch all documents in the "AIRating" collection
 
 		return new Response(
 			JSON.stringify({
 				message: "Successfully connected to MongoDB!",
 				collections, // Array of collections metadata
-				salesData, // Actual documents from the "sales" collection
+				AIRatingData, // Actual documents from the "AIChatbotRating" collection
 			}),
 
 			{ status: 200, headers: { "Content-Type": "application/json" } }
@@ -34,7 +34,7 @@ export async function GET() {
 export async function POST(req) {
 	try {
 		const client = await clientPromise;
-		const db = client.db("mongodbVSCodePlaygroundDB"); // Replace with your DB name
+		const db = client.db("rating_system"); // Replace with your DB name
 
 		// Get the data from the request body
 		const newData = await req.json(); // Parse incoming JSON data
@@ -47,9 +47,9 @@ export async function POST(req) {
 			);
 		}
 
-		// Insert new document into the "sales" collection
-		const salesCollection = db.collection("sales");
-		const result = await salesCollection.insertOne(newData);
+		// Insert new document into the "AIChatbotRating" collection
+		const AIRatingCollection = db.collection("AIChatbotRating");
+		const result = await AIRatingCollection.insertOne(newData);
 
 		return new Response(
 			JSON.stringify({
