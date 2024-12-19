@@ -21,13 +21,13 @@ interface QuestionListTypes {
 	}[];
 }
 
-interface SalesDataTypes {
-	date: string;
-	item: string;
-	price: number;
-	quantity: number;
-	_id: number;
-}
+// interface SalesDataTypes {
+// 	date: string;
+// 	item: string;
+// 	price: number;
+// 	quantity: number;
+// 	_id: number;
+// }
 
 export default function AIComponent({
 	handleOpenAIAssistant,
@@ -45,12 +45,12 @@ export default function AIComponent({
 
 	const [prompt, setPrompt] = useState<string>("");
 	const [closePrePrompts, setClosePrePrompts] = useState<boolean>(false);
-	const [saveConversation, setSaveConversation] = useState<boolean>(false);
-	const [showInfo, setShowInfo] = useState<boolean>(false);
+	// const [saveConversation, setSaveConversation] = useState<boolean>(false);
+	// const [showInfo, setShowInfo] = useState<boolean>(false);
 	const [showLanguageList, setShowLanguageList] = useState<boolean>(false);
 	const [languageSearch, setLanguageSearch] = useState("");
-	const [data, setData] = useState<SalesDataTypes[]>([]);
-	const [dbError, setDBError] = useState<string>("");
+	// const [data, setData] = useState<SalesDataTypes[]>([]);
+	// const [dbError, setDBError] = useState<string>("");
 
 	const ChatBoxRef = useRef<HTMLDivElement | null>(null);
 
@@ -68,21 +68,21 @@ export default function AIComponent({
 		setClosePrePrompts(!closePrePrompts);
 	};
 
-	const handleShowInfo = () => {
-		setShowInfo(!showInfo);
-	};
+	// const handleShowInfo = () => {
+	// 	setShowInfo(!showInfo);
+	// };
 
-	useEffect(() => {
-		const closeModal = (e: MouseEvent) => {
-			const target = e.target as HTMLElement;
-			if (!target.closest(".show-info")) {
-				setShowInfo(false);
-			}
-		};
+	// useEffect(() => {
+	// 	const closeModal = (e: MouseEvent) => {
+	// 		const target = e.target as HTMLElement;
+	// 		if (!target.closest(".show-info")) {
+	// 			setShowInfo(false);
+	// 		}
+	// 	};
 
-		document.addEventListener("mousedown", closeModal);
-		return () => document.removeEventListener("mousedown", closeModal);
-	}, []);
+	// 	document.addEventListener("mousedown", closeModal);
+	// 	return () => document.removeEventListener("mousedown", closeModal);
+	// }, []);
 
 	const handlePrompt = async () => {
 		if (prompt) {
@@ -126,31 +126,31 @@ export default function AIComponent({
 		setLanguageSearch(e.target.value);
 	};
 
-	useEffect(() => {
-		async function fetchData() {
-			try {
-				const res = await fetch("/api/mongoDB");
-				if (!res.ok) throw new Error("Failed to fetch data");
-				const json = await res.json();
-				setData(json.salesData);
-			} catch (err: unknown) {
-				if (err instanceof Error) {
-					setDBError(err.message);
-				} else {
-					setDBError(`Unknown Error: ${err}`);
-				}
-			}
-		}
+	// useEffect(() => {
+	// 	async function fetchData() {
+	// 		try {
+	// 			const res = await fetch("/api/mongoDB");
+	// 			if (!res.ok) throw new Error("Failed to fetch data");
+	// 			const json = await res.json();
+	// 			setData(json.salesData);
+	// 		} catch (err: unknown) {
+	// 			if (err instanceof Error) {
+	// 				setDBError(err.message);
+	// 			} else {
+	// 				setDBError(`Unknown Error: ${err}`);
+	// 			}
+	// 		}
+	// 	}
 
-		fetchData();
-	}, []);
+	// 	fetchData();
+	// }, []);
 
-	const handleSaveConversations = () => {
-		setSaveConversation(!saveConversation);
+	// const handleSaveConversations = () => {
+	// 	setSaveConversation(!saveConversation);
 
-		console.log(data.map((value) => value));
-		console.log(dbError);
-	};
+	// 	console.log(data.map((value) => value));
+	// 	console.log(dbError);
+	// };
 
 	return (
 		<>
@@ -406,7 +406,7 @@ export default function AIComponent({
 						)}
 					</div>
 
-					<div className="hidden flex-col sm:flex-row gap-1 px-3 rounded-lg justify-center items-center text-gray-500 w-full text-sm">
+					{/* <div className="hidden flex-col sm:flex-row gap-1 px-3 rounded-lg justify-center items-center text-gray-500 w-full text-sm">
 						<div className="relative w-fit h-fit flex flex-row justify-center items-center gap-1">
 							<button
 								onClick={handleShowInfo}
@@ -450,7 +450,7 @@ export default function AIComponent({
 								/>
 							</button>
 						</div>
-					</div>
+					</div> */}
 
 					<p className="text-[12px] text-gray-500 mx-auto text-center">
 						This is an experimental generative AI chatbot. AI can make mistakes.
