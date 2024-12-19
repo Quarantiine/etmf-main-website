@@ -3,6 +3,7 @@ import privacypolicy from "@/data/privacyPolicy.json";
 import Link from "next/link";
 import { Metadata } from "next";
 import Image from "next/image";
+import TableOfContents from "@/components/Legal/TableOfContents";
 
 export const metadata: Metadata = {
 	title: "Privacy Policy",
@@ -45,10 +46,10 @@ export default function PrivacyPolicy(): React.ReactElement {
 
 						<div className="flex flex-col w-full">
 							<p>
-								<span className="lato-bold">Effective Date:</span> 11/2/2024{" "}
+								<span className="lato-bold">Effective Date:</span> 11/2/2024
 							</p>
 							<p>
-								<span className="lato-bold">Last Updated:</span> 11/30/2024
+								<span className="lato-bold">Last Updated:</span> 12/19/2024
 							</p>
 						</div>
 					</div>
@@ -61,6 +62,8 @@ export default function PrivacyPolicy(): React.ReactElement {
 						height={100}
 					/>
 				</div>
+
+				<TableOfContents legalDocuments={privacypolicy} />
 
 				<div className="flex flex-col gap-10 w-full">
 					{privacypolicy.map((policy: PolicyTypes, index: number) => {
@@ -80,9 +83,11 @@ export default function PrivacyPolicy(): React.ReactElement {
 }
 
 const PolicyComponent = ({ policy }: { policy: PolicyTypes }) => {
+	const sanitizedTitle = policy.title?.replace(/\s+/g, "-").toLowerCase();
+
 	return (
 		<>
-			<div className="w-full h-auto flex flex-col gap-3">
+			<div className="w-full h-auto flex flex-col gap-3" id={sanitizedTitle}>
 				<h2 className="text-3xl montserrat-bold text-gray-600">
 					{policy.title}
 				</h2>

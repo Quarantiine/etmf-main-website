@@ -44,7 +44,7 @@
 				"paragraphs": [
 					{
 						"textHeader": "Real-World Application:",
-						"text": "AI-generated scenarios based on course content allow students to apply their knowledge in practical, relevant situations."
+						"text": "AI-generated scenarios based on course content allow students to apply their knowledge in practical, relevant situations, fostering critical thinking, problem-solving, and other essential skills."
 					},
 					{
 						"textHeader": "Multilingual Support:",
@@ -56,12 +56,12 @@
 				"title": "VR within the Academy's LMS (Coming Soon)",
 				"paragraphs": [
 					{
-						"textHeader": "Mastering the Pitch:",
-						"text": "VR simulates real-life pitch scenarios, enabling users to practice presenting to virtual investors or panels. AI feedback offers tips on body language, voice modulation, and clarity, helping entrepreneurs refine their delivery."
+						"textHeader": "Mastering Their Speech:",
+						"text": "VR-based simulations offer immersive environments for practicing presentations, replicating real-world speaking scenarios with virtual characters. Utilizing AI-powered analysis, the system provides feedback on key performance indicators such as body language, vocal delivery, and clarity, enabling entrepreneurs and professionals across various sectors to refine their presentation techniques."
 					},
 					{
 						"textHeader": "Strategic Decision-Making:",
-						"text": "Interactive VR scenarios let users tackle real-world business challenges, analyze market data, and experience the consequences of their decisions dynamically, building confidence in their strategic choices."
+						"text": "Interactive VR scenarios provide immersive environments in which users can confront realistic challenges and experience the dynamic consequences of their decisions, fostering confidence in their strategic decision-making."
 					}
 				]
 			}

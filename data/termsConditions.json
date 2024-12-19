@@ -3,10 +3,10 @@
 		"title": "Agreement to Terms",
 		"description": [
 			{
-				"text": "By accessing or using https://etmfoundation.com (the “Website”), you confirm that you have read, understood, and agree to be bound by these Terms and Conditions (“Terms”). ETMF reserves the right to modify or update these Terms at any time."
+				"text": "By accessing or using https://etmfoundation.com (the “Website”), you confirm that you have read, understood, and agree to be bound by these Terms and Conditions (“Terms”)."
 			},
 			{
-				"text": "Notification of significant changes will be provided through website notices or, if applicable, by email to users. Continued use of the Website after any changes take effect constitutes acceptance of those changes."
+				"text": "ETMF reserves the right to modify or update these Terms at any time. Notification of significant changes will be provided through website notices or, if applicable, by email to users. Continued use of the Website after any changes take effect constitutes acceptance of those changes."
 			}
 		],
 		"points": [{}]
@@ -17,7 +17,7 @@
 		"points": [
 			{
 				"textHeader": "Age Requirements",
-				"text": "If you are under the age of 16, please do not submit any forms or share personal information without parental consent."
+				"text": "Users under the age of 16 are not permitted to submit forms or share personal information without parental or guardian consent."
 			},
 			{
 				"textHeader": "Account and Registration",
@@ -33,10 +33,10 @@
 		"title": "Intellectual Property",
 		"description": [
 			{
-				"text": "All content on the Website, but not limited to,—including text, images, videos, graphics, and AI-generated content—is the property of ETMF or its licensors."
+				"text": "All content on the Website—including text, images, videos, graphics, and AI-generated content—is the property of ETMF or its licensors."
 			},
 			{
-				"text": "This content will be protected soon by copyright, trademark, and other intellectual property laws. Users agree not to reproduce, distribute, or publicly display content from the Website without prior written permission from ETMF."
+				"text": "This content is protected, or will be, by copyright, trademark, and other intellectual property laws. Users agree not to reproduce, distribute, or publicly display content from the Website without prior written permission from ETMF."
 			}
 		],
 		"points": [{}]
@@ -60,10 +60,6 @@
 			{
 				"textHeader": "User Restrictions",
 				"text": "While ETMF uses images under Unsplash’s license, users of this Website are reminded that they cannot download, reuse, or distribute images from our Website unless they visit the original source and comply with Unsplash’s licensing terms."
-			},
-			{
-				"textHeader": "Contact for Questions",
-				"text": "If you have questions regarding the use of images on this Website, please contact support email below"
 			}
 		]
 	},
@@ -72,16 +68,16 @@
 		"description": [{}],
 		"points": [
 			{
-				"textHeader": "Data Collection Options",
-				"text": "Users interacting with the AI assistant will have the choice to either save or not save their conversation data to improve the AI model’s assistance capabilities. By default, data from user interactions is saved, but users can adjust this setting to control what information is retained. The default setting can change depending on usage."
+				"textHeader": "AI Assistant Usage",
+				"text": "The AI assistant on the Website is designed solely to help users learn about Empowerment Through Mindset Foundation and navigate the Website more efficiently. ETMF no longer saves user responses during interactions with the AI assistant."
 			},
 			{
-				"textHeader": "Data Handling",
-				"text": "ETMF uses Typeform or Google Form for analytics, marketing, and communication purposes. Typeform or Google Form collects only the data that users willingly input. Data collected via these forms helps ETMF understand user interests and improve the website experience. For comprehensive information, including the AI assistant's data usage practices, please refer to our Privacy Policy down below."
+				"textHeader": "Forms and Analytics",
+				"text": "ETMF uses tools like Google Forms and Typeform for analytics, marketing, and communication purposes. These tools collect only the data willingly provided by users, which helps ETMF understand user interests and improve Website functionality."
 			},
 			{
-				"textHeader": "Data Retention and Privacy",
-				"text": "Conversations that users choose to save may be analyzed to refine ETMF's AI assistant functionality. However, once saved, users cannot delete these interactions from ETMF’s backend. ETMF is committed to handling all data securely and responsibly, aligning with relevant data privacy laws."
+				"textHeader": "Privacy Policy Reference",
+				"text": "For detailed information on how data is collected and used, please refer to our Privacy Policy below."
 			}
 		]
 	},
@@ -89,7 +85,10 @@
 		"title": "Third-Party Services",
 		"description": [
 			{
-				"text": "The Website may integrate or link to third-party services, such as Typeform or Google Form, to enhance user experience. ETMF does not control third-party applications and is not responsible for any damages or losses users may experience due to third-party software use, including data breaches or malfunction. Users interact with third-party services at their own risk and are encouraged to review the privacy policies of these external providers."
+				"text": "The Website may integrate or link to third-party services, such as Google Forms or Typeform, to enhance user experience."
+			},
+			{
+				"text": "ETMF does not control third-party applications and is not responsible for any damages or losses users may experience due to third-party software use, including data breaches or malfunction. Users interact with these third-party services at their own risk and are encouraged to review their privacy policies."
 			}
 		],
 		"points": [{}]
@@ -100,7 +99,7 @@
 		"points": [
 			{
 				"textHeader": "Donations Policy",
-				"text": "All donations are voluntary and generally non-refundable. ETMF allocates funds according to program needs and donor specifications where applicable. For questions regarding donations or refund exceptions, support down below"
+				"text": "All donations are voluntary and generally non-refundable. ETMF allocates funds according to program needs and donor specifications where applicable. For questions regarding donations or refund exceptions, contact etmfoundation.business@gmail.com."
 			}
 		]
 	},
@@ -108,7 +107,10 @@
 		"title": "Disclaimer of Warranties",
 		"description": [
 			{
-				"text": "The Website and all content are provided “as is” and “as available” without any express or implied warranties. ETMF disclaims any liability for inaccuracies or omissions in the Website content, including educational or advisory content. The Website may be unavailable or limited in certain jurisdictions, and ETMF makes no guarantees of uninterrupted access."
+				"text": "The Website and all content are provided “as is” and “as available” without any express or implied warranties. ETMF disclaims any liability for inaccuracies or omissions in the Website content, including educational or advisory content."
+			},
+			{
+				"text": "The Website may be unavailable or limited in certain jurisdictions, and ETMF makes no guarantees of uninterrupted access."
 			}
 		],
 		"points": [{}]
@@ -117,7 +119,10 @@
 		"title": "Limitation of Liability",
 		"description": [
 			{
-				"text": "ETMF and its affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from the use of the Website, the AI assistant, Typeform, Google Form, or any affiliated services. This includes damages for loss of profits, data, or goodwill resulting from user access issues, third-party content, or unauthorized access."
+				"text": "ETMF and its affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from the use of the Website, AI assistant, Typeform, Google Forms, or any affiliated services."
+			},
+			{
+				"text": "This includes damages for loss of profits, data, or goodwill resulting from user access issues, third-party content, or unauthorized access."
 			}
 		],
 		"points": [{}]
@@ -153,7 +158,7 @@
 		"title": "Contact Information",
 		"description": [
 			{
-				"text": "For questions regarding these Terms, please contact our support down below. Our team will respond to inquiries promptly."
+				"text": "For questions regarding these Terms, please contact us at etmfoundation.business@gmail.com. Our team will respond promptly."
 			}
 		],
 		"points": [{}]

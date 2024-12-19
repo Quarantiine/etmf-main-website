@@ -3,7 +3,7 @@ import termsConditions from "@/data/termsConditions.json";
 import Link from "next/link";
 import { Metadata } from "next";
 import Image from "next/image";
-
+import TableOfContents from "@/components/Legal/TableOfContents";
 export const metadata: Metadata = {
 	title: "Terms & Conditions",
 	description:
@@ -45,10 +45,10 @@ export default function TermsNConditions(): React.ReactElement {
 
 						<div className="flex flex-col w-full">
 							<p>
-								<span className="lato-bold">Effective Date:</span> 11/2/2024{" "}
+								<span className="lato-bold">Effective Date:</span> 11/2/2024
 							</p>
 							<p>
-								<span className="lato-bold">Last Updated:</span> 11/30/2024
+								<span className="lato-bold">Last Updated:</span> 12/19/2024
 							</p>
 						</div>
 					</div>
@@ -61,6 +61,8 @@ export default function TermsNConditions(): React.ReactElement {
 						height={100}
 					/>
 				</div>
+
+				<TableOfContents legalDocuments={termsConditions} />
 
 				<div className="flex flex-col gap-10 w-full">
 					{termsConditions.map((terms: TermsTypes, index: number) => {
@@ -83,9 +85,11 @@ export default function TermsNConditions(): React.ReactElement {
 }
 
 const TermsComponent = ({ terms }: { terms: TermsTypes }) => {
+	const sanitizedTitle = terms.title?.replace(/\s+/g, "-").toLowerCase();
+
 	return (
 		<>
-			<div className="w-full h-auto flex flex-col gap-3">
+			<div id={sanitizedTitle} className="w-full h-auto flex flex-col gap-3">
 				<h2 className="text-3xl montserrat-bold text-gray-600">
 					{terms.title}
 				</h2>

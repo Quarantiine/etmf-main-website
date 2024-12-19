@@ -1,9 +1,9 @@
 [
 	{
-		"title": "",
+		"title": "Agreement to the Privacy Policy",
 		"description": [
 			{
-				"text": "This Privacy Policy describes how Empowerment Through Mindset Foundation (“ETMF,” “ETM Foundation,” “foundation,” “Foundation,” “we,” “us,” or “our”) collects, uses, and protects the personal information of users who visit our website, https://etmfoundation.com (the “Website”). By using the Website, you consent to the data practices described in this policy."
+				"text": "This Privacy Policy describes how Empowerment Through Mindset Foundation (“ETMF,” “ETM Foundation,” “Foundation,” “we,” “us,” or “our”) collects, uses, and protects the personal information of users who visit our website, https://etmfoundation.com (the “Website”). By using the Website, you consent to the data practices described in this policy."
 			}
 		],
 		"points": [{}]
@@ -14,11 +14,11 @@
 		"points": [
 			{
 				"textHeader": "Personal Information Provided by Users",
-				"text": "When interacting with the Website, you may provide personal information directly, such as when filling out forms, submitting feedback, or engaging with AI. This includes name, email address, and any other information you choose to provide."
+				"text": "When interacting with the Website, you may provide personal information directly, such as when filling out forms, submitting feedback, or contacting us. This includes name, email address, and any other information you choose to provide."
 			},
 			{
 				"textHeader": "Automatically Collected Information",
-				"text": "ETMF may collect data through cookies, Typeform, Google Forms, and similar technologies, including IP addresses, browser types, operating systems, and other usage data to analyze Website traffic, user interests, and improve Website engagement."
+				"text": "ETMF may collect data through cookies, Typeform, Google Forms, and other technologies, including IP addresses, browser types, operating systems, and other usage data to analyze Website traffic, understand user interests, and improve Website engagement."
 			}
 		]
 	},
@@ -27,16 +27,16 @@
 		"description": [{}],
 		"points": [
 			{
-				"textHeader": "Conversational Data with AI",
-				"text": "Users have the choice to save or not save conversational data when engaging with the search feature that's powered by AI. By default, conversational data is saved and may be used to enhance ETMF's AI assistance capabilities. Once saved, this conversational data cannot be deleted by users. The default setting can change depending on usage."
+				"textHeader": "AI Assistant",
+				"text": "The AI assistant on the Website is designed solely to help users learn about ETMF and navigate the Website. ETMF does not save or store any responses or interactions users have with the AI assistant."
 			},
 			{
 				"textHeader": "Improvement of Website Services",
-				"text": "Data collected from interactions with the AI assistant, forms, analytics tools and more are used to improve Website functionality, user experience, and content relevance."
+				"text": "Data collected through forms, analytics tools, and other interactions are used to improve Website functionality, user experience, and content relevance."
 			},
 			{
 				"textHeader": "Marketing and Analytics",
-				"text": "Data from user interactions, such as form submissions and website usage, may be used for marketing purposes, including understanding user interests and promoting relevant ETMF initiatives and programs."
+				"text": "Data from user interactions, such as form submissions and Website usage, may be used for marketing purposes, including understanding user interests and promoting relevant ETMF initiatives and programs."
 			}
 		]
 	},
@@ -46,15 +46,15 @@
 		"points": [
 			{
 				"textHeader": "Third-Party Processing and External Sharing",
-				"text": "User data, including conversational data saved from interactions with the AI assistant, may be processed and stored using third-party technologies and platforms, such as Gemini flash models and Gemini pro models. These processes adhere to industry standards and legal regulations concerning data privacy and security."
+				"text": "User data may be processed and stored using third-party technologies and platforms, such as Google Forms or Typeform. These processes adhere to industry standards and legal regulations concerning data privacy and security."
 			},
 			{
 				"textHeader": "Location of Data Processing",
-				"text": "Your data may be processed outside your geographic region or outside ETMF’s immediate data frameworks. This includes processing by third-party providers under applicable regulatory compliance standards in effect for AI and data privacy, such as those governing Typeform’s AI models."
+				"text": "Your data may be processed outside your geographic region or outside ETMF’s immediate data frameworks. This includes processing by third-party providers under applicable regulatory compliance standards in effect for AI and data privacy."
 			},
 			{
 				"textHeader": "Security and Compliance Measures",
-				"text": "While ETMF employs technologies and safeguards to protect your data, including encryption and secure storage protocols, we cannot guarantee that data handling practices by third parties, including Typeform, Google Forms, or Gemini model frameworks, will adhere to any specific methods or standards. ETMF strives to ensure due diligence and compliance with prevailing data protection regulations, but users should be aware that data is subject to processing and security protocols under third-party governance."
+				"text": "ETMF employs technologies and safeguards to protect your data. However, we cannot guarantee that third-party data handling practices, including Google Forms or Typeform, will adhere to specific methods or standards. Users interact with these third-party services at their own risk."
 			}
 		]
 	},
@@ -62,10 +62,6 @@
 		"title": "User Rights and Choices",
 		"description": [{}],
 		"points": [
-			{
-				"textHeader": "Opting to Save Data",
-				"text": "Users have control over their choice to save or not save their interactions with the search feature that uses AI. Saved interactions, however, cannot be deleted once stored."
-			},
 			{
 				"textHeader": "Cookie and Tracking Preferences",
 				"text": "Users may manage cookie settings and disable certain tracking technologies through their browser settings. However, doing so may affect the functionality and personalized experience on the Website."
@@ -77,8 +73,8 @@
 		"description": [{}],
 		"points": [
 			{
-				"textHeader": "Typeform, Google Forms, and Analytics",
-				"text": "The Website integrates Typeform or Google Forms for various functions, such as analytics, communication, and marketing. Information submitted via Typeform or Google Forms is handled under Typeform’s or Google Form's data privacy and security protocols. ETMF is not responsible for the practices or policies of Typeform or Google Forms, and users are encouraged to review Typeform’s or Google Form's legal documents on their websites."
+				"textHeader": "Analytics",
+				"text": "The Website integrates Typeform, Google Forms, or other technologies for functions such as analytics, communication, and marketing. Information submitted through these platforms is handled under their respective privacy and security protocols. ETMF is not responsible for the practices or policies of these third-party platforms, and users are encouraged to review Typeform’s and Google’s legal documents directly on their websites."
 			},
 			{
 				"textHeader": "External Links",
@@ -90,7 +86,7 @@
 		"title": "Data Security",
 		"description": [
 			{
-				"text": "ETMF implements reasonable technical and organizational measures to secure personal information and limit unauthorized access or disclosure. However, please note that no data transmission over the Internet or storage system can be guaranteed to be 100% secure. Users interact with the Website at their own risk, and ETMF cannot be held liable for any damages arising from security vulnerabilities beyond ETMF’s control, including those involving third-party technologies and software."
+				"text": "ETMF implements reasonable technical and organizational measures to secure personal information and limit unauthorized access or disclosure. However, no data transmission over the Internet or storage system can be guaranteed to be 100% secure. Users interact with the Website at their own risk, and ETMF cannot be held liable for any damages arising from security vulnerabilities beyond ETMF’s control, including those involving third-party technologies and software."
 			}
 		],
 		"points": [{}]
@@ -99,7 +95,16 @@
 		"title": "Image Data and Attribution",
 		"description": [
 			{
-				"text": "The Website incorporates images sourced from Unsplash, a third-party platform providing free public images. While these images do not collect personal data directly, they are displayed in compliance with Unsplash’s licensing requirements. Third-Party Links and Attribution: Certain images may include metadata or embedded links to the original creators or licensors on Unsplash. Users interacting with these images may be directed to external websites, and ETMF is not responsible for the privacy practices or content of such third-party platforms."
+				"text": "The Website incorporates images sourced from Unsplash, a third-party platform providing free public images. While these images do not collect personal data directly, they are displayed in compliance with Unsplash’s licensing requirements."
+			}
+		],
+		"points": [{}]
+	},
+	{
+		"title": "Third-Party Links and Attribution",
+		"description": [
+			{
+				"text": "Certain images may include metadata or embedded links to the original creators or licensors on Unsplash. Users interacting with these images may be directed to external websites, and ETMF is not responsible for the privacy practices or content of such third-party platforms."
 			}
 		],
 		"points": [{}]
@@ -110,11 +115,11 @@
 		"points": [
 			{
 				"textHeader": "Retention of User Data",
-				"text": "ETMF retains user data for as long as necessary to fulfill the purposes outlined in this Privacy Policy, including for compliance, analytics, and service improvement. Once conversational data is saved, it cannot be removed by users."
+				"text": "ETMF retains user data collected through forms or analytics tools for as long as necessary to fulfill the purposes outlined in this Privacy Policy, including compliance, analytics, and service improvement."
 			},
 			{
 				"textHeader": "Data Removal Requests",
-				"text": "Although saved conversational data cannot be deleted, users may request the removal of other data collected through forms or other Website interactions by contacting ETMF support down below. ETMF will make reasonable efforts to accommodate such requests, where feasible and in compliance with applicable laws."
+				"text": "Users may request the removal of data collected through forms or other Website interactions by contacting ETMF support at etmfoundation.business@gmail.com. ETMF will make reasonable efforts to accommodate such requests, where feasible and in compliance with applicable laws."
 			}
 		]
 	},
@@ -122,16 +127,25 @@
 		"title": "Compliance with Data Privacy Regulations",
 		"description": [
 			{
-				"text": "ETMF is committed to complying with applicable data privacy regulations, including but not limited to the GDPR (General Data Protection Regulation) for users within the EU and the CCPA (California Consumer Privacy Act) for California residents. ETMF will disclose and process data per these legal frameworks and may update this Privacy Policy as needed to reflect compliance requirements."
+				"text": "ETMF will disclose and process data per these legal frameworks and may update this Privacy Policy as needed to reflect evolving compliance requirements. ETMF is committed to complying with applicable data privacy regulations, including but not limited to:"
 			}
 		],
-		"points": [{}]
+		"points": [
+			{
+				"textHeader": "GDPR (General Data Protection Regulation)",
+				"text": "For users within the European Union."
+			},
+			{
+				"textHeader": "CCPA (California Consumer Privacy Act)",
+				"text": "For California residents."
+			}
+		]
 	},
 	{
 		"title": "Changes to this Privacy Policy",
 		"description": [
 			{
-				"text": "ETMF may update this Privacy Policy periodically. Users will be notified of significant changes through the Website or, where applicable, on the website. Continued use of the Website after updates are posted signifies user acceptance of the revised Privacy Policy."
+				"text": "ETMF may update this Privacy Policy periodically. Users will be notified of significant changes through the Website. Continued use of the Website after updates are posted signifies user acceptance of the revised Privacy Policy."
 			}
 		],
 		"points": [{}]
@@ -140,14 +154,9 @@
 		"title": "Contact Us",
 		"description": [
 			{
-				"text": "For questions about this Privacy Policy or data practices, please contact ETMF support down below"
+				"text": "For questions about this Privacy Policy or data practices, please contact us at: Email: etmfoundation.business@gmail.com"
 			}
 		],
-		"points": [
-			{
-				"textHeader": "",
-				"text": ""
-			}
-		]
+		"points": [{}]
 	}
 ]
