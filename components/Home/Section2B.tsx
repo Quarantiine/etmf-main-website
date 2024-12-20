@@ -25,7 +25,7 @@ export default function Section2B(): React.ReactElement {
 		},
 		{
 			src: "https://res.cloudinary.com/dnmdoncxt/video/upload/f_auto:video,q_auto/v1/Podcast/Shorts/rczra6fqtmlxtvyzeg9z",
-			title: "Finding Humor in Anything",
+			title: "Humor in Anything",
 		},
 	];
 

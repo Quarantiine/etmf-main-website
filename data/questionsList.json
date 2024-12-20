@@ -31,5 +31,12 @@
 				"text": "Where can I find a financial report or learn about how donations are used?"
 			}
 		]
+	},
+	{
+		"title": "For Legal Queries",
+		"prompts": [
+			{ "text": "What are ETMF's Terms & Conditions about?" },
+			{ "text": "What are ETMF's Privacy Policy about?" }
+		]
 	}
 ]
