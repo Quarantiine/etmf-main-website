@@ -50,7 +50,7 @@ export default function AIRoles({ conversation }: { conversation: Content }) {
 											target="_blank"
 											rel="noopener noreferrer"
 										>
-											{`Link`}
+											{`Page`}
 										</a>
 									),
 								}}
@@ -66,32 +66,6 @@ export default function AIRoles({ conversation }: { conversation: Content }) {
 }
 
 const AIAssistant = ({ part }: { part: Part }) => {
-	const processUrl = (href: string) => {
-		// Add scheme if it's missing
-		let validUrl = href;
-
-		// If the URL is missing a scheme (http:// or https://), prepend one.
-		if (!/^https?:\/\//.test(href)) {
-			validUrl = "https://" + href;
-		}
-
-		try {
-			const url = new URL(validUrl);
-			let domain;
-
-			if (url.hostname.includes("www.")) {
-				domain = url.hostname.split(".")[1]; // Removes "www"
-			} else {
-				domain = url.hostname.split(".")[0]; // Takes the first part
-			}
-
-			return domain;
-		} catch (error) {
-			console.error("Invalid URL:", `${href} | ${error}`);
-			return ""; // Return empty string for invalid URL
-		}
-	};
-
 	return (
 		<div className="ai-overflow-x overflow-x-scroll overflow-y-hidden w-fit flex flex-col gap-4">
 			<ReactMarkdown
@@ -107,7 +81,7 @@ const AIAssistant = ({ part }: { part: Part }) => {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							{href && processUrl(href)}
+							{"Page"}
 						</a>
 					),
 				}}
