@@ -20,8 +20,8 @@ export default function Section2B(): React.ReactElement {
 			title: "Delayed Gratification",
 		},
 		{
-			src: "https://res.cloudinary.com/dnmdoncxt/video/upload/f_auto:video,q_auto/v1/Podcast/Shorts/uxbtlabukvvehrdpfncb",
-			title: "Never Give Up",
+			src: "https://res.cloudinary.com/dnmdoncxt/video/upload/f_auto:video,q_auto/v1/Podcast/Shorts/wsazlh3ynaed9iaoz9oj",
+			title: "Empowering Future Leaders",
 		},
 		{
 			src: "https://res.cloudinary.com/dnmdoncxt/video/upload/f_auto:video,q_auto/v1/Podcast/Shorts/rczra6fqtmlxtvyzeg9z",
@@ -39,7 +39,7 @@ export default function Section2B(): React.ReactElement {
 
 					<p>{`By fostering critical thinking, creativity, and leadership, we enable students to unlock their potential and drive meaningful change in their communities`}</p>
 
-					<div className="default-overflow-x overflow-x-auto overflow-y-hidden w-full xl:w-auto h-full grid grid-flow-col auto-cols-[minmax(254px,4fr)] gap-10">
+					<div className="default-overflow-x overflow-x-auto overflow-y-hidden w-full xl:w-auto h-full grid grid-flow-col auto-cols-[minmax(254px,3fr)] gap-10">
 						{shortsList.map((short: ShortsTypes, index: number) => {
 							return <Shorts key={index} short={short} />;
 						})}
