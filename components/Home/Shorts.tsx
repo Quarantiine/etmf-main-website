@@ -14,7 +14,7 @@ export default function Shorts({
 }): React.ReactElement {
 	const [isPlaying, setIsPlaying] = useState<boolean>(false);
 	const [showPauseButton, setShowPauseButton] = useState<boolean>(false);
-	const videoRef = useRef<HTMLVideoElement>(null);
+	const videoRef = useRef<HTMLVideoElement | null>(null);
 
 	const togglePlay = (): void => {
 		if (isPlaying) {
@@ -29,6 +29,7 @@ export default function Shorts({
 	const handleShowPauseButton = () => {
 		setShowPauseButton(true);
 	};
+
 	const handleHidePauseButton = () => {
 		setShowPauseButton(false);
 	};

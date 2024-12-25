@@ -54,6 +54,18 @@ export default function FeaturingSection() {
 					mediaType: "",
 				},
 				{
+					title: "Mindset Matters Podcast EP14 Dropped!",
+					image:
+						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Featured%20Content/m12mibbf26qg3f4cp6iw",
+					imageCollage: [
+						{
+							src: "none",
+						},
+					],
+					link: "https://youtu.be/-43UQc8j94M?si=XqkUyzwrH12I8kwL",
+					mediaType: "",
+				},
+				{
 					title: "Mindset Matters Podcast EP13 Dropped!",
 					image:
 						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Featured%20Content/trtvwtukpiycuwi2xdk8",
@@ -75,18 +87,6 @@ export default function FeaturingSection() {
 						},
 					],
 					link: "https://youtu.be/at-oyezrRwU?si=FKzfxndF0KoLX348",
-					mediaType: "",
-				},
-				{
-					title: "Mindset Matters Podcast EP11 Dropped!",
-					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/q4fiuz59ulfplqbmtfr4",
-					imageCollage: [
-						{
-							src: "none",
-						},
-					],
-					link: "https://www.youtube.com/watch?v=6Sx-8Fy9uzg&list=PL-ew-Q-81RCuPlGcZz1ja6_8wybT4qUFJ&index=1",
 					mediaType: "",
 				},
 			],
