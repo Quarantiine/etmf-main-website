@@ -52,6 +52,25 @@
 		]
 	},
 	{
+		"title": "Students Who Create Impact",
+		"subTitle": "Observe what students are doing to create impact",
+		"link": "",
+		"enableBg": false,
+		"content": [
+			{
+				"title": "Get to Know Our CEO From Dallas College",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Social%20Media/e4fxbqflfvqbiodbvofz",
+				"imageCollage": [
+					{
+						"src": "none"
+					}
+				],
+				"link": "https://x.com/dallascollegetx/status/1859257947773079747/photo/",
+				"mediaType": ""
+			}
+		]
+	},
+	{
 		"title": "Mindset Media Productions",
 		"subTitle": "Discover the Content MMP is Creating",
 		"link": "",

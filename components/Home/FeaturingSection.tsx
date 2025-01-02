@@ -18,6 +18,7 @@ interface ResourcesTypes {
 		}[];
 		link: string;
 		mediaType: string;
+		important: boolean;
 	}[];
 }
 
@@ -29,6 +30,7 @@ interface ContentTypes {
 	}[];
 	link: string;
 	mediaType: string;
+	important: boolean;
 }
 
 export default function FeaturingSection() {
@@ -52,6 +54,33 @@ export default function FeaturingSection() {
 					],
 					link: "https://docs.google.com/forms/d/e/1FAIpQLSf1N0zcn6oanoTVBccynQ_D7fQFiy6gCMn5L2uaasIDKqEB2w/viewform",
 					mediaType: "",
+					important: true,
+				},
+				{
+					title: "Get to Know Our CEO From Dallas College",
+					image:
+						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Social%20Media/e4fxbqflfvqbiodbvofz",
+					imageCollage: [
+						{
+							src: "none",
+						},
+					],
+					link: "https://x.com/dallascollegetx/status/1859257947773079747/photo/",
+					mediaType: "",
+					important: false,
+				},
+				{
+					title: "Mindset Matters Podcast EP15 Dropped!",
+					image:
+						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Featured%20Content/kxpijsxnvodto6cchvwd",
+					imageCollage: [
+						{
+							src: "none",
+						},
+					],
+					link: "https://youtu.be/-mzOPaGaEJQ",
+					mediaType: "",
+					important: false,
 				},
 				{
 					title: "Mindset Matters Podcast EP14 Dropped!",
@@ -64,30 +93,7 @@ export default function FeaturingSection() {
 					],
 					link: "https://youtu.be/-43UQc8j94M?si=XqkUyzwrH12I8kwL",
 					mediaType: "",
-				},
-				{
-					title: "Mindset Matters Podcast EP13 Dropped!",
-					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Featured%20Content/trtvwtukpiycuwi2xdk8",
-					imageCollage: [
-						{
-							src: "none",
-						},
-					],
-					link: "https://youtu.be/NoLKNFXQ1Bk?si=F7HrrEZofvrkq4-5",
-					mediaType: "",
-				},
-				{
-					title: "Mindset Matters Podcast EP12 Dropped!",
-					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Podcast/vdcokbebhiittbv7othk",
-					imageCollage: [
-						{
-							src: "none",
-						},
-					],
-					link: "https://youtu.be/at-oyezrRwU?si=FKzfxndF0KoLX348",
-					mediaType: "",
+					important: false,
 				},
 			],
 		},
@@ -138,7 +144,13 @@ export default function FeaturingSection() {
 										{resource.content.map(
 											(data: ContentTypes, index: number) => {
 												return (
-													<React.Fragment key={index}>
+													<div className="relative" key={index}>
+														{data.important && (
+															<div className="w-fit bg-white h-fit px-3 py-1 rounded-xl z-10 absolute top-3 right-3 lato-bold text-black shadow-xl border-2 border-[#4bf2c7]">
+																<p>Important!</p>
+															</div>
+														)}
+
 														<Link
 															href={data.link}
 															target="_blank"
@@ -157,7 +169,7 @@ export default function FeaturingSection() {
 																{data.title}
 															</h1>
 														</Link>
-													</React.Fragment>
+													</div>
 												);
 											}
 										)}
@@ -168,8 +180,6 @@ export default function FeaturingSection() {
 					</React.Fragment>
 				);
 			})}
-
-			{}
 		</>
 	);
 }
