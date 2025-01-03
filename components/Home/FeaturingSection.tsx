@@ -57,7 +57,7 @@ export default function FeaturingSection() {
 					important: true,
 				},
 				{
-					title: "Get to Know Our CEO From Dallas College",
+					title: "Dallas College's Story on our President, CEO",
 					image:
 						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Social%20Media/e4fxbqflfvqbiodbvofz",
 					imageCollage: [
