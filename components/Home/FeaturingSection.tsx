@@ -67,7 +67,7 @@ export default function FeaturingSection() {
 					],
 					link: "https://x.com/dallascollegetx/status/1859257947773079747/photo/",
 					mediaType: "",
-					important: false,
+					important: true,
 				},
 				{
 					title: "Mindset Matters Podcast EP15 Dropped!",
@@ -146,8 +146,15 @@ export default function FeaturingSection() {
 												return (
 													<div className="relative" key={index}>
 														{data.important && (
-															<div className="w-fit bg-white h-fit px-3 py-1 rounded-xl z-10 absolute top-3 right-3 lato-bold text-black shadow-xl border-2 border-[#4bf2c7]">
-																<p>Important!</p>
+															<div className="w-fit bg-white h-fit p-.5 rounded-full z-10 absolute top-3 right-3 lato-bold text-black shadow-xl border-2 border-[#4bf2c7]">
+																<Image
+																	className="object-cover object-center w-auto h-[30px]"
+																	src={"/icons/star.svg"}
+																	title="Important"
+																	alt="image"
+																	width={33}
+																	height={33}
+																/>
 															</div>
 														)}
 
