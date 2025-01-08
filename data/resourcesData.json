@@ -58,7 +58,7 @@
 		"enableBg": false,
 		"content": [
 			{
-				"title": "Get to Know Our CEO From Dallas College",
+				"title": "Dallas College's Story on our President, CEO",
 				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Social%20Media/e4fxbqflfvqbiodbvofz",
 				"imageCollage": [
 					{
@@ -66,7 +66,8 @@
 					}
 				],
 				"link": "https://x.com/dallascollegetx/status/1859257947773079747/photo/",
-				"mediaType": ""
+				"mediaType": "",
+				"important": false
 			}
 		]
 	},

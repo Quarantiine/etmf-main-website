@@ -44,6 +44,20 @@ export default function FeaturingSection() {
 			enableBg: false,
 			content: [
 				{
+					title:
+						"The Amazing Tim McDuffie | Mindset Matters Podcast EP16 Dropped!",
+					image:
+						"https://res.cloudinary.com/dnmdoncxt/image/upload/v1736349535/maxresdefault_pelma7.jpg",
+					imageCollage: [
+						{
+							src: "none",
+						},
+					],
+					link: "https://youtu.be/AVM4FYXTxHY",
+					mediaType: "",
+					important: true,
+				},
+				{
 					title: "ETMF Speaker Series Event Coming Up! Register Now!",
 					image:
 						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ETMF%20Academy/wvwpmrgawzovcygl1c0x",
@@ -67,7 +81,7 @@ export default function FeaturingSection() {
 					],
 					link: "https://x.com/dallascollegetx/status/1859257947773079747/photo/",
 					mediaType: "",
-					important: true,
+					important: false,
 				},
 				{
 					title: "Mindset Matters Podcast EP15 Dropped!",
@@ -79,19 +93,6 @@ export default function FeaturingSection() {
 						},
 					],
 					link: "https://youtu.be/-mzOPaGaEJQ",
-					mediaType: "",
-					important: false,
-				},
-				{
-					title: "Mindset Matters Podcast EP14 Dropped!",
-					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Featured%20Content/m12mibbf26qg3f4cp6iw",
-					imageCollage: [
-						{
-							src: "none",
-						},
-					],
-					link: "https://youtu.be/-43UQc8j94M?si=XqkUyzwrH12I8kwL",
 					mediaType: "",
 					important: false,
 				},
