@@ -8,7 +8,7 @@ This repository contains the source code for the Empowerment Through Mindset Fou
 - **AI Integration:** An intelligent assistant guiding users through the site, answering FAQs, and providing personalized support.
 - **Easy Navigation:** Intuitive site structure and clear calls to action enabling users to easily find what they need.
 - **Engagement Opportunities:** Clear pathways for users to get involved through donations, partnerships, or volunteering.
-- **Resources:** Access to articles, publications, and multimedia content related to ETMF's mission and programs.
+- **Blog:** Access to articles, publications, and multimedia content related to ETMF's mission and programs.
 - **Responsive Design:** Optimized for viewing across various devices (desktops, tablets, and mobile phones).
 
 ## Technologies Used
@@ -28,7 +28,7 @@ This repository contains the source code for the Empowerment Through Mindset Fou
 ETMF's AI assistant, is integrated into the website to provide a more engaging and helpful user experience. AI assistant is capable of:
 
 - **Answering FAQs:** Providing immediate responses to common questions about ETMF.
-- **Guiding Navigation:** Helping users find specific information or resources on the website.
+- **Guiding Navigation:** Helping users find specific information or blog on the website.
 - **Offering Personalized Recommendations:** Suggesting relevant content based on user interests.
 - **Collecting User Feedback:** Gathering information to continuously improve the website and the AI assistant's performance.
 

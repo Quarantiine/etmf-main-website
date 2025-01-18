@@ -51,7 +51,7 @@ export const Section3: React.FC = () => {
 					</h1>
 
 					<p>
-						{`Here are just a few examples of how we're harnessing technology to create a more vibrant and connected community. Discover more in the "Programs" or "Resources" tab!`}
+						{`Here are just a few examples of how we're harnessing technology to create a more vibrant and connected community. Discover more in the "Programs" or "Blog" tab!`}
 					</p>
 
 					<div className="grid grid-cols-1 w-full mx-auto h-auto justify-center items-center gap-5 relative">

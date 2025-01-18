@@ -22,7 +22,7 @@ export default function NavigationBar(): React.ReactElement {
 		{ text: "About Us", urlPath: "/aboutus" },
 		{ text: "Programs", urlPath: "/programs" },
 		{ text: "Get Involved", urlPath: "/getinvolved" },
-		{ text: "Resources", urlPath: "/resources" },
+		{ text: "Blog", urlPath: "/blog" },
 	];
 
 	// State to keep track of the current page

@@ -26,7 +26,7 @@ export async function getAllPages() {
 			priority: 1,
 		},
 		{
-			url: "/resources",
+			url: "/blog",
 			changefreq: "monthly",
 			priority: 1,
 		},

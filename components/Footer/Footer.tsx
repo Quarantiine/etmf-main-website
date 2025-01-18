@@ -78,8 +78,8 @@ export default function Footer(): React.ReactElement {
 			text: "Get Involved",
 		},
 		{
-			href: "https://etmfoundation.com/resources",
-			text: "Resources",
+			href: "https://etmfoundation.com/blog",
+			text: "Blog",
 		},
 	];
 

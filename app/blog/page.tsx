@@ -5,7 +5,7 @@ import resourcesData from "@/data/resourcesData.json";
 import { ResourcesContent } from "@/components/Resources/ResourcesContent";
 
 export const metadata: Metadata = {
-	title: "Resources",
+	title: "Blog",
 	description:
 		"Explore how the ETM Foundation is impacting students’ lives and enriching communities. Discover our latest advanced technology developments, initiatives, and much more.",
 };
@@ -26,7 +26,7 @@ interface ResourcesTypes {
 	}[];
 }
 
-export default function Resources(): React.ReactElement {
+export default function Blog(): React.ReactElement {
 	return (
 		<>
 			<main className="flex flex-col gap-20 w-full h-auto justify-center items-center">
@@ -46,10 +46,10 @@ export default function Resources(): React.ReactElement {
 
 					<div className="w-full h-full flex flex-col justify-center items-center bg-[rgba(0,0,0,0.7)] backdrop-blur-md text-white z-10">
 						<div className="default-width py-10 sm:py-16 h-auto flex flex-col justify-center items-start gap-4">
-							<h1 className="montserrat-bold text-5xl">Resoures</h1>
+							<h1 className="montserrat-bold text-5xl">Blog</h1>
 							<p>
 								{
-									"The resource page keeps you updated on ETM Foundation's latest activities, featuring diverse media formats to foster a vibrant, engaged, and empowered community."
+									"The blog page keeps you updated on ETM Foundation's latest activities, featuring diverse media formats to foster a vibrant, engaged, and empowered community."
 								}
 							</p>
 
