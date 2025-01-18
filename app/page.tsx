@@ -6,7 +6,7 @@ import { Section3 } from "@/components/Home/Section3";
 import Section4 from "@/components/Home/Section4";
 import type { Metadata } from "next";
 import React from "react";
-import HeaderBanner from "@/components/Home/HeaderBanner";
+// import HeaderBanner from "@/components/Home/HeaderBanner";
 
 // Metadata object for the page, includes title and description for SEO and display purposes
 export const metadata: Metadata = {
@@ -19,7 +19,7 @@ export default function Home(): React.ReactElement {
 	return (
 		<>
 			<div className="flex flex-col gap-20 h-auto w-full">
-				<HeaderBanner />
+				{/* <HeaderBanner /> */}
 
 				<div className="flex flex-row gap-5 default-width mx-auto">
 					<Section1 />
