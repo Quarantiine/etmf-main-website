@@ -54,13 +54,13 @@ export default function Shorts({
 	return (
 		<>
 			<div className="default-overflow-x-child relative w-full h-fit mx-auto rounded-2xl overflow-hidden">
-				<div className="bg-gradient-green-1 absolute top-0 left-0 w-full h-full rounded-2xl flex flex-col gap-2 justify-center items-center">
+				<div className="bg-gradient-green-1 absolute top-0 left-0 w-full h-full rounded-2xl flex flex-col justify-center items-center">
 					<Image
-						className="object-cover w-auto h-[80px] no-style-btn"
+						className="object-cover w-auto h-[90px] no-style-btn"
 						src="/etmf_thumb_tack.png"
 						alt="logo"
-						width={80}
-						height={80}
+						width={90}
+						height={90}
 						priority={true}
 					/>
 
@@ -75,10 +75,10 @@ export default function Shorts({
 						onMouseLeave={handleHidePauseButton}
 						onEnded={handleVideoEnded}
 					>
-						{/* <source src={short.src} type="video/mp4" />
+						<source src={short.src} type="video/mp4" />
 						<source src={short.src} type="video/webm" />
 						<source src={short.src} type="video/ogg" />
-						Your browser does not support the video tag. */}
+						Your browser does not support the video tag.
 					</video>
 
 					<div
