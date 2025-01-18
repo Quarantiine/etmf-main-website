@@ -64,7 +64,7 @@ export default function Shorts({
 						priority={true}
 					/>
 
-					<p className="text-gray-400">Click {'"Play"'} Video</p>
+					<p className="text-gray-400">Click {'"Play"'} to Watch Short</p>
 				</div>
 
 				<div className="relative w-full h-full rounded-2xl flex flex-col justify-center">
