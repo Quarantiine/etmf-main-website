@@ -56,7 +56,7 @@ export default function Shorts({
 			<div className="default-overflow-x-child relative w-full h-fit mx-auto rounded-2xl overflow-hidden">
 				<div className="bg-gradient-green-1 absolute top-0 left-0 w-full h-full rounded-2xl flex flex-col justify-center items-center">
 					<Image
-						className="object-cover w-auto h-[90px] no-style-btn"
+						className="object-cover w-auto h-[85px] no-style-btn"
 						src="/etmf_thumb_tack.png"
 						alt="logo"
 						width={90}
@@ -64,7 +64,7 @@ export default function Shorts({
 						priority={true}
 					/>
 
-					<p className="text-gray-400">Click {'"Play"'} to Watch Short</p>
+					<p className="text-white">Click {'"Play"'} to Watch Short</p>
 				</div>
 
 				<div className="relative w-full h-full rounded-2xl flex flex-col justify-center">
