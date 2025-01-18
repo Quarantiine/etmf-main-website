@@ -6,7 +6,6 @@ import React, { useState } from "react";
 import { URLs } from "./URLs";
 import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 
 // Define the types for the URL list below
 interface urlListTypes {
@@ -28,7 +27,6 @@ export default function NavigationBar(): React.ReactElement {
 
 	// State to keep track of the current page
 	const [openMobileNavbar, setOpenMobileNavbar] = useState<boolean>(false);
-	const [openUpdateBanner, setOpenUpdateBanner] = useState<boolean>(false);
 
 	const handleOpenMobileNavbar = () => {
 		setOpenMobileNavbar(!openMobileNavbar);
@@ -39,112 +37,10 @@ export default function NavigationBar(): React.ReactElement {
 		setOpenMobileNavbar(false);
 	};
 
-	const handleCloseUpdateBanner = () => {
-		setOpenUpdateBanner(!openUpdateBanner);
-	};
-
 	return (
 		<>
 			<div className="flex flex-col gap-2 w-full h-fit justify-center items-end sticky top-0 left-0 z-50">
 				<nav className="bg-[rgba(255,255,255,0.3)] backdrop-blur-3xl h-full w-full text-black">
-					{!openUpdateBanner && (
-						<div className="flex flex-row w-full bg-green-1 px-10 py-5 gap-1 sticky top-0 left-0 justify-between items-center text-sm z-50">
-							<p>
-								🎤 New event coming soon! Sign up here:{" "}
-								<Link
-									href={
-										"https://docs.google.com/forms/d/e/1FAIpQLSf1N0zcn6oanoTVBccynQ_D7fQFiy6gCMn5L2uaasIDKqEB2w/viewform?pli=1"
-									}
-									target="_blank"
-									className="no-style-btn underline"
-								>
-									Event Registration
-								</Link>
-								{". "}
-								By using this website, you agree to our{" "}
-								<Link
-									href={"/terms"}
-									target="_blank"
-									className="no-style-btn underline"
-								>
-									Terms & Conditions{" "}
-								</Link>{" "}
-								and{" "}
-								<Link
-									href={"/privacypolicy"}
-									target="_blank"
-									className="no-style-btn underline"
-								>
-									Privacy Policy
-								</Link>
-								.
-							</p>
-
-							<button
-								onClick={handleCloseUpdateBanner}
-								className="no-style-btn"
-							>
-								<Image
-									className="min-w-[19px] max-w-[19px] h-auto"
-									src={"/icons/close.svg"}
-									alt="icon"
-									width={20}
-									height={20}
-								/>
-							</button>
-						</div>
-					)}
-
-					{/* {!openUpdateBanner &&
-						createPortal(
-							<div className="flex flex-row w-[50%] sm:w-[500px] bg-green-1 px-10 py-5 gap-1 fixed bottom-5 left-5 justify-center items-center text-sm z-50 rounded-xl">
-								<p>
-									🎤 New event coming soon! Sign up here:{" "}
-									<Link
-										href={
-											"https://docs.google.com/forms/d/e/1FAIpQLSf1N0zcn6oanoTVBccynQ_D7fQFiy6gCMn5L2uaasIDKqEB2w/viewform?pli=1"
-										}
-										target="_blank"
-										className="no-style-btn underline"
-									>
-										Event Registration
-									</Link>
-									{". "}
-									By using this website, you agree to our{" "}
-									<Link
-										href={"/terms"}
-										target="_blank"
-										className="no-style-btn underline"
-									>
-										Terms & Conditions{" "}
-									</Link>{" "}
-									and{" "}
-									<Link
-										href={"/privacypolicy"}
-										target="_blank"
-										className="no-style-btn underline"
-									>
-										Privacy Policy
-									</Link>
-									.
-								</p>
-
-								<button
-									onClick={handleCloseUpdateBanner}
-									className="no-style-btn"
-								>
-									<Image
-										className="min-w-[19px] max-w-[19px] h-auto"
-										src={"/icons/close.svg"}
-										alt="icon"
-										width={20}
-										height={20}
-									/>
-								</button>
-							</div>,
-							document.body
-						)} */}
-
 					{/* Tablet/Desktop Navigation Bar */}
 					<div className="hidden md:flex w-full h-fit flex-row justify-between items-center gap-4 px-5 sm:px-10 py-4">
 						<button onClick={handleHomeBtn}>
