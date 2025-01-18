@@ -13,32 +13,32 @@ export async function getAllPages() {
 		{
 			url: "/aboutus",
 			changefreq: "monthly",
-			priority: 0.8,
+			priority: 1,
 		},
 		{
 			url: "/programs",
 			changefreq: "monthly",
-			priority: 0.8,
+			priority: 1,
 		},
 		{
 			url: "/getinvolved",
 			changefreq: "monthly",
-			priority: 0.8,
+			priority: 1,
 		},
 		{
 			url: "/resources",
 			changefreq: "monthly",
-			priority: 0.6,
+			priority: 1,
 		},
 		{
 			url: "/privacypolicy",
 			changefreq: "monthly",
-			priority: 0.7,
+			priority: 1,
 		},
 		{
 			url: "/terms",
 			changefreq: "monthly",
-			priority: 0.7,
+			priority: 1,
 		},
 	];
 
