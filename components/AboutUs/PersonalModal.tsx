@@ -46,26 +46,26 @@ export default function PersonalModal({
 
 	return (
 		<>
-			<div className="flex flex-col justify-center items-center h-fit relative w-full rounded-xl overflow-hidden">
+			<div className="flex flex-col gap-3 justify-start items-center h-fit relative w-full">
 				<button
 					onClick={handleOpeningModal}
-					className="no-style-btn bg-gray-400 p-5 w-full h-[400px] sm:h-[300px] flex flex-col relative justify-end items-start text-start"
+					className="no-style-btn black p-5 w-full h-[400px] sm:h-[300px] flex flex-col relative justify-end items-start text-start rounded-3xl overflow-hidden"
 				>
 					<Image
-						className="object-cover object-center"
+						className="object-cover"
 						src={team.picture}
 						alt="image"
 						fill
 						sizes="(max-width: 2000px) 100vw, (max-width: 1200px) 50vw, 33vw"
 					/>
 
-					<div className="default-gradient-bg" />
-
-					<div className="flex flex-col relative justify-end items-start text-start w-full z-10">
-						<h1 className="montserrat-bold text-xl">{team.name}</h1>
-						<p>{team.position}</p>
-					</div>
+					{/* <div className="default-gradient-bg" /> */}
 				</button>
+
+				<div className="flex flex-col relative justify-end items-start text-start w-full z-10 text-black">
+					<h1 className="montserrat-bold text-xl">{team.name}</h1>
+					<p>{team.position}</p>
+				</div>
 			</div>
 
 			{openModal &&

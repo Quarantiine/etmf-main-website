@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import PersonaModal from "./PersonaModal";
+import PersonalModal from "./PersonalModal";
 import teamData from "@/data/teamData.json";
 
 interface TeamDataTypes {
@@ -22,7 +22,7 @@ const OurTeam: React.FC = () => {
 
 			<div className="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 text-white relative gap-10 justify-center sm:justify-start items-center w-full h-full">
 				{teamData.slice(0, 6).map((team: TeamDataTypes, index: number) => {
-					return <PersonaModal key={index} team={team} />;
+					return <PersonalModal key={index} team={team} />;
 				})}
 			</div>
 		</>
