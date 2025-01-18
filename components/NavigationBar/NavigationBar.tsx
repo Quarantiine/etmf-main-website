@@ -48,7 +48,7 @@ export default function NavigationBar(): React.ReactElement {
 			<div className="flex flex-col gap-2 w-full h-fit justify-center items-end sticky top-0 left-0 z-50">
 				<nav className="bg-[rgba(255,255,255,0.3)] backdrop-blur-3xl h-full w-full text-black">
 					{!openUpdateBanner && (
-						<div className="flex flex-row w-full bg-green-1 px-10 py-5 gap-1 sticky top-0 left-0 justify-start items-center text-sm z-50">
+						<div className="flex flex-row w-full bg-green-1 px-10 py-5 gap-1 sticky top-0 left-0 justify-between items-center text-sm z-50">
 							<p>
 								🎤 New event coming soon! Sign up here:{" "}
 								<Link
