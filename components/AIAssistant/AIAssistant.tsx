@@ -33,14 +33,14 @@ export default function AIAssistant(): React.ReactElement {
 
 	return (
 		<>
-			<div className="fixed bottom-5 right-5 z-50 ai-assistant-modal">
+			<div className="ai-assistant-modal fixed top-1/2 -translate-y-1/2 right-0 z-50">
 				{showPopUpMessage && (
-					<div className="flex flex-row justify-start items-center gap-2 w-[175px] h-fit absolute bottom-20 right-0 text-sm !bg-white shadow-lg rounded-xl px-3 py-2">
+					<div className="flex flex-row justify-start items-center gap-2 w-[175px] h-fit absolute bottom-0 right-14 text-sm !bg-white shadow-lg rounded-xl px-3 py-2">
 						<button
 							onClick={handleOpenAIAssistant}
 							className="no-style-btn text-start"
 						>
-							Need Help Finding Something Fast?
+							Use AI to find what you need
 						</button>
 
 						<button onClick={handlePopUpMessage} className="no-style-btn">
@@ -56,12 +56,12 @@ export default function AIAssistant(): React.ReactElement {
 				)}
 
 				<button className="no-style-btn" onClick={handleOpenAIAssistant}>
-					<div className="rounded-full w-16 h-16 bg-green-3 flex justify-center items-center z-50 shadow-[0px_0px_10px_0px_rgba(0,0,0,0.4)]">
+					<div className="rounded-l-3xl w-12 h-12 bg-green-3 flex justify-center items-center z-50 shadow-[0px_0px_10px_0px_rgba(0,0,0,0.4)]">
 						{openAIAssistant ? (
 							<>
 								<Image
 									className="w-auto h-[25px]"
-									src={"/icons/search-white.svg"}
+									src={"/icons/ai-assistant.png"}
 									alt="icon"
 									width={25}
 									height={25}
@@ -71,7 +71,7 @@ export default function AIAssistant(): React.ReactElement {
 							<>
 								<Image
 									className="w-auto h-[25px]"
-									src={"/icons/search-white.svg"}
+									src={"/icons/ai-assistant.png"}
 									alt="icon"
 									width={25}
 									height={25}

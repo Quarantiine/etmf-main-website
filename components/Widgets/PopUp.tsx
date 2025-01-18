@@ -14,7 +14,7 @@ export default function PopUp(): React.ReactElement {
 	return (
 		<>
 			{!openUpdateBanner && (
-				<div className="flex flex-row w-[50%] sm:w-[500px] bg-green-1 px-10 py-5 gap-1 fixed bottom-5 left-5 justify-center items-center text-sm z-50 rounded-xl">
+				<div className="flex flex-row w-[90%] sm:w-[500px] bg-green-1 px-10 py-5 gap-1 fixed bottom-10 left-10 justify-center items-center text-sm z-50 rounded-xl">
 					<p>
 						🎤 New event coming soon! Sign up here:{" "}
 						<Link

@@ -21,14 +21,6 @@ interface QuestionListTypes {
 	}[];
 }
 
-// interface SalesDataTypes {
-// 	date: string;
-// 	item: string;
-// 	price: number;
-// 	quantity: number;
-// 	_id: number;
-// }
-
 export default function AIComponent({
 	handleOpenAIAssistant,
 }: {
@@ -45,12 +37,8 @@ export default function AIComponent({
 
 	const [prompt, setPrompt] = useState<string>("");
 	const [closePrePrompts, setClosePrePrompts] = useState<boolean>(false);
-	// const [saveConversation, setSaveConversation] = useState<boolean>(false);
-	// const [showInfo, setShowInfo] = useState<boolean>(false);
 	const [showLanguageList, setShowLanguageList] = useState<boolean>(false);
 	const [languageSearch, setLanguageSearch] = useState("");
-	// const [data, setData] = useState<SalesDataTypes[]>([]);
-	// const [dbError, setDBError] = useState<string>("");
 
 	const ChatBoxRef = useRef<HTMLDivElement | null>(null);
 
@@ -62,27 +50,12 @@ export default function AIComponent({
 
 	const handlePrePrompts = (text: string) => {
 		setPrompt(text);
+		setClosePrePrompts(true);
 	};
 
 	const handleClosePrePrompts = () => {
 		setClosePrePrompts(!closePrePrompts);
 	};
-
-	// const handleShowInfo = () => {
-	// 	setShowInfo(!showInfo);
-	// };
-
-	// useEffect(() => {
-	// 	const closeModal = (e: MouseEvent) => {
-	// 		const target = e.target as HTMLElement;
-	// 		if (!target.closest(".show-info")) {
-	// 			setShowInfo(false);
-	// 		}
-	// 	};
-
-	// 	document.addEventListener("mousedown", closeModal);
-	// 	return () => document.removeEventListener("mousedown", closeModal);
-	// }, []);
 
 	const handlePrompt = async () => {
 		if (prompt) {
@@ -126,32 +99,6 @@ export default function AIComponent({
 		setLanguageSearch(e.target.value);
 	};
 
-	// useEffect(() => {
-	// 	async function fetchData() {
-	// 		try {
-	// 			const res = await fetch("/api/mongoDB");
-	// 			if (!res.ok) throw new Error("Failed to fetch data");
-	// 			const json = await res.json();
-	// 			setData(json.salesData);
-	// 		} catch (err: unknown) {
-	// 			if (err instanceof Error) {
-	// 				setDBError(err.message);
-	// 			} else {
-	// 				setDBError(`Unknown Error: ${err}`);
-	// 			}
-	// 		}
-	// 	}
-
-	// 	fetchData();
-	// }, []);
-
-	// const handleSaveConversations = () => {
-	// 	setSaveConversation(!saveConversation);
-
-	// 	console.log(data.map((value) => value));
-	// 	console.log(dbError);
-	// };
-
 	return (
 		<>
 			<div className="fixed bottom-0 right-0 w-full border-t-4 h-full mt-auto bg-gradient-to-tr bg-[rgba(255,255,255,0.9)] backdrop-blur-xl z-[60] flex flex-col justify-center items-center">
@@ -174,7 +121,6 @@ export default function AIComponent({
 							</button>
 						</div>
 
-						{/* Language Change */}
 						<div className="w-full sm:w-fit h-fit flex flex-row justify-center items-center gap-5">
 							<div className="w-full sm:w-fit h-fit relative flex justify-center items-center">
 								<button
@@ -405,52 +351,6 @@ export default function AIComponent({
 							</>
 						)}
 					</div>
-
-					{/* <div className="hidden flex-col sm:flex-row gap-1 px-3 rounded-lg justify-center items-center text-gray-500 w-full text-sm">
-						<div className="relative w-fit h-fit flex flex-row justify-center items-center gap-1">
-							<button
-								onClick={handleShowInfo}
-								className="no-style-btn show-info flex flex-row gap-1 text-center justify-center items-center"
-							>
-								<Image
-									className="h-auto min-w-[16px] max-w-[16px]"
-									src={"/icons/info.svg"}
-									alt="icon"
-									width={25}
-									height={25}
-								/>
-							</button>
-
-							{showInfo && (
-								<div className="show-info absolute bottom-6 -left-12 sm:left-0 bg-white border shadow-xl px-4 py-2 rounded-xl w-[250px] h-fit">
-									<p>
-										AI is not always accurate. Saving conversations helps the AI
-										assistant become more accurate, efficient, and helpful by
-										learning to interact with users more effectively over time.
-									</p>
-								</div>
-							)}
-
-							<button
-								onClick={handleSaveConversations}
-								className="no-style-btn flex-row gap-1 text-center justify-center items-center"
-							>
-								<p className="text-[12px] sm:text-sm">Save Conversation</p>
-
-								<Image
-									className="h-auto min-w-[19px] max-w-[19px] mt-auto"
-									src={
-										saveConversation
-											? "/icons/toggle_on.svg"
-											: "/icons/toggle_off.svg"
-									}
-									alt="icon"
-									width={25}
-									height={25}
-								/>
-							</button>
-						</div>
-					</div> */}
 
 					<p className="text-[12px] text-gray-500 mx-auto text-center">
 						This is an experimental generative AI chatbot. AI can make mistakes.
