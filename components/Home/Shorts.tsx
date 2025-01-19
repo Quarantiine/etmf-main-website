@@ -84,7 +84,9 @@ export default function Shorts({
 					<div
 						onMouseOver={handleShowPauseButton}
 						onMouseLeave={handleHidePauseButton}
-						className="absolute bottom-0 right-0 w-full h-fit bg-gradient-to-t from-[rgba(0,0,0,1)] to-transparent flex flex-col justify-end items-start px-4 pt-10 pb-4 rounded-2xl text-start"
+						className={`absolute bottom-0 right-0 w-full bg-gradient-to-t from-[rgba(0,0,0,1)] to-transparent flex flex-col justify-end items-start px-4 pt-10 pb-4 rounded-2xl text-start ${
+							isPlaying ? "h-fit" : "h-full"
+						}`}
 					>
 						<h1 className="text-xl lato-bold text-white">{short.title}</h1>
 					</div>
