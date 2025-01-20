@@ -1,7 +1,10 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Section2B from "./Section2B";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 interface BtnListTypes {
 	title: string;
@@ -43,9 +46,35 @@ export default function Section2(): React.ReactElement {
 		setCurrentDropdown(currentBtn);
 	};
 
+	useEffect(() => {
+		gsap.to(".section-2", {
+			scrollTrigger: {
+				trigger: ".section-2",
+				start: "25% 70%",
+				end: "25% 70%",
+			},
+
+			opacity: 1,
+		});
+
+		gsap.to(".feature-section-carousels", {
+			scrollTrigger: {
+				trigger: ".feature-section",
+				start: "0% 70%",
+				end: "0% 70%",
+			},
+
+			opacity: 1,
+			stagger: {
+				each: 0.2,
+			},
+			delay: 0.5,
+		});
+	}, []);
+
 	return (
 		<>
-			<div className="flex flex-col gap-20 md:gap-0 w-full h-fit">
+			<div className="section-2 flex flex-col gap-20 md:gap-0 w-full h-fit">
 				<div className="flex flex-row w-full h-full relative justify-start items-center gap-5">
 					<>
 						<div className="hidden md:block relative w-[700px] h-fit">
@@ -66,7 +95,9 @@ export default function Section2(): React.ReactElement {
 					</>
 
 					<div className="default-width xl:w-[500px] h-auto md:pr-10 mx-auto flex flex-col justify-center items-start gap-10">
-						<h1 className="montserrat-bold text-5xl">Our Mission</h1>
+						<h1 className="section-2-title montserrat-bold text-5xl">
+							Our Mission
+						</h1>
 						<ul className="flex flex-col gap-4">
 							<li className="list-disc ml-5">
 								Unlock your extraordinary potential through the power of

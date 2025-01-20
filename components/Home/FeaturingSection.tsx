@@ -2,8 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import CarouselArrows from "../Widgets/CarouselArrows";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 interface ResourcesTypes {
 	title: string;
@@ -108,13 +111,13 @@ export default function FeaturingSection() {
 						{resource.content.map((data: ContentTypes) => data).length > 0 && (
 							<div className="flex flex-col justify-center items-start gap-5 w-full relative">
 								<div
-									className={`flex flex-col sm:flex-row gap-2 w-full h-auto ${
+									className={`feature-title-section flex flex-col sm:flex-row gap-2 w-full h-auto ${
 										resource.link
 											? "justify-start sm:justify-between items-start w-full sm:items-end"
 											: "justify-start items-start"
 									}`}
 								>
-									<div className="flex flex-col justify-start items-start">
+									<div className="flex flex-col justify-start items-start feature-section-titles">
 										<h3 className="lato-regular text-lg">
 											{resource.subTitle}
 										</h3>
@@ -145,7 +148,10 @@ export default function FeaturingSection() {
 										{resource.content.map(
 											(data: ContentTypes, index: number) => {
 												return (
-													<div className="relative" key={index}>
+													<div
+														className="relative feature-section-carousels opacity-0"
+														key={index}
+													>
 														{data.important && (
 															<div className="w-fit bg-white h-fit p-.5 rounded-full z-10 absolute top-3 right-3 lato-bold text-black shadow-xl border-2 border-[#4bf2c7]">
 																<Image

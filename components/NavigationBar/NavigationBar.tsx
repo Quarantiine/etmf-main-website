@@ -39,8 +39,12 @@ export default function NavigationBar(): React.ReactElement {
 
 	return (
 		<>
-			<div className="flex flex-col gap-2 w-full h-fit justify-center items-end sticky top-0 left-0 z-50">
-				<nav className="bg-[rgba(255,255,255,0.3)] backdrop-blur-3xl h-full w-full text-black">
+			<div
+				className={`flex flex-col gap-2 w-full justify-center items-end sticky top-0 left-0 z-50 ${
+					openMobileNavbar ? "h-screen md:h-fit" : "h-fit"
+				}`}
+			>
+				<nav className="bg-[rgba(255,255,255,0.3)] backdrop-blur-3xl h-full w-full text-black shadow-sm">
 					{/* Tablet/Desktop Navigation Bar */}
 					<div className="hidden md:flex w-full h-fit flex-row justify-between items-center gap-4 px-5 sm:px-10 py-4">
 						<button onClick={handleHomeBtn}>
@@ -69,7 +73,7 @@ export default function NavigationBar(): React.ReactElement {
 					</div>
 
 					{/* Mobile Navigation Bar */}
-					<div className="flex md:hidden w-full h-fit flex-col justify-between items-center gap-4 px-5 sm:px-10 py-4">
+					<div className="flex md:hidden w-full h-full flex-col justify-between items-center gap-4 px-5 sm:px-10 py-4 relative">
 						<div className="flex flex-row justify-between items-center gap-4 w-full">
 							<button onClick={handleHomeBtn}>
 								<Image
@@ -113,7 +117,7 @@ export default function NavigationBar(): React.ReactElement {
 
 						{openMobileNavbar && (
 							<>
-								<div className="flex flex-col gap-4 text-lg">
+								<div className="flex flex-col gap-4 text-lg absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
 									{URLList.map((item: urlListTypes, index: number) => {
 										return (
 											<URLs

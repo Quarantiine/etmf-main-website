@@ -33,7 +33,9 @@ export default function AIAssistant(): React.ReactElement {
 
 	return (
 		<>
-			<div className="ai-assistant-modal fixed top-1/2 -translate-y-1/2 right-0 z-50">
+			<div
+				className={`ai-assistant-modal fixed top-1/2 -translate-y-1/2 right-0 z-40`}
+			>
 				{showPopUpMessage && (
 					<div className="flex flex-row justify-start items-center gap-2 w-[175px] h-fit absolute bottom-0 right-14 text-sm !bg-white shadow-lg rounded-xl px-3 py-2">
 						<button
