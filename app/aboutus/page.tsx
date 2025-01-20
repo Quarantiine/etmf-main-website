@@ -54,7 +54,7 @@ export default function AboutUs(): React.ReactElement {
 			title: "Our Mission",
 			paragraphs: [
 				{
-					text: "Empowering students, employees, communities and individuals to transform their lives through carefully curated innovative mindset based learning experiences designed to equip them to build a better tomorrow.",
+					text: "Curating innovative technology driven learning experiences impactful programs, initiatives and events designed to educate, inspire and empower.",
 				},
 			],
 		},
