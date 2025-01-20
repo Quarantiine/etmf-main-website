@@ -73,7 +73,7 @@ export default function AboutUs(): React.ReactElement {
 					{/* <MeetingMinutes /> */}
 
 					<div className="flex flex-col justify-center items-center">
-						<div className="flex flex-col justify-center items-center relative pb-20 gap-20">
+						<div className="statement-sections flex flex-col justify-center items-center relative pb-20 gap-20">
 							<div className="check-point-line" />
 
 							{statementsList.map(

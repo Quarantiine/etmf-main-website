@@ -1,4 +1,9 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 interface StatementListTypes {
 	title: string;
@@ -12,6 +17,22 @@ export default function StatementsSection({
 }: {
 	statement: StatementListTypes;
 }): React.ReactElement {
+	useEffect(() => {
+		gsap.to(".check-point-circles", {
+			scrollTrigger: {
+				trigger: ".statement-sections",
+				start: "top 50%",
+				end: "80% 50%",
+				scrub: 1,
+			},
+
+			backgroundColor: "#4BF2C7",
+			stagger: {
+				each: 0.5,
+			},
+		});
+	}, []);
+
 	return (
 		<>
 			<div className="flex flex-col gap-5">

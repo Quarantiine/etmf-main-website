@@ -1,7 +1,19 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
+import gsap from "gsap";
 
 export default function Section1(): React.ReactElement {
+	useEffect(() => {
+		gsap.to(".colored-dots", {
+			opacity: 1,
+			stagger: {
+				each: 0.1,
+			},
+		});
+	}, []);
+
 	return (
 		<>
 			<div className="flex flex-col justify-center items-center gap-20 w-full h-fit border-b-[25px] border-[#4BF2C7] relative">
@@ -30,12 +42,12 @@ export default function Section1(): React.ReactElement {
 						{/* Colored dots for design purposes */}
 						<div className="flex justify-start items-center gap-8">
 							{/* Hidden on smaller screens, visible on larger screens */}
-							<div className="hidden sm:block rounded-full min-w-5 min-h-5 max-w-5 max-h-5 bg-green-3" />
+							<div className="colored-dots opacity-0 hidden sm:block rounded-full min-w-5 min-h-5 max-w-5 max-h-5 bg-green-3" />
 							{/* Visible colored dots */}
-							<div className="rounded-full min-w-5 min-h-5 max-w-5 max-h-5 bg-green-2" />
-							<div className="rounded-full min-w-5 min-h-5 max-w-5 max-h-5 bg-yellow" />
-							<div className="rounded-full min-w-5 min-h-5 max-w-5 max-h-5 bg-green-1" />
-							<div className="rounded-full min-w-5 min-h-5 max-w-5 max-h-5 bg-green-4" />
+							<div className="colored-dots opacity-0 rounded-full min-w-5 min-h-5 max-w-5 max-h-5 bg-green-2" />
+							<div className="colored-dots opacity-0 rounded-full min-w-5 min-h-5 max-w-5 max-h-5 bg-yellow" />
+							<div className="colored-dots opacity-0 rounded-full min-w-5 min-h-5 max-w-5 max-h-5 bg-green-1" />
+							<div className="colored-dots opacity-0 rounded-full min-w-5 min-h-5 max-w-5 max-h-5 bg-green-4" />
 						</div>
 					</div>
 				</div>

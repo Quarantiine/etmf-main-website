@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
 import gettingInvolvedData from "@/data/gettingInvolvedData.json";
-import Link from "next/link";
+import Section1 from "@/components/GetInvolved/Section1";
+import SectionComponent from "@/components/GetInvolved/SectionComponent";
 
 export const metadata: Metadata = {
 	title: "Get Involved",
@@ -38,27 +39,7 @@ export default function GetInvolved(): React.ReactElement {
 						sizes="(max-width: 2000px) 100vw, (max-width: 1200px) 50vw, 33vw"
 					/>
 
-					<div className="w-full h-full flex flex-col justify-center items-center bg-[rgba(0,0,0,0.7)] backdrop-blur-md text-white z-10">
-						<div className="default-width py-10 sm:py-16 h-auto flex flex-col justify-center items-start gap-4">
-							<h1 className="montserrat-bold text-5xl">Getting Involved</h1>
-							<p>
-								{
-									"ETMF offers multiple ways to get involved, including donations, sponsorships, partnerships, volunteering, and spreading awareness through social media or testimonials."
-								}
-							</p>
-
-							{/* Colored dots for design purposes */}
-							<div className="flex justify-start items-center gap-8">
-								{/* Hidden on smaller screens, visible on larger screens */}
-								<div className="hidden sm:block rounded-full min-w-5 min-h-5 max-w-5 max-h-5 bg-green-4" />
-								{/* Visible colored dots */}
-								<div className="rounded-full min-w-5 min-h-5 max-w-5 max-h-5 bg-green-3" />
-								<div className="rounded-full min-w-5 min-h-5 max-w-5 max-h-5 bg-green-2" />
-								<div className="rounded-full min-w-5 min-h-5 max-w-5 max-h-5 bg-yellow" />
-								<div className="rounded-full min-w-5 min-h-5 max-w-5 max-h-5 bg-green-1" />
-							</div>
-						</div>
-					</div>
+					<Section1 />
 				</div>
 
 				<div className="default-width flex flex-col justify-center items-center">
@@ -72,64 +53,3 @@ export default function GetInvolved(): React.ReactElement {
 		</>
 	);
 }
-
-interface TextTypes {
-	textHeader: string;
-	text: string;
-}
-
-const SectionComponent = ({
-	data,
-}: {
-	data: GettingInvolvedTypes;
-}): JSX.Element => {
-	return (
-		<>
-			<div className="flex flex-col justify-center items-center relative pb-20 gap-2 w-full">
-				<div className="check-point-line" />
-
-				<div className="flex flex-col gap-5 w-full">
-					<>
-						<div className="flex flex-col gap-5 justify-center items-start">
-							<div className="flex flex-col gap-5 justify-center items-start">
-								<div className="flex flex-row gap-4 justify-start items-start h-fit">
-									<div className="check-point-circles" />
-									<h1 className="montserrat-bold text-3xl sm:text-5xl">
-										{data.title}
-									</h1>
-								</div>
-
-								<ul className="flex flex-col gap-5 justify-center items-start pl-[100px]">
-									{data.paragraphs.map(
-										(paragraph: TextTypes, index: number) => {
-											return (
-												<React.Fragment key={index}>
-													<li className="list-decimal">
-														<p className="lato-bold text-xl">
-															{paragraph.textHeader}
-														</p>
-														<p>{paragraph.text}</p>
-													</li>
-												</React.Fragment>
-											);
-										}
-									)}
-
-									{data.linkText && (
-										<Link
-											className="styled-btn"
-											href={data.link}
-											target="_blank"
-										>
-											{data.linkText}
-										</Link>
-									)}
-								</ul>
-							</div>
-						</div>
-					</>
-				</div>
-			</div>
-		</>
-	);
-};

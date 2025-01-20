@@ -1,6 +1,9 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 interface ProgramListTypes {
 	id: string;
@@ -37,9 +40,21 @@ export default function ProgramPages({
 }: {
 	program: ProgramListTypes;
 }): React.ReactElement {
-	// const handleGoToTop = () => {
-	// 	scrollTo(0, 0);
-	// };
+	useEffect(() => {
+		gsap.to(".check-point-circles", {
+			scrollTrigger: {
+				trigger: ".statement-sections-2",
+				start: "top 50%",
+				end: "80% 50%",
+				scrub: 1,
+			},
+
+			backgroundColor: "#4BF2C7",
+			stagger: {
+				each: 0.5,
+			},
+		});
+	}, []);
 
 	return (
 		<div className="flex justify-start items-start flex-col w-full h-full gap-10">
@@ -49,12 +64,6 @@ export default function ProgramPages({
 					Back
 				</Link>
 			</div>
-
-			{/* <div className="fixed bottom-10 left-1/2 -translate-x-1/2 z-50">
-				<button onClick={handleGoToTop} className="styled-btn">
-					Go To Top
-				</button>
-			</div> */}
 
 			<div className="flex flex-col gap-5 w-full h-full relative pb-20">
 				<div className="check-point-line" />

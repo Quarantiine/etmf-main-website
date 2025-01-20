@@ -30,7 +30,7 @@ export default function HeaderBanner(): React.ReactElement {
 			description:
 				"Education as Transformation: Education shapes futures, fosters growth, and drives societal change.",
 			image:
-				"https://res.cloudinary.com/dnmdoncxt/image/upload/v1737348741/Screenshot_20241218-145138_1_op3ya8.png",
+				"https://res.cloudinary.com/dnmdoncxt/image/upload/v1737404162/Screenshot_20241218-111200_fzibf6.png",
 		},
 		{
 			title: "Innovation",
@@ -59,6 +59,12 @@ export default function HeaderBanner(): React.ReactElement {
 
 			height: "800px",
 		});
+
+		gsap.to(".header-section-2", {
+			opacity: 1,
+			translateY: 0,
+			duration: 1,
+		});
 	}, []);
 
 	useEffect(() => {
@@ -74,7 +80,7 @@ export default function HeaderBanner(): React.ReactElement {
 	return (
 		<>
 			<div className="header-section w-full h-full relative flex flex-col bg-white z-50 rounded-3xl shadow-[10px_10px_40px_0px_rgba(0,0,0,0.1)]">
-				<div className="w-[97%] sm:w-[90%] mx-auto h-[1100px] flex flex-col justify-center items-center lg:px-10 pb-10 md:py-10">
+				<div className="header-section-2 opacity-0 translate-y-32 w-[97%] sm:w-[90%] mx-auto h-[1100px] flex flex-col justify-center items-center lg:px-10 pb-10 md:py-10">
 					<div className="flex-col justify-center items-center relative bg-[#222] rounded-3xl gap-5 w-full h-full">
 						<div className="flex-col justify-start items-center relative bg-[#222] overflow-hidden rounded-3xl default-overflow-x overflow-x-auto overflow-y-hidden h-full grid grid-flow-col auto-cols-[100%] gap-5">
 							{slideItems
@@ -136,7 +142,7 @@ export default function HeaderBanner(): React.ReactElement {
 						</div>
 
 						<Link className="styled-btn" href={"/aboutus"}>
-							Learn About Us
+							Who Are We?
 						</Link>
 					</div>
 				</div>
