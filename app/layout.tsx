@@ -19,7 +19,7 @@ export default function RootLayout({
 
 				<link rel="icon" href="/etm_foundation_logo.png" />
 				<link rel="apple-touch-icon" href="/etm_foundation_logo.png" />
-				<link rel="canonical" href="URL" />
+				<link rel="canonical" href="https://www.etmfoundation.com" />
 
 				<meta
 					name="google-site-verification"
