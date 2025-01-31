@@ -6,35 +6,8 @@ import React, { useRef } from "react";
 import CarouselArrows from "../Widgets/CarouselArrows";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ContentTypes, ResourcesTypes } from "@/app/lib/types";
 gsap.registerPlugin(ScrollTrigger);
-
-interface ResourcesTypes {
-	title: string;
-	subTitle: string;
-	link: string;
-	enableBg: boolean;
-	content: {
-		title: string;
-		image: string;
-		imageCollage: {
-			src: string;
-		}[];
-		link: string;
-		mediaType: string;
-		important: boolean;
-	}[];
-}
-
-interface ContentTypes {
-	title: string;
-	image: string;
-	imageCollage: {
-		src: string;
-	}[];
-	link: string;
-	mediaType: string;
-	important: boolean;
-}
 
 export default function FeaturingSection() {
 	const carouselArrowsRef = useRef<HTMLDivElement>(null);
@@ -46,6 +19,19 @@ export default function FeaturingSection() {
 			link: "",
 			enableBg: false,
 			content: [
+				{
+					title: "ICE News & Awareness: Know Your Rights",
+					image:
+						"https://res.cloudinary.com/dnmdoncxt/image/upload/v1738358847/markus-spiske-XXWM_8f77KQ-unsplash_wmtekf.jpg",
+					imageCollage: [
+						{
+							src: "none",
+						},
+					],
+					link: "https://immigrantjustice.org/know-your-rights",
+					mediaType: "ice",
+					important: true,
+				},
 				{
 					title:
 						"The Amazing Tim McDuffie | Mindset Matters Podcast EP16 Dropped!",
@@ -71,7 +57,7 @@ export default function FeaturingSection() {
 					],
 					link: "https://docs.google.com/forms/d/e/1FAIpQLSf1N0zcn6oanoTVBccynQ_D7fQFiy6gCMn5L2uaasIDKqEB2w/viewform",
 					mediaType: "",
-					important: true,
+					important: false,
 				},
 				{
 					title: "Dallas College's Story on our President, CEO",

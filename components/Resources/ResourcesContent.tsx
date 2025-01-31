@@ -65,11 +65,27 @@ export const ResourcesContent: FC<{ resource: ResourcesTypes }> = ({
 								: "justify-start items-start"
 						}`}
 					>
-						<div className="flex flex-col justify-start items-start">
+						<div className="flex flex-col justify-start items-start w-full">
 							<h3 className="lato-regular text-lg">{resource.subTitle}</h3>
-							<h1 className="montserrat-bold text-3xl sm:text-5xl text-green-3">
-								{resource.title}
-							</h1>
+
+							<div className="flex justify-between items-center gap-2 w-full">
+								<h1 className="montserrat-bold text-3xl sm:text-5xl text-green-3">
+									{resource.title}
+								</h1>
+
+								{resource.enableBg && (
+									<div className="w-fit bg-white h-fit p-.5 rounded-full z-10 lato-bold text-black shadow-xl border-2 border-[#4bf2c7]">
+										<Image
+											className="object-cover object-center min-w-[30px] max-w-[30px] h-auto"
+											src={"/icons/star.svg"}
+											title="Important"
+											alt="image"
+											width={33}
+											height={33}
+										/>
+									</div>
+								)}
+							</div>
 						</div>
 
 						{resource.link && (

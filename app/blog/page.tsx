@@ -4,32 +4,14 @@ import React from "react";
 import resourcesData from "@/data/resourcesData.json";
 import { ResourcesContent } from "@/components/Resources/ResourcesContent";
 import Section1 from "@/components/Blog/Section1";
+import { BlogResourcesTypes } from "../lib/types";
 
-// Metadata for the blog page
 export const metadata: Metadata = {
 	title: "Blog",
 	description:
 		"Explore how the ETM Foundation is impacting students’ lives and enriching communities. Discover our latest advanced technology developments, initiatives, and much more.",
 };
 
-// Define the structure of the resources data
-interface ResourcesTypes {
-	title: string;
-	subTitle: string;
-	link: string;
-	enableBg: boolean;
-	content: {
-		title: string;
-		image: string;
-		imageCollage: {
-			src: string;
-		}[];
-		link: string;
-		mediaType: string;
-	}[];
-}
-
-// Main Blog component
 export default function Blog(): React.ReactElement {
 	return (
 		<>
@@ -54,7 +36,7 @@ export default function Blog(): React.ReactElement {
 
 				{/* Resources section */}
 				<div className="flex flex-col gap-20 pb-20 w-full h-auto justify-center items-center">
-					{resourcesData.map((resource: ResourcesTypes, index: number) => {
+					{resourcesData.map((resource: BlogResourcesTypes, index: number) => {
 						return <ResourcesContent key={index} resource={resource} />;
 					})}
 				</div>
