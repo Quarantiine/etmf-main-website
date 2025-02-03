@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import { URLs } from "./URLs";
 import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 import { useRouter } from "next/navigation";
+import { LetterURL } from "./ArticleURL";
 
 // Define the types for the URL list below
 interface urlListTypes {
@@ -40,10 +41,12 @@ export default function NavigationBar(): React.ReactElement {
 	return (
 		<>
 			<div
-				className={`flex flex-col gap-2 w-full justify-center items-end sticky top-0 left-0 z-50 ${
+				className={`flex flex-col w-full justify-center items-end sticky top-0 left-0 z-50 ${
 					openMobileNavbar ? "h-screen md:h-fit" : "h-fit"
 				}`}
 			>
+				{!openMobileNavbar && <LetterURL />}
+
 				<nav className="bg-[rgba(255,255,255,0.3)] backdrop-blur-3xl h-full w-full text-black shadow-sm">
 					{/* Tablet/Desktop Navigation Bar */}
 					<div className="hidden md:flex w-full h-fit flex-row justify-between items-center gap-4 px-5 sm:px-10 py-4">

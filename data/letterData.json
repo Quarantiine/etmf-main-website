@@ -1,0 +1,196 @@
+[
+	{
+		"mainTitle": "To Our Students",
+		"description": [
+			{
+				"text": "Young minds represent our future, and your right to education is fundamental and protected by law. I want you to know:"
+			}
+		],
+		"pointMap": false,
+		"points": [
+			{
+				"textHeader": "Your Education is Your Right",
+				"text": "The Supreme Court has established that every child, regardless of immigration status, has the right to attend public school. This is supported by the landmark case Plyler v. Doe (1982), which ruled that undocumented children have a constitutional right to a free public education.",
+				"textList": []
+			},
+			{
+				"textHeader": "You Belong in Our Classrooms",
+				"text": "Your presence enriches our educational community and contributes to the diverse fabric of our society. Your dreams, aspirations, and potential are valuable, and we are committed to protecting your right to pursue them.",
+				"textList": []
+			},
+			{
+				"textHeader": "Higher Education Opportunities",
+				"text": "In Texas, undocumented students may be eligible for in-state tuition under the Texas Dream Act if they meet specific requirements. However, recent legislative actions, such as H.B. 160, propose changes to this policy. We will continue to advocate for policies that support access to higher education for all students.",
+				"textList": []
+			}
+		],
+		"conclusion": ""
+	},
+	{
+		"mainTitle": "School Safety and Immigration Enforcement",
+		"description": [
+			{
+				"text": "Schools should have robust plans in place in case immigration officers show up on their campuses. These plans should include guidance on how to interact with officers and what to do if a child's parent does not show up to pick them up from school, presumably because of an immigration-related arrest."
+			},
+			{
+				"text": "Recently, the Trump administration removed protections on sensitive places like schools, allowing immigration authorities to conduct arrests there. However, federal authorities typically need a warrant to enter schools, and administrators can keep them out without one. Important Steps for Students and Parents:"
+			}
+		],
+		"pointMap": false,
+		"points": [
+			{
+				"textHeader": "Know Your School's Policies",
+				"text": "Familiarize yourself with your school's policies regarding immigration enforcement.",
+				"textList": []
+			},
+			{
+				"textHeader": "Emergency Contacts",
+				"text": "Ensure the school has up-to-date emergency contact information for your family.",
+				"textList": []
+			},
+			{
+				"textHeader": "Designate Trusted Individuals",
+				"text": "Identify trusted individuals who can pick you up from school if your parents are unable to do so.",
+				"textList": []
+			},
+			{
+				"textHeader": "Inform Your School",
+				"text": "If you have concerns about potential immigration enforcement actions, inform your child's school.",
+				"textList": []
+			}
+		],
+		"conclusion": ""
+	},
+	{
+		"mainTitle": "Rights of Parents and Children",
+		"description": [
+			{
+				"text": "Parents have constitutional rights to the custody of their children, regardless of immigration status. If you're a parent:"
+			}
+		],
+		"pointMap": false,
+		"points": [
+			{
+				"textHeader": "Emergency Plans",
+				"text": "Ensure your children know who to contact if you don't come home.",
+				"textList": []
+			},
+			{
+				"textHeader": "Power of Attorney",
+				"text": "Consider setting up a power of attorney for a trusted individual to make decisions for your children if you're detained.",
+				"textList": []
+			},
+			{
+				"textHeader": "School Information",
+				"text": "Make sure your children's school has updated emergency contact information.",
+				"textList": []
+			},
+			{
+				"textHeader": "Safety at Home",
+				"text": "Teach your children not to open the door to strangers and what to do if ICE comes to your home.",
+				"textList": []
+			}
+		],
+		"conclusion": ""
+	},
+	{
+		"mainTitle": "To Our Community Members",
+		"description": [
+			{
+				"text": "As parents, guardians, and community leaders, you are the backbone of our society. We understand your concerns and want to empower you with knowledge and resources:"
+			}
+		],
+		"pointMap": true,
+		"points": [
+			{
+				"textHeader": "Understanding Your Rights",
+				"text": "",
+				"textList": [
+					{
+						"text": "Constitutional protections apply to everyone in the United States, regardless of immigration status."
+					},
+					{
+						"text": "You have the right to due process."
+					},
+					{
+						"text": "You have the right to legal representation."
+					},
+					{
+						"text": "Your family unity is protected under law."
+					}
+				]
+			},
+			{
+				"textHeader": "Practical Steps for Protection:",
+				"text": "",
+				"textList": [
+					{
+						"text": "Maintain detailed documentation of your residence in Texas."
+					},
+					{ "text": "Create and practice family emergency plans." },
+					{ "text": "Keep important documents organized and accessible." },
+					{ "text": "Build strong support networks within your community." }
+				]
+			},
+			{
+				"textHeader": "Educational Empowerment:",
+				"text": "",
+				"textList": [
+					{
+						"text": "Understand school policies regarding immigration enforcement."
+					},
+					{
+						"text": "Maintain updated emergency contact information at schools."
+					},
+					{ "text": "Know your children's rights in the educational system." },
+					{ "text": "Stay involved in your children's education." }
+				]
+			}
+		],
+		"conclusion": ""
+	},
+	{
+		"mainTitle": "Moving Forward Together",
+		"description": [
+			{
+				"text": "ETMF is committed to partnering with relevant community experts and organizations to support our students and community members. We will work together to:"
+			}
+		],
+		"pointMap": false,
+		"points": [
+			{
+				"textHeader": "Provide Information Sessions",
+				"text": "Regular educational workshops and information sessions will be held to keep you informed about your rights and available resources.",
+				"textList": []
+			},
+			{
+				"textHeader": "Access to Legal Aid",
+				"text": "We will facilitate partnerships with legal aid organizations to ensure access to legal guidance and support when needed.",
+				"textList": []
+			},
+			{
+				"textHeader": "Advocate for Educational Rights",
+				"text": "We will continue to advocate for policies that protect and empower students, ensuring that educational institutions remain safe spaces for learning and growth.",
+				"textList": []
+			}
+		],
+		"conclusion": ""
+	},
+	{
+		"mainTitle": "A Message of Hope",
+		"description": [
+			{
+				"text": "In times of uncertainty, being educated and connected become our greatest strengths. Understanding your rights, knowing available resources, and maintaining strong community connections are powerful tools for navigating current challenges."
+			},
+			{
+				"text": "To our students: Your education is a right that cannot be taken away. Continue to learn, grow, and dream big."
+			},
+			{
+				"text": "To our community members: Your strength and resilience inspire us. Together, we will ensure that our educational institutions remain safe spaces for learning and growth."
+			}
+		],
+		"pointMap": false,
+		"points": [],
+		"conclusion": ""
+	}
+]

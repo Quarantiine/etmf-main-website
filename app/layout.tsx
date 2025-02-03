@@ -4,7 +4,7 @@ import NavigationBar from "@/components/NavigationBar/NavigationBar";
 import AIAssistant from "@/components/AIAssistant/AIAssistant";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
-import PopUp from "@/components/Widgets/PopUp";
+// import PopUp from "@/components/Widgets/PopUp";
 
 export default function RootLayout({
 	children,
@@ -31,9 +31,8 @@ export default function RootLayout({
 
 			<body className="h-auto w-full lato-regular text-lg">
 				<main className="min-h-[50vw] w-full relative">
-					<PopUp />
+					{/* <PopUp /> */}
 					<NavigationBar />
-
 					<AIAssistant />
 
 					<div className="w-full mx-auto">
