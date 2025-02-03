@@ -22,7 +22,7 @@ export default function FeaturingSection() {
 				{
 					title: "ICE News & Awareness: Know Your Rights",
 					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/v1738358847/markus-spiske-XXWM_8f77KQ-unsplash_wmtekf.jpg",
+						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ICE/j3bpipwkluaiz8vf2w9a",
 					imageCollage: [
 						{
 							src: "none",

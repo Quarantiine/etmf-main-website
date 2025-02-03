@@ -252,7 +252,7 @@ export default function Footer(): React.ReactElement {
 							</div>
 
 							<div className="text-center md:text-start opacity-30 text-sm text-white flex flex-col justify-center items-center md:items-start pt-10 relative mx-auto md:mr-auto md:mx-0">
-								<p>Copyright © 2024 - 2025</p>
+								<p>© 2024 - 2025</p>
 								<p>Empowerment Through Mindset Foundation</p>
 
 								<div className="flex flex-wrap gap-1 w-full justify-center md:justify-start items-center">

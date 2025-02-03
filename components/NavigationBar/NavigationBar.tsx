@@ -24,6 +24,7 @@ export default function NavigationBar(): React.ReactElement {
 		{ text: "Programs", urlPath: "/programs" },
 		{ text: "Get Involved", urlPath: "/getinvolved" },
 		{ text: "Blog", urlPath: "/blog" },
+		// { text: "Resources", urlPath: "/resources" },
 	];
 
 	// State to keep track of the current page
