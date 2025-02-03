@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { URLs } from "./URLs";
 import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 import { useRouter } from "next/navigation";
-import { LetterURL } from "./ArticleURL";
+import { LetterURL } from "./LetterURL";
 
 // Define the types for the URL list below
 interface urlListTypes {

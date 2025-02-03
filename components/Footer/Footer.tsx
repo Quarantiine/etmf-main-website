@@ -182,12 +182,14 @@ export default function Footer(): React.ReactElement {
 							<div className="flex flex-col gap-2 text-center md:text-start md:w-full">
 								<h1 className="montserrat-bold text-xl">Contact Us</h1>
 
-								<div className="flex flex-col">
-									{/* <p>customersupport@etmfoundatiom.com</p>
-
-									<p>techsupport@etmfoundatiom.com</p> */}
-
-									<p>etmfoundation.business@gmail.com</p>
+								<div className="flex flex-col gap-1 w-full">
+									<p>
+										<span className="lato-bold">Phone:</span> (682)-436-2165
+									</p>
+									<div className="flex flex-col justify-center items-center md:items-start">
+										<p className="lato-bold">Mailing Address:</p>
+										<p>400 N Ervay St, Unit # 132940 Dallas, TX 75313</p>
+									</div>
 								</div>
 							</div>
 

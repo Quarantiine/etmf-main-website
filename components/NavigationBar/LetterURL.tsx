@@ -26,7 +26,7 @@ export const LetterURL = () => {
 						</span>
 					</p>
 
-					<Link className="w-fit no-styled-btn font-semibold" href={"/article"}>
+					<Link className="w-fit no-styled-btn font-semibold" href={"/letter"}>
 						View Letter
 					</Link>
 				</div>

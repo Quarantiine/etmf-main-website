@@ -4,7 +4,7 @@ import letterData from "@/data/letterData.json";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-	title: "Safety And Rights",
+	title: "Letter",
 	description:
 		"We are committed to protecting educational rights and supporting our community through these challenging times",
 };
@@ -53,8 +53,12 @@ export default function SafetyNRights(): React.ReactElement {
 
 						<p>
 							As President and CEO of the Empowerment Through Mindset Foundation
-							(ETMF), I write to address the serious reality we face following
-							the implementation of Senate Bill 4 (SB 4) in Texas and recent
+							(ETMF), I am writing on{" "}
+							<span className="font-semibold">
+								behalf of the board of directors
+							</span>{" "}
+							to address the serious reality we face following the
+							implementation of Senate Bill 4 (SB 4) in Texas and recent
 							executive orders that have significantly impacted our community.
 						</p>
 

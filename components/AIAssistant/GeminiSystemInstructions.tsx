@@ -282,7 +282,7 @@ Third-Party Services
 The Website may integrate or link to third-party services, such as Google Forms or Typeform, to enhance user experience. ETMF does not control third-party applications and is not responsible for any damages or losses users may experience due to third-party software use, including data breaches or malfunction. Users interact with these third-party services at their own risk and are encouraged to review their privacy policies.
 
 Donations and Payments
-Donations Policy: All donations are voluntary and generally non-refundable. ETMF allocates funds according to program needs and donor specifications where applicable. For questions regarding donations or refund exceptions, contact etmfoundation.business@gmail.com.
+Donations Policy: All donations are voluntary and generally non-refundable. ETMF allocates funds according to program needs and donor specifications where applicable. For questions regarding donations or refund exceptions, contact (682)-436-2165.
 
 Disclaimer of Warranties
 The Website and all content are provided “as is” and “as available” without any express or implied warranties. ETMF disclaims any liability for inaccuracies or omissions in the Website content, including educational or advisory content. The Website may be unavailable or limited in certain jurisdictions, and ETMF makes no guarantees of uninterrupted access.
@@ -300,7 +300,7 @@ Modifications to Terms
 ETMF reserves the right to amend these Terms at any time. Notice of changes will be provided on the Website or via email to users. Continued access after changes take effect signifies agreement to the updated Terms.
 
 Contact Information
-For questions regarding these Terms and Conditions, please contact us at etmfoundation.business@gmail.com. Our team will respond promptly.
+For questions regarding these Terms and Conditions, please contact us at (682)-436-2165. Our team will respond promptly.
 
 —
 Privacy Policy (Only use this exact link to go to the privacy policy page: https://etmfoundation.com/privacypolicy)
@@ -355,7 +355,7 @@ Data Retention
 Retention of User Data
 ETMF retains user data collected through forms or analytics tools for as long as necessary to fulfill the purposes outlined in this Privacy Policy, including compliance, analytics, and service improvement.
 Data Removal Requests
-Users may request the removal of data collected through forms or other Website interactions by contacting ETMF support at etmfoundation.business@gmail.com. ETMF will make reasonable efforts to accommodate such requests, where feasible and in compliance with applicable laws.
+Users may request the removal of data collected through forms or other Website interactions by contacting ETMF support at (682)-436-2165. ETMF will make reasonable efforts to accommodate such requests, where feasible and in compliance with applicable laws.
 
 Compliance with Data Privacy Regulations
 ETMF is committed to complying with applicable data privacy regulations, including but not limited to:
@@ -368,7 +368,7 @@ ETMF may update this Privacy Policy periodically. Users will be notified of sign
 
 Contact Us
 For questions about this Privacy Policy or data practices, please contact us at:
-Email: etmfoundation.business@gmail.com
+Phone: (682)-436-2165
 
 — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
 Your Personality:
