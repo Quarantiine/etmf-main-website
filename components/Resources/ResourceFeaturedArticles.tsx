@@ -7,7 +7,7 @@ export const ResourceFeaturedArticles = () => {
 		<>
 			<div className="flex flex-col justify-center items-start gap-5 w-full">
 				<div className="flex flex-col justify-center items-start">
-					<h1 className="title-2 font-bold">Featured Articles</h1>
+					<h1 className="title-2 font-bold">Featured Resources</h1>
 					<p className="text-gray-500">Rights of Undocumented Immigrants</p>
 				</div>
 
