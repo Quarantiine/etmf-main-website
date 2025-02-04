@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
-import resourcesData from "@/data/resourcesData.json";
-import { ResourcesContent } from "@/components/Resources/ResourcesContent";
+import blogData from "@/data/blogData.json";
+import { ResourcesContent } from "@/components/Blog/ResourcesContent";
 import Section1 from "@/components/Blog/Section1";
 import { BlogResourcesTypes } from "../lib/types";
 
@@ -36,7 +36,7 @@ export default function Blog(): React.ReactElement {
 
 				{/* Resources section */}
 				<div className="flex flex-col gap-20 pb-20 w-full h-auto justify-center items-center">
-					{resourcesData.map((resource: BlogResourcesTypes, index: number) => {
+					{blogData.map((resource: BlogResourcesTypes, index: number) => {
 						return <ResourcesContent key={index} resource={resource} />;
 					})}
 				</div>

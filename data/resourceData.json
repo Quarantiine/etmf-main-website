@@ -1,0 +1,197 @@
+[
+	{
+		"title": "Immigration Crackdown in Texas",
+		"description": "Learn about recent enforcement operations and their impact on undocumented immigrants from The Texas Tribune.",
+		"link": [
+			{
+				"url": "https://www.texastribune.org/2025/01/31/texas-ice-immigration-know-your-rights/",
+				"urlName": "The Texas Tribune"
+			}
+		],
+		"category": "Understanding the Current Situation in Texas"
+	},
+	{
+		"title": "Public Opinion on Immigration",
+		"description": "Understand Texans' views on immigration, including support for deporting felons and pathways to citizenship, as reported by the University of Houston.",
+		"link": [
+			{
+				"url": "https://uh.edu/news-events/stories/2025/january/01302025-tx-leg-immigration.php/",
+				"urlName": "University of Houston"
+			}
+		],
+		"category": "Understanding the Current Situation in Texas"
+	},
+	{
+		"title": "State-Level Immigration Enforcement",
+		"description": "Discover how Texas is ramping up enforcement efforts, potentially increasing deportations and detention rates, from Xavier Law Firm.",
+		"link": [
+			{
+				"url": "https://www.xavierlawfirm.com/blog/texas-immigration-changes-in-2025-what-you-need-to-know/",
+				"urlName": "Xavier Law Firm"
+			}
+		],
+		"category": "Understanding the Current Situation in Texas"
+	},
+	{
+		"title": "Know Your Rights (KYR) Cards",
+		"description": "Understand Texans' views on immigration, including support for deporting felons and pathways to citizenship, as reported by the University of Houston.",
+		"link": [
+			{
+				"url": "https://www.ilrc.org/red-cards-tarjetas-rojas",
+				"urlName": "Immigrant Legal Resource Center (ILRC)"
+			}
+		],
+		"category": "Rights of Undocumented Immigrants"
+	},
+	{
+		"title": "KYR Websites",
+		"description": "Visit We Have Rights for videos in multiple languages and Pope de Liberates for comprehensive KYR information.",
+		"link": [
+			{ "url": "https://www.wehaverights.us/", "urlName": "We Have Rights" },
+			{
+				"url": "https://www.popedliberates.org/know-your-rights",
+				"urlName": "Pope de Liberates"
+			}
+		],
+		"category": "Rights of Undocumented Immigrants"
+	},
+	{
+		"title": "ILRC KYR Toolkit",
+		"description": "Access detailed guides and resources on asserting your rights from the ILRC Know Your Rights Toolkit.",
+		"link": [
+			{
+				"url": "https://www.ilrc.org/resources/community/know-your-rights-toolkit",
+				"urlName": "ILRC Know Your Rights Toolkit"
+			}
+		],
+		"category": "Rights of Undocumented Immigrants"
+	},
+	{
+		"title": "Family Preparedness Plans",
+		"description": "Use the Ready To Stay toolkit to create a step-by-step family preparedness plan.",
+		"link": [
+			{
+				"url": "https://readytostay.org/immigrants/resources/step-by-step-family-preparedness-plan",
+				"urlName": "Ready To Stay"
+			}
+		],
+		"category": "Preparing for Potential ICE Encounters"
+	},
+	{
+		"title": "Emergency Preparedness Resources",
+		"description": "Explore the ILRC Preparedness Toolkit for guidance on emergency planning and legal resources.",
+		"link": [
+			{
+				"url": "https://www.ilrc.org/sites/default/files/resources/imm_preparedness_kit_april2020_1.pdf",
+				"urlName": "ILRC Preparedness Toolkit"
+			}
+		],
+		"category": "Preparing for Potential ICE Encounters"
+	},
+	{
+		"title": "Community Reporting Tools",
+		"description": "Report ICE sightings using platforms like Juntos Seguros and People Over Papers.",
+		"link": [
+			{ "url": "https://juntosseguros.com/", "urlName": "Juntos Seguros" },
+			{
+				"url": "https://padlet.com/PeopleoverPapers/people-over-papers-anonymous-an-nimo-lf0l47ljszbto2uj",
+				"urlName": "People Over Papers"
+			}
+		],
+		"category": "Preparing for Potential ICE Encounters"
+	},
+	{
+		"title": "School Policies and ICE Raids",
+		"description": "Learn how schools can prepare for ICE encounters and protect students' rights from The Texas Tribune.",
+		"link": [
+			{
+				"url": "https://www.texastribune.org/2025/01/31/texas-ice-immigration-know-your-rights/",
+				"urlName": "The Texas Tribune"
+			}
+		],
+		"category": "The Role of Educational Institutions"
+	},
+	{
+		"title": "American Gateways",
+		"description": "Offers immigration legal services in Central Texas, focusing on family reunification and removal defense American Gateways.",
+		"link": [
+			{
+				"url": "https://www.americangateways.org/",
+				"urlName": "American Gateways"
+			}
+		],
+		"category": "Community Resources and Support Networks"
+	},
+	{
+		"title": "Las Americas Immigrant Advocacy Center",
+		"description": "Provides free and low-cost legal services to immigrants and refugees in West Texas Las Americas.",
+		"link": [
+			{ "url": "https://www.las-americas.org/", "urlName": "Las Americas" }
+		],
+		"category": "Community Resources and Support Networks"
+	},
+	{
+		"title": "RAICES",
+		"description": "Offers legal services, bond payments, and social services for immigrants and asylum seekers RAICES.",
+		"link": [
+			{
+				"url": "https://www.texastribune.org/2025/01/31/texas-ice-immigration-know-your-rights/",
+				"urlName": "RAICES"
+			}
+		],
+		"category": "Community Resources and Support Networks"
+	},
+	{
+		"title": "Catholic Charities of Central Texas",
+		"description": "Provides affordable immigration legal assistance with a focus on family reunification Catholic Charities.",
+		"link": [
+			{
+				"url": "https://ccctx.org/immigration-legal-services/",
+				"urlName": "Catholic Charities"
+			}
+		],
+		"category": "Community Resources and Support Networks"
+	},
+	{
+		"title": "Mental Health Support",
+		"description": "Access resources for protecting children’s mental health during immigration crises from organizations like Zero to Three.",
+		"link": [
+			{ "url": "https://www.zerotothree.org", "urlName": "Zero to Three" }
+		],
+		"category": "Community Resources and Support Networks"
+	},
+	{
+		"title": "Policy Updates",
+		"description": "Stay informed about policy changes affecting immigrant communities through Immigration Policy Tracking.",
+		"link": [
+			{
+				"url": "https://immpolicytracking.org/policies/?after=2025-01-20",
+				"urlName": "Immigration Policy Tracking"
+			}
+		],
+		"category": "Advocacy and Empowerment"
+	},
+	{
+		"title": "National Immigration Legal Services Directory",
+		"description": "Find free or low-cost nonprofit immigration legal services providers across the U.S. Immigration Advocates Network.",
+		"link": [
+			{
+				"url": "https://www.immigrationadvocates.org/nonprofit/legaldirectory/",
+				"urlName": "Immigration Advocates Network"
+			}
+		],
+		"category": "Legal Assistance and Resources"
+	},
+	{
+		"title": "Community Reporting Initiatives",
+		"description": "Participate in community reporting through platforms like End Lone Star and Juntos Seguros.",
+		"link": [
+			{
+				"url": "https://www.endlonestar.com/community-report",
+				"urlName": "End Lone Star"
+			},
+			{ "url": "https://juntosseguros.com/", "urlName": "Juntos Seguros" }
+		],
+		"category": "Staying Informed and United"
+	}
+]
