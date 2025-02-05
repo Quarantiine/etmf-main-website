@@ -2,6 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 import letterData from "@/data/letterData.json";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
 	title: "Letter",
@@ -132,8 +133,11 @@ export default function SafetyNRights(): React.ReactElement {
 					<p>With determination and solidarity,</p>
 
 					<div className="flex flex-col justify-center items-start gap-0">
-						<p className="text-green-3 font-bold">ETMF President and CEO</p>
+						<p className="font-bold">ETMF President and CEO</p>
 						<p>Empowerment Through Mindset Foundation</p>{" "}
+						<Link className="text-green-3 no-style-btn" href={"/resources"}>
+							View Resources
+						</Link>
 					</div>
 				</div>
 			</div>
