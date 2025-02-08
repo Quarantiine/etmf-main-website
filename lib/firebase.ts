@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { FirebaseApp, initializeApp } from "firebase/app";
 import {
 	addDoc,
@@ -8,7 +8,6 @@ import {
 	CollectionReference,
 	Firestore,
 	getFirestore,
-	onSnapshot,
 } from "firebase/firestore";
 
 const firebaseConfig = {
@@ -35,19 +34,6 @@ export const FirebaseAPI = () => {
 	const [formMessageError, setFormMessageError] = useState<string>("");
 
 	const formMessageErrorRef = useRef<NodeJS.Timeout | null>(null);
-
-	useEffect(() => {
-		try {
-			onSnapshot(colRefFormMessage, (ss) => {
-				ss.docs.map((doc) => ({
-					...doc.data(),
-					id: doc.id,
-				}));
-			});
-		} catch (error) {
-			console.error(error);
-		}
-	}, []);
 
 	class ContactFormSystem {
 		constructor() {}
