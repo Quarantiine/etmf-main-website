@@ -108,7 +108,7 @@ export default function Section2(): React.ReactElement {
 												onClick={() => handleDropdown(btn.currentBtn)}
 												className={`styled-btn w-full ${
 													btn.currentBtn !== currentDropdown &&
-													"disabled-styled-btn"
+													"gray-styled-btn"
 												}`}
 											>
 												{btn.title}

@@ -123,6 +123,9 @@
 .disabled-styled-btn {
 	@apply lato-bold cursor-not-allowed bg-gray-500 text-white px-4 py-2 hover:opacity-70 transition-all rounded-xl;
 }
+.gray-styled-btn {
+	@apply lato-bold cursor-pointer bg-gray-500 text-white px-4 py-2 hover:opacity-70 transition-all rounded-xl;
+}
 .outlined-styled-btn {
 	@apply cursor-pointer bg-transparent border-2 border-[#4bf2c7] px-4 py-2 hover:opacity-70 transition-all rounded-xl;
 }
