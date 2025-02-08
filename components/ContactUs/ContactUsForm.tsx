@@ -77,9 +77,9 @@ export const ContactUsForm = () => {
 			setInquiryType("");
 			setInquiryCategory("");
 
-			sendMessage(name, email, message, inquiryType, inquiryCategory);
-
 			setSubmitted(true);
+
+			sendMessage(name, email, message, inquiryType, inquiryCategory);
 
 			submittedRef.current = setTimeout(() => {
 				setSubmitted(false);
