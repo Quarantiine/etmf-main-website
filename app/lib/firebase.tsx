@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FirebaseApp, initializeApp } from "firebase/app";
 import {
 	addDoc,
@@ -8,6 +8,7 @@ import {
 	CollectionReference,
 	Firestore,
 	getFirestore,
+	onSnapshot,
 } from "firebase/firestore";
 
 const firebaseConfig = {
@@ -20,6 +21,7 @@ const firebaseConfig = {
 	measurementId: process.env.NEXT_PUBLIC_MEASUREMENT_ID,
 };
 
+// Initialize Firebase
 const app: FirebaseApp = initializeApp(firebaseConfig);
 const db: Firestore = getFirestore(app);
 
@@ -33,6 +35,21 @@ export const FirebaseAPI = () => {
 	const [formMessageError, setFormMessageError] = useState<string>("");
 
 	const formMessageErrorRef = useRef<NodeJS.Timeout | null>(null);
+
+	useEffect(() => {
+		try {
+			const unsubscribe = onSnapshot(colRefFormMessage, (ss) => {
+				ss.docs.map((doc) => ({
+					...doc.data(),
+					id: doc.id,
+				}));
+			});
+
+			return () => unsubscribe();
+		} catch (error) {
+			console.error(error);
+		}
+	}, []);
 
 	class ContactFormSystem {
 		constructor() {}
