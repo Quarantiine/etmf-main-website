@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { FirebaseApp, initializeApp } from "firebase/app";
 import {
 	addDoc,
@@ -8,9 +8,7 @@ import {
 	CollectionReference,
 	Firestore,
 	getFirestore,
-	onSnapshot,
 } from "firebase/firestore";
-import { ContactFormData } from "./types";
 
 const firebaseConfig = {
 	apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -32,37 +30,10 @@ const colRefFormMessage: CollectionReference = collection(
 );
 
 export const FirebaseAPI = () => {
-	const [inquiries, setInquiries] = useState<ContactFormData[]>();
-	const [inquiriesLoading, setInquiriesLoading] = useState<boolean>(false);
-
 	const [formMessageLoading, setFormMessageLoading] = useState<boolean>(false);
 	const [formMessageError, setFormMessageError] = useState<string>("");
 
 	const formMessageErrorRef = useRef<NodeJS.Timeout | null>(null);
-
-	useEffect(() => {
-		try {
-			setInquiriesLoading(true);
-
-			onSnapshot(colRefFormMessage, (ss) => {
-				setInquiries(
-					ss.docs.map((doc) => ({
-						...doc.data(),
-						id: doc.id,
-						name: doc.data().name,
-						email: doc.data().email,
-						message: doc.data().message,
-						contact: doc.data().contact,
-						category: doc.data().category,
-					}))
-				);
-			});
-		} catch (error) {
-			console.error(error);
-		} finally {
-			setInquiriesLoading(false);
-		}
-	}, []);
 
 	class ContactFormSystem {
 		constructor() {}
@@ -107,8 +78,6 @@ export const FirebaseAPI = () => {
 
 	return {
 		contactFormSession: {
-			inquiriesLoading,
-			inquiries,
 			sendMessage,
 			formMessageLoading,
 			formMessageError,
