@@ -43,8 +43,8 @@ export default function Footer(): React.ReactElement {
 
 	const actionLinks: LinkTypes[] = [
 		{
-			href: "https://docs.google.com/forms/d/e/1FAIpQLSeZb_o8MS1tGORx56L9JOsjj1TWx7uR3ocbGzOpUEF7eNFXJQ/viewform",
-			text: "Meet a Person",
+			href: "/contact",
+			text: "Contact Us",
 		},
 		{
 			href: "https://docs.google.com/forms/d/e/1FAIpQLSc1uTdhwkn5m2Vql5A0_igyTEzXYVbuwOrFOntBcWod1CGR1g/viewform",
@@ -66,20 +66,28 @@ export default function Footer(): React.ReactElement {
 
 	const pagesLinks: LinkTypes[] = [
 		{
-			href: "https://etmfoundation.com/aboutus",
+			href: "/aboutus",
 			text: "About Us",
 		},
 		{
-			href: "https://etmfoundation.com/programs",
+			href: "/programs",
 			text: "Programs",
 		},
 		{
-			href: "https://etmfoundation.com/getinvolved",
+			href: "/getinvolved",
 			text: "Get Involved",
 		},
 		{
-			href: "https://etmfoundation.com/blog",
+			href: "/blog",
 			text: "Blog",
+		},
+		{
+			href: "/resources",
+			text: "Resources",
+		},
+		{
+			href: "/contact",
+			text: "Contact Us",
 		},
 	];
 

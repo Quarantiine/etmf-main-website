@@ -1,5 +1,6 @@
 "use client";
 
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -13,52 +14,58 @@ export default function PopUp(): React.ReactElement {
 
 	return (
 		<>
-			{!openUpdateBanner && (
-				<div
-					className={`update-banner flex flex-row w-[90%] sm:w-[500px] bg-green-1 px-10 py-5 gap-1 fixed bottom-5 sm:bottom-10 left-5 sm:left-10 justify-center items-center text-sm z-50 rounded-xl shadow-2xl`}
-				>
-					<p>
-						🎤 New event coming soon! Sign up here:{" "}
-						<Link
-							href={
-								"https://docs.google.com/forms/d/e/1FAIpQLSf1N0zcn6oanoTVBccynQ_D7fQFiy6gCMn5L2uaasIDKqEB2w/viewform?pli=1"
-							}
-							target="_blank"
-							className="no-style-btn underline"
+			<AnimatePresence>
+				{!openUpdateBanner && (
+					<div
+						className={`update-banner w-full bg-green-1 gap-1 fixed left-0 bottom-0 flex justify-between items-center text-sm z-50 rounded-t-3xl shadow-2xl`}
+					>
+						<motion.div
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							exit={{ opacity: 0 }}
+							transition={{ duration: 0.5 }}
 						>
-							Event Registration
-						</Link>
-						{". "}
-						By using this website, you agree to our{" "}
-						<Link
-							href={"/terms"}
-							target="_blank"
-							className="no-style-btn underline"
-						>
-							Terms & Conditions{" "}
-						</Link>{" "}
-						and{" "}
-						<Link
-							href={"/privacypolicy"}
-							target="_blank"
-							className="no-style-btn underline"
-						>
-							Privacy Policy
-						</Link>
-						.
-					</p>
+							<div className="bg-green-1 gap-1 fixed left-0 bottom-0 flex justify-between items-center w-full text-sm z-50 rounded-t-3xl shadow-[0px_10px_10px_0px_rgba(0,0,0,0.5)] px-7 py-5">
+								<p>
+									<span className="font-semibold">
+										Terms & Conditions and Privacy Policy was recently updated!
+									</span>{" "}
+									By using this website, you agree to our{" "}
+									<Link
+										href={"/terms"}
+										target="_blank"
+										className="no-style-btn underline"
+									>
+										Terms & Conditions
+									</Link>{" "}
+									and{" "}
+									<Link
+										href={"/privacypolicy"}
+										target="_blank"
+										className="no-style-btn underline"
+									>
+										Privacy Policy
+									</Link>
+									.
+								</p>
 
-					<button onClick={handleCloseUpdateBanner} className="no-style-btn">
-						<Image
-							className="min-w-[19px] max-w-[19px] h-auto"
-							src={"/icons/close.svg"}
-							alt="icon"
-							width={20}
-							height={20}
-						/>
-					</button>
-				</div>
-			)}
+								<button
+									onClick={handleCloseUpdateBanner}
+									className="no-style-btn"
+								>
+									<Image
+										className="min-w-[19px] max-w-[19px] h-auto"
+										src={"/icons/close.svg"}
+										alt="icon"
+										width={20}
+										height={20}
+									/>
+								</button>
+							</div>
+						</motion.div>
+					</div>
+				)}
+			</AnimatePresence>
 		</>
 	);
 }

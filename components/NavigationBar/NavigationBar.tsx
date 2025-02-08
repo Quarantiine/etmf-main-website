@@ -25,6 +25,7 @@ export default function NavigationBar(): React.ReactElement {
 		{ text: "Get Involved", urlPath: "/getinvolved" },
 		{ text: "Blog", urlPath: "/blog" },
 		{ text: "Resources", urlPath: "/resources" },
+		{ text: "Contact Us", urlPath: "/contact" },
 	];
 
 	// State to keep track of the current page
@@ -43,14 +44,14 @@ export default function NavigationBar(): React.ReactElement {
 		<>
 			<div
 				className={`flex flex-col w-full justify-center items-end sticky top-0 left-0 z-50 ${
-					openMobileNavbar ? "h-screen md:h-fit" : "h-fit"
+					openMobileNavbar ? "h-screen lg:h-fit" : "h-fit"
 				}`}
 			>
 				{!openMobileNavbar && <LetterURL />}
 
 				<nav className="bg-[rgba(255,255,255,0.3)] backdrop-blur-3xl h-full w-full text-black shadow-sm">
 					{/* Tablet/Desktop Navigation Bar */}
-					<div className="hidden md:flex w-full h-fit flex-row justify-between items-center gap-4 px-5 sm:px-10 py-4">
+					<div className="hidden lg:flex w-full h-fit flex-row justify-between items-center gap-4 px-5 sm:px-10 py-4">
 						<button onClick={handleHomeBtn}>
 							<Image
 								className="object-cover w-auto h-[40px] no-style-btn"
@@ -77,7 +78,7 @@ export default function NavigationBar(): React.ReactElement {
 					</div>
 
 					{/* Mobile Navigation Bar */}
-					<div className="flex md:hidden w-full h-full flex-col justify-between items-center gap-4 px-5 sm:px-10 py-4 relative">
+					<div className="flex lg:hidden w-full h-full flex-col justify-between items-center gap-4 px-5 sm:px-10 py-4 relative">
 						<div className="flex flex-row justify-between items-center gap-4 w-full">
 							<button onClick={handleHomeBtn}>
 								<Image

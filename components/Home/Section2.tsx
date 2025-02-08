@@ -56,20 +56,6 @@ export default function Section2(): React.ReactElement {
 
 			opacity: 1,
 		});
-
-		gsap.to(".feature-section-carousels", {
-			scrollTrigger: {
-				trigger: ".feature-section",
-				start: "0% 70%",
-				end: "0% 70%",
-			},
-
-			opacity: 1,
-			stagger: {
-				each: 0.2,
-			},
-			delay: 0.5,
-		});
 	}, []);
 
 	return (

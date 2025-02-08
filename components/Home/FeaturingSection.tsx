@@ -97,7 +97,7 @@ export default function FeaturingSection() {
 						{resource.content.map((data: ContentTypes) => data).length > 0 && (
 							<div className="flex flex-col justify-center items-start gap-5 w-full relative">
 								<div
-									className={`feature-title-section flex flex-col sm:flex-row gap-2 w-full h-auto ${
+									className={`flex flex-col sm:flex-row gap-2 w-full h-auto ${
 										resource.link
 											? "justify-start sm:justify-between items-start w-full sm:items-end"
 											: "justify-start items-start"
@@ -134,10 +134,7 @@ export default function FeaturingSection() {
 										{resource.content.map(
 											(data: ContentTypes, index: number) => {
 												return (
-													<div
-														className="relative feature-section-carousels opacity-0"
-														key={index}
-													>
+													<div className="relative" key={index}>
 														{data.important && (
 															<div className="w-fit bg-white h-fit p-.5 rounded-full z-10 absolute top-3 right-3 lato-bold text-black shadow-xl border-2 border-[#4bf2c7]">
 																<Image

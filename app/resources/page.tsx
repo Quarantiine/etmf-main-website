@@ -6,7 +6,8 @@ import { MoreResources } from "@/components/Resources/MoreResources";
 
 export const metadata: Metadata = {
 	title: "Resources",
-	description: "",
+	description:
+		"Here, you'll find a curated collection of tools, guides, and materials designed to empower you in your personal growth and community development journey.",
 };
 
 export default function page(): React.ReactElement {

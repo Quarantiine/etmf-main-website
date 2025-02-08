@@ -1,0 +1,72 @@
+[
+	{
+		"title": "General Support",
+		"description": "This section is for general questions about the Empowerment Through Mindset Foundation (ETMF), our mission and more, or if you're not sure who else to contact",
+		"categoriesTitle": "Select Specific Support",
+		"categories": [
+			{
+				"textHeader": "ETMF Academy",
+				"text": "Questions specifically about the ETMF Academy Program"
+			},
+			{
+				"textHeader": "Partnerships & Collaborations",
+				"text": "If you are with an organization (educational institution, non-profit, business, etc.) and are interested in partnering or collaborating with ETMF, reach out to us. We would love to hear from you."
+			},
+			{
+				"textHeader": "Volunteer Opportunities",
+				"text": "Contact us in this section to learn about current volunteer openings and how you can get involved."
+			},
+			{
+				"textHeader": "Donations & Sponsorships",
+				"text": "For questions about making a donation to ETMF, or if your business is interested in sponsoring our programs or events, please use this section. Your support is greatly appreciated."
+			},
+			{
+				"textHeader": "Media & Press Inquiries",
+				"text": "Members of the media seeking information about ETMF, interviews, or press materials should contact us here."
+			},
+			{
+				"textHeader": "Website Technical Support",
+				"text": "If you are experiencing technical issues with the website (broken links, pages not loading correctly, etc.) or have feedback about the website's functionality, please let us know in this section."
+			},
+			{
+				"textHeader": "Legal Inquiries",
+				"text": "For questions or clarifications regarding our website's Terms and Conditions or Privacy Policy, please contact us here."
+			},
+			{
+				"textHeader": "Custom",
+				"text": "If you do not find your specific category of interest listed, please select this section to address your particular inquiries."
+			}
+		]
+	},
+	{
+		"title": "Executive Board Members",
+		"description": "For formal inquiries, high-level partnership proposals, major donation discussions, or direct communication intended for the Empowerment Through Mindset Foundation's Executive Leadership board.",
+		"categoriesTitle": "Select Executive Member",
+		"categories": [
+			{
+				"textHeader": "President & Chief Executive Officer (CEO)",
+				"text": "Jared Manigault"
+			},
+			{
+				"textHeader": "Vice-President & Chief Operating Officer (COO)",
+				"text": "Christian Tipps"
+			},
+			{
+				"textHeader": "Secretary & Chief Financial Officer (CFO)",
+				"text": "Nery Martinez"
+			},
+			{
+				"textHeader": "Treasurer & Chief Product and Technology Officer (CPTO)",
+				"text": "Daniel Ward"
+			},
+			{
+				"textHeader": "Educational Programs Officer (EPO)",
+				"text": "Natalie Garcia"
+			},
+			{
+				"textHeader": "Community Programs Officer (CPO)",
+				"text": "Jacob Zaragoza"
+			}
+		]
+	}
+]

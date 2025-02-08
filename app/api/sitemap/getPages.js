@@ -31,6 +31,16 @@ export async function getAllPages() {
 			priority: 1,
 		},
 		{
+			url: "/resources",
+			changefreq: "monthly",
+			priority: 1,
+		},
+		{
+			url: "/contact",
+			changefreq: "monthly",
+			priority: 1,
+		},
+		{
 			url: "/privacypolicy",
 			changefreq: "monthly",
 			priority: 1,

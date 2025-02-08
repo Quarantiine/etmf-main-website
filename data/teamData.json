@@ -47,6 +47,10 @@
 			{
 				"linkedIn": "https://medium.com/@danielward.occ",
 				"img": "/icons/medium.svg"
+			},
+			{
+				"linkedIn": "https://www.threads.net/@quarantiiine_?hl=en",
+				"img": "/icons/threads.svg"
 			}
 		],
 		"picture": "https://res.cloudinary.com/dnmdoncxt/image/upload/v1737162695/Background_Profile_Image_Daniel_gsapdn.png"

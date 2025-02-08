@@ -1,6 +1,6 @@
 [
 	{
-		"title": "For General Information",
+		"title": "General Information",
 		"prompts": [
 			{ "text": "What is the Empowerment Through Mindset Foundation about?" },
 			{ "text": "How can I get involved with ETMF?" },
@@ -10,13 +10,13 @@
 		]
 	},
 	{
-		"title": "For Educational Programs",
+		"title": "Educational Programs",
 		"prompts": [
 			{ "text": "What educational programs do you provide for schools?" }
 		]
 	},
 	{
-		"title": "For Partnership Opportunities",
+		"title": "Partnership Opportunities",
 		"prompts": [
 			{ "text": "How can my organization partner with ETMF?" },
 			{ "text": "Does ETMF offer sponsorship opportunities?" },
@@ -24,7 +24,7 @@
 		]
 	},
 	{
-		"title": "For Donations and Support",
+		"title": "Donations and Support",
 		"prompts": [
 			{ "text": "How can I donate to ETMF?" },
 			{
@@ -33,7 +33,7 @@
 		]
 	},
 	{
-		"title": "For Legal Queries",
+		"title": "Legal Queries",
 		"prompts": [
 			{ "text": "What are ETMF's Terms & Conditions about?" },
 			{ "text": "What are ETMF's Privacy Policy about?" }

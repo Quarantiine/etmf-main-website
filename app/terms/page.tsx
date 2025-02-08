@@ -45,10 +45,10 @@ export default function TermsNConditions(): React.ReactElement {
 
 						<div className="flex flex-col w-full">
 							<p>
-								<span className="lato-bold">Effective Date:</span> 11/2/2024
+								<span className="lato-bold">Effective Date:</span> Feb 7, 2025
 							</p>
 							<p>
-								<span className="lato-bold">Last Updated:</span> 12/19/2024
+								<span className="lato-bold">Last Updated:</span> Feb 7, 2025
 							</p>
 						</div>
 					</div>

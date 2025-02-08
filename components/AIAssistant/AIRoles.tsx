@@ -2,7 +2,7 @@
 
 import { Content, Part } from "@google/generative-ai";
 import Image from "next/image";
-import React from "react";
+import React, { useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 
 export default function AIRoles({ conversation }: { conversation: Content }) {
@@ -66,8 +66,37 @@ export default function AIRoles({ conversation }: { conversation: Content }) {
 }
 
 const AIAssistant = ({ part }: { part: Part }) => {
+	const [thumbsType, setThumbsType] = useState<string>("N/A");
+
+	const [copyLoading, setCopyLoading] = useState<boolean>(false);
+	const [copiedIndicator, setCopiedIndicator] = useState<boolean>(false);
+
+	const setCopiedIndicatorRef = useRef<NodeJS.Timeout | null>(null);
+
+	const copyToClipboard = (text: string | undefined) => {
+		if (text) {
+			navigator.clipboard
+				.writeText(text)
+				.then(() => {
+					setCopyLoading(true);
+
+					setCopiedIndicator(true);
+					setCopiedIndicatorRef.current = setTimeout(() => {
+						setCopiedIndicator(false);
+					}, 2000);
+				})
+				.catch((error) => {
+					console.error(error as Error);
+					setCopiedIndicator(false);
+				})
+				.finally(() => {
+					setCopyLoading(false);
+				});
+		}
+	};
+
 	return (
-		<div className="ai-overflow-x overflow-x-scroll overflow-y-hidden w-fit flex flex-col gap-4">
+		<div className="ai-overflow-x overflow-x-scroll overflow-y-hidden w-fit flex flex-col gap-2">
 			<ReactMarkdown
 				components={{
 					ul: ({ children }) => <ul className="list-disc pl-5">{children}</ul>,
@@ -89,27 +118,129 @@ const AIAssistant = ({ part }: { part: Part }) => {
 				{part.text}
 			</ReactMarkdown>
 
-			{/* <div className="flex flex-row gap-4 w-full justify-start items-center">
-				<button className="no-style-btn flex justify-center items-center">
-					<Image
-						className="h-auto min-w-[18px] max-w-[18px]"
-						src={"/icons/thumb_up_filled.svg"}
-						alt="icon"
-						width={20}
-						height={20}
-					/>
-				</button>
+			<div className="flex flex-row gap-4 w-full justify-start items-center">
+				{thumbsType === "N/A" ? (
+					<>
+						<button
+							onClick={() => {
+								setThumbsType("liked");
+							}}
+							className="no-style-btn flex justify-center items-center"
+						>
+							<Image
+								className="h-auto min-w-[15px] max-w-[15px]"
+								src={"/icons/thumbs.svg"}
+								alt="icon"
+								width={20}
+								height={20}
+							/>
+						</button>
+						<button
+							onClick={() => {
+								setThumbsType("disliked");
+							}}
+							className="no-style-btn flex justify-center items-center rotate-180"
+						>
+							<Image
+								className="h-auto min-w-[15px] max-w-[15px]"
+								src={"/icons/thumbs.svg"}
+								alt="icon"
+								width={20}
+								height={20}
+							/>
+						</button>
+					</>
+				) : (
+					<>
+						{thumbsType === "liked" && (
+							<button
+								onClick={() => {
+									setThumbsType("liked");
+								}}
+								className="no-style-btn flex justify-center items-center"
+							>
+								<Image
+									className="h-auto min-w-[15px] max-w-[15px]"
+									src={
+										thumbsType === "liked"
+											? "/icons/thumbs_filled.svg"
+											: "/icons/thumbs.svg"
+									}
+									alt="icon"
+									width={20}
+									height={20}
+								/>
+							</button>
+						)}
 
-				<button className="no-style-btn flex justify-center items-center rotate-180">
-					<Image
-						className="h-auto min-w-[18px] max-w-[18px]"
-						src={"/icons/thumb_up.svg"}
-						alt="icon"
-						width={20}
-						height={20}
-					/>
-				</button>
-			</div> */}
+						{thumbsType === "disliked" && (
+							<button
+								onClick={() => {
+									setThumbsType("disliked");
+								}}
+								className="no-style-btn flex justify-center items-center rotate-180"
+							>
+								<Image
+									className="h-auto min-w-[15px] max-w-[15px]"
+									src={
+										thumbsType === "disliked"
+											? "/icons/thumbs_filled.svg"
+											: "/icons/thumbs.svg"
+									}
+									alt="icon"
+									width={20}
+									height={20}
+								/>
+							</button>
+						)}
+					</>
+				)}
+
+				{copyLoading ? (
+					<button
+						disabled
+						onClick={() => copyToClipboard(part.text)}
+						className="no-style-btn flex justify-center items-center opacity-50"
+					>
+						<Image
+							className="h-auto min-w-[15px] max-w-[15px]"
+							src={"/icons/copy.svg"}
+							alt="icon"
+							width={20}
+							height={20}
+						/>
+					</button>
+				) : copiedIndicator ? (
+					<button
+						disabled
+						onClick={() => copyToClipboard(part.text)}
+						className="flex justify-center items-center gap-1 text-sm"
+					>
+						<Image
+							className="h-auto min-w-[15px] max-w-[15px]"
+							src={"/icons/copied.svg"}
+							alt="icon"
+							width={20}
+							height={20}
+						/>
+
+						<p className="text-gray-500">copied</p>
+					</button>
+				) : (
+					<button
+						onClick={() => copyToClipboard(part.text)}
+						className="no-style-btn flex justify-center items-center"
+					>
+						<Image
+							className="h-auto min-w-[15px] max-w-[15px]"
+							src={"/icons/copy.svg"}
+							alt="icon"
+							width={20}
+							height={20}
+						/>
+					</button>
+				)}
+			</div>
 		</div>
 	);
 };

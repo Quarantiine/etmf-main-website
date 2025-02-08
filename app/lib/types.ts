@@ -1,3 +1,12 @@
+export interface ContactFormData {
+	id: string;
+	name: string;
+	email: string;
+	message: string;
+	contact: string;
+	category: string;
+}
+
 export interface ResourcesTypes {
 	title: string;
 	subTitle: string;

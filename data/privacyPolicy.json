@@ -3,82 +3,159 @@
 		"title": "Agreement to the Privacy Policy",
 		"description": [
 			{
-				"text": "This Privacy Policy describes how Empowerment Through Mindset Foundation (“ETMF,” “ETM Foundation,” “Foundation,” “we,” “us,” or “our”) collects, uses, and protects the personal information of users who visit our website, https://etmfoundation.com (the “Website”). By using the Website, you consent to the data practices described in this policy."
+				"text": "This Privacy Policy describes how Empowerment Through Mindset Foundation (“ETMF,” “ETM Foundation,” “Foundation,” “we,” “us,” or “our”) collects, uses, and protects the personal information of users who visit our website, https://etmfoundation.com (the “Website”). By using the Website, you consent to the data practices described in this policy. If you do not agree with the terms of this Privacy Policy, please do not use the Website."
+			},
+			{
+				"text": "This Privacy Policy is incorporated by reference into our Terms and Conditions."
 			}
 		],
 		"points": [{}]
 	},
 	{
 		"title": "Information We Collect",
-		"description": [{}],
+		"description": [
+			{
+				"text": "When you interact with the Website, you may choose to provide us with personal information. This can happen when you:\nFill out forms on the Website (e.g., contact forms, donation forms).\nSubmit feedback or inquiries to us through the Website or contact information provided.\nContact us via phone or “Contact” page regarding the Foundation.\nThis personal information may include your name, email address, phone number, postal address, and any other information you voluntarily provide."
+			},
+			{
+				"text": "When you access and use the Website, we automatically collect certain information about your visit. This information helps us understand Website traffic and usage patterns and improve the Website. This automatically collected information may include:"
+			}
+		],
 		"points": [
 			{
 				"textHeader": "Personal Information Provided by Users",
-				"text": "When interacting with the Website, you may provide personal information directly, such as when filling out forms, submitting feedback, or contacting us. This includes name, email address, and any other information you choose to provide."
+				"text": "When you interact with the Website, you may choose to provide us with personal information. This can happen when you:\nFill out forms on the Website (e.g., contact forms, donation forms).\nSubmit feedback or inquiries to us through the Website or contact information provided.\nContact us via phone or “Contact” page regarding the Foundation.\nThis personal information may include your name, email address, phone number, postal address, and any other information you voluntarily provide."
 			},
 			{
 				"textHeader": "Automatically Collected Information",
-				"text": "ETMF may collect data through cookies, Typeform, Google Forms, and other technologies, including IP addresses, browser types, operating systems, and other usage data to analyze Website traffic, understand user interests, and improve Website engagement."
+				"text": "When you access and use the Website, we automatically collect certain information about your visit. This information helps us understand Website traffic and usage patterns and improve the Website. This automatically collected information may include:"
+			},
+			{
+				"textHeader": "Log Data",
+				"text": "Such as your IP address, browser type, operating system, referring URL, pages visited, and the dates and times of your visits."
+			},
+			{
+				"textHeader": "Cookies and Similar Tracking Technologies",
+				"text": "We could use cookies, pixels, and similar technologies to collect information about your browsing activity on the Website. Cookies are small data files stored on your device that enable us to recognize your browser and capture certain information. We may use both session cookies (which expire once you close your browser) and persistent cookies (which remain on your device for a set period). You can control the use of cookies at the browser level. If you choose to disable cookies, it may limit your use of certain features or functions on our Website."
+			},
+			{
+				"textHeader": "Analytics Services",
+				"text": "We could use third-party analytics services, such as Google Analytics, to help us analyze Website traffic and user behavior. These services may use cookies and similar technologies to collect information about your use of the Website and report website trends to us. You can learn more about Google’s practices by visiting Google Privacy Policy and opt-out of Google Analytics by downloading the Google Analytics opt-out browser add-on, available at Google Analytics Opt-out."
 			}
 		]
 	},
 	{
 		"title": "Use of Collected Information",
-		"description": [{}],
+		"description": [
+			{
+				"text": "We use the information we collect for the following purposes:"
+			}
+		],
 		"points": [
 			{
-				"textHeader": "AI Assistant",
-				"text": "The AI assistant on the Website is designed solely to help users learn about ETMF and navigate the Website. ETMF does not save or store any responses or interactions users have with the AI assistant."
+				"textHeader": "To Operate and Improve the Website",
+				"text": "To ensure the Website functions correctly, to personalize your experience, to monitor and analyze Website usage and trends, and to improve the design, content, and functionality of the Website."
 			},
 			{
-				"textHeader": "Improvement of Website Services",
-				"text": "Data collected through forms, analytics tools, and other interactions are used to improve Website functionality, user experience, and content relevance."
+				"textHeader": "To Respond to Inquiries and Provide Support",
+				"text": "To respond to your questions, requests, and feedback, and to provide user support."
 			},
 			{
-				"textHeader": "Marketing and Analytics",
-				"text": "Data from user interactions, such as form submissions and Website usage, may be used for marketing purposes, including understanding user interests and promoting relevant ETMF initiatives and programs."
+				"textHeader": "For Marketing and Communications (if applicable)",
+				"text": "If you have opted in to receive marketing communications, we may use your contact information to send you updates about ETMF programs, initiatives, events, and fundraising opportunities. You can opt-out of receiving marketing communications at any time by following the unsubscribe instructions provided in those communications or by contacting us as described in the \"Contact Us\" section below."
+			},
+			{
+				"textHeader": "For Analytics and Research",
+				"text": "To analyze user behavior and preferences to understand how users interact with our Website and to improve our services and outreach efforts."
+			},
+			{
+				"textHeader": "To Protect Against Misuse and Abuse",
+				"text": "To detect, investigate, and prevent fraudulent, unauthorized, or illegal activity and to protect the security and integrity of the Website."
+			},
+			{
+				"textHeader": "To Comply with Legal Obligations",
+				"text": "To comply with applicable laws, regulations, legal processes, or governmental requests."
+			},
+			{
+				"textHeader": "AI Assistant - Informational and Navigational Aid (No Data Saving)",
+				"text": "The AI assistant on the Website is designed solely to help users learn about ETMF and navigate the Website more effectively. We do not save, store, or retain any user responses or interactions with the AI assistant. Your conversations with the AI assistant are not tracked or recorded by ETMF. The system is designed to save user ratings exclusively when individuals provide feedback on the AI Assistant's performance using the thumbs up or thumbs down icons. This functionality allows for the collection of data specifically on the perceived helpfulness of the AI Assistant."
 			}
 		]
 	},
 	{
 		"title": "Data Processing and External Handling",
-		"description": [{}],
+		"description": [
+			{
+				"text": "To provide and improve our Website and services, we may use third-party service providers that process data on our behalf. These third-party providers may include:\nAnalytics Providers: Such as Google Analytics (as mentioned above).\nForm and Survey Providers: Such as Typeform and Google Forms, which we may use to collect data through forms on the Website.\nHosting and Infrastructure Providers: That provides the technical infrastructure for our Website.\nCommunication and Marketing Platforms (if applicable): Used for sending emails and managing communications.\nThese third-party providers are contractually obligated to protect your personal information and use it only for the purposes for which we disclose it to them, and in compliance with applicable data privacy laws."
+			},
+			{
+				"text": "Your personal information may be processed and stored in countries outside of your country of residence, including in the United States. Data processing locations may also be where our third-party service providers operate. By using the Website and providing us with your information, you consent to the transfer of your personal information to these locations. We will take steps to ensure that your personal information is protected in accordance with this Privacy Policy and applicable data protection laws when transferred to these locations."
+			},
+			{
+				"text": "We will only share your personal information with third parties in the following limited circumstances:"
+			}
+		],
 		"points": [
 			{
 				"textHeader": "Third-Party Processing and External Sharing",
-				"text": "User data may be processed and stored using third-party technologies and platforms, such as Google Forms or Typeform. These processes adhere to industry standards and legal regulations concerning data privacy and security."
+				"text": "To provide and improve our Website and services, we may use third-party service providers that process data on our behalf. These third-party providers may include:\nAnalytics Providers: Such as Google Analytics (as mentioned above).\nForm and Survey Providers: Such as Typeform and Google Forms, which we may use to collect data through forms on the Website.\nHosting and Infrastructure Providers: That provides the technical infrastructure for our Website.\nCommunication and Marketing Platforms (if applicable): Used for sending emails and managing communications.\nThese third-party providers are contractually obligated to protect your personal information and use it only for the purposes for which we disclose it to them, and in compliance with applicable data privacy laws."
 			},
 			{
 				"textHeader": "Location of Data Processing",
-				"text": "Your data may be processed outside your geographic region or outside ETMF’s immediate data frameworks. This includes processing by third-party providers under applicable regulatory compliance standards in effect for AI and data privacy."
+				"text": "Your personal information may be processed and stored in countries outside of your country of residence, including in the United States. Data processing locations may also be where our third-party service providers operate. By using the Website and providing us with your information, you consent to the transfer of your personal information to these locations. We will take steps to ensure that your personal information is protected in accordance with this Privacy Policy and applicable data protection laws when transferred to these locations."
 			},
 			{
-				"textHeader": "Security and Compliance Measures",
-				"text": "ETMF employs technologies and safeguards to protect your data. However, we cannot guarantee that third-party data handling practices, including Google Forms or Typeform, will adhere to specific methods or standards. Users interact with these third-party services at their own risk."
+				"textHeader": "Data Sharing – Limited Circumstances",
+				"text": "We will only share your personal information with third parties in the following limited circumstances:\nWith your consent.\nWith our service providers who need access to your information to perform services on our behalf (as described above).\nTo comply with legal obligations, such as responding to subpoenas, court orders, or government requests.\nTo protect the rights and safety of ETMF, our users, or others, including enforcing our Terms and Conditions and Privacy Policy.\nIn connection with a merger, acquisition, or sale of all or a substantial portion of our assets, in which case your information may be transferred as part of that transaction."
 			}
 		]
 	},
 	{
 		"title": "User Rights and Choices",
-		"description": [{}],
+		"description": [
+			{
+				"text": "You have choices regarding the use of cookies and other tracking technologies. Most web browsers are set to accept cookies by default. You can usually modify your browser settings to decline cookies or to alert you when cookies are being sent. To do so, follow the instructions provided by your browser (usually located within the “Help,” “Tools” or “Edit” settings). Please note that if you disable cookies, some features of the Website may not function properly."
+			},
+			{
+				"text": "You can opt-out of receiving marketing communications from us at any time. You can do this by clicking the “unsubscribe” link at the bottom of any marketing email we send you, or by contacting us using the contact information provided below."
+			},
+			{
+				"text": "Depending on your jurisdiction and applicable data privacy laws, you may have certain rights regarding your personal information that we hold, including the right to:\nAccess your personal information.\nCorrect inaccuracies in your personal information.\nRequest deletion of your personal information.\nTo exercise these rights, or if you have questions about your rights, please contact us on the “Contact” page or at (682)-436-2165. We will consider and respond to your request in accordance with applicable laws. To protect your privacy and security, we may take reasonable steps to verify your identity before fulfilling your request. Please be aware that there may be legal or administrative reasons why we cannot fulfill every request, such as data retention requirements."
+			}
+		],
 		"points": [
 			{
 				"textHeader": "Cookie and Tracking Preferences",
-				"text": "Users may manage cookie settings and disable certain tracking technologies through their browser settings. However, doing so may affect the functionality and personalized experience on the Website."
+				"text": "You have choices regarding the use of cookies and other tracking technologies. Most web browsers are set to accept cookies by default. You can usually modify your browser settings to decline cookies or to alert you when cookies are being sent. To do so, follow the instructions provided by your browser (usually located within the “Help,” “Tools” or “Edit” settings). Please note that if you disable cookies, some features of the Website may not function properly."
+			},
+			{
+				"textHeader": "Opt-Out of Marketing Communications (if applicable)",
+				"text": "You can opt-out of receiving marketing communications from us at any time. You can do this by clicking the “unsubscribe” link at the bottom of any marketing email we send you, or by contacting us using the contact information provided below."
+			},
+			{
+				"textHeader": "Access, Correction, and Deletion (Data Removal Requests)",
+				"text": "Depending on your jurisdiction and applicable data privacy laws, you may have certain rights regarding your personal information that we hold, including the right to:\nAccess your personal information.\nCorrect inaccuracies in your personal information.\nRequest deletion of your personal information.\nTo exercise these rights, or if you have questions about your rights, please contact us on the “Contact” page or at (682)-436-2165. We will consider and respond to your request in accordance with applicable laws. To protect your privacy and security, we may take reasonable steps to verify your identity before fulfilling your request. Please be aware that there may be legal or administrative reasons why we cannot fulfill every request, such as data retention requirements."
 			}
 		]
 	},
 	{
-		"title": "Third-Party Services",
-		"description": [{}],
+		"title": "Third-Party Services and Links",
+		"description": [
+			{
+				"text": "As mentioned above, the Website utilizes third-party services like Google Analytics, Typeform, or Google Forms for analytics, form collection, and communication purposes. These services operate independently from ETMF and have their own privacy policies. We encourage you to review the privacy policies of these third-party providers directly on their websites to understand their data practices. ETMF is not responsible for the privacy practices of these third-party services."
+			},
+			{
+				"text": "The Website may contain links to external websites that are not operated by us. These links are provided for your convenience and information. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party websites. We encourage you to review the privacy policy of every website you visit. The inclusion of a link to a third-party website does not constitute an endorsement by ETMF."
+			}
+		],
 		"points": [
 			{
-				"textHeader": "Analytics",
-				"text": "The Website integrates Typeform, Google Forms, or other technologies for functions such as analytics, communication, and marketing. Information submitted through these platforms is handled under their respective privacy and security protocols. ETMF is not responsible for the practices or policies of these third-party platforms, and users are encouraged to review Typeform’s and Google’s legal documents directly on their websites."
+				"textHeader": "Analytics, Forms, and Other Services",
+				"text": "As mentioned above, the Website utilizes third-party services like Google Analytics, Typeform, or Google Forms for analytics, form collection, and communication purposes. These services operate independently from ETMF and have their own privacy policies. We encourage you to review the privacy policies of these third-party providers directly on their websites to understand their data practices. ETMF is not responsible for the privacy practices of these third-party services."
 			},
 			{
 				"textHeader": "External Links",
-				"text": "The Website may contain links to external sites or third-party services. ETMF does not control these sites and is not responsible for their content or privacy practices. Users are encouraged to review the privacy policies of any external sites they visit."
+				"text": "The Website may contain links to external websites that are not operated by us. These links are provided for your convenience and information. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party websites. We encourage you to review the privacy policy of every website you visit. The inclusion of a link to a third-party website does not constitute an endorsement by ETMF."
 			}
 		]
 	},
@@ -86,66 +163,59 @@
 		"title": "Data Security",
 		"description": [
 			{
-				"text": "ETMF implements reasonable technical and organizational measures to secure personal information and limit unauthorized access or disclosure. However, no data transmission over the Internet or storage system can be guaranteed to be 100% secure. Users interact with the Website at their own risk, and ETMF cannot be held liable for any damages arising from security vulnerabilities beyond ETMF’s control, including those involving third-party technologies and software."
+				"text": "ETMF takes reasonable and appropriate technical and organizational measures to protect your personal information from unauthorized access, use, disclosure, alteration, or destruction. We leverage modern web development practices and technologies, including the capabilities of Next.js, to enhance the security of our Website. These measures are designed to safeguard your information and include:"
 			}
 		],
-		"points": [{}]
+		"points": [
+			{
+				"textHeader": "Encryption in Transit",
+				"text": "Our Website is served over HTTPS (Hypertext Transfer Protocol Secure). This means that all communication between your web browser and our servers is encrypted using SSL/TLS (Secure Sockets Layer/Transport Layer Security) protocols. This encryption protects your data while it is being transmitted over the internet, making it significantly harder for unauthorized parties to intercept and read your information as it travels between your device and our servers. Next.js, as a framework built for modern web applications, inherently supports and encourages the use of HTTPS, ensuring this encryption is in place for all website traffic."
+			},
+			{
+				"textHeader": "Regular Security Practices",
+				"text": "We also implement other standard security practices, such as regularly updating our website and monitoring for potential security vulnerabilities."
+			},
+			{
+				"textHeader": "No Absolute Security",
+				"text": "While we strive to protect your personal information using these comprehensive measures, it is important to remember that no method of transmission over the internet or method of electronic storage is 100% secure. Therefore, despite our best efforts and the security features inherent in technologies like Next.js and HTTPS, we cannot guarantee the absolute security of your personal information. Any transmission of personal information to us is at your own risk. We are not responsible for circumvention of any privacy settings or security measures contained on the Website, although we will always take reasonable steps to prevent such occurrences."
+			}
+		]
 	},
 	{
 		"title": "Image Data and Attribution",
 		"description": [
 			{
-				"text": "The Website incorporates images sourced from Unsplash, a third-party platform providing free public images. While these images do not collect personal data directly, they are displayed in compliance with Unsplash’s licensing requirements."
-			}
-		],
-		"points": [{}]
-	},
-	{
-		"title": "Third-Party Links and Attribution",
-		"description": [
-			{
-				"text": "Certain images may include metadata or embedded links to the original creators or licensors on Unsplash. Users interacting with these images may be directed to external websites, and ETMF is not responsible for the privacy practices or content of such third-party platforms."
+				"text": "The Website incorporates images sourced from Unsplash, a third-party platform providing free public images. Unsplash itself does not collect personal data from users of websites that display their images through their standard embedding or linking methods. However, please be aware of Unsplash’s own privacy policy which you can review on the Unsplash Privacy Policy Page."
 			}
 		],
 		"points": [{}]
 	},
 	{
 		"title": "Data Retention",
-		"description": [{}],
-		"points": [
+		"description": [
 			{
-				"textHeader": "Retention of User Data",
-				"text": "ETMF retains user data collected through forms or analytics tools for as long as necessary to fulfill the purposes outlined in this Privacy Policy, including compliance, analytics, and service improvement."
-			},
-			{
-				"textHeader": "Data Removal Requests",
-				"text": "Users may request the removal of data collected through forms or other Website interactions by contacting ETMF support at (682)-436-2165. ETMF will make reasonable efforts to accommodate such requests, where feasible and in compliance with applicable laws."
+				"text": "We will retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law. This period may vary depending on the type of information and the purposes for which it is used. For example, we may retain your contact information for as long as you are subscribed to our mailing list or as needed to respond to your inquiries. We may also retain certain information for legal compliance, audit, or record-keeping purposes.\nWhen we no longer need to retain your personal information, we will securely dispose of it in accordance with our data retention and disposal policies."
 			}
-		]
+		],
+		"points": [{}]
 	},
 	{
 		"title": "Compliance with Data Privacy Regulations",
 		"description": [
 			{
-				"text": "ETMF will disclose and process data per these legal frameworks and may update this Privacy Policy as needed to reflect evolving compliance requirements. ETMF is committed to complying with applicable data privacy regulations, including but not limited to:"
+				"text": "We will process and protect your data in accordance with relevant legal frameworks."
 			}
 		],
-		"points": [
-			{
-				"textHeader": "GDPR (General Data Protection Regulation)",
-				"text": "For users within the European Union."
-			},
-			{
-				"textHeader": "CCPA (California Consumer Privacy Act)",
-				"text": "For California residents."
-			}
-		]
+		"points": [{}]
 	},
 	{
 		"title": "Changes to this Privacy Policy",
 		"description": [
 			{
-				"text": "ETMF may update this Privacy Policy periodically. Users will be notified of significant changes through the Website. Continued use of the Website after updates are posted signifies user acceptance of the revised Privacy Policy."
+				"text": "We may update this Privacy Policy from time to time to reflect changes in our data practices or applicable laws. We will notify you of any significant changes by posting the updated Privacy Policy on the Website and updating the “Last Updated” date at the top of this policy. In some cases, we may also provide you with additional notice, such as via email or a prominent notice on the Website. Your continued use of the Website after the posting of changes constitutes your acceptance of the revised Privacy Policy."
+			},
+			{
+				"text": "We encourage you to periodically review this Privacy Policy for any updates or changes."
 			}
 		],
 		"points": [{}]
@@ -154,7 +224,7 @@
 		"title": "Contact Us",
 		"description": [
 			{
-				"text": "For questions about this Privacy Policy or data practices, please contact us at: Phone: (682)-436-2165"
+				"text": "If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at, \nPhone: (682)-436-2165.\nYou may also use our “Contact” Page on the Website and indicate that your query is regarding the Privacy Policy."
 			}
 		],
 		"points": [{}]

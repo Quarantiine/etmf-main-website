@@ -3,6 +3,7 @@
 import Image from "next/image";
 import React, { MouseEventHandler, useEffect, useState } from "react";
 import AIComponent from "./AIComponent";
+import { AnimatePresence } from "framer-motion";
 
 export default function AIAssistant(): React.ReactElement {
 	const [openAIAssistant, setOpenAIAssistant] = useState<boolean>(false);
@@ -37,12 +38,12 @@ export default function AIAssistant(): React.ReactElement {
 				className={`ai-assistant-modal fixed top-1/2 -translate-y-1/2 right-0 z-40`}
 			>
 				{showPopUpMessage && (
-					<div className="flex flex-row justify-start items-center gap-2 w-[175px] h-fit absolute bottom-0 right-14 text-sm !bg-white shadow-lg rounded-xl px-3 py-2">
+					<div className="flex flex-row justify-start items-center gap-2 w-[155px] h-fit absolute bottom-0 right-14 text-sm !bg-white shadow-lg rounded-xl px-3 py-2">
 						<button
 							onClick={handleOpenAIAssistant}
 							className="no-style-btn text-start"
 						>
-							Use AI to find what you need
+							Use AI to Learn About ETMF
 						</button>
 
 						<button onClick={handlePopUpMessage} className="no-style-btn">
@@ -84,9 +85,11 @@ export default function AIAssistant(): React.ReactElement {
 				</button>
 			</div>
 
-			{openAIAssistant && (
-				<AIComponent handleOpenAIAssistant={handleOpenAIAssistant} />
-			)}
+			<AnimatePresence>
+				{openAIAssistant && (
+					<AIComponent handleOpenAIAssistant={handleOpenAIAssistant} />
+				)}
+			</AnimatePresence>
 		</>
 	);
 }

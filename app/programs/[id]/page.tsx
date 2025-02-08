@@ -4,7 +4,6 @@ import Link from "next/link";
 import React from "react";
 import programList from "@/data/programList.json";
 import type { Metadata } from "next";
-import Head from "next/head";
 
 interface ProgramListTypes {
 	id: string;
@@ -52,14 +51,6 @@ export default async function ProgramsPages({
 
 	return (
 		<>
-			<Head>
-				{programList
-					.filter((value: ProgramListTypes) => value.id === id)
-					.map((program: ProgramListTypes) => (
-						<title key={program.id}>{program.title}</title>
-					))}
-			</Head>
-
 			<div className="flex flex-col w-full h-auto justify-center items-center">
 				<div className="default-width mx-auto pt-10 flex flex-col gap-10">
 					<div className="w-full h-fit flex flex-col justify-center items-center">
