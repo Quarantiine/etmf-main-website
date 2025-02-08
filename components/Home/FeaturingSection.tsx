@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 import CarouselArrows from "../Widgets/CarouselArrows";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ContentTypes, ResourcesTypes } from "@/app/lib/types";
+import { ContentTypes, ResourcesTypes } from "@/lib/types";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function FeaturingSection() {

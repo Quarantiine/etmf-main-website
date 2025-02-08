@@ -4,7 +4,7 @@ import React from "react";
 import blogData from "@/data/blogData.json";
 import { ResourcesContent } from "@/components/Blog/ResourcesContent";
 import Section1 from "@/components/Blog/Section1";
-import { BlogResourcesTypes } from "../lib/types";
+import { BlogResourcesTypes } from "../../lib/types";
 
 export const metadata: Metadata = {
 	title: "Blog",

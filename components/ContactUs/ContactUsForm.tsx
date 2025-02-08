@@ -3,7 +3,7 @@
 import React, { Dispatch, useRef, useState } from "react";
 import inquiryList from "@/data/inquiryList.json";
 import Image from "next/image";
-import { FirebaseAPI } from "@/app/lib/firebase";
+import { FirebaseAPI } from "@/lib/firebase";
 
 export const ContactUsForm = () => {
 	const {

@@ -38,14 +38,12 @@ export const FirebaseAPI = () => {
 
 	useEffect(() => {
 		try {
-			const unsubscribe = onSnapshot(colRefFormMessage, (ss) => {
+			onSnapshot(colRefFormMessage, (ss) => {
 				ss.docs.map((doc) => ({
 					...doc.data(),
 					id: doc.id,
 				}));
 			});
-
-			return () => unsubscribe();
 		} catch (error) {
 			console.error(error);
 		}
