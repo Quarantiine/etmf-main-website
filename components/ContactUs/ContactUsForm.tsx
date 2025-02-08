@@ -43,7 +43,7 @@ export const ContactUsForm = () => {
 		setText(text);
 	};
 
-	const handleOnSubmit = () => {
+	const handleOnSubmit = async () => {
 		const checkContactEmail = (email: string) => {
 			const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 			return emailRegex.test(email);
@@ -79,7 +79,7 @@ export const ContactUsForm = () => {
 
 			setSubmitted(true);
 
-			sendMessage(name, email, message, inquiryType, inquiryCategory);
+			await sendMessage(name, email, message, inquiryType, inquiryCategory);
 
 			submittedRef.current = setTimeout(() => {
 				setSubmitted(false);
