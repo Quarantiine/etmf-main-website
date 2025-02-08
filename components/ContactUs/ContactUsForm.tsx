@@ -96,7 +96,7 @@ export const ContactUsForm = () => {
 	return (
 		<>
 			<div className="w-fit h-fit p-5 rounded-xl border flex flex-col justify-center items-start gap-4">
-				<h1 className="text-2xl">Who to contact?</h1>
+				<h1 className="text-2xl">Contact</h1>
 
 				<div className="grid grid-cols-1 justify-start items-start gap-5">
 					{inquiryList.map((inquiry, index) => {
