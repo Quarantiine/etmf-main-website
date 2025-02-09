@@ -6,29 +6,35 @@ export const ResourceHeader = () => {
 	const gradientRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
-		let start = 0;
-		const colors = ["#07f49e", "#104030", "#0B7955"];
-		const speed = 0.005; // Adjust the speed for smoother animation
-
-		const animateGradient = () => {
-			start += speed;
-			const gradient = `radial-gradient(circle, ${colors
-				.map((color, index) => {
-					const angle =
-						(start + (index * (Math.PI * 2)) / colors.length) % (Math.PI * 2);
-					const offset = Math.sin(angle) * 50 + 50;
-					return `${color} ${offset}%`;
-				})
-				.join(", ")})`;
-
-			if (gradientRef.current) {
-				gradientRef.current.style.background = gradient;
-			}
-
-			requestAnimationFrame(animateGradient);
+		const getAnimatedGradient = () => {
+			return `linear-gradient(-270deg, ${"#0B7955"}, ${"#07f49e"}, ${"#0B7955"})`;
 		};
 
-		animateGradient();
+		const gradientInterval: NodeJS.Timeout = setInterval(() => {
+			const animatedGradient = `background: ${getAnimatedGradient()}; background-size: 200% 200%; animation: gradientAnimation 15s ease infinite;`;
+
+			const element = gradientRef.current;
+			if (element) {
+				element.setAttribute("style", animatedGradient);
+			}
+		}, 1);
+
+		return () => clearInterval(gradientInterval);
+	}, []);
+
+	useEffect(() => {
+		const style = document.createElement("style");
+		style.innerHTML = `
+				@keyframes gradientAnimation {
+					0% { background-position: 100% 50%; }
+					50% { background-position: 0% 0%; }
+					100% { background-position: 100% 50%; }
+				}
+			`;
+		document.head.appendChild(style);
+		return () => {
+			document.head.removeChild(style);
+		};
 	}, []);
 
 	return (
@@ -37,7 +43,7 @@ export const ResourceHeader = () => {
 				ref={gradientRef}
 				className="flex justify-center items-start w-full h-fit"
 				style={{
-					background: "radial-gradient(circle, #07f49e, #104030, #0B7955)",
+					background: "linear-gradient(circle, #07f49e, #104030, #0B7955)",
 				}}
 			>
 				<div className="default-width flex flex-col justify-center items-center gap-5 w-full text-center bg-white rounded-xl p-12 relative top-12">
