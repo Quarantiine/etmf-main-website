@@ -257,7 +257,7 @@ export const ContactUsForm = () => {
 					<div className="flex flex-col justify-center items-center gap-2 w-full p-3 bg-gray-100 rounded-xl">
 						{inquiryType ? (
 							<div className="flex flex-col justify-center items-center bg-green-3 rounded-xl p-3 text-center text-white w-full text-sm">
-								<p className="lato-bold">{inquiryType} (Inquiry)</p>
+								<p className="lato-bold">{inquiryType} (Contact)</p>
 							</div>
 						) : (
 							<div className="flex flex-col justify-center items-center bg-gray-200 text-gray-500 text-center p-3 rounded-xl w-full text-sm">
