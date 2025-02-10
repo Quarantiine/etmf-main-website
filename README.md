@@ -34,7 +34,7 @@ ETMF's AI assistant, is integrated into the website to provide a more engaging a
 
 The AI assistant's integration utilizes Google's Gemini AI API.
 
-## Contribution Guidelines
+## [Contribution Guidelines](https://github.com/Quarantiine/ETMF-Main-Website/blob/main/CONTRIBUTING.md)
 
 We are not accepting _contributions_ at the moment.
 
