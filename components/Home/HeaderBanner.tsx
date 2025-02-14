@@ -44,7 +44,7 @@ export default function HeaderBanner(): React.ReactElement {
 			description:
 				"Empowerment Through Support: We provide resources and programs to remove barriers, fostering self-reliance and change.",
 			image:
-				"https://res.cloudinary.com/dnmdoncxt/image/upload/v1737351361/PXL_20250118_174218142.MP_q0qljw.jpg",
+				"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Header%20Section/et1y6qdyi01r1xdrtgri",
 		},
 	];
 

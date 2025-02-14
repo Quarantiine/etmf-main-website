@@ -129,7 +129,7 @@ export default function Footer(): React.ReactElement {
 
 						<div className="absolute top-0 left-0 bg-[rgba(6,64,48,0.7)] w-full h-full flex flex-col justify-center items-center gap-1">
 							{/* Social Links Container (Hidden on Mobile) */}
-							<div className="hidden md:flex flex-row justify-center items-center gap-3 absolute bottom-5 left-1/2 -translate-x-1/2 z-50">
+							<div className="hidden md:flex flex-row justify-center items-center gap-3 absolute bottom-5 left-1/2 -translate-x-1/2">
 								{socialList?.map((social: SocialListTypes, index: number) => {
 									return (
 										<React.Fragment key={index}>

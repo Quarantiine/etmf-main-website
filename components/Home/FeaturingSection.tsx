@@ -34,30 +34,17 @@ export default function FeaturingSection() {
 				},
 				{
 					title:
-						"The Amazing Tim McDuffie | Mindset Matters Podcast EP16 Dropped!",
+						"From Passion To Plate | Dallas College Chef Student | Mindset Matters Podcast EP17 Dropped!",
 					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/v1736349535/maxresdefault_pelma7.jpg",
+						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Header%20Section/vulzdh2uanpqorkzkzud",
 					imageCollage: [
 						{
 							src: "none",
 						},
 					],
-					link: "https://youtu.be/AVM4FYXTxHY",
+					link: "https://www.youtube.com/watch?v=y98GPmDsQHc&t=441s",
 					mediaType: "",
 					important: true,
-				},
-				{
-					title: "ETMF Speaker Series Event Coming Up! Register Now!",
-					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ETMF%20Academy/wvwpmrgawzovcygl1c0x",
-					imageCollage: [
-						{
-							src: "none",
-						},
-					],
-					link: "https://docs.google.com/forms/d/e/1FAIpQLSf1N0zcn6oanoTVBccynQ_D7fQFiy6gCMn5L2uaasIDKqEB2w/viewform",
-					mediaType: "",
-					important: false,
 				},
 				{
 					title: "Dallas College's Story on our President, CEO",
@@ -73,15 +60,15 @@ export default function FeaturingSection() {
 					important: false,
 				},
 				{
-					title: "Mindset Matters Podcast EP15 Dropped!",
+					title: "ETMF Speaker Series Event Coming Up! Register Now!",
 					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Featured%20Content/kxpijsxnvodto6cchvwd",
+						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ETMF%20Academy/wvwpmrgawzovcygl1c0x",
 					imageCollage: [
 						{
 							src: "none",
 						},
 					],
-					link: "https://youtu.be/-mzOPaGaEJQ",
+					link: "https://docs.google.com/forms/d/e/1FAIpQLSf1N0zcn6oanoTVBccynQ_D7fQFiy6gCMn5L2uaasIDKqEB2w/viewform",
 					mediaType: "",
 					important: false,
 				},
