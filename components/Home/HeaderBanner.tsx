@@ -37,14 +37,14 @@ export default function HeaderBanner(): React.ReactElement {
 			description:
 				"Innovation in Education: We push educational boundaries with AI, VR, and emerging tech.",
 			image:
-				"https://res.cloudinary.com/dnmdoncxt/image/upload/v1737348957/PXL_20241017_210020220.MP_uzfgny.jpg",
+				"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Header%20Section/lzykqzfcjgqo5tnrpsan",
 		},
 		{
 			title: "Empowerment",
 			description:
 				"Empowerment Through Support: We provide resources and programs to remove barriers, fostering self-reliance and change.",
 			image:
-				"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Header%20Section/et1y6qdyi01r1xdrtgri",
+				"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Header%20Section/iqsl27ytbbvlgm4xvpdh",
 		},
 	];
 
