@@ -82,21 +82,14 @@ export default async function ProgramsPages({
 
 						<div className="flex flex-col gap-5 justify-center items-start">
 							<p>
-								Fill out the form below to connect with someone who can discuss
-								how the ETM Foundation will achieve success in the initiatives
-								we offer.
+								{
+									'Fill out the form on our contact page under "Executive Board Members" to connect with someone who can discuss how the ETM Foundation will achieve success in the initiatives we offer.'
+								}
 							</p>
 						</div>
 
-						<Link
-							href={
-								"https://docs.google.com/forms/d/e/1FAIpQLSeZb_o8MS1tGORx56L9JOsjj1TWx7uR3ocbGzOpUEF7eNFXJQ/viewform"
-							}
-							// href={"https://m06w1sq48mn.typeform.com/to/egR2Hgce"}
-							className="styled-btn"
-							target="_blank"
-						>
-							Meet a Person
+						<Link href={"/contact"} className="styled-btn" target="_blank">
+							Contact Us
 						</Link>
 					</div>
 				</div>

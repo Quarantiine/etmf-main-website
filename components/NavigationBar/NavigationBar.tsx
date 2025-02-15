@@ -7,6 +7,7 @@ import { URLs } from "./URLs";
 import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 import { useRouter } from "next/navigation";
 import { LetterURL } from "./LetterURL";
+import { AnimatePresence } from "framer-motion";
 
 // Define the types for the URL list below
 interface urlListTypes {
@@ -122,17 +123,19 @@ export default function NavigationBar(): React.ReactElement {
 
 						{openMobileNavbar && (
 							<>
-								<div className="flex flex-col gap-4 text-lg absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-									{URLList.map((item: urlListTypes, index: number) => {
-										return (
-											<URLs
-												key={index}
-												item={item}
-												setOpenMobileNavbar={setOpenMobileNavbar}
-											/>
-										);
-									})}
-								</div>
+								<AnimatePresence>
+									<div className="flex flex-col gap-4 text-lg absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+										{URLList.map((item: urlListTypes, index: number) => {
+											return (
+												<URLs
+													key={index}
+													item={item}
+													setOpenMobileNavbar={setOpenMobileNavbar}
+												/>
+											);
+										})}
+									</div>
+								</AnimatePresence>
 							</>
 						)}
 					</div>
