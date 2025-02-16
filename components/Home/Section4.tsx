@@ -19,7 +19,7 @@ export default function Section4(): React.ReactElement {
 				"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/skvvhvujsv6srilfyg2o",
 			title: "ETMF Academy",
 			description:
-				"Our technology-driven learning platform utilizes AI, VR, and personalized learning pathways. Programs include: Entrepreneurship & Innovation Student Government Leadership Professional Development Academic Excellence Empowerment for Historically Marginalized Communities",
+				"The ETMF Academy revolutionizes learning through emerging technologies, creating personalized, engaging, and accessible educational experiences",
 		},
 		{
 			id: "2",
@@ -27,7 +27,7 @@ export default function Section4(): React.ReactElement {
 				"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/j7eeazsk5lupdobivmf8",
 			title: "Student Activity Program",
 			description:
-				"The Student Activity Program empowers student governments to effectively govern student activity through funding, data analytics training and education on how to design and implement engaging, student-led initiatives that provides value and drives student engagement.",
+				"The Student Activity Program empowers student government leaders to create transformative change on their campuses.",
 		},
 		{
 			id: "3",
@@ -35,7 +35,7 @@ export default function Section4(): React.ReactElement {
 				"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/uufwd8beiqsceq411qe8",
 			title: "Access to Education Program",
 			description:
-				"The Access to Education Program removes financial and systematic barriers to education for international, undocumented, underrepresented and under resourced students allowing them to maintain access to education.",
+				"Supporting undocumented and international students through comprehensive resources and support.",
 		},
 	];
 

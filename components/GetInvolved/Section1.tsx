@@ -17,7 +17,9 @@ export default function Section1(): JSX.Element {
 		<>
 			<div className="w-full h-full flex flex-col justify-center items-center bg-[rgba(0,0,0,0.7)] backdrop-blur-md text-white z-10">
 				<div className="default-width py-10 sm:py-16 h-auto flex flex-col justify-center items-start gap-4">
-					<h1 className="montserrat-bold text-5xl">Getting Involved</h1>
+					<h1 className="montserrat-bold text-5xl">
+						Ways to Support Our Mission
+					</h1>
 					<p>
 						{
 							"ETMF offers multiple ways to get involved, including donations, sponsorships, partnerships, volunteering, and spreading awareness through social media or testimonials."

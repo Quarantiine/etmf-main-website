@@ -26,7 +26,7 @@ export default function ProgramsTab(): React.ReactElement {
 	return (
 		<>
 			<div className="statement-sections-2 default-width flex flex-col gap-5 mx-auto">
-				<div className="flex flex-col sm:grid sm:grid-cols-2 text-white relative gap-10 justify-center sm:justify-start items-center w-full pb-20">
+				<div className="flex flex-col text-white relative gap-10 justify-center sm:justify-start items-center w-full pb-20">
 					{programList.map((program: ProgramListTypes) => {
 						return (
 							<React.Fragment key={program.id}>

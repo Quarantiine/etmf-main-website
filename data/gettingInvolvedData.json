@@ -3,100 +3,101 @@
 		"title": "Donating or Sponsoring",
 		"paragraphs": [
 			{
-				"textHeader": "Direct Donations:",
-				"text": "You can make one-time or recurring donations directly to ETMF through our website or other platforms. These donations support our overall mission and the various programs we offer."
+				"textHeader": "Direct Donations",
+				"text": "Support our overall mission"
 			},
 			{
-				"textHeader": "Targeted Donations:",
-				"text": "If you're passionate about specific initiatives, you can choose to contribute to particular programs, such as the ETMF Academy or Student Activity Funds, allowing your support to go exactly where it matters most to you."
+				"textHeader": "Targeted Program Support",
+				"text": "Fund specific initiatives"
 			},
 			{
 				"textHeader": "Event Sponsorship",
-				"text": "Businesses and organizations can sponsor our events or programs, providing us with financial support while gaining visibility and demonstrating their commitment to social responsibility."
+				"text": "Partner in our events and programs"
+			},
+			{
+				"textHeader": "Corporate Giving",
+				"text": "Align your organization with educational innovation"
 			}
 		],
 		"link": "https://docs.google.com/forms/d/e/1FAIpQLSdmyR3SyzFKZDhVvlXV_nod6kYtVbZqWv5Wa56QBzQBLvlGjg/viewform",
-		"linkText": "Become a Donor or Sponsor"
+		"linkText": "Contribute"
 	},
 	{
-		"title": "Collaborate or Partnership",
+		"title": "Collaboration Opportunities",
 		"paragraphs": [
 			{
 				"textHeader": "Educational Institutions:",
-				"text": "Schools, colleges, and universities can partner with us to integrate the ETMF Academy into their curriculum or offer it as a resource to their students. This expands our educational reach and provides valuable learning opportunities for students."
+				"text": "Integrate our programs"
 			},
 			{
 				"textHeader": "Community Organizations:",
-				"text": "Nonprofits and community groups can collaborate with us on initiatives that align with our shared goals, such as leadership development programs, workshops, or community outreach events."
+				"text": "Partner in local initiatives"
 			},
 			{
 				"textHeader": "Corporate Partnerships:",
-				"text": "Businesses can partner with us to offer employee training programs, mentorship opportunities, or volunteer initiatives that support our mission while enhancing their corporate social responsibility efforts."
+				"text": "Develop workforce programs"
 			},
 			{
 				"textHeader": "Individual Collaboration:",
-				"text": "Individual collaboration with the foundation allows you to directly contribute your skills and expertise, helping us drive meaningful change and support our mission to empower students and communities."
+				"text": "Contribute your expertise"
 			}
 		],
 		"link": "https://docs.google.com/forms/d/e/1FAIpQLScBPx1_dTcoS5zOytGE9Igk1O4NGqSU_GCMPwjHBAyK7ZSqTw/viewform",
-		"linkText": "Become a Partner or Collaborator"
+		"linkText": "Collaborate"
 	},
 	{
-		"title": "Volunteering",
+		"title": "Volunteer Programs",
 		"paragraphs": [
 			{
-				"textHeader": "Mentorship:",
-				"text": "If you have expertise in leadership, personal development, or entrepreneurship, you can volunteer as a mentor for our programs, providing valuable guidance and support to participants."
+				"textHeader": "",
+				"text": "Mentorship Opportunities"
 			},
 			{
-				"textHeader": "Event Support:",
-				"text": "You can also volunteer your time and skills to assist with our events, such as conferences, workshops, or fundraising activities, helping to ensure the success of these initiatives."
+				"textHeader": "",
+				"text": "Event Support"
 			},
 			{
-				"textHeader": "Content Creation:",
-				"text": "If you're skilled in content creation, we welcome your contributions in writing articles, creating videos, or developing educational materials for the ETMF Academy."
+				"textHeader": "",
+				"text": "Content Creation"
 			},
 			{
-				"textHeader": "Custom Skill Set:",
-				"text": "If you have any skills or experience that you believe would be valuable to the foundation, and you're eager to contribute to our mission, we welcome your support in helping us achieve our goals."
+				"textHeader": "",
+				"text": "Technical Expertise"
+			},
+			{
+				"textHeader": "",
+				"text": "Program Development"
+			},
+			{
+				"textHeader": "",
+				"text": "Community Outreach"
 			}
 		],
 		"link": "https://docs.google.com/forms/d/e/1FAIpQLSdI6mWco1NYVzBi8OUO3Rc0ESXMpAkhUuX5GspylArg64Ublw/viewform",
-		"linkText": "Become a Volunteer"
+		"linkText": "Volunteer"
 	},
 	{
-		"title": "Spreading the Word",
+		"title": "Join Our Movement",
 		"paragraphs": [
 			{
-				"textHeader": "Social Media:",
-				"text": "By following us on social media and sharing our content, you can help raise awareness about our mission and programs, reaching a wider audience."
+				"textHeader": "",
+				"text": "Follow Our Social Media Below"
 			},
 			{
-				"textHeader": "Word of Mouth:",
-				"text": "Sharing information about ETMF with your friends, family, and colleagues helps spread the word and encourages others to get involved."
+				"textHeader": "",
+				"text": "Share Success Stories with #etmf"
 			},
 			{
-				"textHeader": "Testimonials:",
-				"text": "If ETMF has made a positive impact in your life, sharing your personal story can inspire others to support our foundation."
-			}
-		],
-		"link": "",
-		"linkText": ""
-	},
-	{
-		"title": "Additional Ways to Get Involved",
-		"paragraphs": [
-			{
-				"textHeader": "Internships:",
-				"text": "We may offer internship opportunities for students or recent graduates interested in gaining experience in nonprofit management, education, or community development, and more."
+				"textHeader": "",
+				"text": "Attend Events"
 			},
 			{
-				"textHeader": "Research and Development:",
-				"text": "Individuals with expertise in education, psychology, or related fields can contribute to ETMF's research and development efforts, helping to refine programs and create new initiatives."
+				"textHeader": "",
+				"text": "Advocate for Education Innovation"
 			},
 			{
-				"textHeader": "Advocacy:",
-				"text": "Supporting policies and initiatives that promote education, mentorship, and community development aligns with our mission and contributes to creating a more empowered society."
+				"textHeader": "",
+				"text": "Join Our Educator Mentor Network"
 			}
 		],
 		"link": "",

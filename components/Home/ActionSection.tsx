@@ -22,7 +22,7 @@ export default function ActionSection(): React.ReactElement {
 
 						<div className="w-full h-full bg-[rgba(0,0,0,0.7)] flex flex-col gap-5 z-10 p-10 justify-center items-center">
 							<h1 className="text-3xl sm:text-4xl montserrat-bold">
-								Become a Collaborator or Partner
+								Become a Collaborator
 							</h1>
 
 							<p>

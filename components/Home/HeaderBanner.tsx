@@ -130,14 +130,14 @@ export default function HeaderBanner(): React.ReactElement {
 
 						<div className="flex flex-col justify-start items-start gap-5">
 							<p className="text-lg lg:text-xl text-[#222]">
-								ETMF is building the future of education—a world where learning
-								is infused with innovation, powered by technology, and made
-								engaging through impactful content.
+								ETMF is building the future of education and redefining the way
+								people learn by leveraging the power of education, innovation
+								and inspiring empowerment through mindset.
 							</p>
 							<p className="text-lg lg:text-xl text-[#222]">
-								We empower students, employees, communities and individuals to
-								reach their full potential, and create pathways for
-								extraordinary success.
+								We are committed to curating learning experiences programs and
+								initiatives designed to empower students, educators, educational
+								institutions and communities to reach their full potential.
 							</p>
 						</div>
 

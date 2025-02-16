@@ -17,25 +17,25 @@ export default function Section2(): React.ReactElement {
 		{
 			title: "Department of Education",
 			description:
-				"Our Department of Education empowers institutions to deliver innovative programs, fostering a growth mindset, developing essential skills, and paving the way for student success and workforce readiness, ultimately leading to wider economic development.",
+				"Our Department of Education empowers students, faculty, staff, administration, and educational institutions through innovative programs and initiatives designed to revolutionize learning and foster student empowerment.",
 			currentBtn: "btn1",
 		},
 		{
 			title: "Technology and Innovation",
 			description:
-				"The foundation is built on innovation, personalization, and accessibility, leveraging emerging technology to curate impactful learning experiences and foster deeper engagement with ETMF's mission.",
+				"The Technology & Innovation Department leverages emerging technologies to create innovative solutions in education, revolutionizing the way people learn through  cutting-edge educational tools.",
 			currentBtn: "btn4",
 		},
 		{
 			title: "Community Engagement",
 			description:
-				"Our Community Engagement department develops initiatives that inspire and motivate community members to embrace personal growth, pursue their passions, and build a brighter, more empowered society.",
+				"Our Community Engagement Department partners with community organizations, legislators, and leaders to create transformative programs designed to empower communities and drive positive change.",
 			currentBtn: "btn2",
 		},
 		{
-			title: "Mindset Media Productions",
+			title: "Operations and Finance",
 			description:
-				"Our production company creates impactful, mindset-based content to educate, empower, and inspire our audiences to leverage what they've learned through our programs and initiatives to reach their full potential.",
+				"Our Operations and Finance teams ensure the sustainable growth and efficient management of our initiatives, maintaining transparency and accountability in all our endeavors.",
 			currentBtn: "btn3",
 		},
 	];
@@ -84,19 +84,13 @@ export default function Section2(): React.ReactElement {
 						<h1 className="section-2-title montserrat-bold text-5xl">
 							Our Mission
 						</h1>
-						<ul className="flex flex-col gap-4">
-							<li className="list-disc ml-5">
-								Unlock your extraordinary potential through the power of
-								mindset.
+						<ul className="flex flex-col gap-4 list-disc ml-5">
+							<li>
+								Revolutionize education by redefining learning methods and
+								transforming communities through the power of education and
+								innovation.
 							</li>
-							<li className="list-disc ml-5">
-								At ETM Foundation, we believe that true success starts with a
-								shift in perspective.
-							</li>
-							<li className="list-disc ml-5">
-								Discover how our programs can help you cultivate a mindset of
-								growth, resilience, and unwavering belief in yourself.
-							</li>
+							<li>Inspire empowerment through mindset changes.</li>
 						</ul>
 
 						<div className="w-full h-auto flex flex-col gap-3">
