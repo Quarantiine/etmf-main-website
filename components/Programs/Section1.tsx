@@ -44,8 +44,8 @@ export default function Section1(): React.ReactElement {
 							to address specific challenges within the educational ecosystem,
 							harnessing cutting-edge approaches, resources, and community
 							collaboration to foster transformative outcomes. Below is an
-							overview of the five cornerstone programs that reflect ETMF’s
-							commitment to education, innovation, empowerment, and inspiration.
+							overview of the programs that reflect ETMF’s commitment to
+							education, innovation, empowerment, and inspiration.
 						</p>
 
 						{/* Colored dots for design purposes */}
