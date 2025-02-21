@@ -35,11 +35,12 @@ export default function Section1(): React.ReactElement {
 						<h1 className="montserrat-bold text-4xl md:text-5xl">
 							Department of Education
 						</h1>
+
 						<p>
 							The Empowerment Through Mindset Foundation (ETMF) Department of
 							Education is dedicated to empowering students, student leaders,
 							staff, faculty, administration, and educational institutions
-							through a suite of innovative programs. Each program is designed
+							through a varity of innovative programs. Each program is designed
 							to address specific challenges within the educational ecosystem,
 							harnessing cutting-edge approaches, resources, and community
 							collaboration to foster transformative outcomes. Below is an
