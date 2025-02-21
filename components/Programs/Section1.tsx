@@ -33,12 +33,18 @@ export default function Section1(): React.ReactElement {
 				<div className="w-full h-full flex flex-col justify-center items-center bg-[rgba(0,0,0,0.7)] backdrop-blur-md text-white z-10">
 					<div className="default-width py-10 sm:py-16 h-auto flex flex-col justify-center items-start gap-4">
 						<h1 className="montserrat-bold text-4xl md:text-5xl">
-							ETMF Department of Education Programs Overview
+							Department of Education
 						</h1>
 						<p>
-							Our Department of Education partners with institutions to foster
-							growth mindsets, build skills, and prepare students for success
-							and workforce readiness.
+							The Empowerment Through Mindset Foundation (ETMF) Department of
+							Education is dedicated to empowering students, student leaders,
+							staff, faculty, administration, and educational institutions
+							through a suite of innovative programs. Each program is designed
+							to address specific challenges within the educational ecosystem,
+							harnessing cutting-edge approaches, resources, and community
+							collaboration to foster transformative outcomes. Below is an
+							overview of the five cornerstone programs that reflect ETMF’s
+							commitment to education, innovation, empowerment, and inspiration.
 						</p>
 
 						{/* Colored dots for design purposes */}
