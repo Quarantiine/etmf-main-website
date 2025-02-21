@@ -33,7 +33,7 @@ export default function Section1(): React.ReactElement {
 				<div className="w-full h-full flex flex-col justify-center items-center bg-[rgba(0,0,0,0.7)] backdrop-blur-md text-white z-10">
 					<div className="default-width py-10 sm:py-16 h-auto flex flex-col justify-center items-start gap-4">
 						<h1 className="montserrat-bold text-4xl md:text-5xl">
-							Education Programs
+							ETMF Department of Education Programs Overview
 						</h1>
 						<p>
 							Our Department of Education partners with institutions to foster

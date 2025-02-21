@@ -2,10 +2,16 @@
 	{
 		"id": "1",
 		"title": "ETMF Academy",
-		"subTitle": "Empowerment Through Education",
+		"subTitle": "(Coming Soon)",
 		"description": [
 			{
-				"text": "The ETMF Academy revolutionizes learning through emerging technologies, creating personalized, engaging, and accessible educational experiences."
+				"text": "ETMF Academy is a pioneering educational platform committed to revolutionizing the learning experience for students by leveraging emerging technologies."
+			},
+			{
+				"text": "It offers personalized, engaging, and accessible learning opportunities that adapt to individual needs, ensuring every student can thrive in a dynamic, technology-driven world."
+			},
+			{
+				"text": "By staying at the forefront of educational innovation, ETMF Academy equips students with the tools to excel academically and prepares them for future challenges, fostering a mindset of endless possibility."
 			}
 		],
 		"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/skvvhvujsv6srilfyg2o",
@@ -14,28 +20,16 @@
 				"title": "Key Features",
 				"paragraphs": [
 					{
-						"textHeader": "AI-Driven Personalization:",
-						"text": "Adaptive learning paths tailored to individual needs."
+						"textHeader": "",
+						"text": "Personalized learning tailored to individual student needs."
 					},
 					{
-						"textHeader": "Immersive Learning:",
-						"text": "VR and AR integration for hands-on experiences."
+						"textHeader": "",
+						"text": "Engaging, immersive educational experiences."
 					},
 					{
-						"textHeader": "Historically Marginalized Communities:",
-						"text": "The Academy offers specialized programs addressing leadership and empowerment within historically marginalized communities. Through immersive scenarios and AI-generated case studies, students can learn how to advocate for change and drive community growth."
-					},
-					{
-						"textHeader": "Gamification:",
-						"text": "Engaging learning through game mechanics."
-					},
-					{
-						"textHeader": "Collaborative Tools:",
-						"text": "Virtual classrooms and real-time project spaces."
-					},
-					{
-						"textHeader": "Academic Excellence:",
-						"text": "The Academy’s academic programs offer mindset-based strategies for excelling in educational pursuits. With personalized learning paths, AI tutors, and AR tools, students receive the support they need to achieve academic success."
+						"textHeader": "",
+						"text": "Collaborative tools fostering student interaction."
 					}
 				]
 			},
@@ -44,27 +38,15 @@
 				"paragraphs": [
 					{
 						"textHeader": "",
-						"text": "Student Government & Leadership Development"
+						"text": "Adaptive learning modules for diverse subjects."
 					},
 					{
 						"textHeader": "",
-						"text": "Professional Development"
+						"text": "Interactive workshops for hands-on skill development."
 					},
 					{
 						"textHeader": "",
-						"text": "Programs for Historically Marginalized Communities"
-					},
-					{
-						"textHeader": "",
-						"text": "Business Leadership"
-					},
-					{
-						"textHeader": "",
-						"text": "Personal Development"
-					},
-					{
-						"textHeader": "",
-						"text": "Academic Excellence"
+						"text": "Resource hub for supplementary educational materials."
 					}
 				]
 			},
@@ -73,27 +55,15 @@
 				"paragraphs": [
 					{
 						"textHeader": "",
-						"text": "AI-powered Learning Management System"
+						"text": "AI-ready for personalized content delivery and progress tracking (future integration)."
 					},
 					{
 						"textHeader": "",
-						"text": "Virtual Reality Training Environments"
+						"text": "VR/AR options for immersive learning experiences (planned enhancement)."
 					},
 					{
 						"textHeader": "",
-						"text": "Augmented Reality Educational Tools"
-					},
-					{
-						"textHeader": "",
-						"text": "Adaptive Assessment Systems"
-					},
-					{
-						"textHeader": "",
-						"text": "Personal Development"
-					},
-					{
-						"textHeader": "",
-						"text": "Academic Excellence"
+						"text": "Digital platforms for seamless collaboration and engagement."
 					}
 				]
 			}
@@ -105,33 +75,62 @@
 		"subTitle": "(Coming Soon)",
 		"description": [
 			{
-				"text": "The Student Activity Program empowers student government leaders to create transformative change on their campuses."
+				"text": "The Student Activity Program empowers student leaders to drive positive change on their campuses through comprehensive training, funding, and resources."
+			},
+			{
+				"text": "It provides skills in leadership, data analytics, and program development to create impactful initiatives, alongside policies that ensure student governance is both effective and autonomous. This program cultivates a culture of student-driven leadership, enabling student leaders to advocate for their peers and enhance their educational communities."
 			}
 		],
 		"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/j7eeazsk5lupdobivmf8",
 		"statementSection": [
 			{
-				"title": "Core Components: Training and Development",
+				"title": "Key Features",
 				"paragraphs": [
 					{
 						"textHeader": "",
-						"text": "Leadership and Governance Training"
+						"text": "Comprehensive leadership and data analytics training."
 					},
 					{
 						"textHeader": "",
-						"text": "Data Analytics Education"
+						"text": "Funding support for student-led initiatives."
 					},
 					{
 						"textHeader": "",
-						"text": "Program Planning and Management"
+						"text": "Policy frameworks empowering student governance."
+					}
+				]
+			},
+			{
+				"title": "Programs Include",
+				"paragraphs": [
+					{
+						"textHeader": "",
+						"text": "Workshops on governance, analytics, and program creation."
 					},
 					{
 						"textHeader": "",
-						"text": "Financial Management Training"
+						"text": "Funding grants for impactful campus projects."
 					},
 					{
 						"textHeader": "",
-						"text": "Student Leadership Grants"
+						"text": "Policy development sessions for student advocacy."
+					}
+				]
+			},
+			{
+				"title": "Technology Integration",
+				"paragraphs": [
+					{
+						"textHeader": "",
+						"text": "AI-prepared for analytics training and impact analysis (future option)."
+					},
+					{
+						"textHeader": "",
+						"text": "VR potential for simulated leadership scenarios (planned feature)."
+					},
+					{
+						"textHeader": "",
+						"text": "Online tools for resource access and collaboration."
 					}
 				]
 			}
@@ -143,83 +142,129 @@
 		"subTitle": "(Coming Soon)",
 		"description": [
 			{
-				"text": "Supporting undocumented and international students through comprehensive resources and support."
+				"text": "The Access to Education Program is a transformative initiative that removes barriers to education for students by providing scholarships, legal support, and resources, complemented by research, education, and advocacy efforts."
+			},
+			{
+				"text": "It ensures that every student, regardless of their circumstances, can access educational opportunities, empowering them to pursue their goals and contribute to society. Through this holistic approach, the program champions equity and opportunity in education."
 			}
 		],
 		"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/uufwd8beiqsceq411qe8",
 		"statementSection": [
 			{
-				"title": "Services Include",
+				"title": "Key Features",
 				"paragraphs": [
 					{
 						"textHeader": "",
-						"text": "Financial Assistance"
+						"text": "Scholarships removing financial barriers."
 					},
 					{
 						"textHeader": "",
-						"text": "Housing Security"
+						"text": "Legal support addressing educational access issues."
 					},
 					{
 						"textHeader": "",
-						"text": "Food Security"
-					},
-					{
-						"textHeader": "",
-						"text": "Transportation Support"
-					},
-					{
-						"textHeader": "",
-						"text": "Legal Aid Referrals"
-					},
-					{
-						"textHeader": "",
-						"text": "Mental Health Services"
-					},
-					{
-						"textHeader": "",
-						"text": "Mentorship Programs"
+						"text": "Research, education, and advocacy for systemic change."
 					}
 				]
 			},
 			{
-				"title": "EmpowerEDU",
+				"title": "Programs Include",
 				"paragraphs": [
 					{
 						"textHeader": "",
-						"text": "Faculty Support Program"
+						"text": "Scholarship application and funding support process."
+					},
+					{
+						"textHeader": "",
+						"text": "Legal clinics and know-your-rights workshops."
+					},
+					{
+						"textHeader": "",
+						"text": "Resource hub with educational and career opportunities."
 					}
 				]
 			},
 			{
-				"title": "Features",
+				"title": "Technology Integration",
 				"paragraphs": [
 					{
 						"textHeader": "",
-						"text": "Professional Development"
+						"text": "AI envisioned for resource personalization and barrier analysis (future capability)."
 					},
 					{
 						"textHeader": "",
-						"text": "Comprehensive Resource Library"
+						"text": "VR/AR considered for virtual legal and educational workshops (planned addition)."
 					},
 					{
 						"textHeader": "",
-						"text": "Educator Mentor Network and Collaboration Tools"
+						"text": "Digital platform for accessible, multilingual resource distribution."
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "4",
+		"title": "EmpowerEDU",
+		"subTitle": "(Coming Soon)",
+		"description": [
+			{
+				"text": "EmpowerEDU is dedicated to elevating faculty by offering professional development, alumni mentorship, and classroom grants to support innovative teaching practices."
+			},
+			{
+				"text": "This program equips faculty with the knowledge, resources, and networks needed to create engaging, impactful learning experiences, ultimately enhancing student outcomes. By fostering a supportive environment for faculty, EmpowerEDU strengthens the foundation of educational excellence."
+			}
+		],
+		"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/v1740094164/christina-wocintechchat-com-MkxWUzCuYkE-unsplash_eqnipa.jpg",
+		"statementSection": [
+			{
+				"title": "Key Features",
+				"paragraphs": [
+					{
+						"textHeader": "",
+						"text": "Professional development enhancing teaching innovation."
 					},
 					{
 						"textHeader": "",
-						"text": "Classroom Technology Integration and Training"
+						"text": "Faculty alumni mentorship for ongoing support."
 					},
 					{
 						"textHeader": "",
-						"text": "Cultural Competency Development"
+						"text": "Classroom grants funding innovative educational tools."
+					}
+				]
+			},
+			{
+				"title": "Programs Include",
+				"paragraphs": [
+					{
+						"textHeader": "",
+						"text": "Workshops on teaching strategies and technology use."
 					},
 					{
 						"textHeader": "",
-						"text": "Classroom Supplies Grants"
+						"text": "Mentorship pairing with experienced educators."
 					},
 					{
 						"textHeader": "",
-						"text": "Cultural Competency Development"
+						"text": "Grant application process for classroom resources."
+					}
+				]
+			},
+			{
+				"title": "Technology Integration",
+				"paragraphs": [
+					{
+						"textHeader": "",
+						"text": "AI planned for tailored professional development paths (future integration)."
+					},
+					{
+						"textHeader": "",
+						"text": "VR potential for virtual classroom simulations (planned enhancement)."
+					},
+					{
+						"textHeader": "",
+						"text": "Online network for resource sharing and collaboration."
 					}
 				]
 			}
