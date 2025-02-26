@@ -34,6 +34,34 @@ export default function FeaturingSection() {
 				},
 				{
 					title:
+						"DCCCD's Student Engagement Coordinator | Mindset Matters EP19",
+					image:
+						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Featured%20Content/uscp5fcapwctr7z7avuc",
+					imageCollage: [
+						{
+							src: "none",
+						},
+					],
+					link: "https://youtu.be/yUfCJnhxqN4",
+					mediaType: "",
+					important: true,
+				},
+				{
+					title:
+						"Bridging Education Service and Entrepreneurship | Mindset Matters EP18",
+					image:
+						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Featured%20Content/sarjc93pfbbtz9ckqi5h",
+					imageCollage: [
+						{
+							src: "none",
+						},
+					],
+					link: "https://youtu.be/euXO9iqk6Zg",
+					mediaType: "",
+					important: true,
+				},
+				{
+					title:
 						"From Passion To Plate | Dallas College Chef Student | Mindset Matters Podcast EP17 Dropped!",
 					image:
 						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Header%20Section/vulzdh2uanpqorkzkzud",
@@ -43,32 +71,6 @@ export default function FeaturingSection() {
 						},
 					],
 					link: "https://www.youtube.com/watch?v=y98GPmDsQHc&t=441s",
-					mediaType: "",
-					important: true,
-				},
-				{
-					title: "Dallas College's Story on our President, CEO",
-					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Social%20Media/e4fxbqflfvqbiodbvofz",
-					imageCollage: [
-						{
-							src: "none",
-						},
-					],
-					link: "https://x.com/dallascollegetx/status/1859257947773079747/photo/",
-					mediaType: "",
-					important: false,
-				},
-				{
-					title: "ETMF Speaker Series Event Coming Up! Register Now!",
-					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ETMF%20Academy/wvwpmrgawzovcygl1c0x",
-					imageCollage: [
-						{
-							src: "none",
-						},
-					],
-					link: "https://docs.google.com/forms/d/e/1FAIpQLSf1N0zcn6oanoTVBccynQ_D7fQFiy6gCMn5L2uaasIDKqEB2w/viewform",
 					mediaType: "",
 					important: false,
 				},
