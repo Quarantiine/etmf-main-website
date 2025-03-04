@@ -20,6 +20,20 @@ export default function FeaturingSection() {
 			enableBg: false,
 			content: [
 				{
+					title:
+						"Dallas College Board of Trustee | Education and Entrepreneurship | EP19",
+					image:
+						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Featured%20Content/yix2ngxewygb0oqvdsek",
+					imageCollage: [
+						{
+							src: "none",
+						},
+					],
+					link: "https://youtu.be/PFG3cqb7hxs?si=np8Qa6re5e_0HdE7",
+					mediaType: "",
+					important: true,
+				},
+				{
 					title: "ICE News & Awareness: Know Your Rights",
 					image:
 						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ICE/j3bpipwkluaiz8vf2w9a",
@@ -30,20 +44,6 @@ export default function FeaturingSection() {
 					],
 					link: "https://immigrantjustice.org/know-your-rights",
 					mediaType: "ice",
-					important: true,
-				},
-				{
-					title:
-						"DCCCD's Student Engagement Coordinator | Mindset Matters EP19",
-					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Featured%20Content/uscp5fcapwctr7z7avuc",
-					imageCollage: [
-						{
-							src: "none",
-						},
-					],
-					link: "https://youtu.be/yUfCJnhxqN4",
-					mediaType: "",
 					important: true,
 				},
 				{
@@ -62,15 +62,15 @@ export default function FeaturingSection() {
 				},
 				{
 					title:
-						"From Passion To Plate | Dallas College Chef Student | Mindset Matters Podcast EP17 Dropped!",
+						"DCCCD's Student Engagement Coordinator | Mindset Matters EP19",
 					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Header%20Section/vulzdh2uanpqorkzkzud",
+						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Featured%20Content/uscp5fcapwctr7z7avuc",
 					imageCollage: [
 						{
 							src: "none",
 						},
 					],
-					link: "https://www.youtube.com/watch?v=y98GPmDsQHc&t=441s",
+					link: "https://youtu.be/yUfCJnhxqN4",
 					mediaType: "",
 					important: false,
 				},
