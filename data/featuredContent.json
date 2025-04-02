@@ -1,0 +1,58 @@
+[
+	{
+		"title": "Featured Content",
+		"subTitle": "The Latest Updates from the Foundation",
+		"link": "",
+		"enableBg": false,
+		"content": [
+			{
+				"title": "The Life of Jerry | DCCCD MAP Leader | Mindset Matters EP23",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Featured%20Content/ka6mmk599o7n6m3pgiv9",
+				"imageCollage": [
+					{
+						"src": "none"
+					}
+				],
+				"link": "https://www.youtube.com/watch?v=ejxEuw5Wq38",
+				"mediaType": "video",
+				"important": true
+			},
+			{
+				"title": "Drawing Strength From Who You Are | Mindset Media Podcast EP22",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Featured%20Content/iictw6atgacgwy7wurmk",
+				"imageCollage": [
+					{
+						"src": "none"
+					}
+				],
+				"link": "https://www.youtube.com/watch?v=Thlhvs6JtuM",
+				"mediaType": "video",
+				"important": false
+			},
+			{
+				"title": "Education Leadership and Advocacy | Mindset Matters EP21",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Featured%20Content/dyitforkqpmcue8ffd6x",
+				"imageCollage": [
+					{
+						"src": "none"
+					}
+				],
+				"link": "https://www.youtube.com/watch?v=VxI_ZbumnOE",
+				"mediaType": "video",
+				"important": false
+			},
+			{
+				"title": "Dallas College Board of Trustee | Education and Entrepreneurship | EP19",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Featured%20Content/yix2ngxewygb0oqvdsek",
+				"imageCollage": [
+					{
+						"src": "none"
+					}
+				],
+				"link": "https://youtu.be/PFG3cqb7hxs?si=np8Qa6re5e_0HdE7",
+				"mediaType": "video",
+				"important": false
+			}
+		]
+	}
+]

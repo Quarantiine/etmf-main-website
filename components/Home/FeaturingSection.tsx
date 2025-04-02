@@ -7,80 +7,15 @@ import CarouselArrows from "../Widgets/CarouselArrows";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ContentTypes, ResourcesTypes } from "@/lib/types";
+import featuredContent from "@/data/featuredContent.json";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function FeaturingSection() {
 	const carouselArrowsRef = useRef<HTMLDivElement>(null);
 
-	const resources: ResourcesTypes[] = [
-		{
-			title: "Featured Content",
-			subTitle: "The Latest Updates from the Foundation",
-			link: "",
-			enableBg: false,
-			content: [
-				{
-					title:
-						"Dallas College Board of Trustee | Education and Entrepreneurship | EP19",
-					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Featured%20Content/yix2ngxewygb0oqvdsek",
-					imageCollage: [
-						{
-							src: "none",
-						},
-					],
-					link: "https://youtu.be/PFG3cqb7hxs?si=np8Qa6re5e_0HdE7",
-					mediaType: "",
-					important: true,
-				},
-				{
-					title: "ICE News & Awareness: Know Your Rights",
-					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ICE/j3bpipwkluaiz8vf2w9a",
-					imageCollage: [
-						{
-							src: "none",
-						},
-					],
-					link: "https://immigrantjustice.org/know-your-rights",
-					mediaType: "ice",
-					important: true,
-				},
-				{
-					title:
-						"Bridging Education Service and Entrepreneurship | Mindset Matters EP18",
-					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Featured%20Content/sarjc93pfbbtz9ckqi5h",
-					imageCollage: [
-						{
-							src: "none",
-						},
-					],
-					link: "https://youtu.be/euXO9iqk6Zg",
-					mediaType: "",
-					important: true,
-				},
-				{
-					title:
-						"DCCCD's Student Engagement Coordinator | Mindset Matters EP19",
-					image:
-						"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Featured%20Content/uscp5fcapwctr7z7avuc",
-					imageCollage: [
-						{
-							src: "none",
-						},
-					],
-					link: "https://youtu.be/yUfCJnhxqN4",
-					mediaType: "",
-					important: false,
-				},
-			],
-		},
-	];
-
 	return (
 		<>
-			{resources.map((resource: ResourcesTypes, index: number) => {
+			{featuredContent.map((resource: ResourcesTypes, index: number) => {
 				return (
 					<React.Fragment key={index}>
 						{resource.content.map((data: ContentTypes) => data).length > 0 && (

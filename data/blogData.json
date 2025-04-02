@@ -1,65 +1,5 @@
 [
 	{
-		"title": "How to be prepared for ICE",
-		"subTitle": "Staying Updated With The Times",
-		"link": "",
-		"enableBg": true,
-		"content": [
-			{
-				"title": "Know Your Rights",
-				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ICE/jjvwpavgjlyq3ucdlujw",
-				"imageCollage": [
-					{
-						"src": "none"
-					}
-				],
-				"link": "https://immigrantjustice.org/know-your-rights",
-				"mediaType": "ice"
-			}
-		]
-	},
-	{
-		"title": "ICE News & Awareness",
-		"subTitle": "Staying Updated With The Times",
-		"link": "",
-		"enableBg": true,
-		"content": [
-			{
-				"title": "What is ICE?",
-				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ICE/j3bpipwkluaiz8vf2w9a",
-				"imageCollage": [
-					{
-						"src": "none"
-					}
-				],
-				"link": "https://usafacts.org/articles/what-is-ice-and-what-does-it-do/",
-				"mediaType": "ice"
-			},
-			{
-				"title": "ICE's Recent Activities",
-				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ICE/vv4pher9cpannjcfkj1y",
-				"imageCollage": [
-					{
-						"src": "none"
-					}
-				],
-				"link": "https://www.ice.gov/newsroom",
-				"mediaType": "ice"
-			},
-			{
-				"title": "ICE Deportation Data",
-				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ICE/kead0bewzwz6g6mnharn",
-				"imageCollage": [
-					{
-						"src": "none"
-					}
-				],
-				"link": "https://www.ice.gov/spotlight/statistics",
-				"mediaType": "ice"
-			}
-		]
-	},
-	{
 		"title": "ETMF Academy Activities",
 		"subTitle": "See What ETMF is Bringing to You",
 		"link": "",
@@ -108,6 +48,66 @@
 				],
 				"link": "https://docs.google.com/forms/d/e/1FAIpQLSc8uEPraHb8ETMuPgcN6MEkcl3VPvGeFl0gw6PA-nmsIAZWag/viewform",
 				"mediaType": ""
+			}
+		]
+	},
+	{
+		"title": "How to be prepared for ICE",
+		"subTitle": "Staying Updated With The Times",
+		"link": "",
+		"enableBg": false,
+		"content": [
+			{
+				"title": "Know Your Rights",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ICE/jjvwpavgjlyq3ucdlujw",
+				"imageCollage": [
+					{
+						"src": "none"
+					}
+				],
+				"link": "https://immigrantjustice.org/know-your-rights",
+				"mediaType": "ice"
+			}
+		]
+	},
+	{
+		"title": "ICE News & Awareness",
+		"subTitle": "Staying Updated With The Times",
+		"link": "",
+		"enableBg": false,
+		"content": [
+			{
+				"title": "What is ICE?",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ICE/j3bpipwkluaiz8vf2w9a",
+				"imageCollage": [
+					{
+						"src": "none"
+					}
+				],
+				"link": "https://usafacts.org/articles/what-is-ice-and-what-does-it-do/",
+				"mediaType": "ice"
+			},
+			{
+				"title": "ICE's Recent Activities",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ICE/vv4pher9cpannjcfkj1y",
+				"imageCollage": [
+					{
+						"src": "none"
+					}
+				],
+				"link": "https://www.ice.gov/newsroom",
+				"mediaType": "ice"
+			},
+			{
+				"title": "ICE Deportation Data",
+				"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ICE/kead0bewzwz6g6mnharn",
+				"imageCollage": [
+					{
+						"src": "none"
+					}
+				],
+				"link": "https://www.ice.gov/spotlight/statistics",
+				"mediaType": "ice"
 			}
 		]
 	},
