@@ -37,15 +37,9 @@ export default function Section1(): React.ReactElement {
 						</h1>
 
 						<p>
-							The Empowerment Through Mindset Foundation (ETMF) Department of
-							Education is dedicated to empowering students, student leaders,
-							staff, faculty, administration, and educational institutions
-							through a varity of innovative programs. Each program is designed
-							to address specific challenges within the educational ecosystem,
-							harnessing cutting-edge approaches, resources, and community
-							collaboration to foster transformative outcomes. Below is an
-							overview of the programs that reflect ETMF’s commitment to
-							education, innovation, empowerment, and inspiration.
+							{
+								"The Empowerment Through Mindset Foundation (ETMF) Department of Education empowers students, staff, and institutions with innovative programs. These address educational challenges using advanced methods and collaboration for impactful results. Below are ETMF’s programs highlighting its focus on education and empowerment."
+							}
 						</p>
 
 						{/* Colored dots for design purposes */}

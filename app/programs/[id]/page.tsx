@@ -4,23 +4,7 @@ import Link from "next/link";
 import React from "react";
 import programList from "@/data/programList.json";
 import type { Metadata } from "next";
-
-interface ProgramListTypes {
-	id: string;
-	title: string;
-	subTitle: string;
-	description: {
-		text: string;
-	}[];
-	image: string;
-	statementSection: {
-		title: string;
-		paragraphs: {
-			textHeader: string;
-			text: string;
-		}[];
-	}[];
-}
+import { ProgramListTypes } from "@/types/programTypes";
 
 type Props = {
 	params: Promise<{ id: string }>;

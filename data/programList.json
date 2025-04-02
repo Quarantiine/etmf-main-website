@@ -3,9 +3,16 @@
 		"id": "1",
 		"title": "ETMF Academy",
 		"subTitle": "(Coming Soon)",
+		"createdBy": "Minovative Technologies",
 		"description": [
 			{
-				"text": "ETMF Academy is an innovative educational platform committed to revolutionizing the learning experience for students by leveraging emerging technologies. It offers personalized, engaging, and accessible learning opportunities that adapt to individual needs, ensuring every student can thrive in a dynamic, technology-driven world. By staying at the forefront of educational innovation, ETMF Academy equips students with the tools to excel academically and prepares them for future challenges, fostering a mindset of endless possibility"
+				"text": "ETMF Academy is an innovative educational platform committed to revolutionizing the learning experience for students by leveraging emerging technologies."
+			},
+			{
+				"text": "It offers personalized, engaging, and accessible learning opportunities that adapt to individual needs, ensuring every student can thrive in a dynamic, technology-driven world."
+			},
+			{
+				"text": "By staying at the forefront of educational innovation, ETMF Academy equips students with the tools to excel academically and prepares them for future challenges, fostering a mindset of endless possibility."
 			}
 		],
 		"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/skvvhvujsv6srilfyg2o",
@@ -67,9 +74,16 @@
 		"id": "2",
 		"title": "Student Activity Program",
 		"subTitle": "(Coming Soon)",
+		"createdBy": "ETM Foundation",
 		"description": [
 			{
-				"text": "The Student Activity Program empowers student leaders to drive positive change on their campuses through comprehensive training, funding, and resources. It provides skills in leadership, data analytics, and program development to create impactful initiatives, alongside policies that ensure student governance is both effective and autonomous. This program cultivates a culture of student-driven leadership, enabling student leaders to advocate for their peers and enhance their educational communities."
+				"text": "The Student Activity Program empowers student leaders to drive positive change on their campuses through comprehensive training, funding, and resources."
+			},
+			{
+				"text": "It provides skills in leadership, data analytics, and program development to create impactful initiatives, alongside policies that ensure student governance is both effective and autonomous."
+			},
+			{
+				"text": "This program cultivates a culture of student-driven leadership, enabling student leaders to advocate for their peers and enhance their educational communities."
 			}
 		],
 		"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/j7eeazsk5lupdobivmf8",
@@ -131,9 +145,16 @@
 		"id": "3",
 		"title": "Access to Education Program",
 		"subTitle": "(Coming Soon)",
+		"createdBy": "ETM Foundation",
 		"description": [
 			{
-				"text": "The Access to Education Program is a transformative initiative that removes barriers to education for students by providing scholarships, legal support, and resources, complemented by research, education, and advocacy efforts. It ensures that every student, regardless of their circumstances, can access educational opportunities, empowering them to pursue their goals and contribute to society. Through this holistic approach, the program champions equity and opportunity in education"
+				"text": "The Access to Education Program is a transformative initiative that removes barriers to education for students by providing scholarships, legal support, and resources, complemented by research, education, and advocacy efforts."
+			},
+			{
+				"text": "It ensures that every student, regardless of their circumstances, can access educational opportunities, empowering them to pursue their goals and contribute to society."
+			},
+			{
+				"text": "Through this holistic approach, the program champions equity and opportunity in education."
 			}
 		],
 		"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/uufwd8beiqsceq411qe8",
@@ -195,9 +216,16 @@
 		"id": "4",
 		"title": "EmpowerEDU",
 		"subTitle": "(Coming Soon)",
+		"createdBy": "ETM Foundation",
 		"description": [
 			{
-				"text": "EmpowerEDU is dedicated to elevating faculty by offering professional development, alumni mentorship, and classroom grants to support innovative teaching practices. This program equips faculty with the knowledge, resources, and networks needed to create engaging, impactful learning experiences, ultimately enhancing student outcomes. By fostering a supportive environment for faculty, EmpowerEDU strengthens the foundation of educational excellence"
+				"text": "EmpowerEDU is dedicated to elevating faculty by offering professional development, alumni mentorship, and classroom grants to support innovative teaching practices."
+			},
+			{
+				"text": "This program equips faculty with the knowledge, resources, and networks needed to create engaging, impactful learning experiences, ultimately enhancing student outcomes."
+			},
+			{
+				"text": "By fostering a supportive environment for faculty, EmpowerEDU strengthens the foundation of educational excellence."
 			}
 		],
 		"image": "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Programs/wesfo0togjjaaqwzxqpw",

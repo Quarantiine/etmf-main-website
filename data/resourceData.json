@@ -172,26 +172,58 @@
 		"category": "Advocacy and Empowerment"
 	},
 	{
-		"title": "National Immigration Legal Services Directory",
-		"description": "Find free or low-cost nonprofit immigration legal services providers across the U.S. Immigration Advocates Network.",
-		"link": [
-			{
-				"url": "https://www.immigrationadvocates.org/nonprofit/legaldirectory/",
-				"urlName": "Immigration Advocates Network"
-			}
-		],
-		"category": "Legal Assistance and Resources"
-	},
-	{
 		"title": "Community Reporting Initiatives",
 		"description": "Participate in community reporting through platforms like End Lone Star and Juntos Seguros.",
 		"link": [
 			{
 				"url": "https://www.endlonestar.com/community-report",
 				"urlName": "End Lone Star"
-			},
-			{ "url": "https://juntosseguros.com/", "urlName": "Juntos Seguros" }
+			}
 		],
 		"category": "Staying Informed and United"
+	},
+	{
+		"title": "Research on Immigrants in Texas",
+		"description": "Access data and analysis on the immigrant population in Texas from the American Immigration Council.",
+		"link": [
+			{
+				"url": "https://www.americanimmigrationcouncil.org/research/immigrants-in-texas",
+				"urlName": "American Immigration Council"
+			}
+		],
+		"category": "Understanding the Current Situation in Texas"
+	},
+	{
+		"title": "Human Rights Initiative of North Texas",
+		"description": "Provides legal and support services to immigrants and refugees in North Texas.",
+		"link": [
+			{
+				"url": "https://hrionline.org/",
+				"urlName": "Human Rights Initiative"
+			}
+		],
+		"category": "Community Resources and Support Networks"
+	},
+	{
+		"title": "Immigration Law Guide",
+		"description": "Explore this comprehensive guide on immigration law provided by the Texas State Law Library to understand the legal framework.",
+		"link": [
+			{
+				"url": "https://guides.sll.texas.gov/immigration-law",
+				"urlName": "Texas State Law Library"
+			}
+		],
+		"category": "Legal Assistance and Resources"
+	},
+	{
+		"title": "Legal Orientation Program",
+		"description": "Learn about the Legal Orientation Program by the Executive Office for Immigration Review, which provides information on immigration court procedures.",
+		"link": [
+			{
+				"url": "https://www.justice.gov/eoir/legal-orientation-program",
+				"urlName": "EOIR"
+			}
+		],
+		"category": "Legal Assistance and Resources"
 	}
 ]

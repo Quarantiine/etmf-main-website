@@ -110,18 +110,6 @@ export const MoreResources = () => {
 							return (
 								<React.Fragment key={index}>
 									<div className="flex flex-col justify-center items-start gap-3 bg-white border border-[#eee] rounded-xl p-5 text-start h-fit">
-										{/* <div className="w-full h-48 rounded-xl bg-gray-200 relative overflow-hidden">
-                <Image
-                  className="object-cover"
-                  src={
-                    "https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/ICE/klqbbodxpoa6nfqlzgf4"
-                  }
-                  alt="image"
-                  fill
-                  sizes="(max-width: 2000px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div> */}
-
 										<p className="text-sm text-gray-500">{data.category}</p>
 										<h1 className="title-2">{data.title}</h1>
 										<p className="line-clamp-4">{data.description}</p>

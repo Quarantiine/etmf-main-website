@@ -3,37 +3,12 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import {
+	ParagraphsTypes,
+	ProgramListTypes,
+	StatementTypes,
+} from "@/types/programTypes";
 gsap.registerPlugin(ScrollTrigger);
-
-interface ProgramListTypes {
-	id: string;
-	title: string;
-	subTitle: string;
-	description: {
-		text: string;
-	}[];
-	image: string;
-	statementSection: {
-		title: string;
-		paragraphs: {
-			textHeader: string;
-			text: string;
-		}[];
-	}[];
-}
-
-interface StatementTypes {
-	title: string;
-	paragraphs: {
-		textHeader: string;
-		text: string;
-	}[];
-}
-
-interface TextTypes {
-	textHeader: string;
-	text: string;
-}
 
 export default function ProgramPages({
 	program,
@@ -73,7 +48,13 @@ export default function ProgramPages({
 						<div className="check-point-circles" />
 
 						<div className="flex flex-col justify-start items-start">
-							<h1 className="lato-regular text-lg">{program.subTitle}</h1>
+							<div className="flex justify-center items-center gap-2">
+								<h3 className="lato-regular text-lg">{program.subTitle}</h3>
+
+								<p className="text-gray-400 text-sm font-bold">
+									Built By: {program.createdBy}
+								</p>
+							</div>
 							<h1 className="montserrat-bold text-4xl sm:text-5xl text-green-3">
 								{program.title}
 							</h1>
@@ -110,7 +91,7 @@ export default function ProgramPages({
 											className={`flex flex-col gap-5 justify-center items-start pl-[100px]`}
 										>
 											{statement.paragraphs.map(
-												(paragraph: TextTypes, index: number) => {
+												(paragraph: ParagraphsTypes, index: number) => {
 													return (
 														<React.Fragment key={index}>
 															{statement.paragraphs.map((value) => value)
