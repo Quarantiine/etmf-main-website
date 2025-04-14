@@ -1,17 +1,35 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export const ResourceFeaturedArticles = () => {
+	useEffect(() => {
+		const animation = gsap.context(() => {
+			gsap.to(".featured-resourses-child", {
+				opacity: 1,
+				scale: 1,
+			});
+		});
+
+		return () => {
+			animation.revert();
+		};
+	}, []);
+
 	return (
 		<>
-			<div className="flex flex-col justify-center items-start gap-5 w-full">
+			<div className="featured-resourses-container flex flex-col justify-center items-start gap-5 w-full">
 				<div className="flex flex-col justify-center items-start">
 					<h1 className="title-2 font-bold">Featured Resources</h1>
 					<p className="text-gray-500">Rights of Undocumented Immigrants</p>
 				</div>
 
-				<div className="grid grid-cols-1 md:grid-cols-[70%_30%] w-full justify-center items-center gap-5">
+				<div className="featured-resourses-child opacity-0 scale-90 grid grid-cols-1 md:grid-cols-[70%_30%] w-full justify-center items-center gap-5">
 					<div className="w-full h-full flex justify-center items-center">
 						<Link
 							target="_blank"

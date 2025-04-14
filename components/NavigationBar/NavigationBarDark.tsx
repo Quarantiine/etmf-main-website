@@ -31,7 +31,7 @@ export default function NavigationBarDark(): React.ReactElement {
 
 	// State to keep track of the current page
 	const [openMobileNavbar, setOpenMobileNavbar] = useState<boolean>(false);
-	const [hideNavbar, setHideNavbar] = useState<boolean>(false);
+	const [hideNavbar, setHideNavbar] = useState<boolean>(true);
 
 	const handleOpenMobileNavbar = () => {
 		setOpenMobileNavbar(!openMobileNavbar);

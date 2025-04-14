@@ -2,10 +2,11 @@ import ActionSection from "@/components/Home/ActionSection";
 import FeaturingSection from "@/components/Home/FeaturingSection";
 import Section2 from "@/components/Home/Section2";
 import Section4 from "@/components/Home/Section4";
-import type { Metadata } from "next";
+import type { Metadata } from "next/types";
 import React from "react";
 import HeaderBanner from "@/components/Home/HeaderBanner";
 import Link from "next/link";
+import WelcomeSectionAnimation from "@/components/Home/WelcomeSectionAnimation";
 
 // Metadata object for the page, includes title and description for SEO and display purposes
 export const metadata: Metadata = {
@@ -23,31 +24,29 @@ export default function Home(): React.ReactElement {
 				{/* Header banner section */}
 				<HeaderBanner />
 
-				<div className="default-width mx-auto flex flex-col justify-center items-start relative h-fit bg-white gap-5 px-0">
-					<div className="flex flex-col justify-start items-start pt-10">
-						<h3 className="text-base lato-bold text-gray-500">WELCOME TO</h3>
-						<h1 className="text-4xl sm:text-6xl lato-bold text-[#222]">
-							Empowerment Through Mindset Foundation
-						</h1>
-					</div>
+				<WelcomeSectionAnimation>
+					{/* Welcome section */}
+					<div className="default-width mx-auto flex flex-col justify-center items-center text-center pb-10 relative h-fit bg-white gap-5 px-0">
+						<div className="flex flex-col justify-center items-center pt-10">
+							<h3 className="text-base lato-bold text-gray-500">WELCOME TO</h3>
+							<h1 className="text-4xl sm:text-6xl lato-bold text-[#222]">
+								Empowerment Through Mindset Foundation
+							</h1>
+						</div>
 
-					<div className="flex flex-col justify-start items-start gap-5">
-						{/* <p className="text-lg lg:text-xl text-[#222]">
-							ETMF is building the future of education and redefining the way
-							people learn by leveraging the power of education, innovation and
-							inspiring empowerment through mindset.
-						</p> */}
-						<p className="text-lg lg:text-xl text-[#222]">
-							We are committed to curating learning experiences programs and
-							initiatives designed to empower students, educators, educational
-							institutions and communities to reach their full potential.
-						</p>
-					</div>
+						<div className="flex flex-col justify-center items-center gap-5">
+							<p className="text-lg lg:text-xl text-[#222]">
+								We are committed to curating learning experiences programs and
+								initiatives designed to empower students, educators, educational
+								institutions and communities to reach their full potential.
+							</p>
+						</div>
 
-					<Link className="styled-btn" href={"/aboutus"}>
-						Who Are We?
-					</Link>
-				</div>
+						<Link className="styled-btn" href={"/aboutus"}>
+							Who Are We?
+						</Link>
+					</div>
+				</WelcomeSectionAnimation>
 
 				{/* Featuring section */}
 				<div className="flex flex-row gap-5 default-width mx-auto">
@@ -61,8 +60,8 @@ export default function Home(): React.ReactElement {
 
 				{/* Section 3 */}
 				{/* <div className="flex justify-center items-center gap-5 w-full mx-auto">
-					<Section3 />
-				</div> */}
+                    <Section3 />
+                </div> */}
 
 				{/* Section 4 */}
 				<div className="flex flex-col gap-10 default-width mx-auto">

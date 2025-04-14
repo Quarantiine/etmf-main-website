@@ -4,6 +4,9 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import resourceData from "@/data/resourceData.json";
 import Link from "next/link";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export const MoreResources = () => {
 	const [searchQuery, setSearchQuery] = useState<string>("");
@@ -31,9 +34,33 @@ export const MoreResources = () => {
 		setOpenCategoriesDropdown(false);
 	};
 
+	useEffect(() => {
+		const animation = gsap.context(() => {
+			gsap.to(".more-resources-child", {
+				opacity: 1,
+				translateY: 0,
+				stagger: {
+					each: 0.2,
+				},
+				scrollTrigger: {
+					trigger: ".more-resources-container",
+					start: "top 70%",
+					end: "bottom bottom",
+					scrub: true,
+					toggleActions: "play none none reverse",
+					// markers: true,
+				},
+			});
+		});
+
+		return () => {
+			animation.revert();
+		};
+	}, []);
+
 	return (
 		<>
-			<div className="flex flex-col justify-center items-start text-start w-full gap-5">
+			<div className="flex flex-col justify-center items-start text-start w-full gap-5 more-resources-container">
 				<div className="flex flex-col justify-center items-start gap-5 w-full">
 					<div className="flex flex-col justify-center items-start">
 						<h1 className="title-2 font-bold">More Resources</h1>
@@ -108,7 +135,10 @@ export const MoreResources = () => {
 								.includes(searchQuery.toLowerCase())
 						) {
 							return (
-								<React.Fragment key={index}>
+								<div
+									key={index}
+									className="more-resources-child w-fit h-fit translate-y-20 opacity-0"
+								>
 									<div className="flex flex-col justify-center items-start gap-3 bg-white border border-[#eee] rounded-xl p-5 text-start h-fit">
 										<p className="text-sm text-gray-500">{data.category}</p>
 										<h1 className="title-2">{data.title}</h1>
@@ -130,7 +160,7 @@ export const MoreResources = () => {
 											})}
 										</div>
 									</div>
-								</React.Fragment>
+								</div>
 							);
 						}
 					})}

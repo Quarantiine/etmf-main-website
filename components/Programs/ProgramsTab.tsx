@@ -1,9 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import programList from "@/data/programList.json";
 import Link from "next/link";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 interface ProgramListTypes {
 	id: string;
@@ -23,13 +26,40 @@ interface ProgramListTypes {
 }
 
 export default function ProgramsTab(): React.ReactElement {
+	useEffect(() => {
+		const animation = gsap.context(() => {
+			gsap.to(".program-page-child", {
+				opacity: 1,
+				translateY: 0,
+				stagger: {
+					each: 0.3,
+				},
+				scrollTrigger: {
+					trigger: ".program-page-container",
+					start: "top 90%",
+					end: "bottom bottom",
+					scrub: true,
+					toggleActions: "play none none reverse",
+					// markers: true,
+				},
+			});
+		});
+
+		return () => {
+			animation.revert();
+		};
+	}, []);
+
 	return (
 		<>
 			<div className="statement-sections-2 default-width flex flex-col gap-5 mx-auto">
-				<div className="flex flex-col text-white relative gap-10 justify-center sm:justify-start items-center w-full pb-20">
+				<div className="flex flex-col text-white relative gap-10 justify-center sm:justify-start items-center w-full pb-20 program-page-container">
 					{programList.map((program: ProgramListTypes) => {
 						return (
-							<React.Fragment key={program.id}>
+							<div
+								className="program-page-child w-full h-fit opacity-0 translate-y-48"
+								key={program.id}
+							>
 								<Link
 									href={`/programs/${program.id}`}
 									className="no-style-btn flex flex-col relative rounded-xl w-full h-72 sm:h-96 overflow-hidden"
@@ -52,7 +82,7 @@ export default function ProgramsTab(): React.ReactElement {
 										</h1>
 									</div>
 								</Link>
-							</React.Fragment>
+							</div>
 						);
 					})}
 				</div>
