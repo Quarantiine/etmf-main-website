@@ -9,16 +9,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 export const ResourceFeaturedArticles = () => {
 	useEffect(() => {
-		const animation = gsap.context(() => {
+		gsap.context(() => {
 			gsap.to(".featured-resourses-child", {
 				opacity: 1,
 				scale: 1,
 			});
 		});
-
-		return () => {
-			animation.revert();
-		};
 	}, []);
 
 	return (

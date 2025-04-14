@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function ActionSection(): React.ReactElement {
 	useEffect(() => {
-		const animation = gsap.context(() => {
+		gsap.context(() => {
 			gsap.to(".collab-container", {
 				opacity: 1,
 				scale: 1,
@@ -23,10 +23,6 @@ export default function ActionSection(): React.ReactElement {
 				},
 			});
 		});
-
-		return () => {
-			animation.revert();
-		};
 	}, []);
 
 	return (

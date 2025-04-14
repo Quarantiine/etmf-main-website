@@ -49,15 +49,11 @@ export default function HeaderBanner(): React.ReactElement {
 	];
 
 	useEffect(() => {
-		const animation = gsap.to(".header-section-2", {
+		gsap.to(".header-section-2", {
 			opacity: 1,
 			duration: 1,
 			scale: 1,
 		});
-
-		return () => {
-			animation.revert();
-		};
 	}, []);
 
 	useEffect(() => {

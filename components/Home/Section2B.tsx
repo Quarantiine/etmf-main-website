@@ -33,7 +33,7 @@ export default function Section2B(): React.ReactElement {
 	];
 
 	useEffect(() => {
-		const animation = gsap.context(() => {
+		gsap.context(() => {
 			gsap.to(".short-videos", {
 				stagger: {
 					each: 0.5,
@@ -49,10 +49,6 @@ export default function Section2B(): React.ReactElement {
 				},
 			});
 		});
-
-		return () => {
-			animation.revert();
-		};
 	}, []);
 
 	return (

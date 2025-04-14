@@ -44,7 +44,7 @@ export default function Section4(): React.ReactElement {
 	];
 
 	useEffect(() => {
-		const animation = gsap.context(() => {
+		gsap.context(() => {
 			gsap.to(".programs-child", {
 				stagger: {
 					each: 0.5,
@@ -60,10 +60,6 @@ export default function Section4(): React.ReactElement {
 				},
 			});
 		});
-
-		return () => {
-			animation.revert();
-		};
 	}, []);
 
 	return (

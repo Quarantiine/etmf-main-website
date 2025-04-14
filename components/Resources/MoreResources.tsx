@@ -35,7 +35,7 @@ export const MoreResources = () => {
 	};
 
 	useEffect(() => {
-		const animation = gsap.context(() => {
+		gsap.context(() => {
 			gsap.to(".more-resources-child", {
 				opacity: 1,
 				translateY: 0,
@@ -52,10 +52,6 @@ export const MoreResources = () => {
 				},
 			});
 		});
-
-		return () => {
-			animation.revert();
-		};
 	}, []);
 
 	return (

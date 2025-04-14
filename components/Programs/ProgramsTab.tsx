@@ -27,7 +27,7 @@ interface ProgramListTypes {
 
 export default function ProgramsTab(): React.ReactElement {
 	useEffect(() => {
-		const animation = gsap.context(() => {
+		gsap.context(() => {
 			gsap.to(".program-page-child", {
 				opacity: 1,
 				translateY: 0,
@@ -44,10 +44,6 @@ export default function ProgramsTab(): React.ReactElement {
 				},
 			});
 		});
-
-		return () => {
-			animation.revert();
-		};
 	}, []);
 
 	return (

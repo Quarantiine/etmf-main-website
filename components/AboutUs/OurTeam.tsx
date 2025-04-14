@@ -18,7 +18,7 @@ interface TeamDataTypes {
 
 const OurTeam: React.FC = () => {
 	useEffect(() => {
-		const animation = gsap.context(() => {
+		gsap.context(() => {
 			gsap.to(".team-child", {
 				opacity: 1,
 				stagger: {
@@ -26,10 +26,6 @@ const OurTeam: React.FC = () => {
 				},
 			});
 		});
-
-		return () => {
-			animation.revert();
-		};
 	}, []);
 
 	return (
