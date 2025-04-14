@@ -2,8 +2,8 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { gsap } from "gsap";
+import NavigationBar from "../NavigationBar/NavigationBar";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -23,7 +23,7 @@ export default function HeaderBanner(): React.ReactElement {
 			description:
 				"Inspiration for Empowerment: We inspire action, belief in potential, and a culture of hope.",
 			image:
-				"https://res.cloudinary.com/dnmdoncxt/image/upload/v1734609885/Headshots/mokanqopnrfpglrbsfza.jpg",
+				"https://res.cloudinary.com/dnmdoncxt/image/upload/f_auto,q_auto/v1/Headshots/grro5vpbuz9kf5ec7cqk",
 		},
 		{
 			title: "Education",
@@ -49,55 +49,59 @@ export default function HeaderBanner(): React.ReactElement {
 	];
 
 	useEffect(() => {
-		gsap.to(".header-section-image", {
-			scrollTrigger: {
-				trigger: ".header-section",
-				start: "top 0%",
-				end: "20% 0%",
-				scrub: 1,
-			},
-
-			height: "800px",
-		});
-
 		gsap.to(".header-section-2", {
 			opacity: 1,
-			translateY: 0,
 			duration: 1,
+			scale: 1,
 		});
 	}, []);
 
 	useEffect(() => {
 		const interval = setInterval(() => {
 			if (!slideBtn) {
-				setSlideSection((prevSection) => (prevSection + 1) % slideItems.length);
+				const tl = gsap.timeline();
+				tl.to(".header-section-2", {
+					opacity: 0,
+					duration: 1,
+				})
+					.call(() =>
+						setSlideSection(
+							(prevSection) => (prevSection + 1) % slideItems.length
+						)
+					)
+					.to(".header-section-2", {
+						opacity: 1,
+						duration: 4,
+					});
 			}
-		}, 4000);
+		}, 10000);
 
 		return () => clearInterval(interval);
 	}, [slideItems.length, slideBtn]);
 
 	return (
 		<>
-			<div className="header-section w-full h-full relative flex flex-col bg-white z-50 rounded-3xl shadow-[10px_10px_40px_0px_rgba(0,0,0,0.1)]">
-				<div className="header-section-2 opacity-0 translate-y-32 w-[97%] sm:w-[90%] mx-auto h-[1100px] flex flex-col justify-center items-center lg:px-10 pb-10 md:py-10">
-					<div className="flex-col justify-center items-center relative bg-[#222] rounded-3xl gap-5 w-full h-full">
-						<div className="flex-col justify-start items-center relative bg-[#222] overflow-hidden rounded-3xl default-overflow-x overflow-x-auto overflow-y-hidden h-full grid grid-flow-col auto-cols-[100%] gap-5">
+			<div className="w-full h-full relative flex flex-col bg-[#111] z-50 bg-scroll">
+				<NavigationBar />
+
+				<div className="header-section-2 opacity-0 scale-95 w-full mx-auto h-[800px] flex flex-col justify-center items-center">
+					<div className="flex-col justify-center items-center relative bg-[#000] gap-5 w-full h-full">
+						<div className="flex-col justify-start items-center relative bg-[#000] overflow-hidden default-overflow-x overflow-x-auto overflow-y-hidden h-full grid grid-flow-col auto-cols-[100%] gap-5">
 							{slideItems
 								.filter((_, index) => index === slideSection)
 								.map((item: SlideItemProps, index) => {
 									return (
 										<React.Fragment key={index}>
-											<div className="relative w-full h-full rounded-3xl overflow-hidden flex flex-col">
+											<div className="relative w-full h-full overflow-hidden flex flex-col">
 												<Image
-													className="header-section-image object-cover object-bottom sm:object-center rounded-3xl"
+													className="header-section-image object-cover object-bottom sm:object-center"
 													src={item.image}
 													alt="images"
 													fill
 													sizes="(max-width: 2000px) 100vw, (max-width: 1200px) 50vw, 33vw"
 												/>
 
-												<div className="w-full h-full bg-gradient-to-t from-[#222] via-[#222222de] to-[transparent] absolute bottom-0 left-0 flex flex-col justify-end items-start text-white p-5 sm:p-10 gap-5">
+												<div className="w-full h-full bg-gradient-to-t from-[#000] via-[#0000009a] to-[transparent] absolute bottom-0 left-0 flex flex-col justify-end items-start text-white p-5 sm:p-10 gap-5">
 													<div className="flex flex-col gap-2 w-full">
 														<h1 className="text-2xl sm:text-4xl lato-bold">
 															{item.title}
@@ -119,32 +123,6 @@ export default function HeaderBanner(): React.ReactElement {
 						slideBtn={slideBtn}
 						setSlideBtn={setSlideBtn}
 					/>
-
-					<div className="default-width flex flex-col justify-center items-start relative h-fit bg-white gap-5 px-10 lg:px-0">
-						<div className="flex flex-col justify-start items-start pt-10">
-							<h3 className="text-base lato-bold text-gray-500">WELCOME TO</h3>
-							<h1 className="text-4xl sm:text-6xl lato-bold text-[#222]">
-								Empowerment Through Mindset Foundation
-							</h1>
-						</div>
-
-						<div className="flex flex-col justify-start items-start gap-5">
-							<p className="text-lg lg:text-xl text-[#222]">
-								ETMF is building the future of education and redefining the way
-								people learn by leveraging the power of education, innovation
-								and inspiring empowerment through mindset.
-							</p>
-							<p className="text-lg lg:text-xl text-[#222]">
-								We are committed to curating learning experiences programs and
-								initiatives designed to empower students, educators, educational
-								institutions and communities to reach their full potential.
-							</p>
-						</div>
-
-						<Link className="styled-btn" href={"/aboutus"}>
-							Who Are We?
-						</Link>
-					</div>
 				</div>
 			</div>
 		</>
@@ -179,7 +157,7 @@ const ButtonControls = ({
 
 	return (
 		<>
-			<div className="flex flex-row justify-center items-center gap-5 w-full pt-5">
+			<div className="flex flex-row justify-center items-center gap-5 w-full py-5 bg-black">
 				{slideItems.map((_, index) => {
 					return (
 						<React.Fragment key={index}>

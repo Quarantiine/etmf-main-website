@@ -38,7 +38,7 @@ export default function Section1(): React.ReactElement {
 
 						<p>
 							{
-								"The Empowerment Through Mindset Foundation (ETMF) Department of Education empowers students, staff, and institutions with innovative programs. These address educational challenges using advanced methods and collaboration for impactful results. Below are ETMF’s programs highlighting its focus on education and empowerment."
+								"The Empowerment Through Mindset Foundation (ETMF) Department of Education empowers students, staff, and institutions with innovative programs."
 							}
 						</p>
 

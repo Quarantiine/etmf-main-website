@@ -95,7 +95,7 @@ export const ContactUsForm = () => {
 
 	return (
 		<>
-			<div className="w-fit h-fit p-5 rounded-xl border flex flex-col justify-center items-start gap-4">
+			<div className="w-fit h-fit p-5 rounded-xl border-2 border-gray-100 flex flex-col justify-center items-start gap-4">
 				<h1 className="text-2xl">Contact</h1>
 
 				<div className="grid grid-cols-1 justify-start items-start gap-5">
@@ -116,7 +116,7 @@ export const ContactUsForm = () => {
 									</button>
 
 									{inquiry.title === inquiryType && (
-										<div className="bg-white border p-5 rounded-xl flex flex-col gap-2 text-sm">
+										<div className="bg-white border-2 border-gray-100 p-5 rounded-xl flex flex-col gap-2 text-sm">
 											<h1 className="text-gray-500 lato-bold">
 												{inquiry.categoriesTitle}
 											</h1>
@@ -153,7 +153,7 @@ export const ContactUsForm = () => {
 				</div>
 			</div>
 
-			<div className="sticky top-10 left-0 w-full h-fit p-5 rounded-xl border flex flex-col justify-center items-center">
+			<div className="sticky top-10 left-0 w-full h-fit p-5 rounded-xl border-2 border-gray-100 flex flex-col justify-center items-center">
 				<form className="flex flex-col justify-center items-start gap-5 w-full">
 					{formMessageError && (
 						<div className="flex justify-start items-center gap-2 text-white bg-red-500 p-4 rounded-xl w-full text-sm">
