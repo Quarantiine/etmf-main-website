@@ -2,51 +2,16 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import CarouselArrows from "../Widgets/CarouselArrows";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ContentTypes, ResourcesTypes } from "@/lib/types";
 import featuredContent from "@/data/featuredContent.json";
 
-gsap.registerPlugin(ScrollTrigger);
-
 export default function FeaturingSection() {
 	const carouselArrowsRef = useRef<HTMLDivElement>(null);
-	const sectionRef = useRef<HTMLDivElement>(null); // Ref for the whole section
-
-	useEffect(() => {
-		const el = sectionRef.current;
-
-		if (!el) return; // Exit if el is null
-
-		gsap.context(() => {
-			gsap.fromTo(
-				el,
-				{
-					opacity: 0,
-					y: 50,
-				},
-				{
-					opacity: 1,
-					y: 0,
-					duration: 1,
-					ease: "power3.out",
-					scrollTrigger: {
-						trigger: el,
-						start: "top 80%",
-						end: "bottom 20%",
-						scrub: 0.5,
-						toggleActions: "play none none reverse",
-						// markers: true,
-					},
-				}
-			);
-		}, []);
-	}, []);
 
 	return (
-		<div ref={sectionRef}>
+		<>
 			{featuredContent.map((resource: ResourcesTypes, index: number) => {
 				return (
 					<React.Fragment key={index}>
@@ -133,6 +98,6 @@ export default function FeaturingSection() {
 					</React.Fragment>
 				);
 			})}
-		</div>
+		</>
 	);
 }

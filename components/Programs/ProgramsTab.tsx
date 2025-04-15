@@ -36,7 +36,7 @@ export default function ProgramsTab(): React.ReactElement {
 				},
 				scrollTrigger: {
 					trigger: ".program-page-container",
-					start: "top 90%",
+					start: "top 100%",
 					end: "bottom bottom",
 					scrub: true,
 					toggleActions: "play none none reverse",

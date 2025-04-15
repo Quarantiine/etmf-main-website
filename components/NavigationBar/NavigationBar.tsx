@@ -2,7 +2,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { URLs } from "./URLs";
 import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 import { useRouter } from "next/navigation";
@@ -42,24 +42,10 @@ export default function NavigationBar(): React.ReactElement {
 		setOpenMobileNavbar(false);
 	};
 
-	useEffect(() => {
-		gsap.to(".home-navbar", {
-			backgroundColor: "rgba(0, 0, 0, 0.85)",
-			backdropFilter: "blur(8px)",
-			duration: 0.3,
-			ease: "power1.out",
-			scrollTrigger: {
-				// markers: true,
-				start: "700px",
-				toggleActions: "play reverse play reverse",
-			},
-		});
-	}, []);
-
 	return (
 		<>
 			<div
-				className={`home-navbar flex flex-col w-full justify-center items-end fixed top-0 left-0 z-50 ${
+				className={`flex flex-col w-full justify-center items-end fixed top-0 left-0 z-50 ${
 					openMobileNavbar ? "h-screen lg:h-fit" : "h-fit"
 				}`}
 			>

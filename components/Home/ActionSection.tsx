@@ -2,32 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import React from "react";
 
 export default function ActionSection(): React.ReactElement {
-	useEffect(() => {
-		gsap.context(() => {
-			gsap.to(".collab-container", {
-				opacity: 1,
-				scale: 1,
-				scrollTrigger: {
-					trigger: ".collab-container",
-					start: "top 60%",
-					end: "bottom bottom",
-					scrub: true,
-					toggleActions: "play none none reverse",
-					// markers: true,
-				},
-			});
-		});
-	}, []);
-
 	return (
 		<>
-			<div className="collab-container scale-95 opacity-0 flex flex-row gap-5 w-full h-full mx-auto">
+			<div className="flex flex-row gap-5 w-full h-full mx-auto">
 				<div className="bg-green-3 w-full h-full sm:h-screen flex flex-col sm:flex-row justify-center items-start text-white relative overflow-hidden text-center">
 					<div className="w-full h-full flex flex-col justify-center items-center relative border-b sm:border-r sm:border-b-0 border-[#4bf2c8]">
 						<Image

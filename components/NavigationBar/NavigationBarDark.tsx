@@ -45,9 +45,7 @@ export default function NavigationBarDark(): React.ReactElement {
 	const pathname = usePathname();
 
 	useEffect(() => {
-		router.refresh();
 		setHideNavbar(pathname === "/");
-		window.scrollTo(0, 0);
 	}, [pathname, router]);
 
 	return (
