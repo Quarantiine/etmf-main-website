@@ -1,8 +1,11 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import NavigationBar from "../NavigationBar/NavigationBar";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 interface SlideItemProps {
 	title: string;
@@ -45,12 +48,35 @@ export default function HeaderBanner(): React.ReactElement {
 		},
 	];
 
+	useEffect(() => {
+		const interval = setInterval(() => {
+			if (!slideBtn) {
+				const tl = gsap.timeline();
+				tl.to(".header-section-2", {
+					opacity: 0,
+					duration: 1,
+				})
+					.call(() =>
+						setSlideSection(
+							(prevSection) => (prevSection + 1) % slideItems.length
+						)
+					)
+					.to(".header-section-2", {
+						opacity: 1,
+						duration: 4,
+					});
+			}
+		}, 10000);
+
+		return () => clearInterval(interval);
+	}, [slideItems.length, slideBtn]);
+
 	return (
 		<>
 			<div className="w-full h-full relative flex flex-col bg-[#111] z-50 bg-scroll">
 				<NavigationBar />
 
-				<div className="w-full mx-auto h-[800px] flex flex-col justify-center items-center">
+				<div className="header-section-2 w-full mx-auto h-[800px] flex flex-col justify-center items-center">
 					<div className="flex-col justify-center items-center relative bg-[#000] gap-5 w-full h-full">
 						<div className="flex-col justify-start items-center relative bg-[#000] overflow-hidden default-overflow-x overflow-x-auto overflow-y-hidden h-full grid grid-flow-col auto-cols-[100%] gap-5">
 							{slideItems
