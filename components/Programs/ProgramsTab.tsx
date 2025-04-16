@@ -40,7 +40,7 @@ export default function ProgramsTab(): React.ReactElement {
 					end: "bottom bottom",
 					scrub: true,
 					toggleActions: "play none none reverse",
-					// markers: true,
+					markers: false,
 				},
 			});
 		});

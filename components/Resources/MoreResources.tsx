@@ -48,7 +48,7 @@ export const MoreResources = () => {
 					end: "bottom bottom",
 					scrub: true,
 					toggleActions: "play none none reverse",
-					// markers: true,
+					markers: false,
 				},
 			});
 		});

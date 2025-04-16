@@ -46,7 +46,7 @@ export default function Section2B(): React.ReactElement {
 					end: "50% 50%",
 					scrub: true,
 					toggleActions: "play none none reverse",
-					markers: true,
+					markers: false,
 				},
 			});
 		});
