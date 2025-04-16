@@ -53,7 +53,7 @@ export const MainLayoutComponent = () => {
 		const tl4 = gsap.timeline({
 			scrollTrigger: {
 				trigger: section2Ref.current,
-				start: "top 80%",
+				start: "top 60%",
 				end: "bottom 20%",
 				toggleActions: "play none none reverse",
 				markers: false,
@@ -63,7 +63,7 @@ export const MainLayoutComponent = () => {
 		const tl5 = gsap.timeline({
 			scrollTrigger: {
 				trigger: section4Ref.current,
-				start: "top 80%",
+				start: "top 60%",
 				end: "bottom 20%",
 				toggleActions: "play none none reverse",
 				markers: false,
@@ -73,7 +73,7 @@ export const MainLayoutComponent = () => {
 		const tl6 = gsap.timeline({
 			scrollTrigger: {
 				trigger: actionRef.current,
-				start: "top 80%",
+				start: "top 60%",
 				end: "bottom 20%",
 				toggleActions: "play none none reverse",
 				markers: false,

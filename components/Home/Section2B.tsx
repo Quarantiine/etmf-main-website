@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import Shorts from "./Shorts";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -32,9 +32,33 @@ export default function Section2B(): React.ReactElement {
 		},
 	];
 
+	useEffect(() => {
+		const animation = gsap.context(() => {
+			gsap.to(".short-videos", {
+				stagger: {
+					each: 0.5,
+				},
+				opacity: 1,
+				translateY: 0,
+				scrollTrigger: {
+					trigger: ".short-videos-container",
+					start: "top 80%",
+					end: "50% 50%",
+					scrub: true,
+					toggleActions: "play none none reverse",
+					markers: true,
+				},
+			});
+		});
+
+		return () => {
+			animation.revert();
+		};
+	}, []);
+
 	return (
 		<>
-			<div className="bg-[#222] w-full mx-auto h-fit flex flex-col justify-center items-center text-white relative px-10 py-16 overflow-hidden">
+			<div className="bg-[#222] w-full mx-auto h-fit flex flex-col justify-center items-center text-white relative px-10 py-16 overflow-hidden short-videos-container">
 				<div className="flex flex-col justify-center items-center w-full mx-auto gap-10 z-10 text-center">
 					<h1 className="montserrat-bold text-4xl sm:text-5xl text-center">
 						Student Empowerment
@@ -45,9 +69,12 @@ export default function Section2B(): React.ReactElement {
 					<div className="default-overflow-x overflow-x-auto overflow-y-hidden w-full xl:w-auto h-full grid grid-flow-col auto-cols-[minmax(254px,3fr)] gap-10">
 						{shortsList.map((short: ShortsTypes, index: number) => {
 							return (
-								<React.Fragment key={index}>
+								<div
+									className="short-videos opacity-0 translate-y-32"
+									key={index}
+								>
 									<Shorts short={short} />
-								</React.Fragment>
+								</div>
 							);
 						})}
 					</div>
